@@ -1,5 +1,5 @@
 /datum/patron/godless
-	name = "Apostasy"
+	name = "Godless" // This isn't called Apostasy because otherwise it shows up as Patron: Apostasy which just looks absurdly dumb.
 	domain = "Ontological Reality"
 	desc = "No gods or kings, only man! You and others are known as what are Apostates- those who reject all divinity in favor of their own strength."
 	worshippers = "Madmen, Narcissists, beasts, powerful nobility, and some dwarves"
