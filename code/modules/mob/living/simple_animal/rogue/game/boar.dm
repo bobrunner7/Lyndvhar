@@ -26,8 +26,8 @@
 	maxHealth = 200
 	melee_damage_lower = 10
 	melee_damage_upper = 15
-	vision_range = 7
-	aggro_vision_range = 9
+	vision_range = 5
+	aggro_vision_range = 7
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	retreat_distance = 0
 	minimum_distance = 0
@@ -42,7 +42,7 @@
 	STACON = 10
 	STASTR = 10
 	STASPD = 7
-	simple_detect_bonus = 20
+	simple_detect_bonus = 5
 	deaggroprob = 0
 	defprob = 40
 	defdrain = 10
@@ -79,8 +79,8 @@
 	maxHealth = 350
 	melee_damage_lower = 15
 	melee_damage_upper = 25
-	vision_range = 7
-	aggro_vision_range = 9
+	vision_range = 5
+	aggro_vision_range = 7
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	retreat_distance = 0
 	minimum_distance = 0
@@ -95,7 +95,7 @@
 	STACON = 16
 	STASTR = 13
 	STASPD = 8
-	simple_detect_bonus = 20
+	simple_detect_bonus = 5
 	deaggroprob = 0
 	defprob = 40
 	defdrain = 10
@@ -132,8 +132,8 @@
 	maxHealth = 500
 	melee_damage_lower = 35
 	melee_damage_upper = 60
-	vision_range = 7
-	aggro_vision_range = 9
+	vision_range = 5
+	aggro_vision_range = 7
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	retreat_distance = 0
 	minimum_distance = 0
@@ -148,7 +148,7 @@
 	STACON = 20
 	STASTR = 15
 	STASPD = 6
-	simple_detect_bonus = 20
+	simple_detect_bonus = 5
 	deaggroprob = 0
 	defprob = 40
 	defdrain = 10

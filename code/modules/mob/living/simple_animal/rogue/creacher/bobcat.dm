@@ -25,8 +25,8 @@
 	health = 100
 	maxHealth = 100	//Wolf is 120
 	simple_detect_bonus = 40	//VERY good at detecting stealthed people
-	melee_damage_lower = 15
-	melee_damage_upper = 25
+	melee_damage_lower = 10
+	melee_damage_upper = 15
 	STACON = 6
 	STASTR = 6
 	STASPD = 15	//Fast as fuck, boy

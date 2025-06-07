@@ -26,8 +26,8 @@
 									/obj/item/natural/head/direbear = 1)
 	faction = list("wolfs")		//This mf will kill undead - won't kill wolves just to avoid it fighting too many types of ambushes.
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	melee_damage_lower = 30		// Ey, bo-bo!
-	melee_damage_upper = 40		// We're gonna take his pick-in-ick basket!
+	melee_damage_lower = 20		// Ey, bo-bo!
+	melee_damage_upper = 35		// We're gonna take his pick-in-ick basket!
 	vision_range = 6		
 	aggro_vision_range = 8
 	environment_smash = ENVIRONMENT_SMASH_NONE
