@@ -429,6 +429,14 @@
 	verbage_simple = "build"
 	verbage = "builds"
 
+/datum/crafting_recipe/roguetown/structure/pyre
+	name = "pyre"
+	result = /obj/machinery/light/rogue/campfire/pyre
+	reqs = list(/obj/item/grown/log/tree/small = 4)
+	verbage_simple = "build"
+	verbage = "builds"
+
+
 /datum/crafting_recipe/roguetown/structure/cookpit
 	name = "hearth"
 	result = /obj/machinery/light/rogue/hearth
