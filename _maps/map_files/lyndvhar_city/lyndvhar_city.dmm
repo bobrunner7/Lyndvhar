@@ -3993,6 +3993,15 @@
 /obj/item/alch/golddust,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/sewer)
+"cUy" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/machinery/light/rogue/lanternpost,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/town)
 "cUL" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
@@ -5325,6 +5334,13 @@
 /area/rogue/indoors/town/dwarfin{
 	first_time_text = "SMITHING QUARTER"
 	})
+"dUR" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/town)
 "dUX" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -11932,10 +11948,16 @@
 "iwz" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
 	icon_state = "cobbleedge-w"
 	},
-/obj/machinery/light/rogue/lanternpost,
-/turf/open/floor/rogue/dirt/road,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "iwC" = (
 /obj/effect/landmark/start/knavewench,
@@ -13846,6 +13868,14 @@
 /obj/item/rope/chain,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
+"jGf" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/machinery/light/rogue/lanternpost,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/town)
 "jGM" = (
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/rtfield{
@@ -22268,16 +22298,15 @@
 /area/rogue/indoors/town/manor)
 "pCp" = (
 /obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-sread"
-	},
-/obj/machinery/light/rogue/lanternpost{
-	dir = 1
+	dir = 10;
+	icon_state = "cobbleedge-e"
 	},
 /obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
+	dir = 10;
+	icon_state = "cobbleedge-w"
 	},
-/turf/open/floor/rogue/blocks,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "pCs" = (
 /obj/machinery/light/rogue/wallfire/candle{
@@ -32692,6 +32721,14 @@
 /obj/item/natural/feather,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/bath)
+"xdu" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/town)
 "xdF" = (
 /obj/structure/fluff/walldeco/bigpainting/lake{
 	pixel_x = 0;
@@ -93129,7 +93166,7 @@ bRY
 bRY
 bRY
 wvJ
-iwz
+kaN
 uMr
 wDA
 wDA
@@ -93290,7 +93327,7 @@ bRY
 bRY
 bRY
 bRY
-gFl
+jGf
 eMB
 uMr
 wDA
@@ -94744,9 +94781,9 @@ bHY
 tPJ
 vFk
 bRY
+dUR
+tCy
 bRY
-itZ
-qTZ
 bRY
 bRY
 bRY
@@ -94908,9 +94945,9 @@ tpH
 bRY
 bRY
 bRY
-bRY
-bRY
-bRY
+jmk
+jmk
+jmk
 bRY
 wTj
 wTj
@@ -95066,14 +95103,14 @@ bRY
 axt
 gFl
 gFl
-mZt
+cUy
 bRY
 bRY
-jmk
-jmk
-jmk
-bRY
-bRY
+aHW
+nbL
+nbL
+nbL
+epT
 uMr
 wDA
 wDA
@@ -95230,12 +95267,12 @@ bRY
 bRY
 bRY
 bRY
-aHW
-nbL
-nbL
-nbL
-pCp
 bRY
+aHW
+puA
+puA
+puA
+pgW
 uMr
 wDA
 wDA
@@ -95392,12 +95429,12 @@ jkO
 mHm
 bRY
 bRY
+pCp
 aHW
 puA
-puA
-puA
+trg
+dEY
 pgW
-bRY
 uMr
 wDA
 wDA
@@ -95554,12 +95591,12 @@ onQ
 cRi
 wVn
 bRY
+bRY
 aHW
 puA
-trg
-dEY
+puA
+puA
 pgW
-bRY
 uMr
 wDA
 wDA
@@ -95716,12 +95753,12 @@ bRY
 bRY
 bRY
 bRY
-aHW
-puA
-puA
-puA
-pgW
 bRY
+aHW
+uuP
+uuP
+uuP
+epT
 uMr
 wDA
 wDA
@@ -95877,12 +95914,12 @@ bir
 bRY
 bRY
 bRY
+sRP
 bRY
-aHW
-uuP
-uuP
-uuP
-epT
+bRY
+tNZ
+tNZ
+tNZ
 bRY
 uMr
 wDA
@@ -96039,11 +96076,11 @@ rCg
 tCy
 bRY
 bRY
+xdu
+iwz
 bRY
 bRY
-tNZ
-tNZ
-tNZ
+bRY
 bRY
 bRY
 uMr
@@ -96206,7 +96243,7 @@ dNi
 dNi
 dNi
 dNi
-bRY
+tmc
 bRY
 uMr
 wDA
