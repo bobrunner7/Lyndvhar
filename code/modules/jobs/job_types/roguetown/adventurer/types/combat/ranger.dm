@@ -8,12 +8,13 @@
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	classes = list("Sentinel" = "You are a ranger well-versed in traversing untamed lands, with years of experience taking odd jobs as a pathfinder and bodyguard in areas of wilderness untraversable to common soldiery.",
 					"Assassin" = "You've lived the life of a hired killer and have spent your time training with blades and crossbows alike.",
-					"Bombadier" = "Bombs? You've got them. Plenty of them - and the skills to make more. You've spent years training under skilled alchemists and have found the perfect mix to create some chaos - now go blow something up!")
+					"Bombadier" = "Bombs? You've got them. Plenty of them - and the skills to make more. You've spent years training under skilled alchemists and have found the perfect mix to create some chaos - now go blow something up!",
+					"Survivalist" = "You've learned how to survive on your own in the wilderness at a young age. You make use of your trusty sling to take down all kinds of game.")
 
 /datum/outfit/job/roguetown/adventurer/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Sentinel","Assassin","Bombadier")
+	var/classes = list("Sentinel","Assassin","Bombadier","Survivalist")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -127,3 +128,39 @@
 			H.change_stat("strength", 1)
 			H.change_stat("intelligence", 2)
 			H.set_blindness(0)
+
+		if("Survivalist")
+			to_chat(H, span_warning("You've learned how to survive on your own in the wilderness at a young age. You make use of your trusty sling to take down all kinds of game."))
+			shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedboots
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+			pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
+			belt = /obj/item/storage/belt/rogue/rope
+			armor = /obj/item/clothing/suit/roguetown/armor/hide
+			cloak = /obj/item/clothing/cloak/tribal
+			backl = /obj/item/storage/backpack/rogue/satchel
+			beltr = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/quiver/sling
+			r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
+			backpack_contents = list(/obj/item/bait = 1, /obj/item/rogueweapon/huntingknife = 1)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/slings, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/butchering, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
+			H.change_stat("perception", 2)
+			H.change_stat("speed", 2)
