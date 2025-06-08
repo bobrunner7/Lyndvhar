@@ -31677,8 +31677,8 @@
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/huntingknife/idagger,
 /obj/item/rogueweapon/huntingknife/idagger,
-/obj/item/rogueweapon/sword/short,
-/obj/item/rogueweapon/sword/short,
+/obj/item/rogueweapon/sword/iron/short,
+/obj/item/rogueweapon/sword/iron/short,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "wtr" = (
