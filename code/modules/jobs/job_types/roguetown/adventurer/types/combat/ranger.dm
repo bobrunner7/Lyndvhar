@@ -135,8 +135,8 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
-			belt = /obj/item/storage/belt/rogue/rope
-			armor = /obj/item/clothing/suit/roguetown/armor/hide
+			belt = /obj/item/storage/belt/rogue/leather/rope
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
 			cloak = /obj/item/clothing/cloak/tribal
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltr = /obj/item/flashlight/flare/torch/lantern
@@ -145,7 +145,7 @@
 			backpack_contents = list(/obj/item/bait = 1, /obj/item/rogueweapon/huntingknife = 1)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/slings, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/slings, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
