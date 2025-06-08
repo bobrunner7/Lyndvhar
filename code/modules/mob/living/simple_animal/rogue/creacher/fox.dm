@@ -37,7 +37,7 @@
 	health = 100
 	maxHealth = 100				//Wolf is 120
 	melee_damage_lower = 10		//Wolf is 19
-	melee_damage_upper = 20		//Wolf is 29
+	melee_damage_upper = 15		//Wolf is 29
 	vision_range = 7
 	aggro_vision_range = 9
 	environment_smash = ENVIRONMENT_SMASH_NONE
