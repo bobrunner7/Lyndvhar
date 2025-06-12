@@ -39,6 +39,13 @@
 	additional_items = list(/obj/item/ingot/iron)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 
+/datum/anvil_recipe/armor/iron/fullplate
+	name = "Full-Plate Armour (+3 Iron, +1 Cured Leather)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron, /obj/item/ingot/iron, /obj/item/ingot/iron, /obj/item/natural/hide/cured)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	craftdiff = 4
+
 /datum/anvil_recipe/armor/iron/chainglove
 	name = "Chain Gauntlets"
 	req_bar = /obj/item/ingot/iron
