@@ -43,3 +43,5 @@
 		H.change_stat("strength", 1)
 		H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+
