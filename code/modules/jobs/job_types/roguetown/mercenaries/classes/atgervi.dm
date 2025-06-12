@@ -57,7 +57,9 @@
 			beltl = /obj/item/flashlight/flare/torch
 			backpack_contents = list(/obj/item/roguekey/mercenary)
 
-			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)	
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+
 			H.cmode_music = 'sound/music/combat_vagarian.ogg'
 		if("Shaman")
 			H.set_blindness(0)

@@ -37,6 +37,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 2)
 			backl = /obj/item/rogueweapon/shield/heater
@@ -68,6 +69,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", 2)
 			backl = /obj/item/rogueweapon/sword/long/rider

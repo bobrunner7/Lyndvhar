@@ -79,4 +79,5 @@
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/grenzelhoft)
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	H.grant_language(/datum/language/grenzelhoftian)

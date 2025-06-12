@@ -48,3 +48,4 @@
 	H.change_stat("perception", 3)
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
