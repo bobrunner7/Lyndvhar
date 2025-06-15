@@ -32,7 +32,6 @@
 	head = /obj/item/clothing/head/roguetown/bardhat
 	mouth = /obj/item/alch/rosa
 	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
-	neck = /obj/item/clothing/neck/roguetown/leather
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 	belt = /obj/item/storage/belt/rogue/leather
