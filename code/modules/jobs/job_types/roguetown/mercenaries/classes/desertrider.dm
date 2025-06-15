@@ -45,6 +45,7 @@
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
+			backr = /obj/item/storage/backpack/rogue/satchel
 			H.grant_language(/datum/language/celestial)
 
 		if("Blade Dancer")
@@ -73,6 +74,7 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
+			backr = /obj/item/storage/backpack/rogue/satchel
 			H.grant_language(/datum/language/celestial)
 			var/weapons = list("Shamshir","Whips and Knives",)
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
