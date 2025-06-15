@@ -57,7 +57,7 @@
 		if("Forvheipal Sharpshooter")
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's ranged janissary, wielding a longbow and relying on their agility to avoid blows."))
-			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
