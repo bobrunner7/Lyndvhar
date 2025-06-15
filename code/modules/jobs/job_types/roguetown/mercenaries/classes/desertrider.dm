@@ -67,7 +67,8 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("intelligence", 1)
-			H.change_stat("speed", 2)
+			H.change_stat("perception", 2)
+			H.change_stat("speed", 3)
 			backl = /obj/item/rogueweapon/sword/long/rider
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			gloves = /obj/item/clothing/gloves/roguetown/leather
