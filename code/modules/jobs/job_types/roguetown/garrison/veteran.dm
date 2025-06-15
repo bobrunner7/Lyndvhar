@@ -161,7 +161,7 @@
 // You get a SAIGA. Saigas are pretty good, you lose out on your legendary weapon skills and you suck more on foot though.
 
 /datum/outfit/job/roguetown/vet/calvaryman/pre_equip(mob/living/carbon/human/H)
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full/iron
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half	////Former knights should have knightly armour. 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
