@@ -681,6 +681,14 @@
 	smelt_bar_num = 4
 	sellprice = 240
 
+/obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	name = "iron plate armor"
+	desc = "Full plate made of iron. Leg protecting tassets, groin cup, armored vambraces."
+	icon_state = "iron_plate"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 300
+	sellprice = 160
+
 /obj/item/clothing/suit/roguetown/armor/plate/hoplite
 	name = "ancient plate armor"
 	desc = "A battered set of bronze plate armor. Intricate runes and carvings once adorned the pieces, but most have faded with age."
