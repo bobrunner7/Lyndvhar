@@ -200,7 +200,7 @@
 		if(adjustable == CAN_CADJUST)
 			adjustable = CADJUSTED
 			if(toggle_icon_state)
-				icon_state = "chaincoif"
+				icon_state = "[initial(icon_state)]_h"
 			flags_inv = HIDEHAIR
 			body_parts_covered = NECK|HAIR|EARS|HEAD
 			if(ishuman(user))
@@ -210,7 +210,7 @@
 		else if(adjustable == CADJUSTED)
 			adjustable = CADJUSTED_MORE
 			if(toggle_icon_state)
-				icon_state = "chaincoif_t"
+				icon_state = "[initial(icon_state)]_t"
 			flags_inv = null
 			body_parts_covered = NECK
 			if(ishuman(user))
@@ -224,6 +224,11 @@
 			H.update_inv_neck()
 			H.update_inv_head()
 
+/obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	name = "iron full chain coif"
+	icon_state = "iron_fchaincoif"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 150
 
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"

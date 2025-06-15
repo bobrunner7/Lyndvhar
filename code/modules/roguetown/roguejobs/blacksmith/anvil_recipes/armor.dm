@@ -21,6 +21,13 @@
 	createditem_num = 1
 	craftdiff = 0
 
+/datum/anvil_recipe/armor/iron/fullchaincoif
+	name = "Full Chain Coif"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	createditem_num = 1
+	craftdiff = 2
+
 /datum/anvil_recipe/armor/iron/gorget
 	name = "Gorget"
 	req_bar = /obj/item/ingot/iron
