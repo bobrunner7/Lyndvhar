@@ -858,7 +858,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 						name += virtuetwo.name
 					else
 						name = virtuetwo?.name
-				if(primary_charflaw && primary_charflaw.type in job.vice_restrictions) // Changed charflaw to primary_charflaw
+				if(primary_charflaw && (primary_charflaw.type in job.vice_restrictions)) // Changed charflaw to primary_charflaw
 					if(name)
 						name += ", "
 						name += primary_charflaw.name
@@ -880,7 +880,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 					HTML += "<font color='#a59461'>[used_name] (Disallowed by Virtue: [name])</font></td> <td> </td></tr>"
 					continue
 			if(length(job.vice_restrictions))
-				if(primary_charflaw && primary_charflaw.type in job.vice_restrictions) // Changed charflaw to primary_charflaw
+				if(primary_charflaw && (primary_charflaw.type in job.vice_restrictions)) // Changed charflaw to primary_charflaw
 					HTML += "<font color='#a56161'>[used_name] (Disallowed by Vice: [primary_charflaw.name])</font></td> <td> </td></tr>"
 					continue
 			var/job_unavailable = JOB_AVAILABLE
