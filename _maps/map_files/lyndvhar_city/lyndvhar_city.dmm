@@ -30918,7 +30918,7 @@
 	icon_state = "wcv";
 	locked = 1;
 	lockid = "manor";
-	name = "household retinue quarters"
+	name = "Knight quarters"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)

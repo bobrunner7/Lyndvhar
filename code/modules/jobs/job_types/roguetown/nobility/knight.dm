@@ -1,5 +1,5 @@
 /datum/job/roguetown/knight
-	title = "Household Retinue"		//Knights, but their role is far more clear this way.
+	title = "Knight"
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
