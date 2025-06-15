@@ -1,5 +1,5 @@
 /datum/job/roguetown/knight
-	title = "Knight"
+	title = "Cataphract"
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -69,8 +69,8 @@
 	backpack_contents = list(/obj/item/storage/keyring/guardcastle = 1)
 
 /datum/advclass/knight/heavy
-	name = "Heavy Knight"
-	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, and maces. People may fear the mounted knights, but they should truly fear those who come off their mount.."
+	name = "Heavy Cataphract"
+	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, and maces. People may fear the mounted Cataphract, but they should truly fear those who come off their mount.."
 	outfit = /datum/outfit/job/roguetown/knight/heavy
 
 	category_tags = list(CTAG_ROYALGUARD)
@@ -146,8 +146,8 @@
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
 
 /datum/advclass/knight/footknight
-	name = "Men-At-Arms Knight"
-	tutorial = "You are accustomed to traditional foot-soldier training in swords, flails, and shields. You are not as used to riding a mount as other knights, but you are the finest of all with the versatile combination of a shield and weapon!"
+	name = "Light Cataphract"
+	tutorial = "You are accustomed to traditional foot-soldier training in swords, flails, and shields. You are not as used to riding a mount as other Cataphract, but you are the finest of all with the versatile combination of a shield and weapon!"
 	outfit = /datum/outfit/job/roguetown/knight/footknight
 
 	category_tags = list(CTAG_ROYALGUARD)
@@ -218,7 +218,7 @@
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
 
 /datum/advclass/knight/mountedknight
-	name = "Cavalry Knight"
+	name = "Mounted Cataphract"
 	tutorial = "You are the picture-perfect knight from a high tale, knowledgeable in riding steeds into battle. You specialize in weapons most useful on a saiga including spears, swords and maces, but know your way around a shield."
 	outfit = /datum/outfit/job/roguetown/knight/mountedknight
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
@@ -295,7 +295,7 @@
 
 /datum/advclass/knight/irregularknight
 	name = "Champion Duelist"
-	tutorial = "Your skillset is abnormal for a knight. Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in medium armor, your evasive skills will only truly shine if you don even lighter protection."
+	tutorial = "Your skillset is abnormal for a Cataphract. Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in medium armor, your evasive skills will only truly shine if you don even lighter protection."
 	outfit = /datum/outfit/job/roguetown/knight/irregularknight
 
 	category_tags = list(CTAG_ROYALGUARD)
