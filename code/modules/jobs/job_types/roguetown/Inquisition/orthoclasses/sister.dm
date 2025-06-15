@@ -16,10 +16,9 @@
 		H.name = "Sister [prev_name]"
 		neck = /obj/item/clothing/neck/roguetown/psicross/silver
 		pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-		wrists = /obj/item/clothing/wrists/roguetown/bracers
-		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+		shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 		belt = /obj/item/storage/belt/rogue/leather/steel
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 		id = /obj/item/clothing/ring/silver
 		backl = /obj/item/storage/backpack/rogue/satchel
