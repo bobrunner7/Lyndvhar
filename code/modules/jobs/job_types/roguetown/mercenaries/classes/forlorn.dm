@@ -44,7 +44,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
-			pants = /obj/item/clothing/under/roguetown/tights/black
+			pants = /obj/item/clothing/under/roguetown/trou/leather
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
