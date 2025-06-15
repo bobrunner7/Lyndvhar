@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/forlorn
 	name = "Forvheipal Janissary"
-	tutorial = "A Janissary from the strange and enigmatic kingdom in Yoheon, Forvheipal. The Janissary are an elite sellsword contingent of the Zapyrixian Order- mostly made up of Lupians and Vulpkians. They will do any work for the highest bidder- and thus you will, too."
+	tutorial = "A Janissary from the strange and enigmatic kingdom in Yoheon, Forvheipal. The Janissary are a sellsword contingent of the Zapyrixian Order- mostly made up of Lupians and Vulpkian slaves-from-birth. They will do any work for the highest bidder as per their contract made from birth- and thus you will, too."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/forlorn
@@ -20,7 +20,7 @@
 	switch(classchoice)
 		if("Forvheipal Light Infantry")
 			H.set_blindness(0)
-			to_chat(H, span_warning("The Forvheipal Light Infantry are the Zapyrixian Order's elite close combat units, wielding warhammer and shield."))
+			to_chat(H, span_warning("The Forvheipal Light Infantry are the Zapyrixian Order's regular janissary, wielding warhammer and shield."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
@@ -47,7 +47,7 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/rogueweapon/mace/warhammer
@@ -56,8 +56,8 @@
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/jannisary)
 		if("Forvheipal Sharpshooter")
 			H.set_blindness(0)
-			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's elite ranged combat units, wielding crossbow and relying on their agility to avoid blows."))
-			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's ranged janissary, wielding a longbow and relying on their agility to avoid blows."))
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -81,10 +81,10 @@
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
+			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			beltl = /obj/item/quiver/bolts
+			beltl = /obj/item/quiver/arrows
 			backr = /obj/item/storage/backpack/rogue/satchel
-			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/jannisary)

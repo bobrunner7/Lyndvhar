@@ -30,7 +30,7 @@
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/rogueweapon/huntingknife
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/rogueweapon/woodstaff
+			backr = /obj/item/rogueweapon/woodstaff/prepared/ruby
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/spellbook_unfinished/pre_arcyne = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)

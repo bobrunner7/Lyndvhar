@@ -57,7 +57,7 @@
 			H.change_stat("constitution", 1)
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			pants = /obj/item/clothing/under/roguetown/trou
 			gloves = /obj/item/clothing/gloves/roguetown/leather

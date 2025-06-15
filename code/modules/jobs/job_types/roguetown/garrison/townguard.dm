@@ -43,8 +43,8 @@
 	cloak = /obj/item/clothing/cloak/stabard/guard
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots
-	belt = /obj/item/storage/belt/rogue/leather/black
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	belt = /obj/item/storage/belt/rogue/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather		//Would seperate to leather bracers for archer for dodge but - funnily, armor class doesn't exist on bracers.
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/signal_horn = 1)
@@ -133,7 +133,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	backr = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/storage/keyring/guardcastle
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1)
 	H.verbs |= /mob/proc/haltyell

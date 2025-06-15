@@ -68,7 +68,7 @@ GLOBAL_LIST_INIT(noble_positions, list(
 	"Marshal",
 	"Councillor",
 	"Steward",
-	"Household Retinue",
+	"Cataphract",
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(
@@ -151,8 +151,8 @@ GLOBAL_LIST_INIT(youngfolk_positions, list(
 	"Squire",
 	"Clerk",
 	"Apothecary",
-	"Smithy Apprentice",
-	"Magicians Associate",
+	"Apprentice Smith",
+	"Magicians Apprentice",
 	"Churchling",
 	"Servant",
 	"Shophand",

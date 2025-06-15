@@ -33,7 +33,7 @@
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 		H.verbs |= /mob/living/carbon/human/proc/torture_victim //Professional torturers, no?
 
-		if(H.gender == FEMALE) //Melee defense-oriented brute, heavy lean towards non-lethal takedowns and capture.
+		if(H.gender == FEMALE) // Melee defense-oriented brute, heavy lean towards non-lethal takedowns and capture.
 			mask = /obj/item/clothing/mask/rogue/facemask/shadowfacemask
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			gloves = /obj/item/clothing/gloves/roguetown/chain/iron/shadowgauntlets
@@ -46,15 +46,15 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 
-			H.change_stat("strength", 2) //Dark elf women.
+			H.change_stat("strength", 2) //Dark elf women. Don't ask questions.
 			H.change_stat("constitution", 1)
 			H.change_stat("endurance", 1)
-			H.change_stat("intelligence", -1) //Reliant on the male counterpart for the more crafty side.
+			H.change_stat("intelligence", -1) // Reliant on the male counterpart for the more crafty side.
 			H.change_stat("speed", -1)
 
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
-		if(H.gender == MALE) //Squishy hit-and-runner assassin.
+		if(H.gender == MALE) // Squishy hit-and-runner assassin.
 			mask = /obj/item/clothing/mask/rogue/shepherd/shadowmask
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 			cloak = /obj/item/clothing/cloak/half/shadowcloak
@@ -63,7 +63,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/shadowshirt
 			beltr = /obj/item/quiver/arrows
 			beltl = /obj/item/rogueweapon/sword/sabre/stalker
-			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve 
+			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
@@ -74,10 +74,10 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE) //Spread-out support skills, but inferior to Steppesman/Boltslinger.
+			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
 
-			H.change_stat("speed", 2) //Speedier than a Steppesman, but not as tough or damaging.
+			H.change_stat("speed", 2) // Dark elf men. Don't ask questions.
 			H.change_stat("endurance", 1)
 
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
