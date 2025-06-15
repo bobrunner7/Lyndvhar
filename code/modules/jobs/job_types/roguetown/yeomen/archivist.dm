@@ -39,7 +39,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltl = /obj/item/storage/keyring/archivist
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	mask = /obj/item/clothing/mask/rogue/spectacles
 
 	if(H.mind)
@@ -61,7 +61,8 @@
 		H.grant_language(/datum/language/orcish)
 		H.grant_language(/datum/language/canilunzt)
 		H.grant_language(/datum/language/grenzelhoftian)
-		H.grant_language(/datum/language/draconic) // All but beast, which is associated with werewolves.
+		H.grant_language(/datum/language/draconic)
+		H.grant_language(/datum/language/zybean) // All but beast, which is associated with Dendor and Werewolves.
 		ADD_TRAIT(H, TRAIT_SEEPRICES, type)
 		ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)

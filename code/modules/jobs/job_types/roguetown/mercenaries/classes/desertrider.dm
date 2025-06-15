@@ -91,4 +91,4 @@
 					l_hand = /obj/item/rogueweapon/huntingknife/idagger
 
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/rogueweapon/huntingknife/idagger/navaja, /obj/item/clothing/neck/roguetown/shalal, /obj/item/clothing/neck/roguetown/mercmedal/zybatine)
-
+	H.grant_language(/datum/language/zybean)
