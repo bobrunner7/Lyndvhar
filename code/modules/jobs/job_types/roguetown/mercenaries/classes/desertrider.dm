@@ -45,6 +45,7 @@
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backr = /obj/item/storage/backpack/rogue/satchel
 
 		if("Blade Dancer")
@@ -68,11 +69,14 @@
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", 2)
 			backl = /obj/item/rogueweapon/sword/long/rider
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather/shalal
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backr = /obj/item/storage/backpack/rogue/satchel
 
 			var/weapons = list("Shamshir","Whips and Knives",)

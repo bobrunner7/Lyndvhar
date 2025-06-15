@@ -47,7 +47,7 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/rogueweapon/mace/warhammer
