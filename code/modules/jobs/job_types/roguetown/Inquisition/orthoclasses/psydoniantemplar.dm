@@ -12,23 +12,23 @@
 	has_loadout = TRUE
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	cloak = /obj/item/clothing/cloak/psydontabard
-	backr = /obj/item/rogueweapon/shield/tower/metal
+	backr = /obj/item/rogueweapon/shield/tower
 	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	backl = /obj/item/storage/backpack/rogue/satchel/black
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	backl = /obj/item/storage/backpack/rogue/satchel
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	id = /obj/item/clothing/ring/silver
 	backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
