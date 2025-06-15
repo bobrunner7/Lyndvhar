@@ -87,7 +87,7 @@
 
 /datum/supply_pack/rogue/Sellsword/steelcuirass
 	name = "Blacksteel Cuirass"
-	cost = 50
+	cost = 150
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate)
 
 
@@ -105,23 +105,23 @@
 
 /datum/supply_pack/rogue/Sellsword/kettle
 	name = "Kettle Helmet"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/clothing/head/roguetown/helmet/kettle)
 
 /datum/supply_pack/rogue/Sellsword/sallet
 	name = "Sallet"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet)
 
 
 /datum/supply_pack/rogue/Sellsword/visoredsallet
 	name = "Visored Sallet"
-	cost = 30
+	cost = 65
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
 /datum/supply_pack/rogue/Sellsword/wolfhelm
 	name = "Volf Plate Helm"
-	cost = 30
+	cost = 50
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/volfplate)
 
 

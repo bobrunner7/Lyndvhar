@@ -38,37 +38,37 @@
 
 /datum/supply_pack/rogue/Knight/blkstelbuckhelm
 	name = "Blacksteel Bucket Helm"
-	cost = 100
+	cost = 200
 	contains = list(/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket)
 
 /datum/supply_pack/rogue/Knight/Fullplate
 	name = "Steel Full plate"
-	cost = 60
+	cost = 150
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full)
 
 /datum/supply_pack/rogue/Knight/blacksteelfullplate
 	name = "Blacksteel Full plate"
-	cost = 150
+	cost = 250
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate)
 
 /datum/supply_pack/rogue/Knight/hauberk
 	name = "Hauberk"
-	cost = 40
+	cost = 50
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
 
 /datum/supply_pack/rogue/Knight/Haubergeon
 	name = "Haubergeon"
-	cost = 20
+	cost = 75
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail)
 
 /datum/supply_pack/rogue/Knight/coif/steel
 	name = "Steel Coif"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
 /datum/supply_pack/rogue/Knight/Bevor
 	name = "Bevor"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/clothing/neck/roguetown/bevor)
 
 /datum/supply_pack/rogue/Knight/gorget
@@ -78,38 +78,38 @@
 
 /datum/supply_pack/rogue/Knight/bracers
 	name = "Steel Bracers"
-	cost = 10
+	cost = 25
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers)
 
 /datum/supply_pack/rogue/Knight/plategaunt
 	name = "Plate Gauntlets"
-	cost = 20
+	cost = 25
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
 
 /datum/supply_pack/rogue/Knight/blkplategaunt
 	name = "Blacksteel Plate Gauntlets"
-	cost = 50
+	cost = 65
 	contains = list(/obj/item/clothing/gloves/roguetown/blacksteel/plategloves)
 
 /datum/supply_pack/rogue/Knight/platechausses
 	name = "Plate Chausses"
-	cost = 40
+	cost = 65
 	contains = list(/obj/item/clothing/under/roguetown/platelegs)
 
 
 /datum/supply_pack/rogue/Knight/blkplatechausses
 	name = "Blacksteel Plate Chausses"
-	cost = 100
+	cost = 125
 	contains = list(/obj/item/clothing/under/roguetown/platelegs/blacksteel)
 
 /datum/supply_pack/rogue/Knight/plateboots
 	name = "Plated boots"
-	cost = 10
+	cost = 45
 	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
 
 /datum/supply_pack/rogue/Knight/blkplateboots
 	name = "Blacksteel Plated boots"
-	cost = 40
+	cost = 95
 	contains = list(/obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots)
 
 
