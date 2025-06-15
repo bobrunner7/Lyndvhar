@@ -90,14 +90,14 @@
 
 		if("Paladin")
 			to_chat(H, span_warning("A holy warrior. Where others of the clergy may have spent their free time studying scriptures, you have instead honed your skills with a blade."))
-			belt = /obj/item/storage/belt/rogue/leather
+			belt = /obj/item/storage/belt/rogue/leather/steel
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/rogueweapon/shield/tower
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
