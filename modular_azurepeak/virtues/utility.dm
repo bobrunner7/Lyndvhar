@@ -62,7 +62,8 @@
 		/datum/language/orcish,
 		/datum/language/draconic,
 		/datum/language/canilunzt,
-		/datum/language/grenzelhoftian
+		/datum/language/grenzelhoftian,
+		/datum/language/zybean
 	)
 		
 	var/list/choices = list()
