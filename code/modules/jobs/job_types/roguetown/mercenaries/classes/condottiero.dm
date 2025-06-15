@@ -11,7 +11,7 @@
 /datum/outfit/job/roguetown/mercenary/condottiero/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	cloak = /obj/item/clothing/cloak/half/half/rider/red
+	cloak = /obj/item/clothing/cloak/half/rider/red
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather

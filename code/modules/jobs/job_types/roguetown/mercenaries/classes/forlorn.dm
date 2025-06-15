@@ -81,7 +81,7 @@
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			shirt = /obj/item/clothing/suit/roguetown/undershirt/brown
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/quiver/arrows
