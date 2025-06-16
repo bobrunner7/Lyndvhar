@@ -13252,6 +13252,16 @@
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/water/swamp,
 /area/rogue/indoors/cave)
+"jog" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/town)
 "joC" = (
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
@@ -19811,6 +19821,12 @@
 /obj/effect/decal/herringbone,
 /turf/open/floor/rogue/tile/tilerg,
 /area/rogue/indoors/town/manor)
+"nWy" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 4
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town)
 "nWC" = (
 /obj/structure/mineral_door/wood/fancywood{
 	name = "Mercenaries Guild";
@@ -26265,6 +26281,12 @@
 /obj/item/rope/chain,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
+"sAt" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town)
 "sAu" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/structure/stairs{
@@ -93683,7 +93705,7 @@ lUs
 gRI
 oqD
 nXx
-ubD
+jog
 xES
 bRY
 bFI
@@ -93867,13 +93889,13 @@ cDa
 uAg
 qld
 puA
+nWy
 puA
 puA
 puA
 puA
 puA
-puA
-puA
+nWy
 puA
 vFk
 rBa
@@ -94995,7 +95017,7 @@ bRY
 bRY
 bRY
 bRY
-bRY
+sAt
 bRY
 vpW
 bRY
