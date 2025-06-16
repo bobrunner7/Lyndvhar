@@ -36,10 +36,10 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
-		H.change_stat("strength", 1)
+		H.change_stat("strength", 2)
+		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 3)
 		
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
@@ -47,9 +47,6 @@
 		ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
 
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
-		var/datum/devotion/C = new /datum/devotion(H, H.patron)
-		C.grant_spells_templar(H)
-		H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 
 /datum/outfit/job/roguetown/psydoniantemplar/choose_loadout(mob/living/carbon/human/H)
