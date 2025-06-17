@@ -166,6 +166,12 @@
 	created_item = /obj/item/rogueweapon/sword/sabre
 	craftdiff = 2
 
+/datum/anvil_recipe/weapons/steel/messer
+	name = "Messer"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/messer
+	craftdiff = 0
+
 /datum/anvil_recipe/weapons/steel/flail
 	name = "Flail"
 	req_bar = /obj/item/ingot/steel
