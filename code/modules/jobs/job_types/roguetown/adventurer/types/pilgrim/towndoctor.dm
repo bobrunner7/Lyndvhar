@@ -39,7 +39,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
 		H.change_stat("intelligence", 3)
