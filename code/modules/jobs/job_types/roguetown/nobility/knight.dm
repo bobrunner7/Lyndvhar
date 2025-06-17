@@ -122,7 +122,6 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 	
 
 	neck = /obj/item/clothing/neck/roguetown/gorget
@@ -346,7 +345,6 @@
 
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		
 		if("Sabre + Buckler")
 			r_hand = /obj/item/rogueweapon/sword/sabre
