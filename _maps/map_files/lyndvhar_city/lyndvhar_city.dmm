@@ -5924,7 +5924,7 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
-/obj/structure/chair/stool/rogue,
+/obj/structure/fermenting_barrel/nocshine,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/magician)
 "eqN" = (
@@ -11546,7 +11546,6 @@
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/structure/closet/crate/chest/neu,
-/obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
@@ -11557,11 +11556,12 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
-/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
-/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
 /obj/item/reagent_containers/food/snacks/grown/onion/rogue,
 /obj/item/reagent_containers/food/snacks/grown/potato/rogue,
-/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/rogue/meat/sausage,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "ilX" = (
@@ -15083,6 +15083,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/cooking/pan,
+/obj/item/reagent_containers/food/snacks/butter,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "kIr" = (
@@ -16952,10 +16953,13 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "lYm" = (
-/turf/open/water/river{
-	icon_state = "rockwd"
+/obj/structure/fluff/railing/border{
+	dir = 5;
+	pixel_x = 0;
+	pixel_y = 0
 	},
-/area/rogue/outdoors/river)
+/turf/open/floor/rogue/rooftop,
+/area/rogue/outdoors/town/roofs)
 "lYB" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/tile/masonic{
@@ -17522,18 +17526,11 @@
 	first_time_text = "CITY OUTSKIRTS"
 	})
 "mtU" = (
-/obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/item/reagent_containers/food/snacks/butter,
-/obj/item/reagent_containers/food/snacks/rogue/meat/sausage,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
-/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/carafe,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "mtW" = (
@@ -21789,6 +21786,10 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
+"psY" = (
+/obj/structure/fermenting_barrel/random/water,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town/magician)
 "ptd" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -22617,12 +22618,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/manor)
-"pYR" = (
-/obj/structure/fermenting_barrel/random/beer,
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
-	},
-/area/rogue/indoors/town/magician)
 "pYS" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/chair/wood/rogue/chair3,
@@ -24902,6 +24897,11 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
+"rBn" = (
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "rBz" = (
 /obj/structure/stairs{
 	dir = 4
@@ -30845,13 +30845,11 @@
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/bath)
 "vZD" = (
-/obj/structure/fluff/railing/border{
-	dir = 5;
-	pixel_x = 0;
-	pixel_y = 0
+/obj/structure/fluff/statue/gargoyle,
+/turf/open/floor/rogue/tile{
+	icon_state = "greenstone"
 	},
-/turf/open/floor/rogue/rooftop,
-/area/rogue/outdoors/town/roofs)
+/area/rogue/indoors/town/magician)
 "vZK" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/natural/feather,
@@ -31109,6 +31107,9 @@
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/magician)
 "whZ" = (
@@ -33828,6 +33829,12 @@
 /obj/item/bedsheet/rogue/fabric_double,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
+"yjM" = (
+/obj/structure/fermenting_barrel/random/beer,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/magician)
 "yko" = (
 /obj/structure/fluff/nest,
 /obj/item/reagent_containers/food/snacks/crow{
@@ -95906,7 +95913,7 @@ mqC
 mqC
 wFk
 gVv
-lYm
+rBn
 uRm
 rYr
 mqX
@@ -167643,7 +167650,7 @@ nup
 pek
 diZ
 lRX
-lCI
+vZD
 pek
 ojh
 viN
@@ -168777,12 +168784,12 @@ vPO
 nup
 izA
 nup
-pYR
+yjM
 wqx
 ilQ
 mtU
 jYG
-jYG
+psY
 ngK
 blU
 blU
@@ -169594,7 +169601,7 @@ lCI
 ngK
 oyI
 oyI
-vZD
+lYm
 blU
 blU
 blU
