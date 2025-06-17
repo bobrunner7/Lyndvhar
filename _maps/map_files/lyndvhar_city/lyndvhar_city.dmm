@@ -793,6 +793,11 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
+"aAG" = (
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/river)
 "aAJ" = (
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood{
@@ -90070,7 +90075,7 @@ wFk
 cce
 gVv
 qVK
-qVK
+jUp
 jUp
 eBN
 jUp
@@ -95903,7 +95908,7 @@ mqC
 mqC
 wFk
 gVv
-uRm
+aAG
 uRm
 rYr
 mqX
