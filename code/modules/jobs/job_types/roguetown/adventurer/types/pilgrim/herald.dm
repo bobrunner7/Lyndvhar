@@ -44,6 +44,11 @@ GLOBAL_VAR_INIT(herald_spawned, FALSE)
 	..()
 	H.verbs += /mob/living/carbon/human/proc/heraldannouncement
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 
 	head = /obj/item/clothing/head/roguetown/articap
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes/buckle
@@ -61,4 +66,4 @@ GLOBAL_VAR_INIT(herald_spawned, FALSE)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mindlink)
 
 	H.change_stat("constitution", 1)
-	H.change_stat("speed", 2)
+	H.change_stat("speed", 3)
