@@ -2317,6 +2317,13 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/woods)
+"tn" = (
+/obj/effect/landmark/mapGenerator/rogue/forest{
+	endTurfY = 200;
+	endTurfX = 200
+	},
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cave)
 "to" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -7015,7 +7022,7 @@ rO
 rO
 rO
 rO
-rO
+tn
 "}
 (3,1,1) = {"
 rO
@@ -87615,7 +87622,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (2,1,3) = {"
 KL
@@ -87817,7 +87824,7 @@ rO
 rO
 rO
 rO
-AX
+tn
 "}
 (3,1,3) = {"
 KL
@@ -88019,7 +88026,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (4,1,3) = {"
 KL
@@ -88221,7 +88228,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (5,1,3) = {"
 KL
@@ -88423,7 +88430,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (6,1,3) = {"
 KL
@@ -88625,7 +88632,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (7,1,3) = {"
 KL
@@ -88827,7 +88834,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (8,1,3) = {"
 KL
@@ -89029,7 +89036,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (9,1,3) = {"
 KL
@@ -89231,7 +89238,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (10,1,3) = {"
 KL
@@ -89433,7 +89440,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (11,1,3) = {"
 KL
@@ -89635,7 +89642,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (12,1,3) = {"
 KL
@@ -89837,7 +89844,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (13,1,3) = {"
 KL
@@ -90039,7 +90046,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (14,1,3) = {"
 KL
@@ -90241,7 +90248,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (15,1,3) = {"
 KL
@@ -90443,7 +90450,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (16,1,3) = {"
 KL
@@ -90645,7 +90652,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (17,1,3) = {"
 KL
@@ -90847,7 +90854,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (18,1,3) = {"
 KL
@@ -91049,7 +91056,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (19,1,3) = {"
 KL
@@ -91251,7 +91258,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (20,1,3) = {"
 KL
@@ -91453,7 +91460,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (21,1,3) = {"
 KL
@@ -91655,7 +91662,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (22,1,3) = {"
 KL
@@ -91857,7 +91864,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (23,1,3) = {"
 KL
@@ -92059,7 +92066,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (24,1,3) = {"
 KL
@@ -92261,7 +92268,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (25,1,3) = {"
 KL
@@ -92463,7 +92470,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (26,1,3) = {"
 KL
@@ -92665,7 +92672,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (27,1,3) = {"
 KL
@@ -92867,7 +92874,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (28,1,3) = {"
 KL
@@ -93069,7 +93076,7 @@ rO
 rO
 rO
 rO
-KL
+rO
 "}
 (29,1,3) = {"
 KL
