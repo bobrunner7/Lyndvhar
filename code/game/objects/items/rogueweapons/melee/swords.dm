@@ -581,12 +581,23 @@
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
-	desc = "A single edged blade to slice and chop with."
+	desc = "A single edged 'knife' to slice and chop with. For all intents and legalities this is a knife. Not a sword."
 	icon_state = "imesser"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
 	gripped_intents = null
+	associated_skill = /datum/skill/combat/knives
 	minstr = 4
 	wdefense = 2
+
+/obj/item/rogueweapon/sword/messer
+	name = "steel messer"
+	desc = "A single edged 'knife' to slice and chop with. For all intents and legalities this is a knife. Not a sword."
+	icon_state = "smesser"
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
+	gripped_intents = null
+	associated_skill = /datum/skill/combat/knives
+	minstr = 4
+	wdefense = 2.5
 
 /obj/item/rogueweapon/sword/sabre
 	name = "sabre"
