@@ -1,28 +1,19 @@
 /datum/job/roguetown/physician
-	title = "Court Physician"
+	title = "Practitioner"
 	flag = PHYSICIAN
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/aasimar,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_PHYSICIAN
 	tutorial = "You were a child born into good wealth--but poor health. \
 		Perhaps in another life, you would have turned out to be a powerful mage, wise archivist or a shrewd steward, \
 		but leprosy took away your younger years. \
 		Out of desperation, you followed the ways of Pestra and managed to be cured. \
-		Now you serve in the court ensuring the good health of those inhabiting the keep."
+		Now you serve the city ensuring the good health of those inhabiting the walls."
 	outfit = /datum/outfit/job/roguetown/physician
 	whitelist_req = TRUE
 

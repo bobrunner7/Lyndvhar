@@ -8,7 +8,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT)
 
-	tutorial = "Working under the tutelage of the court physician, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
+	tutorial = "Working under the tutelage of the Practitioner, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
 
 	outfit = /datum/outfit/job/roguetown/apothecary
 
