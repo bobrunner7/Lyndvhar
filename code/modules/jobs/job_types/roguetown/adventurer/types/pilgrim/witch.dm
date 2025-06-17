@@ -1,6 +1,5 @@
 /datum/advclass/witch
 	name = "Seer"
-	f_name = "Seeress"
 	tutorial = "You are a seer, seen as wisefolk, guides, divinators, and sometimes prophetic or demons to others. Often ostracized and sequestered for wrongthinks or outright heresy sometimes, your potions are what the commonfolk turn to when all else fails, and for this they tolerate you — at an arm’s length. Take care not to end ‘pon a pyre, for the church often condemns your left handed arts and trickery."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
