@@ -688,7 +688,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "The Dwarven Quarter"
+	first_time_text = "SMITHING QUARTER"
 	converted_type = /area/rogue/outdoors/exposed/dwarf
 /area/rogue/outdoors/exposed/dwarf
 	icon_state = "dwarf"
@@ -763,7 +763,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "The Dwarven Quarter"
+	first_time_text = "SMITHING QUARTER"
 	soundenv = 16
 	converted_type = /area/rogue/indoors/shelter/town/dwarf
 /area/rogue/indoors/shelter/town/dwarf
