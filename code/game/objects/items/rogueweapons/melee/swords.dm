@@ -68,6 +68,11 @@
 /datum/intent/sword/chop/falx
 	penfactor = 40
 
+/datum/intent/sword/chop/awful // This is for pure thrusting swords with very little slashing power as an absolute last resort.
+	name = "cleave"
+	attack_verb = list("awkwardly cleaves", "poorly splits")
+	damfactor = 0.5
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
