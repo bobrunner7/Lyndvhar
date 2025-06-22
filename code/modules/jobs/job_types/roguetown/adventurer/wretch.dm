@@ -69,7 +69,6 @@
 	switch(weapon_choice)
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backr = /obj/item/gwstrap
 		if("Mace + Shield")
 			beltr = /obj/item/rogueweapon/mace/steel
 			backr = /obj/item/rogueweapon/shield/tower/metal

@@ -1095,6 +1095,21 @@
 	icon_state = "linoleum"
 /turf/open/floor/rogue/tile/checkeralt
 	icon_state = "tile"
+	
+/turf/open/floor/rogue/tile/brownbrick
+	icon_state = "brown"
+
+/turf/open/floor/rogue/tile/harem
+	icon = 'icons/turf/roguefloor.dmi'
+	icon_state = "harem"
+
+/turf/open/floor/rogue/tile/harem1
+	icon = 'icons/turf/roguefloor.dmi'
+	icon_state = "harem1"
+
+/turf/open/floor/rogue/tile/harem2
+	icon = 'icons/turf/roguefloor.dmi'
+	icon_state = "harem2"
 
 /turf/open/floor/rogue/concrete
 	icon_state = "concretefloor1"

@@ -122,7 +122,6 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 	
 
 	neck = /obj/item/clothing/neck/roguetown/gorget
@@ -240,7 +239,7 @@
 	//Normal shared skill section.
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -346,7 +345,6 @@
 
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		
 		if("Sabre + Buckler")
 			r_hand = /obj/item/rogueweapon/sword/sabre

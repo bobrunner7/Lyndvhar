@@ -133,7 +133,6 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		if("Bastard Sword & Shield")
 			beltr = /obj/item/rogueweapon/sword/long
 			backl = /obj/item/rogueweapon/shield/tower/metal
@@ -171,7 +170,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
