@@ -96,10 +96,15 @@
 	cost = 25
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
 
-/datum/supply_pack/rogue/Brigand/chaingauntlets
+/datum/supply_pack/rogue/Knight/chaingauntlets
 	name = "Steel Chain Gauntlets"
 	cost = 25
 	contains = list(/obj/item/clothing/gloves/roguetown/chain)
+
+/datum/supply_pack/rogue/Knight/chainlegs
+	name = "Chain Chausses"
+	cost = 25
+	contains = list(/obj/item/clothing/under/roguetown/chainlegs)
 
 /datum/supply_pack/rogue/Knight/platechausses
 	name = "Plate Chausses"
