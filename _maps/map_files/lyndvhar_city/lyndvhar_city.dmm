@@ -3226,8 +3226,10 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
 "cpn" = (
-/obj/structure/chair/bench/church,
 /obj/effect/landmark/start/monk,
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "cpA" = (
@@ -7221,8 +7223,10 @@
 	first_time_text = "SMITHING QUARTER"
 	})
 "fgM" = (
-/obj/structure/chair/bench/church/r,
 /obj/effect/landmark/start/monk,
+/obj/structure/chair/bench/church/r{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "fgT" = (
@@ -12422,7 +12426,9 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
 "iNH" = (
-/obj/structure/chair/bench/church/r,
+/obj/structure/chair/bench/church/r{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "iNP" = (
@@ -13940,7 +13946,9 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "jNe" = (
-/obj/structure/chair/bench/church,
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "jND" = (
@@ -21812,7 +21820,9 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "pri" = (
-/obj/structure/chair/bench/church/mid,
+/obj/structure/chair/bench/church/mid{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "prD" = (
@@ -27428,8 +27438,10 @@
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town)
 "tuk" = (
-/obj/structure/chair/bench/church/mid,
 /obj/effect/landmark/start/monk,
+/obj/structure/chair/bench/church/mid{
+	dir = 1
+	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel)
 "tuy" = (
