@@ -98,37 +98,37 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 		ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/divine/astrata) // Astratans can ressurect people from the dead. Do you really need much more than that?
+		if(H.patron?.type == /datum/patron/divine/astrata)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-		if(H.patron?.type == /datum/patron/divine/pestra) // Pestrans are great at medicine and have some knife skills.
+		if(H.patron?.type == /datum/patron/divine/pestra)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/divine/malum) // Malums are support and have blacksmithing skill to repair stuff.
+		if(H.patron?.type == /datum/patron/divine/malum)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-		if(H.patron?.type == /datum/patron/divine/noc) // Nocites are nerds.
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE) //Hammer time.
+		if(H.patron?.type == /datum/patron/divine/noc)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
-		if(H.patron?.type == /datum/patron/divine/necra) // Necrans can climb.
+		if(H.patron?.type == /datum/patron/divine/necra)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE) //Church needs folk who can actually climb worth a poop and xylix isn't a possible patron.
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE) //Church needs folk who can actually climb worth a poop as the dedicated corpse recovery person.
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		if(H.patron?.type == /datum/patron/divine/abyssor)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		if(H.patron?.type == /datum/patron/divine/eora)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
