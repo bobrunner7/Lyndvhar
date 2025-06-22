@@ -58,13 +58,6 @@
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
 
-
-/datum/supply_pack/rogue/Brigand/blksteelcuirass
-	name = "Blacksteel Cuirass"
-	cost = 150
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate)
-
-
 /datum/supply_pack/rogue/Brigand/Bevor
 	name = "Bevor"
 	cost = 90
@@ -171,3 +164,9 @@
 	name = "Heater Shield"
 	cost = 45
 	contains = list(/obj/item/rogueweapon/shield/heater)
+
+/* Blacksteel is disabled for bandit jobs but this is left here for reference if its ever rebalanced.
+/datum/supply_pack/rogue/Brigand/blksteelcuirass
+	name = "Blacksteel Cuirass"
+	cost = 150
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate) */
