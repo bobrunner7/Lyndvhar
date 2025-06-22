@@ -56,7 +56,7 @@
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
 
-/datum/supply_pack/rogue/Knight/hauberk
+/datum/supply_pack/rogue/Knight/fluted_hauberk
 	name = "Fluted Hauberk"
 	cost = 100
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted)
