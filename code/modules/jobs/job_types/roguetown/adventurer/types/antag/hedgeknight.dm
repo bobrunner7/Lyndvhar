@@ -5,12 +5,12 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/hedgeknight
 	category_tags = list(CTAG_BANDIT)
-	maximum_possible_slots = 1 // You're the 'Big' guy of the Bandit Camp. Could replace Iconoclast as the bandit leader eventually.
+	maximum_possible_slots = 1 // You're the 'Big' guy of the Bandit Camp. Could replace Iconoclast as the Bandit leader eventually.
 	cmode_music = 'sound/music/combat_bandit.ogg'
 
 /datum/outfit/job/roguetown/bandit/hedgeknight/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/heavy
+	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	cloak = /obj/item/clothing/cloak/tabard/blkknight
@@ -42,6 +42,6 @@
 	H.change_stat("strength", 2)
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2) //dark souls 3 dual greatshield moment
-	H.change_stat("intelligence", -4) // This is mainly to absolutely fuck up your ability to learn ANY skill and make you super susceptible to being feinted.
+	H.change_stat("intelligence", -3) // This is mainly to absolutely fuck up your ability to learn ANY skill and make you super susceptible to being feinted. Tough muscle. Make your teammates use the thinking skills for you.
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)

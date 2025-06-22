@@ -71,6 +71,11 @@
 	cost = 40
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/silver/elvish)
 
+/datum/supply_pack/rogue/Knave/smesser
+	name = "Steel Messer"
+	cost = 30
+	contains = list(/obj/item/rogueweapon/sword/messer)
+
 
 /datum/supply_pack/rogue/Knave/steeltossblades
 	name = "Steel Tossblade Belt"

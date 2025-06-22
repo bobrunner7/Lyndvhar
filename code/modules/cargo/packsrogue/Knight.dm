@@ -32,8 +32,13 @@
 
 /datum/supply_pack/rogue/Knight/bhelm
 	name = "Bucket Helm"
-	cost = 50
+	cost = 70
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/bucket)
+
+/datum/supply_pack/rogue/Knight/steelcuirass
+	name = "Steel Cuirass"
+	cost = 60
+	contains =  list(/obj/item/clothing/suit/roguetown/armor/plate/half)
 
 /datum/supply_pack/rogue/Knight/fullplate_iron
 	name = "Iron Full plate"
@@ -45,6 +50,16 @@
 	name = "Steel Full plate"
 	cost = 300
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full)
+
+/datum/supply_pack/rogue/Knight/hgambeson
+	name = "Heavy Gambeson"
+	cost = 20
+	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
+
+/datum/supply_pack/rogue/Knight/hauberk
+	name = "Fluted Hauberk"
+	cost = 100
+	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted)
 
 /datum/supply_pack/rogue/Knight/hauberk
 	name = "Hauberk"
@@ -80,6 +95,11 @@
 	name = "Plate Gauntlets"
 	cost = 25
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
+
+/datum/supply_pack/rogue/Brigand/chaingauntlets
+	name = "Steel Chain Gauntlets"
+	cost = 25
+	contains = list(/obj/item/clothing/gloves/roguetown/chain)
 
 /datum/supply_pack/rogue/Knight/platechausses
 	name = "Plate Chausses"
