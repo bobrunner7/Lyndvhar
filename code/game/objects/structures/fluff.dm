@@ -25,14 +25,30 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper-open"
 
-/obj/structure/fluff/empty_sleeper/nanotrasen
-	name = "broken hypersleep chamber"
-	desc = "A Nanotrasen hypersleep chamber - this one appears broken. \
-		There are exposed bolts for easy disassembly using a wrench."
-	icon_state = "sleeper-o"
+/obj/structure/fluff/pillow
+	name = "pillows"
+	desc = ""
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "pillow"
+	density = FALSE
 
-/obj/structure/fluff/empty_sleeper/syndicate
-	icon_state = "sleeper_s-open"
+/obj/structure/fluff/pillow/red
+	color = CLOTHING_RED
+
+/obj/structure/fluff/pillow/blue
+	color = CLOTHING_BLUE
+
+/obj/structure/fluff/pillow/green
+	color = CLOTHING_GREEN
+
+/obj/structure/fluff/pillow/magenta
+	color = CLOTHING_MAGENTA
+
+/obj/structure/fluff/pillow/purple
+	color = CLOTHING_PURPLE
+
+/obj/structure/fluff/pillow/black
+	color = CLOTHING_BLACK
 
 /obj/structure/fluff/empty_cryostasis_sleeper //Empty cryostasis sleepers are created when a malfunctioning cryostasis sleeper in a lavaland shelter is activated
 	name = "empty cryostasis sleeper"
@@ -886,13 +902,49 @@
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "pillar"
 
-/obj/structure/fluff/statue/femalestatue
+/obj/structure/fluff/statue/femalestatue1
 	icon = 'icons/roguetown/misc/ay.dmi'
 	icon_state = "1"
 	pixel_x = -32
 	pixel_y = -16
 
-/obj/structure/fluff/statue/femalestatue/Initialize()
+/obj/structure/fluff/statue/femalestatue1/Initialize()
+	. = ..()
+	var/matrix/M = new
+	M.Scale(0.7,0.7)
+	src.transform = M
+
+/obj/structure/fluff/statue/femalestatue1/alt
+	icon = 'icons/roguetown/misc/ay.dmi'
+	icon_state = "1_alt"
+	pixel_x = -32
+	pixel_y = -16
+
+/obj/structure/fluff/statue/femalestatue1/alt/Initialize()
+	. = ..()
+	var/matrix/M = new
+	M.Scale(0.7,0.7)
+	src.transform = M
+
+/obj/structure/fluff/statue/femalestatue2
+	icon = 'icons/roguetown/misc/ay.dmi'
+	icon_state = "2"
+	pixel_x = -32
+	pixel_y = -16
+
+/obj/structure/fluff/statue/femalestatue2/Initialize()
+	. = ..()
+	var/matrix/M = new
+	M.Scale(0.7,0.7)
+	src.transform = M
+
+/obj/structure/fluff/statue/femalestatue2/alt
+	icon = 'icons/roguetown/misc/ay.dmi'
+	icon_state = "2_alt"
+	pixel_x = -32
+	pixel_y = -16
+
+/obj/structure/fluff/statue/femalestatue2/alt/Initialize()
 	. = ..()
 	var/matrix/M = new
 	M.Scale(0.7,0.7)
@@ -1294,6 +1346,12 @@
 	blade_dulling = DULLING_BASH
 	max_integrity = 300
 
+/obj/structure/fluff/statue/shisha/hookah
+	name = "shisha pipe"
+	desc = "A traditional shisha pipe, this one is broken."
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "hookah"
+	
 /obj/structure/fluff/headstake
 	name = "head on a stake"
 	desc = ""

@@ -282,7 +282,7 @@
 				H.update_icon()
 		else if(adjustable == CADJUSTED)
 			ResetAdjust(user)
-			flags_inv = HIDEBOOB
+			flags_inv = HIDECROTCH|HIDEBOOB
 			body_parts_covered = ARM_LEFT|ARM_RIGHT|CHEST|GROIN
 			if(user)
 				if(ishuman(user))
