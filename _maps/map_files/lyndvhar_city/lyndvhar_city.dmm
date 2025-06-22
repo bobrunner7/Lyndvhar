@@ -238,6 +238,14 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/garrison)
+"ahN" = (
+/obj/machinery/light/rogue/wallfire{
+	pixel_x = -32
+	},
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/outdoors/town/roofs)
 "ain" = (
 /obj/structure/mineral_door/wood/violet{
 	locked = 1;
@@ -504,17 +512,6 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church)
-"arV" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-e"
-	},
-/obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-n"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "asd" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/mask/cigarette/rollie/nicotine,
@@ -597,6 +594,12 @@
 /obj/item/rogueweapon/thresher,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/sewer)
+"auL" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "avk" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
@@ -775,14 +778,22 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
 "aAJ" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	pixel_y = 1
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
 	},
-/obj/effect/decal/cobbleedge{
-	dir = 9
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
 	},
-/turf/open/floor/rogue/blocks,
+/obj/structure/bars/passage/shutter{
+	redstone_id = "artificer_shutter"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
+"aBg" = (
+/obj/structure/stairs/d,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/dwarfin)
 "aBO" = (
 /obj/effect/landmark/events/haunts,
@@ -1050,21 +1061,6 @@
 /obj/structure/bars/steel,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/roofs)
-"aKY" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/item/rogueore/iron,
-/obj/item/rogueore/iron,
-/obj/item/rogueore/iron,
-/obj/item/rogueore/iron,
-/obj/item/rogueore/coal,
-/obj/item/rogueore/coal,
-/obj/item/rogueore/coal,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/exposed/dwarf)
-"aLx" = (
-/obj/structure/stairs/d,
-/turf/closed/mineral/random/rogue,
-/area/rogue/under/cave)
 "aLT" = (
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/ruinedwood{
@@ -1177,9 +1173,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
-"aOI" = (
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/roofs)
 "aOZ" = (
 /obj/structure/rack/rogue/shelf/big{
 	icon_state = "shelf_biggest"
@@ -1580,6 +1573,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
+"baq" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "baI" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/cobble,
@@ -1963,9 +1963,6 @@
 /obj/structure/fluff/walldeco/rpainting/saiga,
 /turf/closed/wall/mineral/rogue/decostone/long,
 /area/rogue/indoors/town/manor)
-"brG" = (
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/town/dwarfin)
 "brP" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -2044,17 +2041,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town)
-"btp" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/paper,
-/obj/item/paper,
-/obj/item/paper,
-/obj/item/paper/scroll,
-/obj/item/paper/scroll,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/dwarfin)
 "bvv" = (
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -2097,6 +2083,20 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
+"byl" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 9
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/item/natural/feather,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "byr" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -2227,9 +2227,8 @@
 	},
 /area/rogue/indoors/town)
 "bDx" = (
-/obj/structure/stairs{
-	dir = 4
-	},
+/obj/structure/rack/rogue,
+/obj/item/flint,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin)
 "bDE" = (
@@ -2477,6 +2476,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
+"bLI" = (
+/obj/structure/mineral_door/wood{
+	locked = 1;
+	lockid = "blacksmith"
+	},
+/turf/open/floor/rogue/ruinedwood/chevron,
+/area/rogue/outdoors/town/roofs)
 "bMk" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /obj/effect/decal/mossy{
@@ -2586,10 +2592,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
 "bSa" = (
-/obj/structure/fluff/railing/border{
-	dir = 9
-	},
-/turf/open/floor/rogue/wood,
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/town/roofs)
 "bSr" = (
 /obj/structure/table/wood,
@@ -3008,6 +3012,17 @@
 "clS" = (
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/town/basement/keep)
+"cmj" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "cmr" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -3278,13 +3293,6 @@
 	},
 /area/rogue/indoors/town/magician)
 "cyn" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/paper/scroll,
-/obj/item/paper/scroll,
-/obj/item/natural/feather,
-/obj/item/paper/bsmith,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -3558,6 +3566,10 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"cKl" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/dwarf)
 "cKy" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/garrison)
@@ -3801,13 +3813,8 @@
 	first_time_text = "THE FOOL'S FLAGON"
 	})
 "cUc" = (
-/obj/structure/lever/wall{
-	dir = 8;
-	pixel_x = 12;
-	redstone_id = "artificer_shutter"
-	},
-/turf/closed/wall/mineral/rogue/pipe,
-/area/rogue/indoors/town/dwarfin)
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/dwarf)
 "cUg" = (
 /obj/structure/roguemachine/scomm,
 /turf/open/floor/rogue/carpet/lord/right,
@@ -4089,11 +4096,13 @@
 	},
 /area/rogue/indoors/town/manor)
 "dgp" = (
-/obj/structure/rack/rogue,
-/obj/item/rogueweapon/tongs,
-/obj/item/rogueweapon/hammer,
-/obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/cobble,
+/obj/structure/handcart{
+	dir = 4
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "dgQ" = (
 /obj/effect/decal/cobbleedge{
@@ -4119,21 +4128,18 @@
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/bath)
 "dhf" = (
-/obj/machinery/light/rogue/torchholder/r,
-/obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-sread"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
-"dhA" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
 	lockid = "blacksmith"
 	},
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
+"dhA" = (
+/obj/machinery/light/rogue/torchholder/l{
+	dir = 8
 	},
-/area/rogue/outdoors/town/roofs)
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "dhK" = (
 /obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/cobble,
@@ -4765,13 +4771,12 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "dIm" = (
-/obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-sread"
-	},
+/obj/structure/rack/rogue,
 /obj/effect/decal/cobbleedge{
 	dir = 5
 	},
-/turf/open/floor/rogue/blocks,
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/dwarfin)
 "dIM" = (
 /obj/structure/mineral_door/wood/donjon{
@@ -4842,6 +4847,9 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/bath)
+"dKZ" = (
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors/town/dwarfin)
 "dLk" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/structure/fluff/wallclock,
@@ -4920,6 +4928,10 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/sewer)
+"dNA" = (
+/obj/structure/fluff/walldeco/artificerflag,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/town/dwarfin)
 "dNF" = (
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = -32
@@ -5067,9 +5079,10 @@
 	first_time_text = "CITY OUTSKIRTS"
 	})
 "dTA" = (
-/obj/structure/rack/rogue,
-/obj/item/flint,
-/turf/open/floor/rogue/cobble,
+/obj/structure/roguemachine/vendor{
+	keycontrol = "blacksmith"
+	},
+/turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/dwarfin)
 "dTI" = (
 /obj/structure/fluff/railing/border{
@@ -5095,10 +5108,15 @@
 	},
 /area/rogue/indoors/town/garrison)
 "dUG" = (
-/obj/structure/closet/crate/chest/neu_iron,
-/obj/item/reagent_containers/glass/bottle/waterskin/purifier,
-/obj/item/grapplinghook,
-/turf/open/floor/rogue/blocks/stonered,
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "dUR" = (
 /obj/effect/decal/cobbleedge{
@@ -5573,6 +5591,13 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"elw" = (
+/obj/structure/mineral_door/wood{
+	locked = 1;
+	lockid = "artificer"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "elx" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/dirt/road,
@@ -6538,6 +6563,14 @@
 	icon_state = "vertw"
 	},
 /area/rogue/outdoors/beach)
+"eTa" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/fluff/walldeco/wantedposter/r,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/town)
 "eTn" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/shield/tower,
@@ -6615,14 +6648,18 @@
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/church)
+"eWe" = (
+/obj/effect/decal/cobbleedge{
+	dir = 9
+	},
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "eWm" = (
-/obj/structure/roguewindow,
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
+/obj/structure/fluff/railing/border{
+	dir = 1
 	},
 /turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/dwarfin)
+/area/rogue/outdoors/town)
 "eWn" = (
 /obj/structure/flora/roguegrass,
 /obj/effect/decal/cobbleedge{
@@ -6789,6 +6826,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/physician)
+"fbm" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/rogueweapon/hammer,
+/obj/item/rogueweapon/tongs,
+/obj/item/paper/bsmith,
+/turf/open/floor/rogue/ruinedwood/chevron,
+/area/rogue/outdoors/town/roofs)
 "fby" = (
 /obj/structure/mineral_door/swing_door,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -7203,6 +7247,23 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"fpz" = (
+/obj/structure/rack/rogue,
+/obj/item/ingot/bronze{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/ingot/bronze{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/ingot/bronze,
+/obj/item/ingot/bronze{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "fpD" = (
 /obj/structure/fermenting_barrel/random/water,
 /obj/structure/fluff/railing/border{
@@ -7316,6 +7377,12 @@
 "fva" = (
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/town/basement/keep)
+"fvw" = (
+/obj/structure/roguewindow/openclose{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/town/roofs)
 "fvF" = (
 /obj/structure/fluff/statue/knight/r,
 /turf/open/floor/rogue/cobble/mossy,
@@ -7369,10 +7436,10 @@
 /turf/open/floor/rogue/tile/masonic/single,
 /area/rogue/indoors/town/manor)
 "fyS" = (
-/obj/machinery/light/rogue/torchholder{
-	pixel_y = 32
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
 	},
-/turf/open/floor/rogue/cobble,
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "fzi" = (
 /turf/open/floor/rogue/ruinedwood/chevron,
@@ -7407,6 +7474,9 @@
 "fBg" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/town)
+"fBu" = (
+/turf/closed/wall/mineral/rogue/wooddark/horizontal,
+/area/rogue/indoors/town/dwarfin)
 "fBw" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -7425,6 +7495,13 @@
 /obj/structure/ladder/earth,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/cave)
+"fCk" = (
+/obj/machinery/light/rogue/wallfire{
+	pixel_y = -27;
+	pixel_x = 1
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "fCC" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -7856,6 +7933,13 @@
 /obj/structure/flora/rock,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
+"fUx" = (
+/obj/item/roguebin/water/gross,
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "fUD" = (
 /obj/machinery/light/rogue/firebowl,
 /obj/effect/decal/cobbleedge{
@@ -8014,10 +8098,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
-"gae" = (
-/obj/structure/roguemachine/withdraw,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/dwarfin)
 "gak" = (
 /obj/structure/flora/newtree,
 /obj/effect/decal/cobbleedge{
@@ -8352,7 +8432,10 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "gkx" = (
-/turf/open/floor/rogue/cobble,
+/obj/effect/decal/cobbleedge{
+	dir = 6
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "gkB" = (
 /turf/open/floor/rogue/hexstone,
@@ -8686,9 +8769,8 @@
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
 "gAv" = (
-/obj/structure/roguewindow/openclose,
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/outdoors/town/roofs)
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "gAG" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -8766,21 +8848,8 @@
 /turf/open/transparent/openspace,
 /area/rogue/under/town/basement/keep)
 "gEj" = (
-/obj/structure/rack/rogue,
-/obj/item/ingot/bronze{
-	pixel_x = -5;
-	pixel_y = 3
-	},
-/obj/item/ingot/bronze{
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/ingot/bronze,
-/obj/item/ingot/bronze{
-	pixel_x = 6;
-	pixel_y = -1
-	},
-/turf/open/floor/rogue/blocks/stonered,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin)
 "gEn" = (
 /obj/structure/fluff/railing/border{
@@ -9561,11 +9630,9 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/cave)
 "hek" = (
-/obj/structure/roguewindow/openclose{
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/outdoors/town/roofs)
+/obj/machinery/light/rogue/forge,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "hel" = (
 /obj/structure/closet/crate/chest/wicker,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
@@ -9670,6 +9737,9 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
+"hkq" = (
+/turf/closed/wall/mineral/rogue/wooddark/vertical,
+/area/rogue/indoors/town/dwarfin)
 "hks" = (
 /turf/closed/wall/mineral/rogue/decostone/end{
 	dir = 1
@@ -9746,6 +9816,17 @@
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
+"hmA" = (
+/obj/structure/closet/crate/chest{
+	base_icon_state = "woodchestalt";
+	icon_state = "woodchestalt"
+	},
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "hmB" = (
 /obj/structure/chair/wood/rogue/throne,
 /turf/open/floor/rogue/wood/herringbone,
@@ -9800,9 +9881,6 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
-"hnS" = (
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "hnZ" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -9932,13 +10010,6 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
-"hrN" = (
-/obj/structure/closet/crate/drawer,
-/obj/item/clothing/shoes/roguetown/boots/leather,
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
-	},
-/area/rogue/outdoors/town/roofs)
 "hsa" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -10748,15 +10819,11 @@
 	},
 /area/rogue/indoors/town/magician)
 "hTU" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/item/grown/log/tree/small,
-/obj/item/grown/log/tree/small,
-/obj/item/grown/log/tree/small,
-/obj/item/grown/log/tree/small,
-/obj/item/grown/log/tree/stick,
-/obj/item/grown/log/tree/stick,
-/obj/item/grown/log/tree/stick,
-/turf/open/floor/rogue/cobble,
+/obj/machinery/light/rogue/torchholder/l,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "hTZ" = (
 /obj/structure/mineral_door/bars{
@@ -12239,12 +12306,11 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/beach)
 "iVo" = (
-/obj/structure/bed/rogue/inn/double,
-/obj/item/bedsheet/rogue/double_pelt,
-/obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
+/obj/structure/stairs{
+	dir = 4
 	},
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/town/roofs)
 "iVS" = (
 /turf/open/floor/rogue/wood/nosmooth,
@@ -12882,8 +12948,11 @@
 /turf/open/floor/rogue/tile/masonic,
 /area/rogue/indoors/town/manor)
 "jpk" = (
-/obj/machinery/light/rogue/forge,
-/turf/open/floor/rogue/cobble,
+/obj/machinery/anvil/crafted,
+/obj/effect/decal/cobbleedge{
+	dir = 9
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "jpm" = (
 /obj/structure/bed/rogue/shit{
@@ -13299,13 +13368,6 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
-"jED" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "jEG" = (
 /obj/structure/lever/wall{
 	redstone_id = "steward_shutter";
@@ -14399,6 +14461,16 @@
 "kyH" = (
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/town)
+"kyP" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "kyV" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/woodturned,
@@ -14480,6 +14552,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/indoors/town/church)
+"kBG" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "kBX" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -14545,6 +14623,9 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
+"kED" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/dwarf)
 "kEO" = (
 /obj/structure/chair/wood/rogue{
 	dir = 1
@@ -14725,6 +14806,10 @@
 	},
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town)
+"kKA" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/exposed/dwarf)
 "kKC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/carpet,
@@ -15161,18 +15246,9 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "lcv" = (
-/obj/structure/roguemachine/mail/l,
-/obj/structure/closet/crate/chest/neu_iron,
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	pixel_y = 1
-	},
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/roofs)
 "lcw" = (
 /turf/open/water/river{
 	dir = 4;
@@ -15463,12 +15539,21 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
-"lqc" = (
-/obj/item/roguebin/water/gross,
-/obj/effect/decal/cobbleedge{
-	dir = 5
+"lpB" = (
+/obj/structure/bed/rogue/inn/double,
+/obj/item/bedsheet/rogue/double_pelt,
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
 	},
-/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/town/roofs)
+"lqc" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/machinery/light/rogue/torchholder/r,
+/obj/item/ingot/steel,
+/obj/item/ingot/steel,
+/obj/item/ingot/steel,
+/turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin)
 "lqw" = (
 /obj/structure/bed/rogue/inn/wool,
@@ -15592,11 +15677,8 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
 "luX" = (
-/obj/structure/roguemachine/vendor{
-	keycontrol = "blacksmith"
-	},
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/indoors/town/dwarfin)
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/exposed/dwarf)
 "lvg" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
 /turf/open/water/sewer,
@@ -16239,6 +16321,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/garrison)
+"lQU" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "lQY" = (
 /obj/structure/closet/crate/chest/neu_iron,
 /obj/item/scrying,
@@ -16271,6 +16357,14 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
+"lRR" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "lRX" = (
 /obj/machinery/light/rogue/wallfire/candle/blue{
 	pixel_x = -32;
@@ -16736,6 +16830,10 @@
 "mhm" = (
 /turf/open/water/sewer,
 /area/rogue/under/cave)
+"mhC" = (
+/obj/structure/roguemachine/withdraw,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "mhP" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt,
@@ -16857,7 +16955,14 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
 "mnm" = (
-/obj/structure/fermenting_barrel/water,
+/obj/structure/closet/crate/chest/neu,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/exposed/dwarf)
 "moh" = (
@@ -17106,13 +17211,6 @@
 "mvd" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/shop)
-"mvh" = (
-/obj/structure/stairs{
-	dir = 4
-	},
-/obj/machinery/light/rogue/wallfire/candle,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/roofs)
 "mvo" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/cobble,
@@ -17132,6 +17230,15 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"mwr" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "mwD" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -17412,6 +17519,18 @@
 	},
 /turf/open/floor/carpet/inn,
 /area/rogue/indoors/town/physician)
+"mFb" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/natural/feather,
+/obj/item/paper/bsmith,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/outdoors/town/roofs)
 "mFm" = (
 /obj/structure/fluff/statue/knight/r,
 /turf/open/floor/rogue/cobble,
@@ -17638,10 +17757,7 @@
 	},
 /area/rogue/indoors/town/church)
 "mMR" = (
-/obj/effect/decal/cobbleedge{
-	dir = 6
-	},
-/turf/open/floor/rogue/blocks,
+/turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/town/dwarfin)
 "mNv" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
@@ -18094,13 +18210,9 @@
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/indoors/town/bath)
 "ncx" = (
-/obj/machinery/light/rogue/wallfire{
-	pixel_x = -32
-	},
-/turf/open/floor/rogue/ruinedwood{
-	icon_state = "weird1"
-	},
-/area/rogue/outdoors/town/roofs)
+/obj/machinery/anvil,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "ndb" = (
 /obj/structure/fluff/railing/border{
 	dir = 5;
@@ -18821,11 +18933,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "nDt" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/item/rogueweapon/hammer,
-/obj/item/rogueweapon/tongs,
-/obj/item/paper/bsmith,
-/turf/open/floor/rogue/ruinedwood/chevron,
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/town/roofs)
 "nDz" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
@@ -19047,8 +19156,9 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
 "nMo" = (
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/exposed/dwarf)
+/obj/structure/roguewindow/openclose,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/town/roofs)
 "nMw" = (
 /obj/structure/table/wood{
 	icon_state = "map1"
@@ -19151,6 +19261,13 @@
 "nRb" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/physician)
+"nRN" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/tongs,
+/obj/item/rogueweapon/hammer,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "nRP" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -19306,6 +19423,10 @@
 "nXx" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/garrison)
+"nXK" = (
+/obj/structure/mineral_door/wood/deadbolt,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "nXV" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4
@@ -19787,6 +19908,9 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town)
+"ooG" = (
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/town/dwarfin)
 "ooH" = (
 /obj/effect/decal/wood/herringbone2{
 	dir = 4
@@ -19919,11 +20043,10 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
 "orM" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "blacksmith"
+/obj/structure/fluff/wallclock{
+	dir = 3
 	},
-/turf/open/floor/rogue/cobble,
+/turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/dwarfin)
 "osw" = (
 /obj/machinery/light/rogue/wallfire/candle,
@@ -19990,6 +20113,8 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
 "ovB" = (
+/obj/structure/closet/crate/drawer,
+/obj/item/clothing/shoes/roguetown/boots/leather,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -20642,6 +20767,10 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town)
+"oUP" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "oVg" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/cleanshallow,
@@ -21133,14 +21262,6 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
-"ppi" = (
-/obj/item/roguebin/water/gross,
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "ppq" = (
 /obj/effect/landmark/start/villager,
 /turf/open/floor/rogue/cobble,
@@ -21187,18 +21308,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/town/sewer)
 "prE" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable_mid"
-	},
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/obj/structure/bars/passage/shutter{
-	redstone_id = "artificer_shutter"
-	},
-/turf/open/floor/rogue/cobble,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/dwarfin)
 "psf" = (
 /obj/structure/flora/newtree,
@@ -21670,13 +21780,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
-"pIT" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "artificer"
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/dwarfin)
 "pJe" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/suit/roguetown/shirt/robe/bath,
@@ -21937,6 +22040,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town)
+"pVg" = (
+/obj/structure/fluff/walldeco/bsmith,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/dwarf)
 "pVr" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4;
@@ -21988,12 +22095,27 @@
 /obj/item/cooking/pan,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
+"pWS" = (
+/obj/structure/lever/wall{
+	dir = 8;
+	pixel_x = 12;
+	redstone_id = "artificer_shutter"
+	},
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/town/dwarfin)
 "pWV" = (
 /obj/structure/closet/crate/chest/wicker,
 /obj/item/storage/roguebag,
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/town)
+"pWX" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "pXc" = (
 /obj/structure/table/wood{
 	icon_state = "longtable";
@@ -22364,6 +22486,20 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
+"qjP" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
+	},
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/obj/structure/bars/passage/shutter{
+	redstone_id = "weaponsmith_shutter"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "qjZ" = (
 /obj/machinery/light/rogue/wallfire/candle/weak/l,
 /turf/open/floor/rogue/woodturned,
@@ -22829,6 +22965,14 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/tile/masonic,
 /area/rogue/indoors/town/manor)
+"qBv" = (
+/obj/structure/bed/rogue/inn/double,
+/obj/item/bedsheet/rogue/double_pelt,
+/obj/effect/landmark/start/artificer{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors/town/dwarfin)
 "qBK" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -22945,13 +23089,6 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
-"qGB" = (
-/obj/machinery/anvil/crafted,
-/obj/effect/decal/cobbleedge{
-	dir = 9
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "qGC" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/spear,
@@ -23270,6 +23407,9 @@
 "qSa" = (
 /turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/outdoors/town)
+"qSh" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/outdoors/town/roofs)
 "qSr" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/machinery/light/rogue/wallfire/candle{
@@ -23850,9 +23990,6 @@
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
-"rmV" = (
-/turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue/outdoors/town/roofs)
 "rnq" = (
 /obj/structure/mannequin/male/female,
 /turf/open/floor/rogue/ruinedwood{
@@ -23894,6 +24031,12 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
+"rpa" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/item/reagent_containers/glass/bottle/waterskin/purifier,
+/obj/item/grapplinghook,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "rpC" = (
 /obj/structure/bed/rogue,
 /obj/item/bedsheet/rogue/cloth,
@@ -23915,13 +24058,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/cave)
-"rqK" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "artificer"
-	},
-/turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/dwarfin)
 "rqV" = (
 /obj/structure/stairs{
 	dir = 1
@@ -24177,6 +24313,15 @@
 /area/rogue/indoors/shelter/town/sargoth{
 	first_time_text = "MERCENARY GUILD"
 	})
+"rzU" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "rAh" = (
 /obj/structure/boatbell/fluff{
 	desc = ""
@@ -24243,6 +24388,14 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
+"rDC" = (
+/obj/structure/rack/rogue,
+/obj/effect/decal/cobbleedge{
+	dir = 9
+	},
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "rDL" = (
 /obj/structure/reliquarybox,
 /turf/open/floor/rogue/concrete,
@@ -24579,24 +24732,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "rQi" = (
-/obj/structure/rack/rogue,
-/obj/item/roguegear{
-	pixel_x = -6;
-	pixel_y = 3
-	},
-/obj/item/roguegear{
-	pixel_x = -2
-	},
-/obj/item/roguegear{
-	pixel_x = 5;
-	pixel_y = -6
-	},
-/obj/item/roguegear{
-	pixel_x = 1;
-	pixel_y = -3
-	},
-/obj/item/roguegear,
-/turf/open/floor/rogue/blocks/stonered,
+/obj/structure/fluff/walldeco/artificerflag,
+/turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/dwarfin)
 "rQo" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -24936,6 +25073,14 @@
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town)
+"sdu" = (
+/obj/structure/roguewindow,
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "sec" = (
 /obj/item/reagent_containers/glass/bottle,
 /obj/item/reagent_containers/glass/carafe/silver,
@@ -25010,12 +25155,11 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
 "sfX" = (
-/obj/machinery/light/rogue/torchholder/l,
-/obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-sread"
+/obj/structure/fluff/railing/border{
+	dir = 9
 	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/roofs)
 "sgh" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/ingot/iron,
@@ -25130,6 +25274,21 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
+"skN" = (
+/obj/structure/fluff/walldeco/wantedposter/r{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/obj/machinery/light/rogue/firebowl/standing,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/dwarf)
 "sld" = (
 /obj/structure/roguewindow/openclose{
 	dir = 1
@@ -25822,6 +25981,13 @@
 	icon_state = "bfloorz"
 	},
 /area/rogue/indoors/town/manor)
+"sQu" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/ruinedwood/chevron,
+/area/rogue/outdoors/town/roofs)
 "sQD" = (
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -25922,20 +26088,6 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
-"sST" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/effect/decal/cobbleedge{
-	dir = 9
-	},
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/obj/item/natural/feather,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "sSU" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/carpet/stellar,
@@ -25979,6 +26131,17 @@
 /obj/effect/decal/remains/bigrat,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/town)
+"sUE" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/structure/fluff/railing/border{
+	dir = 5;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/town)
 "sUS" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
@@ -26013,7 +26176,12 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cave)
 "sVy" = (
-/turf/closed/wall/mineral/rogue/wooddark,
+/obj/structure/closet/crate/drawer,
+/obj/item/roguekey/artificer{
+	pixel_x = -3;
+	pixel_y = 1
+	},
+/turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/dwarfin)
 "sVX" = (
 /obj/structure/roguewindow,
@@ -26185,9 +26353,8 @@
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/indoors/town)
 "tcJ" = (
-/obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/exposed/dwarf)
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "tdk" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -26236,12 +26403,9 @@
 /area/rogue/indoors/town)
 "tfd" = (
 /obj/effect/decal/cobbleedge{
-	dir = 5
-	},
-/obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
-/turf/open/floor/rogue/blocks,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/dwarfin)
 "tfB" = (
 /obj/structure/closet/crate/drawer/random{
@@ -26477,6 +26641,16 @@
 /obj/item/rogueweapon/huntingknife/idagger/silver,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/shop)
+"tph" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks/platform,
+/area/rogue/indoors/town/dwarfin)
 "tpl" = (
 /obj/effect/gibspawner/human,
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf{
@@ -26513,11 +26687,10 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "tqk" = (
-/obj/structure/handcart{
-	dir = 4
-	},
+/obj/item/roguebin/water/gross,
 /obj/effect/decal/cobbleedge{
-	dir = 5
+	dir = 10;
+	icon_state = "cobbleedge-w"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
@@ -27352,6 +27525,12 @@
 /obj/item/listeningdevice,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/bath)
+"ucH" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "udD" = (
 /obj/structure/flora/roguegrass,
 /obj/effect/decal/cobbleedge{
@@ -27420,6 +27599,12 @@
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
+"ugr" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "ugD" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/ruinedwood{
@@ -27499,11 +27684,13 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/exposed/church)
 "ukn" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
+/obj/structure/mineral_door/wood{
+	locked = 1;
+	lockid = "blacksmith"
 	},
-/obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/ruinedwood/chevron,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
 /area/rogue/outdoors/town/roofs)
 "ulG" = (
 /obj/structure/rack/rogue,
@@ -28727,17 +28914,11 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "vcZ" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable_mid"
-	},
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/obj/structure/bars/passage/shutter{
-	redstone_id = "weaponsmith_shutter"
-	},
+/obj/item/ingot/copper,
+/obj/item/ingot/copper,
+/obj/item/ingot/copper,
+/obj/item/ingot/copper,
+/obj/structure/closet/crate/chest/neu,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/dwarfin)
 "vdu" = (
@@ -28756,9 +28937,14 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church/chapel)
 "vei" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
-/turf/open/floor/rogue/ruinedwood/chevron,
-/area/rogue/outdoors/town/roofs)
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "vep" = (
 /obj/structure/chair/bench/ultimacouch,
 /obj/effect/landmark/start/nightmaiden,
@@ -28927,6 +29113,7 @@
 	},
 /area/rogue/indoors/town/shop)
 "vkn" = (
+/obj/structure/fluff/walldeco/artificerflag,
 /turf/closed/wall/mineral/rogue/pipe,
 /area/rogue/indoors/town/dwarfin)
 "vkr" = (
@@ -29421,12 +29608,8 @@
 	first_time_text = "CITY OUTSKIRTS"
 	})
 "vDf" = (
-/obj/structure/closet/crate/chest/neu_iron,
-/obj/machinery/light/rogue/torchholder/r,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/turf/open/floor/rogue/cobble,
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/dwarfin)
 "vDi" = (
 /turf/open/floor/rogue/woodturned,
@@ -29477,6 +29660,12 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/town/sewer)
+"vEs" = (
+/obj/structure/fluff/walldeco/bsmith{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/exposed/dwarf)
 "vEz" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_x = 32;
@@ -30112,6 +30301,23 @@
 /obj/structure/fermenting_barrel/crafted,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"wbz" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/rogueweapon/hammer/claw{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/rogueweapon/tongs{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/structure/fluff/wallclock{
+	dir = 3
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "wcp" = (
 /obj/effect/decal/herringbone{
 	dir = 1
@@ -30606,6 +30812,12 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"wwu" = (
+/obj/structure/closet/crate/roguecloset/inn,
+/obj/item/clothing/mask/rogue/spectacles/golden,
+/obj/item/flashlight/flare/torch/lantern,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "wwT" = (
 /obj/structure/stairs{
 	dir = 1
@@ -30623,11 +30835,11 @@
 /area/rogue/indoors/town)
 "wxF" = (
 /obj/effect/decal/cobbleedge{
-	dir = 5
+	dir = 10;
+	pixel_y = 1
 	},
 /obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-e"
+	dir = 9
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
@@ -30870,8 +31082,11 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/exposed/town/keep)
 "wDn" = (
-/obj/machinery/light/rogue/wallfire/candle/r,
-/turf/open/floor/rogue/blocks/stonered,
+/obj/structure/mineral_door/wood{
+	locked = 1;
+	lockid = "artificer"
+	},
+/turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/dwarfin)
 "wDw" = (
 /obj/machinery/light/rogue/wallfire/candle{
@@ -31035,6 +31250,17 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"wJR" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/stick,
+/obj/item/grown/log/tree/stick,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "wKx" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 8
@@ -31244,6 +31470,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
+"wRJ" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "wSN" = (
 /obj/effect/decal/herringbone,
 /turf/open/floor/rogue/tile/tilerg,
@@ -31369,9 +31601,25 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/garrison)
 "wXo" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/roofs)
+/obj/structure/rack/rogue,
+/obj/item/roguegear{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/item/roguegear{
+	pixel_x = -2
+	},
+/obj/item/roguegear{
+	pixel_x = 5;
+	pixel_y = -6
+	},
+/obj/item/roguegear{
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/obj/item/roguegear,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/dwarfin)
 "wYh" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 8
@@ -31533,12 +31781,6 @@
 	dir = 10
 	},
 /area/rogue/outdoors/town/roofs)
-"xfj" = (
-/obj/effect/decal/cobbleedge{
-	icon_state = "cobbleedge-n"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town/dwarfin)
 "xfl" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/herringbone,
@@ -31604,10 +31846,6 @@
 	icon_state = "horzw"
 	},
 /area/rogue/indoors/town)
-"xhm" = (
-/obj/machinery/light/rogue/wallfire/candle,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/roofs)
 "xht" = (
 /obj/structure/rack/rogue,
 /obj/item/needle/thorn,
@@ -31719,12 +31957,8 @@
 	first_time_text = "CITY OUTSKIRTS"
 	})
 "xmu" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "blacksmith"
-	},
-/turf/open/floor/rogue/ruinedwood/chevron,
-/area/rogue/outdoors/town/roofs)
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "xmz" = (
 /obj/structure/stairs{
 	dir = 1
@@ -32001,6 +32235,13 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"xwg" = (
+/obj/machinery/light/rogue/torchholder/r,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/town/dwarfin)
 "xwA" = (
 /obj/structure/fluff/statue/knight/r,
 /obj/effect/decal/cobbleedge{
@@ -32265,6 +32506,9 @@
 	dir = 10;
 	icon_state = "cobbleedge-w"
 	},
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
 "xHN" = (
@@ -32272,6 +32516,9 @@
 /obj/effect/landmark/start/prisonerr,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/garrison)
+"xHT" = (
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/roofs)
 "xIC" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/woodturned,
@@ -32468,12 +32715,6 @@
 /obj/item/clothing/neck/roguetown/psicross,
 /turf/open/floor/carpet/red,
 /area/rogue/under/cave)
-"xVi" = (
-/obj/structure/fluff/railing/border{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/dwarfin)
 "xVs" = (
 /obj/structure/bed/rogue,
 /obj/machinery/light/rogue/wallfire/candle{
@@ -32925,8 +33166,17 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "ykO" = (
-/obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/cobble,
+/obj/structure/roguemachine/mail/l,
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	pixel_y = 1
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/dwarfin)
 "ykP" = (
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -71929,16 +72179,16 @@ nfk
 hJU
 eNY
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
 nfk
 hJU
 hJU
@@ -72093,14 +72343,14 @@ eNY
 hIF
 tpI
 bBR
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+mMR
+fBu
+fBu
+fBu
+fBu
+mMR
+gXs
+gXs
 nfk
 hJU
 rJD
@@ -72255,14 +72505,14 @@ eNY
 hJU
 fSK
 nfk
-xEw
-xEw
-xEw
-xEw
-aLx
-xEw
-xEw
-xEw
+hkq
+mMR
+tph
+lRR
+aBg
+hkq
+gXs
+gXs
 nfk
 hel
 hJU
@@ -72417,14 +72667,14 @@ eNY
 eNY
 eNY
 nfk
-xEw
-xEw
-xEw
-xEw
-aLx
-xEw
-xEw
-xEw
+hkq
+mMR
+tfd
+gAv
+aBg
+hkq
+gXs
+gXs
 hIF
 tpI
 tpI
@@ -72579,18 +72829,18 @@ hJU
 hJU
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+hkq
+mMR
+tfd
+eWe
+mMR
+hkq
+fBu
+fBu
+fBu
+mMR
+gXs
+gXs
 hIF
 tpI
 tpI
@@ -72741,18 +72991,18 @@ tpI
 tpI
 tpI
 xGA
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+hkq
+dNA
+tfd
+auL
+dNA
+hkq
+wwu
+prE
+ucH
+hkq
+gXs
+gXs
 nfk
 tPo
 hJU
@@ -72896,25 +73146,25 @@ hJU
 hJU
 jpF
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+mMR
+ooG
+mMR
+mhC
+tfd
+gAv
+auL
+mMR
+lQU
+prE
+hvt
+hkq
+gXs
+gXs
 nfk
 euc
 hCA
@@ -73058,25 +73308,25 @@ eNY
 xcD
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+oUP
+gEj
+tcJ
+tfd
+gAv
+gAv
+nXK
+prE
+prE
+fCk
+hkq
+gXs
+gXs
 nfk
 hJU
 gxP
@@ -73220,25 +73470,25 @@ eNY
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+ncx
+tcJ
+tcJ
+tfd
+gAv
+eWe
+mMR
+orM
+dKZ
+dKZ
+hkq
+gXs
+gXs
 nfk
 hCA
 hCA
@@ -73382,25 +73632,25 @@ qwk
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+hek
+tcJ
+tcJ
+tfd
+rDC
+mMR
+hkq
+sVy
+qBv
+dKZ
+hkq
+gXs
+gXs
 nfk
 pkh
 hCA
@@ -73544,25 +73794,25 @@ qwk
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+wbz
+tcJ
+tcJ
+tfd
+mMR
+mMR
+mMR
+fBu
+fBu
+fBu
+mMR
+gXs
+gXs
 nfk
 hJU
 hCA
@@ -73706,25 +73956,25 @@ qwk
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+vcZ
+tcJ
+tcJ
+tfd
+dIm
+mMR
+hkq
+wwu
+prE
+ucH
+hkq
+gXs
+gXs
 nfk
 hCA
 hCA
@@ -73868,25 +74118,25 @@ xcD
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+hmA
+tcJ
+tcJ
+tfd
+gAv
+auL
+mMR
+lQU
+prE
+hvt
+hkq
+gXs
+gXs
 nfk
 ekV
 reF
@@ -74030,25 +74280,25 @@ eNY
 eNY
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+tcJ
+dhA
+tcJ
+tfd
+gAv
+gAv
+nXK
+prE
+prE
+fCk
+hkq
+gXs
+gXs
 nfk
 hJU
 hJU
@@ -74192,25 +74442,25 @@ hJU
 hJU
 hJU
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+hkq
+mMR
+mMR
+dNA
+mwr
+baq
+eWe
+mMR
+orM
+dKZ
+dKZ
+hkq
+gXs
+gXs
 nfk
 hCA
 hCA
@@ -74355,24 +74605,24 @@ tpI
 tpI
 xGA
 ekV
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+mMR
+fBu
+fBu
+fBu
+fBu
+fBu
+fBu
+mMR
+sVy
+qBv
+dKZ
+hkq
+gXs
+gXs
 nfk
 hCA
 xgl
@@ -74517,24 +74767,24 @@ dll
 hJU
 fSK
 nfk
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
-xEw
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+gXs
+mMR
+fBu
+fBu
+fBu
+mMR
+gXs
+gXs
 nfk
 lVW
 hCA
@@ -97859,7 +98109,7 @@ bRY
 gFl
 xdu
 gFl
-gFl
+eTa
 bRY
 bRY
 bRY
@@ -98179,13 +98429,13 @@ hSC
 bRY
 bRY
 bRY
-stT
+rQi
 ujq
 jtT
 pTS
-rQi
-gEj
-cUc
+wXo
+fpz
+pWS
 vkn
 bRY
 bRY
@@ -98341,14 +98591,14 @@ ekh
 bRY
 bRY
 bRY
-stT
+rQi
 ujq
 jtT
-brG
-brG
-brG
-brG
 prE
+prE
+prE
+prE
+aAJ
 bRY
 bRY
 lIY
@@ -98503,14 +98753,14 @@ uAg
 bRY
 bRY
 bRY
-eWm
+sdu
 bZY
 mGn
 iFB
-brG
-brG
-brG
 prE
+prE
+prE
+aAJ
 bRY
 bRY
 eMB
@@ -98665,13 +98915,13 @@ gOR
 nfP
 itZ
 bRY
-sVy
+mMR
 vyt
 hvt
-brG
-brG
-brG
-brG
+prE
+prE
+prE
+prE
 hne
 bRY
 bRY
@@ -98827,14 +99077,14 @@ hSt
 rCg
 bRY
 bRY
-pIT
-brG
-wDn
-brG
-brG
-dUG
+elw
+prE
+vDf
+prE
+prE
+rpa
 mGk
-stT
+rQi
 bRY
 bRY
 iOH
@@ -98988,18 +99238,18 @@ bRY
 bRY
 bRY
 bRY
-sVy
+mMR
 stT
 stT
 stT
 stT
-rqK
+wDn
 stT
 stT
 stT
 stT
-sVy
-bRY
+mMR
+mMR
 bRY
 bRY
 wGj
@@ -99151,18 +99401,18 @@ tpH
 bRY
 bRY
 stT
-lcv
-sST
-btp
-stT
-gkx
 ykO
-jpk
-gtx
-sfX
+byl
+cmj
 stT
-bRY
-bRY
+tcJ
+gEj
+hek
+gtx
+hTU
+stT
+pVg
+eTI
 bRY
 wGj
 fBg
@@ -99312,19 +99562,19 @@ bFD
 fBg
 lIY
 bRY
-eWm
-gkx
+sdu
+tcJ
 oqy
 oqy
 stT
 nbT
 lsA
 jvP
-gkx
+tcJ
 eGL
+dTA
 luX
-gce
-bRY
+eWm
 bRY
 are
 dHB
@@ -99474,19 +99724,19 @@ fpb
 aPq
 lIY
 bRY
-eWm
-gkx
-jED
+sdu
+tcJ
+pWX
 oes
 stT
-gkx
+tcJ
 igZ
-ppi
-gkx
+tqk
+tcJ
 kFt
-vcZ
-bRY
-bRY
+qjP
+cUc
+eWm
 bRY
 bRY
 eQG
@@ -99637,18 +99887,18 @@ fBg
 rCg
 lIY
 stT
-fyS
-aAJ
-gkx
+ugr
+wxF
+tcJ
 stT
 igZ
-gkx
-xfj
-gkx
+tcJ
+fyS
+tcJ
 wnd
-vcZ
-bRY
-bRY
+qjP
+cUc
+jhN
 bRY
 vdu
 dHB
@@ -99798,19 +100048,19 @@ xBX
 nFg
 bRY
 lIY
-eWm
-tfd
-gkx
-gkx
-orM
-gkx
-gkx
-arV
-wxF
+sdu
+rzU
+tcJ
+tcJ
+dhf
+tcJ
+tcJ
+dUG
+kyP
 rGr
-sVy
-bRY
-bRY
+mMR
+skN
+sUE
 bRY
 gOR
 uAg
@@ -99960,19 +100210,19 @@ fBg
 tpH
 bRY
 bRY
-eWm
-xfj
+sdu
+fyS
 lsA
 gpd
 rGr
 fLs
-jED
-gkx
-gkx
+pWX
+tcJ
+tcJ
 fgt
 lGx
-bRY
-bRY
+cUc
+eTI
 bRY
 gOR
 bFI
@@ -100123,18 +100373,18 @@ jqJ
 bRY
 bRY
 stT
-bDx
-bDx
-xVi
+kBG
+kBG
+wRJ
 stT
-gkx
-hnS
-lqc
-gkx
-gkx
+tcJ
+xmu
+fUx
+tcJ
+tcJ
 lGx
-bRY
-bRY
+cUc
+eWm
 bRY
 wcx
 hWC
@@ -100285,17 +100535,17 @@ bBY
 bRY
 bRY
 stT
-sVy
-sVy
+mMR
+mMR
 stT
 stT
 nbT
 igZ
-qGB
-gkx
-dIm
-luX
-bRY
+jpk
+tcJ
+vei
+dTA
+cUc
 xHs
 nfP
 bRY
@@ -100447,18 +100697,18 @@ pup
 bRY
 rhy
 stT
-sVy
-sVy
+mMR
+mMR
 stT
 stT
 dkt
 oSU
-jpk
-gkx
-dhf
+hek
+tcJ
+xwg
 stT
-bRY
-bRY
+vEs
+jhN
 hSt
 bRY
 bRY
@@ -100614,12 +100864,12 @@ stT
 stT
 stT
 stT
-sVy
+mMR
 stT
-orM
+dhf
 stT
-sVy
-bRY
+mMR
+mMR
 kIZ
 bRY
 kTW
@@ -100773,13 +101023,13 @@ bRY
 bRY
 neh
 sep
-nMo
-tcJ
+kED
+kKA
 lVV
 stT
-dTA
-gkx
-dgp
+bDx
+tcJ
+nRN
 stT
 bRY
 bRY
@@ -100934,14 +101184,14 @@ rCg
 bRY
 bRY
 neh
-nMo
-nMo
-nMo
-aKY
+kED
+kED
+kED
+mnm
 stT
-gae
-mMR
-tqk
+mhC
+gkx
+dgp
 stT
 bRY
 bRY
@@ -101096,12 +101346,12 @@ lIY
 bRY
 bRY
 neh
-nMo
-nMo
-nMo
-nMo
-orM
-gkx
+kED
+kED
+kED
+kED
+dhf
+tcJ
 lBr
 sgh
 stT
@@ -101259,13 +101509,13 @@ bRY
 bRY
 neh
 sep
-nMo
-nMo
-mnm
+kED
+kED
+cKl
 stT
-vDf
-gkx
-hTU
+lqc
+tcJ
+wJR
 stT
 bRY
 bRY
@@ -101424,11 +101674,11 @@ neh
 neh
 neh
 stT
-sVy
+mMR
 stT
-eWm
+sdu
 stT
-sVy
+mMR
 qaX
 bRY
 bRY
@@ -124910,15 +125160,15 @@ brQ
 qWd
 qWd
 lrE
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
 lrE
 lrE
 lrE
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
 lrE
 qWd
 qWd
@@ -125071,17 +125321,17 @@ fBg
 tpH
 blU
 qWd
-rmV
-nDt
-vei
+qSh
+fbm
+bSa
 fzi
 lrE
-wXo
-rmV
+nDt
+qSh
 pYS
-ncx
-ovB
-hek
+ahN
+cyn
+fvw
 qWd
 qWd
 qWd
@@ -125233,17 +125483,17 @@ ruK
 fBg
 blU
 qWd
-rmV
-nDt
+qSh
+fbm
 fzi
 fzi
-xmu
-aOI
-dhA
-ovB
-ovB
+bLI
+xHT
+ukn
+cyn
+cyn
 rYF
-hek
+fvw
 qWd
 qWd
 qWd
@@ -125395,16 +125645,16 @@ aiV
 fBg
 blU
 qWd
-gAv
+nMo
 fzi
 fzi
 fzi
 lrE
-aOI
-rmV
-hrN
-iVo
-cyn
+xHT
+qSh
+ovB
+lpB
+mFb
 lrE
 qWd
 qWd
@@ -125557,16 +125807,16 @@ uAT
 fBg
 blU
 qWd
-rmV
+qSh
 fzi
 fzi
 fzi
-rmV
-xhm
+qSh
+lcv
 lrE
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
 lrE
 qWd
 qWd
@@ -125719,17 +125969,17 @@ aew
 fBg
 qWd
 qWd
-rmV
+qSh
 lpb
-ukn
+sQu
 lpb
-rmV
-aOI
-rmV
+qSh
+xHT
+qSh
 pYS
-ncx
-ovB
-hek
+ahN
+cyn
+fvw
 qWd
 qWd
 qWd
@@ -125882,16 +126132,16 @@ tpH
 qWd
 qWd
 lrE
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
 lrE
-aOI
-dhA
-ovB
-ovB
+xHT
+ukn
+cyn
+cyn
 rYF
-hek
+fvw
 qWd
 qWd
 qWd
@@ -126043,16 +126293,16 @@ gtd
 mmB
 qWd
 qWd
-rmV
+qSh
 qWd
 qWd
 xIP
-aOI
-aOI
-rmV
-hrN
-iVo
-cyn
+xHT
+xHT
+qSh
+ovB
+lpB
+mFb
 lrE
 qWd
 qWd
@@ -126205,16 +126455,16 @@ mVf
 qWd
 qWd
 qWd
-rmV
-mvh
+qSh
+iVo
 bbH
 xIP
-aOI
+xHT
 fIj
 lrE
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
 lrE
 qWd
 qWd
@@ -126367,17 +126617,17 @@ mVf
 qWd
 qWd
 qWd
-rmV
-aOI
-aOI
-bSa
-aOI
-rmV
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+xHT
+xHT
+sfX
+xHT
+qSh
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -126530,16 +126780,16 @@ qWd
 qWd
 qWd
 qWd
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
 lrE
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -126697,11 +126947,11 @@ qWd
 qWd
 qWd
 qWd
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -126859,11 +127109,11 @@ qWd
 qWd
 qWd
 qWd
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -127021,11 +127271,11 @@ qWd
 qWd
 qWd
 qWd
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -127183,11 +127433,11 @@ qWd
 qWd
 qWd
 qWd
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
@@ -127345,11 +127595,11 @@ qWd
 qWd
 qWd
 fIx
-rmV
-rmV
-rmV
-rmV
-rmV
+qSh
+qSh
+qSh
+qSh
+qSh
 qWd
 qWd
 qWd
