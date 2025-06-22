@@ -14143,6 +14143,12 @@
 	dir = 4
 	},
 /area/rogue/outdoors/town/roofs)
+"jWP" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
 "jWQ" = (
 /obj/structure/fluff/millstone{
 	pixel_y = 7
@@ -17837,6 +17843,12 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
+"mBZ" = (
+/obj/machinery/light/rogue/torchholder/l{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town)
 "mCf" = (
 /obj/structure/bed/rogue/inn/wooldouble,
 /obj/item/bedsheet/rogue/double_pelt,
@@ -20785,6 +20797,9 @@
 /obj/structure/chair/wood,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave)
+"oCc" = (
+/turf/closed/wall/mineral/rogue/decostone,
+/area/rogue/indoors/town)
 "oCi" = (
 /obj/effect/decal/cobbleedge{
 	dir = 5
@@ -23464,6 +23479,12 @@
 /obj/item/natural/feather,
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
+"qzO" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/town)
 "qAc" = (
 /obj/structure/table/wood{
@@ -28871,6 +28892,11 @@
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
+"uFy" = (
+/obj/machinery/light/rogue/torchholder/l,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
 "uFF" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/mossback,
 /turf/open/water/swamp,
@@ -63889,7 +63915,7 @@ lys
 lys
 lys
 nfk
-bHr
+hJU
 hJU
 eNY
 nfk
@@ -65506,8 +65532,8 @@ hJU
 hJU
 pQg
 hJU
-hJU
-hJU
+uFy
+jWP
 wAH
 fSK
 hJU
@@ -90941,10 +90967,10 @@ eeh
 dvQ
 jND
 qen
-tMM
-tMM
-tMM
-tMM
+oCc
+oCc
+oCc
+oCc
 nCM
 gWn
 bRY
@@ -91103,10 +91129,10 @@ dvQ
 hdj
 oEA
 oYy
-tMM
-tMM
-tMM
-tMM
+oCc
+oCc
+oCc
+oCc
 gqc
 bRY
 bRY
@@ -91265,10 +91291,10 @@ dvQ
 hdj
 pZU
 oYy
-tMM
-tMM
-tMM
-tMM
+oCc
+qzO
+uSD
+mHt
 nLA
 bRY
 itZ
@@ -91427,10 +91453,10 @@ hdM
 jMy
 suI
 oYy
-tMM
-tMM
-tMM
-tMM
+oCc
+mBZ
+oCc
+oCc
 xnm
 jUv
 bRY
@@ -91589,9 +91615,9 @@ dvQ
 beY
 kqR
 oYy
-tMM
-tMM
-tMM
+oCc
+oCc
+oCc
 qSa
 aKh
 rCg
