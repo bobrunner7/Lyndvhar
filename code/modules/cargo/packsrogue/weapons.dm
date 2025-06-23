@@ -76,21 +76,21 @@
 
 /datum/supply_pack/rogue/weapons/saildagger
 	name = "Sail Dagger"
-	cost = 80
+	cost = 150
 	contains = list(
 					/obj/item/rogueweapon/huntingknife/idagger/steel/parrying/vaquero,
 				)
 
 /datum/supply_pack/rogue/weapons/erapier
 	name = "Valorian Rapier"
-	cost = 80
+	cost = 200
 	contains = list(
 					/obj/item/rogueweapon/sword/rapier/vaquero,
 	)
 
 /datum/supply_pack/rogue/weapons/shamshir
 	name = "Shamshir"
-	cost = 80
+	cost = 120
 	contains = list(
 					/obj/item/rogueweapon/sword/long/rider,
 				)
