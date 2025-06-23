@@ -44,6 +44,6 @@
 	H.change_stat("constitution", 2) //dark souls 3 dual greatshield moment
 	H.change_stat("speed", 1)
 	H.change_stat("intelligence", -3) // This is mainly to absolutely fuck up your ability to learn ANY skill and make you super susceptible to being feinted. Tough muscle. Make your teammates use the thinking skills for you.
-	H.change_stat("perception", -2) // Ditto for Per.
+	H.change_stat("perception", -1) // Ditto for Per.
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
