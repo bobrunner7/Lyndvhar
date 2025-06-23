@@ -1842,7 +1842,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var/list/loadouts_available = list("None")
 					for (var/path as anything in GLOB.loadout_items)
 						var/datum/loadout_item/loadout2 = GLOB.loadout_items[path]
-							continue
 						if (!loadout2.name)
 							continue
 						loadouts_available[loadout2.name] = loadout2
@@ -1861,7 +1860,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var/list/loadouts_available = list("None")
 					for (var/path as anything in GLOB.loadout_items)
 						var/datum/loadout_item/loadout3 = GLOB.loadout_items[path]
-							continue
 						if (!loadout3.name)
 							continue
 						loadouts_available[loadout3.name] = loadout3
