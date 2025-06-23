@@ -94,7 +94,7 @@
 			unlocked_cats+="Sellsword"
 		if("Sawbones")
 			unlocked_cats+="Sawbones"
-		if("Hedge Knight")
+		if("Hedge Cataphract")
 			unlocked_cats+="Knight"
 		if("Rogue Mage")
 			unlocked_cats+="Mage"
