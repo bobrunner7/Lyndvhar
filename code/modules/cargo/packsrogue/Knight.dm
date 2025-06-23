@@ -7,12 +7,12 @@
 
 /datum/supply_pack/rogue/Knight/sbelt
 	name = "Steel Belt"
-	cost = 5
+	cost = 1
 	contains = list(/obj/item/storage/belt/rogue/leather/steel)
 
 /datum/supply_pack/rogue/Knight/froggy
 	name = "Froggemund Helm"
-	cost = 60
+	cost = 25 // This thing's FOV is so trash you can get it has been singled out to be dead cheap to give you any literally /any/ reason to use it.
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/frogmouth)
 
 /datum/supply_pack/rogue/Knight/wolfhelm
@@ -42,13 +42,13 @@
 
 /datum/supply_pack/rogue/Knight/fullplate_iron
 	name = "Iron Full plate"
-	cost = 200
+	cost = 220
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full/iron)
 
 
 /datum/supply_pack/rogue/Knight/Fullplate
 	name = "Steel Full plate"
-	cost = 300
+	cost = 320
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full)
 
 /datum/supply_pack/rogue/Knight/hgambeson
@@ -58,7 +58,7 @@
 
 /datum/supply_pack/rogue/Knight/fluted_hauberk
 	name = "Fluted Hauberk"
-	cost = 100
+	cost = 125
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted)
 
 /datum/supply_pack/rogue/Knight/hauberk
@@ -93,7 +93,7 @@
 
 /datum/supply_pack/rogue/Knight/plategaunt
 	name = "Plate Gauntlets"
-	cost = 25
+	cost = 40
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
 
 /datum/supply_pack/rogue/Knight/chaingauntlets
@@ -116,6 +116,11 @@
 	cost = 45
 	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
 
+/datum/supply_pack/rogue/Knight/steel_knuckles
+	name = "Steel Knuckles"
+	cost = 20
+	contains = list(/obj/item/rogueweapon/knuckles)
+
 /datum/supply_pack/rogue/Knight/bsword
 	name = "Bastard Sword"
 	cost = 20
@@ -128,18 +133,18 @@
 
 /datum/supply_pack/rogue/Knight/greatsword
 	name = "Greatsword"
-	cost = 80
+	cost = 70
 	contains = list(/obj/item/rogueweapon/greatsword)
 
 /datum/supply_pack/rogue/Knight/Zweihandersword
-	name = "Zweihander"
-	cost = 70
+	name = "Iron Zweihander"
+	cost = 30
 	contains = list(/obj/item/rogueweapon/greatsword/zwei)
 
 
 /datum/supply_pack/rogue/Knight/kiteshield
 	name = "Kite Shield"
-	cost = 20
+	cost = 30
 	contains = list(/obj/item/rogueweapon/shield/tower/metal)
 
 /* Blacksteel is disabled for bandit jobs but this is left here for reference if its ever rebalanced.

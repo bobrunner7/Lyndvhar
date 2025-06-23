@@ -1,4 +1,4 @@
-/datum/advclass/hedgeknight //Knight class, good stats and equipment but your int absolutely sucks so good luck learning anything and everyone will freak out at you.
+/datum/advclass/hedgeknight // Knight class, good stats and equipment but your int absolutely sucks so good luck learning anything and everyone will freak out at a bandit in full plate.
 	name = "Hedge Cataphract"
 	tutorial = "A warrior fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours."
 	allowed_sexes = list(MALE, FEMALE)
@@ -20,11 +20,11 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/rogueweapon/sword/long
+	beltr = /obj/item/rogueweapon/sword/long/heirloom
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	id = /obj/item/mattcoin
 	backpack_contents = list(
-					/obj/item/rogueweapon/huntingknife/idagger = 1,
+					/obj/item/rogueweapon/knuckles = 1,
 					/obj/item/flashlight/flare/torch = 1,
 					)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
@@ -42,6 +42,8 @@
 	H.change_stat("strength", 2)
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2) //dark souls 3 dual greatshield moment
-	H.change_stat("intelligence", -3) // This is mainly to absolutely fuck up your ability to learn ANY skill and make you super susceptible to being feinted. Tough muscle. Make your teammates use the thinking skills for you.
 	H.change_stat("speed", 1)
+	H.change_stat("intelligence", -3) // This is mainly to absolutely fuck up your ability to learn ANY skill and make you super susceptible to being feinted. Tough muscle. Make your teammates use the thinking skills for you.
+	H.change_stat("perception", -1) // Ditto for Per.
+
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
