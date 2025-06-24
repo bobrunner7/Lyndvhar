@@ -280,7 +280,6 @@
 			if(compact)
 				contents += "Treasury: [SStreasury.treasury_value]m"
 				contents += " / Lord's Tax: [SStreasury.tax_value*100]%"
-				contents += " / Guild's Tax: [SStreasury.queens_tax*100]%</center><BR>"
 				for(var/datum/roguestock/stockpile/A in SStreasury.stockpile_datums)
 					contents += "<b>[A.name]:</b>"
 					contents += " [A.held_items[1] + A.held_items[2]]"
@@ -291,7 +290,6 @@
 			else
 				contents += "Treasury: [SStreasury.treasury_value]m<BR>"
 				contents += "Lord's Tax: [SStreasury.tax_value*100]%<BR>"
-				contents += "Guild's Tax: [SStreasury.queens_tax*100]%</center><BR>"
 				for(var/datum/roguestock/stockpile/A in SStreasury.stockpile_datums)
 					contents += "[A.name]<BR>"
 					contents += "[A.desc]<BR>"
@@ -310,14 +308,12 @@
 			if(compact)
 				contents += "Treasury: [SStreasury.treasury_value]m"
 				contents += " / Lord's Tax: [SStreasury.tax_value*100]%"
-				contents += " / Guild's Tax: [SStreasury.queens_tax*100]%</center><BR>"
 				for(var/datum/roguestock/import/A in SStreasury.stockpile_datums)
 					contents += "<b>[A.name]:</b>"
 					contents += " <a href='?src=\ref[src];import=\ref[A]'>\[Import [A.importexport_amt] ([A.get_import_price()])\]</a><BR><BR>"
 			else
 				contents += "Treasury: [SStreasury.treasury_value]m<BR>"
 				contents += "Lord's Tax: [SStreasury.tax_value*100]%<BR>"
-				contents += "Guild's Tax: [SStreasury.queens_tax*100]%</center><BR>"
 				for(var/datum/roguestock/import/A in SStreasury.stockpile_datums)
 					contents += "[A.name]<BR>"
 					contents += "[A.desc]<BR>"

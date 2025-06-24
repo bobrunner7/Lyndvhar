@@ -28,7 +28,6 @@
 
 	contents += "<center>MERCHANT'S GUILD<BR>"
 	contents += "--------------<BR>"
-	contents += "Guild's Tax: [SStreasury.queens_tax*100]%<BR>"
 	contents += "Next Balloon: [time2text((next_airlift - world.time), "mm:ss")]</center><BR>"
 
 	if(!user.can_read(src, TRUE))
