@@ -48,7 +48,7 @@
 
 /datum/supply_pack/rogue/weapons/daggerss
 	name = "Steel Dagger"
-	cost = 35
+	cost = 60
 	contains = list(
 					/obj/item/rogueweapon/huntingknife/idagger/steel,
 				)
