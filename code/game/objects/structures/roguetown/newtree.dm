@@ -61,20 +61,20 @@
 /obj/structure/flora/newtree/attack_hand(mob/user)
 	if(isliving(user))
 		var/mob/living/L = user
-		if(L.stat != CONSCIOUS)
+		if(L.stat != CONSCIOUS || L.incapacitated() || !(L.mobility_flags & MOBILITY_STAND))
 			return
 		var/turf/target = get_step_multiz(user, UP)
 		if(!istype(target, /turf/open/transparent/openspace))
-			to_chat(user, "<span class='warning'>I can't climb here.</span>")
+			to_chat(user, span_warning("I can't climb here."))
 			return
 		if(!L.can_zTravel(target, UP))
-			to_chat(user, "<span class='warning'>I can't climb there.</span>")
+			to_chat(user, span_warning("I can't climb there."))
 			return
 		var/used_time = 0
-		var/exp_to_gain = 0
+		var/exp_to_gain = 0 
 		if(L.mind)
 			var/myskill = L.mind.get_skill_level(/datum/skill/misc/climbing)
-			exp_to_gain = (L.STAINT/2) * L.mind.get_learning_boon(/datum/skill/misc/climbing)
+			exp_to_gain = L.STAINT/2
 			var/obj/structure/table/TA = locate() in L.loc
 			if(TA)
 				myskill += 1
@@ -84,7 +84,7 @@
 					myskill += 1
 			used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 30)
 		playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
-		user.visible_message("<span class='warning'>[user] starts to climb [src].</span>", "<span class='warning'>I start to climb [src]...</span>")
+		user.visible_message(span_warning("[user] starts to climb [src]."), span_warning("I start to climb [src]..."))
 		if(do_after(L, used_time, target = src))
 			var/pulling = user.pulling
 			if(ismob(pulling))
@@ -92,8 +92,8 @@
 			user.forceMove(target)
 			user.start_pulling(pulling,supress_message = TRUE)
 			playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
-			if(L.mind)
-				L.mind.adjust_experience(/datum/skill/misc/climbing, exp_to_gain, FALSE)
+			if(L.mind) // idk just following whats going on above
+				L.mind.add_sleep_experience(/datum/skill/misc/climbing, exp_to_gain, FALSE)
 
 /obj/structure/flora/newtree/fire_act(added, maxstacks)
 	. = ..()
@@ -178,8 +178,8 @@
 		for(var/obj/structure/flora/newleaf/LEAF in DIA)
 			LEAF.obj_destruction(damage_type)
 
-	if(!istype(NT, /turf/open/transparent/openspace) && !(locate(/obj/structure/table/wood/treestump) in NT))//if i don't add the stump check it spawns however many zlevels it goes up because of src recursion
-		new /obj/structure/table/wood/treestump(NT)
+	if(!istype(NT, /turf/open/transparent/openspace) && !(locate(/obj/structure/flora/roguetree/stump) in NT))//if i don't add the stump check it spawns however many zlevels it goes up because of src recursion
+		new /obj/structure/flora/roguetree/stump(NT)
 	playsound(src, 'sound/misc/treefall.ogg', 100, FALSE)
 
 /obj/structure/flora/newtree/proc/build_trees()
