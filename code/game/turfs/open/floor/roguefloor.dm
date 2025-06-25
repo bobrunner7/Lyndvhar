@@ -1025,6 +1025,17 @@
 	icon_state = "mossystone_edges"
 	mouse_opacity = 0
 
+/turf/open/floor/cobble/snow
+	icon_state = "snowcobble1"
+	neighborlay = "snowcobbleedge"
+
+/turf/open/floor/cobble/snow/cardinal_smooth(adjacencies)
+	smooth(adjacencies)
+
+/turf/open/floor/cobble/snow/Initialize()
+	. = ..()
+	icon_state = "snowcobble[rand(1,3)]"
+
 /turf/open/floor/rogue/cobblerock
 	icon_state = "cobblerock"
 	footstep = FOOTSTEP_STONE
@@ -1047,6 +1058,9 @@
 	icon = 'icons/turf/roguefloor.dmi'
 	icon_state = "cobblestone_edges"
 	mouse_opacity = 0
+	
+/obj/effect/decal/cobbleedge/snow
+	icon_state = "snowcobble_edges"
 
 /turf/open/floor/rogue/tile
 	icon_state = "chess"
