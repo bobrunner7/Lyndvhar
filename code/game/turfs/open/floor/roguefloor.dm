@@ -1030,7 +1030,7 @@
 	neighborlay = "snowcobbleedge"
 
 /turf/open/floor/cobble/snow/cardinal_smooth(adjacencies)
-	smooth(adjacencies)
+	roguesmooth(adjacencies)
 
 /turf/open/floor/cobble/snow/Initialize()
 	. = ..()
