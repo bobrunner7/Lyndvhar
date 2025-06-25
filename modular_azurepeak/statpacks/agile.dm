@@ -2,7 +2,7 @@
 /datum/statpack/agile/swift
 	name = "Swift"
 	desc = "With the wind in your hair and trouble at your back, your speed has oft been your salvation."
-	stat_array = list(STAT_STRENGTH = -1, STAT_CONSTITUTION = -2, STAT_ENDURANCE = 1, STAT_SPEED = 3)
+	stat_array = list(STAT_STRENGTH = -1, STAT_PERCEPTION = -2, STAT_CONSTITUTION = -2, STAT_ENDURANCE = 1, STAT_SPEED = 3)
 
 /datum/statpack/agile/quickwitted
 	name = "Quick-Witted"
