@@ -145,7 +145,7 @@
 
 	//RegisterSignal(src, COMSIG_ATOM_TURF_CHANGE, PROC_REF(update_visuals_effects))
 
-	START_PROCESSING(SSobj, src)
+	START_PROCESSING(SSslowobj, src)
 
 	update_corners(TRUE)
 	update_overlays()
@@ -154,7 +154,7 @@
 
 /obj/structure/snow/Destroy(force)
 	update_visuals_effects(src, FALSE)
-	STOP_PROCESSING(SSobj, src)
+	STOP_PROCESSING(SSslowobj, src)
 	snowed_turf.snow = null
 	snowed_turf = null
 
