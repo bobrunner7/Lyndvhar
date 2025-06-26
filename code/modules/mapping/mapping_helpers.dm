@@ -99,7 +99,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
 		if(target_type && !istype(A,target_type))
 			continue
 		var/cargs = build_args()
-		A._AddComponent(arglist(cargs))
+		A.AddComponent(arglist(cargs))
 		qdel(src)
 		return
 

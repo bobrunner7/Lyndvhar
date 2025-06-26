@@ -231,7 +231,7 @@ SUBSYSTEM_DEF(mapping)
 	INIT_ANNOUNCE("Loading [config.map_name]...")
 	#endif
 
-	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_TOWN)
+	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
 
 	var/list/otherZ = list()
 
@@ -240,7 +240,7 @@ SUBSYSTEM_DEF(mapping)
 	#endif
 	if(otherZ.len)
 		for(var/datum/map_config/OtherZ in otherZ)
-			LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_TOWN)
+			LoadGroup(FailedZs, OtherZ.map_name, OtherZ.map_path, OtherZ.map_file, OtherZ.traits, ZTRAITS_STATION)
 
 	if(SSdbcore.Connect())
 		var/datum/DBQuery/query_round_map_name = SSdbcore.NewQuery({"

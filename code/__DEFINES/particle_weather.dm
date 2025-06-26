@@ -6,8 +6,6 @@
 #define PARTICLEWEATHER_SNOW "weather_snow"
 #define PARTICLEWEATHER_BLOODRAIN "weather_blood"
 
-#define MAX_LAYER_SNOW_LEVELS 3
-
 GLOBAL_LIST_EMPTY(weather_act_upon_list)
 
 /// Weather immunities, also protect mobs inside them.
