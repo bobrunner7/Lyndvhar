@@ -14,6 +14,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"ag" = (
+/obj/structure/bars/passage{
+	density = 0;
+	icon_state = "passage1"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "ah" = (
 /obj/structure/fluff/railing/fence,
 /obj/effect/decal/cobbleedge{
@@ -93,6 +100,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"aH" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/storage/belt/rogue/surgery_bag/full,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "aJ" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -144,6 +159,11 @@
 /obj/item/rope/chain,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"aU" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "aV" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -248,6 +268,9 @@
 /obj/item/clothing/suit/roguetown/armor/gambeson,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"bN" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,
+/area/rogue/under/cave)
 "bP" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
@@ -271,6 +294,13 @@
 "bX" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/troll,
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"bZ" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave)
 "ca" = (
 /obj/structure/stairs/stone{
@@ -446,6 +476,19 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"dn" = (
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
+"dq" = (
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "ds" = (
 /obj/item/restraints/legcuffs/beartrap/armed{
 	layer = 2.5
@@ -474,12 +517,30 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"dB" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
+"dE" = (
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "dF" = (
 /obj/structure/stairs{
 	dir = 8
 	},
 /turf/open/floor/rogue/grassyel,
 /area/rogue/indoors/shelter/woods)
+"dJ" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "dK" = (
 /obj/structure/flora/newleaf,
 /turf/open/transparent/openspace,
@@ -492,6 +553,9 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"dR" = (
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "dV" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -541,6 +605,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"el" = (
+/obj/structure/chair/bench/church,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "em" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobblerock,
@@ -673,6 +741,29 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"fI" = (
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/butter,
+/obj/item/reagent_containers/food/snacks/rogue/meat/sausage,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/structure/closet/crate/chest/neu,
+/obj/item/reagent_containers/food/snacks/rogue/meat/salami,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
+"fJ" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8;
+	icon_state = "chair2"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "fN" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -764,6 +855,12 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"gw" = (
+/obj/structure/mineral_door/bars{
+	lockid = "inhumen"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "gx" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -808,6 +905,11 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"gF" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 8
+	},
+/area/rogue/under/cave)
 "gI" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -822,6 +924,12 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"gL" = (
+/obj/structure/ladder/earth,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "gN" = (
 /obj/structure/stairs{
 	dir = 1
@@ -841,6 +949,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"gU" = (
+/obj/structure/closet/crate/roguecloset/inn/south,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "gY" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -968,6 +1080,14 @@
 	},
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/town/roofs)
+"hT" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
 "hU" = (
 /obj/structure/bed/rogue,
 /turf/open/floor/rogue/cobble,
@@ -985,6 +1105,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"ih" = (
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "largetable"
+	},
+/obj/item/rogueweapon/huntingknife/cleaver,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "ii" = (
 /obj/structure/fluff/railing/fence,
 /turf/open/floor/rogue/wood/nosmooth,
@@ -999,6 +1127,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"io" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/under/cave)
+"ir" = (
+/obj/structure/pillory{
+	lockid = "inhumen"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "it" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -1024,6 +1161,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"iz" = (
+/obj/structure/table/church/m,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "iD" = (
 /obj/structure/closet/crate/roguecloset/dark{
 	locked = 1;
@@ -1067,6 +1208,11 @@
 /obj/item/roguekey/warden,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/shelter/woods)
+"iP" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/whip,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "iR" = (
 /obj/structure/table/wood{
 	icon_state = "largetable";
@@ -1114,6 +1260,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"jl" = (
+/obj/structure/bed/rogue/shit,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "jq" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -1140,6 +1290,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"jD" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "jG" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -1196,6 +1352,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"jS" = (
+/obj/structure/fluff/alch,
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "jU" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newleaf,
@@ -1236,6 +1400,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"kp" = (
+/obj/machinery/light/rogue/firebowl{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "kq" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -1319,10 +1489,18 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/town/roofs)
+"la" = (
+/obj/structure/chair/wood/rogue,
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "ld" = (
 /obj/item/restraints/legcuffs/beartrap/armed,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/woods)
+"lf" = (
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave)
 "lm" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/woodturned/nosmooth,
@@ -1413,6 +1591,22 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"mf" = (
+/obj/structure/table/vtable/v2,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper,
+/obj/item/paper,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
+"mg" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/obj/item/reagent_containers/glass/cup/golden,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "mk" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
 /turf/open/floor/rogue/wood/nosmooth,
@@ -1426,6 +1620,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"mm" = (
+/obj/structure/fluff/statue/femalestatue/zizo{
+	desc = "An ancient statue depicting an elven woman.";
+	name = "Ancient Statue";
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "mn" = (
 /obj/effect/spawner/roguemap/stump,
 /turf/open/floor/rogue/grass,
@@ -1490,6 +1692,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"mG" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "mL" = (
 /obj/structure/pillory{
 	lockid = "warden"
@@ -1574,6 +1780,22 @@
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/shelter/woods)
+"nv" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/landmark/start/wretchlate,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"nw" = (
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
+"nB" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "nC" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -1674,6 +1896,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/shelter/woods)
+"ox" = (
+/obj/structure/table/optable,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "oz" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -1689,6 +1915,15 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"oH" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "oQ" = (
 /obj/structure/flora/ausbushes/brflowers,
 /mob/living/carbon/human/species/skeleton/npc/ambush,
@@ -1696,12 +1931,34 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"oR" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/effect/landmark/start/wretchlate,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "oX" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"oY" = (
+/obj/item/natural/worms/leech,
+/obj/item/natural/worms/leech{
+	pixel_x = 8
+	},
+/obj/item/natural/worms/leech{
+	pixel_x = -8
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/water/swamp,
+/area/rogue/under/cave)
 "pa" = (
 /turf/open/water/river{
 	icon_state = "rockwd";
@@ -1732,6 +1989,11 @@
 /area/rogue/outdoors/town/roofs)
 "ph" = (
 /turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"pj" = (
+/obj/structure/closet/crate/roguecloset/inn/south,
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/wood,
 /area/rogue/under/cave)
 "po" = (
 /obj/structure/fluff/walldeco/chains,
@@ -1768,6 +2030,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"pG" = (
+/obj/structure/table/vtable,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper,
+/obj/item/paper,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "pI" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area)
@@ -1796,6 +2067,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"pY" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "qa" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/grass,
@@ -1825,6 +2102,11 @@
 	},
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"ql" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "qx" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = -1
@@ -1879,6 +2161,16 @@
 	},
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/town/roofs)
+"qT" = (
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "qW" = (
 /turf/closed/wall/mineral/rogue/wooddark/end,
 /area/rogue/indoors/shelter/woods)
@@ -1895,6 +2187,13 @@
 	},
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"rb" = (
+/obj/structure/table/wood{
+	dir = 8;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "rc" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
@@ -1925,6 +2224,13 @@
 	},
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
+"rl" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
+	dir = 1
+	},
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
@@ -1988,6 +2294,13 @@
 /area/rogue/outdoors/town/roofs)
 "rO" = (
 /turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cave)
+"rQ" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 5
+	},
+/turf/open/floor/rogue/concrete,
 /area/rogue/under/cave)
 "rS" = (
 /obj/structure/fluff/railing/wood{
@@ -2102,6 +2415,62 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"sE" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 0;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -5;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -11;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -11;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/glass/alchemical{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
+"sG" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "sO" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass,
@@ -2227,6 +2596,10 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/shelter/woods)
+"ty" = (
+/obj/item/rogueweapon/pick,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "tB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/grass,
@@ -2242,6 +2615,16 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
+"tE" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
@@ -2264,6 +2647,9 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"tK" = (
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "tM" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -2315,6 +2701,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"uf" = (
+/obj/item/chair/rogue,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "ug" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
 	dir = 1
@@ -2338,6 +2728,11 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/town/roofs)
+"up" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "uq" = (
 /obj/structure/table/wood,
 /obj/item/natural/bundle/cloth{
@@ -2427,6 +2822,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"uW" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/thresher,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "uX" = (
 /obj/structure/well,
 /turf/open/floor/rogue/cobble,
@@ -2485,6 +2885,20 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"vp" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/machinery/light/rogue/firebowl/church{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
+"vr" = (
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "vw" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1";
@@ -2513,6 +2927,16 @@
 "vG" = (
 /turf/open/water/swamp,
 /area/rogue/under/cave)
+"vH" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "vJ" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/clothing/suit/roguetown/shirt/rags,
@@ -2528,6 +2952,13 @@
 /obj/item/clothing/suit/roguetown/shirt/rags,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"vM" = (
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "wb" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -2556,6 +2987,12 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/shelter/woods)
+"wi" = (
+/obj/machinery/light/rogue/hearth,
+/obj/machinery/light/rogue/oven/south,
+/obj/item/cooking/pan,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "wk" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -2650,10 +3087,22 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"xp" = (
+/obj/structure/closet/crate/drawer,
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave)
 "xw" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"xz" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "xB" = (
 /obj/effect/decal/cobbleedge{
 	dir = 9
@@ -2680,6 +3129,17 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"xI" = (
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "xJ" = (
 /obj/effect/landmark/start/bogguardlate,
 /turf/open/floor/rogue/cobble/mossy,
@@ -2701,10 +3161,22 @@
 /obj/item/reagent_containers/glass/bottle/waterskin,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"xO" = (
+/obj/machinery/light/rogue/cauldron,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "xP" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"xQ" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "xR" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/twig,
@@ -2829,6 +3301,9 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"zo" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/under/cave)
 "zr" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/cobble,
@@ -2955,17 +3430,40 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Ah" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 9
+	},
+/obj/item/reagent_containers/food/snacks/butter,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "Ai" = (
 /obj/structure/pillory/reinforced/bog_dungeon,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"An" = (
+/obj/machinery/tanningrack,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
+"Ao" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "Ap" = (
 /turf/closed/wall/mineral/rogue/wooddark/end,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Aq" = (
+/obj/structure/table/vtable/v2,
+/obj/item/natural/feather,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "As" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -2993,6 +3491,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Ay" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "Az" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/cave)
@@ -3050,6 +3554,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"AR" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "AT" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -3238,6 +3746,11 @@
 /obj/item/rogueweapon/stoneaxe/woodcut,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"Cw" = (
+/obj/structure/closet/crate/drawer,
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave)
 "CC" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/bait,
@@ -3245,6 +3758,9 @@
 /obj/item/bait,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"CE" = (
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "CI" = (
 /obj/structure/stairs{
 	dir = 8
@@ -3295,6 +3811,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Df" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "Dj" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newbranch/leafless,
@@ -3414,6 +3934,16 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"DS" = (
+/obj/item/natural/worms/leech,
+/obj/item/natural/worms/leech{
+	pixel_x = 8
+	},
+/obj/item/natural/worms/leech{
+	pixel_x = -8
+	},
+/turf/open/water/swamp,
+/area/rogue/under/cave)
 "DW" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/woods{
@@ -3556,6 +4086,23 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"EU" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/reagent_containers/glass/bucket/pot,
+/obj/item/natural/bundle/stick{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/natural/bundle/stick{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/stick{
+	pixel_y = 2;
+	pixel_x = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "EV" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/wood/nosmooth,
@@ -3564,6 +4111,11 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grassred,
 /area/rogue/indoors/shelter/woods)
+"EY" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 1
+	},
+/area/rogue/under/cave)
 "EZ" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newbranch/connector{
@@ -3620,6 +4172,16 @@
 /obj/structure/rack/rogue,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"FK" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 5
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/concrete,
 /area/rogue/under/cave)
 "FN" = (
 /obj/structure/fluff/railing/border{
@@ -3681,6 +4243,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Gh" = (
+/obj/structure/chair/wood/rogue,
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "Gl" = (
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/cobble/mossy,
@@ -3889,6 +4456,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"HU" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
 "HX" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/twig,
@@ -3916,6 +4489,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Id" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 4
+	},
+/area/rogue/under/cave)
 "Ie" = (
 /obj/structure/mineral_door/wood/deadbolt,
 /turf/open/floor/rogue/wood/nosmooth,
@@ -3985,6 +4563,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"IC" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "ID" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/rogue/dirt,
@@ -4023,6 +4607,12 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/town/roofs)
+"IQ" = (
+/obj/structure/fluff/walldeco/chains{
+	pixel_x = 23
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "IU" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -4060,6 +4650,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Jk" = (
+/obj/structure/roguewindow/stained/zizo,
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
 "Jl" = (
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/rogue/grass,
@@ -4175,6 +4769,13 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave)
+"Km" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "Kq" = (
 /obj/machinery/light/rogue/torchholder/r,
 /obj/structure/closet/crate/roguecloset/dark{
@@ -4184,6 +4785,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"Ks" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "Kt" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/effect/spawner/lootdrop/potion_ingredient/herb,
@@ -4205,6 +4812,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Ky" = (
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "KD" = (
 /obj/effect/decal/wood/herringbone2{
 	dir = 4
@@ -4249,6 +4860,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"KT" = (
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "KY" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/event,
 /turf/open/floor/rogue/cobble,
@@ -4369,6 +4986,11 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/woods)
+"LB" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "LH" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -4383,6 +5005,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"LK" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "LP" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf,
 /turf/open/floor/rogue/naturalstone,
@@ -4425,6 +5054,9 @@
 /obj/item/reagent_containers/food/snacks/grown/onion/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"LU" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
 "LX" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/clothing/suit/roguetown/shirt/robe/dendor,
@@ -4526,6 +5158,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"MB" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
+	dir = 1
+	},
+/area/rogue/under/cave)
 "MI" = (
 /obj/structure/fluff/railing/stonehedge{
 	dir = 8
@@ -4573,6 +5210,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Nf" = (
+/obj/structure/chair/bench/church/r,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "Ng" = (
 /obj/item/roguebin/water,
 /obj/structure/fluff/railing/border{
@@ -4580,6 +5221,13 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"Ni" = (
+/obj/structure/bars/passage{
+	density = 0;
+	icon_state = "passage1"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "Nk" = (
 /obj/structure/fluff/railing/fence{
 	dir = 8
@@ -4602,6 +5250,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Nx" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "NA" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -4719,6 +5373,12 @@
 	},
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/roofs)
+"Oj" = (
+/obj/machinery/light/rogue/firebowl{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "Om" = (
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/cobble/mossy,
@@ -4761,6 +5421,12 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/shelter/woods)
+"OF" = (
+/obj/structure/mineral_door/bars{
+	lockid = "inhumen"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "OH" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
@@ -4905,6 +5571,19 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/town/roofs)
+"PH" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
+"PI" = (
+/obj/structure/table/church,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "PJ" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/reagent_containers/glass/bottle/rogue/beer/ratkept,
@@ -4938,6 +5617,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"PU" = (
+/obj/structure/bed/rogue/inn/wooldouble,
+/obj/item/bedsheet/rogue/double_pelt,
+/obj/effect/landmark/start/wretch,
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave)
 "PV" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /turf/open/floor/rogue/grass,
@@ -5005,6 +5691,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"QH" = (
+/obj/structure/chair/bench/church/mid,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "QJ" = (
 /obj/structure/bars/cemetery,
 /turf/open/floor/rogue/cobble,
@@ -5037,6 +5727,9 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"QS" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end,
+/area/rogue/under/cave)
 "QT" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/event,
 /turf/open/floor/rogue/cobble/mossy,
@@ -5080,6 +5773,13 @@
 /obj/item/roguegem/random,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
+"Rv" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 9
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "RA" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -5104,6 +5804,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"RJ" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "RL" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt/ambush,
@@ -5196,6 +5902,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"SA" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "SC" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -5402,6 +6112,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"TF" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
 "TH" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/floor/rogue/dirt/road,
@@ -5428,12 +6145,25 @@
 /obj/item/clothing/suit/roguetown/shirt/rags,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"TX" = (
+/obj/machinery/light/rogue/firebowl{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/under/cave)
 "TY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/town/roofs)
+"Ub" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "Ud" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -5572,6 +6302,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Vd" = (
+/obj/structure/table/vtable,
+/obj/item/natural/feather,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "Ve" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
@@ -5600,6 +6335,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Vm" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave)
 "Vp" = (
 /obj/structure/bars/cemetery,
 /obj/structure/fluff/littlebanners/bluewhite{
@@ -5609,6 +6351,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Vt" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "Vu" = (
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/town/roofs)
@@ -5626,6 +6372,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"VC" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "VE" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/cobblerock,
@@ -5694,6 +6447,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"VX" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "VY" = (
 /obj/item/restraints/legcuffs/beartrap/armed,
 /turf/open/floor/rogue/cobble,
@@ -5721,6 +6480,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"Wp" = (
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave)
 "Wr" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/cobble,
@@ -5753,6 +6516,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"WC" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "WD" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4
@@ -5808,6 +6579,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"WT" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "WY" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1";
@@ -5816,6 +6591,10 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"Xb" = (
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "Xd" = (
 /obj/structure/closet/crate/drawer/inn{
 	density = 0
@@ -5823,6 +6602,13 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/shelter/woods)
+"Xf" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
 "Xg" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -5860,6 +6646,16 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"Xv" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/item/clothing/neck/roguetown/collar/leather/cursed,
+/obj/item/clothing/neck/roguetown/collar/leather/cursed,
+/obj/item/clothing/neck/roguetown/collar/leather/cursed,
+/obj/item/leash/chain,
+/obj/item/leash/chain,
+/obj/item/leash/chain,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "Xw" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
 	dir = 4
@@ -5902,6 +6698,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"XM" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "XN" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4
@@ -5973,6 +6773,25 @@
 /obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"Yi" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
+"Yj" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1";
+	pixel_y = -4
+	},
+/obj/structure/fluff/millstone{
+	pixel_y = 7
+	},
+/obj/item/kitchen/rollingpin,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave)
+"Yk" = (
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "Yl" = (
 /obj/structure/chair/wood/rogue{
 	dir = 1
@@ -5987,12 +6806,22 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Yq" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "Yr" = (
 /obj/structure/flora/newtree,
 /turf/open/water/swamp,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"Yw" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave)
 "YD" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -6058,6 +6887,10 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/indoors/shelter/woods)
+"Zh" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cave)
 "Zi" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/grass,
@@ -6140,6 +6973,9 @@
 	},
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/town/roofs)
+"ZS" = (
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave)
 "ZY" = (
 /obj/item/rope{
 	pixel_y = 12;
@@ -28308,8 +29144,8 @@ rO
 OL
 OL
 OL
-rO
-rO
+OL
+OL
 rO
 rO
 rO
@@ -28478,13 +29314,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+io
+io
+Jk
+io
+io
+zo
 rO
 rO
 rO
@@ -28510,11 +29346,11 @@ rO
 rO
 OL
 OL
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -28680,13 +29516,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+gU
+dn
+dn
+dn
+Zh
+MB
 rO
 rO
 rO
@@ -28715,9 +29551,9 @@ OL
 OL
 rO
 rO
-rO
-rO
-rO
+OL
+OL
+OL
 rO
 rO
 rO
@@ -28882,13 +29718,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+lf
+lf
+dn
+dn
+jD
+bN
 rO
 rO
 rO
@@ -28917,9 +29753,9 @@ OL
 OL
 rO
 rO
-rO
-rO
-rO
+OL
+OL
+OL
 rO
 rO
 rO
@@ -29084,13 +29920,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+bN
+PU
+lf
+dn
+dn
+Vd
+MB
 rO
 rO
 rO
@@ -29120,8 +29956,8 @@ OL
 rO
 rO
 rO
-rO
-rO
+OL
+OL
 rO
 rO
 rO
@@ -29274,25 +30110,25 @@ rO
 rO
 rO
 rO
+zo
+zo
+bN
+Jk
+Jk
+zo
+bN
+zo
+zo
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+Cw
+Wp
+dn
+la
+mf
+MB
 rO
 rO
 rO
@@ -29323,11 +30159,11 @@ OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
+OL
 lv
 lv
 lv
@@ -29476,26 +30312,26 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+wi
+Xf
+tK
+EU
+ZS
+dB
+ZS
+zo
+QS
+io
+Jk
+io
+io
+bN
+xQ
+bN
+io
+io
+EY
 rO
 rO
 rO
@@ -29525,10 +30361,10 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
 lv
 lv
 lv
@@ -29671,33 +30507,33 @@ rO
 rO
 rO
 rO
+ph
+ph
 rO
 rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+Yj
+tK
+tK
+An
+ZS
+ZS
+ZS
+RJ
+bN
+Nx
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+kp
+bN
 rO
 rO
 rO
@@ -29872,34 +30708,34 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
+CK
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+fI
+tK
+tK
+ZS
+ZS
+ZS
+ZS
+ZS
+WC
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+Yk
+QS
 rO
 rO
 rO
@@ -30073,35 +30909,35 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
+CK
+CK
+CK
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+RJ
+bN
+LB
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+kp
+bN
 rO
 rO
 rO
@@ -30275,35 +31111,35 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+CK
+LU
+LU
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+zo
+ZS
+ZS
+dE
+ZS
+AR
+zo
+Jk
+zo
+QS
+io
+Jk
+io
+io
+ag
+ag
+ag
+io
+EY
+QS
 rO
 rO
 rO
@@ -30477,35 +31313,35 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+LU
+LU
+LU
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+bN
+Yi
+ZS
+dE
+dE
+dE
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+pY
+TF
+nw
+nw
+nw
+TX
+zo
+zo
 rO
 rO
 rO
@@ -30679,36 +31515,36 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+LU
+LU
+LU
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+Jk
+ZS
+ZS
+nB
+nB
+uf
+zo
+zo
+zo
+zo
+zo
+zo
+oR
+CE
+HU
+nw
+nw
+nw
+nw
+nw
+zo
+Id
 rO
 rO
 rO
@@ -30881,36 +31717,36 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+LU
+LU
+LU
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+Jk
+ZS
+ZS
+Ah
+rb
+vH
+zo
+Id
+zo
+bN
+zo
+Oj
+CE
+CE
+HU
+nw
+KT
+KT
+el
+nw
+nw
+gF
 rO
 rO
 rO
@@ -31082,40 +31918,40 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+ph
+ph
+ph
+CK
+CK
+LU
+LU
+OL
+OL
+bN
+Yi
+ZS
+rQ
+ih
+dq
+zo
+Jk
+Df
+bZ
+CE
+CE
+CE
+CE
+TF
+nw
+QH
+QH
+QH
+nw
+nw
+Jk
+Vt
+OL
+OL
 rO
 rO
 rO
@@ -31284,42 +32120,42 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+ph
+ph
+ph
+CK
+CK
+LU
+LU
+OL
+OL
+Ni
+ZS
+ZS
+fJ
+dE
+fJ
+zo
+gF
+CE
+dE
+dE
+dE
+CE
+PI
+TF
+nw
+Nf
+Nf
+Nf
+nw
+nw
+zo
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -31486,47 +32322,47 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
+CK
+LU
+LU
+WT
+ty
+Ni
+ZS
+ZS
+dE
+dE
+dE
+zo
+bN
+mG
+dE
+mm
+dE
+CE
+iz
+vp
+nw
+nw
+nw
+nw
+nw
+nw
+hT
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+IC
+OL
 rO
 rO
 rO
@@ -31688,47 +32524,47 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
+CK
+LU
+LU
+OL
+Xb
+Ni
+ZS
+ZS
+nB
+dE
+LK
+zo
+Id
+CE
+dE
+dE
+dE
+CE
+mg
+TF
+nw
+KT
+KT
+el
+nw
+nw
+zo
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+IC
+OL
 rO
 rO
 rO
@@ -31890,48 +32726,48 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
+CK
+LU
+LU
+OL
+OL
+bN
+Yi
+ZS
+Rv
+Vm
+xI
+zo
+Jk
+XM
+Ub
+CE
+CE
+CE
+CE
+TF
+nw
+QH
+QH
+QH
+nw
+nw
+Jk
+Vt
+OL
+OL
+OL
+OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
 rO
 rO
 rO
@@ -32093,48 +32929,48 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+LU
+LU
+LU
+rO
+Jk
+ZS
+ZS
+FK
+qT
+vM
+zo
+gF
+zo
+bN
+zo
+Oj
+CE
+CE
+HU
+nw
+Nf
+Nf
+Nf
+nw
+nw
+Id
+rO
+OL
+OL
+OL
+OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -32295,48 +33131,48 @@ rO
 rO
 rO
 rO
+ph
+ph
+CK
+CK
+CK
+LU
+LU
+rO
+Jk
+ZS
+ZS
+uf
+dE
+Ao
+zo
+zo
+zo
+zo
+zo
+zo
+nv
+CE
+HU
+nw
+nw
+nw
+nw
+nw
+zo
+gF
+rO
+rO
+OL
+OL
+OL
+OL
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
 rO
 rO
 rO
@@ -32497,48 +33333,48 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+CK
 rO
 rO
 rO
 rO
+bN
+Yi
+ZS
+dE
+dE
+dE
+zo
+zo
+zo
+zo
+zo
+zo
+zo
+VC
+TF
+nw
+nw
+nw
+TX
+zo
+zo
 rO
 rO
 rO
+OL
+OL
+OL
+OL
+OL
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
 rO
 rO
 rO
@@ -32700,46 +33536,46 @@ rO
 rO
 rO
 rO
+ph
+ph
+ph
+rO
+zo
+zo
+zo
+zo
+zo
+ZS
+ZS
+dE
+ZS
+AR
+zo
+Jk
+zo
+QS
+io
+Jk
+io
+io
+ag
+ag
+ag
+io
+io
+EY
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -32906,42 +33742,42 @@ rO
 rO
 rO
 rO
+Jk
+jl
+IQ
+ZS
+Yq
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+RJ
+bN
+LB
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+kp
+bN
 rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -33108,42 +33944,42 @@ rO
 rO
 rO
 rO
+bN
+Yi
+ZS
+ZS
+gw
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+WC
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+Yk
+QS
 rO
 rO
 rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+OL
+OL
+OL
+OL
+OL
+OL
 rO
 rO
 rO
@@ -33310,30 +34146,30 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+Jk
+Ky
+jl
+ZS
+Yq
+ZS
+ZS
+ZS
+Ks
+Ay
+Ay
+Ay
+oH
+bN
+VX
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+ZS
+kp
+bN
 rO
 rO
 rO
@@ -33511,31 +34347,31 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+zo
+OF
+zo
+zo
+zo
+sE
+jS
+xO
+aU
+DS
+oY
+DS
+zo
+QS
+io
+Jk
+io
+io
+bN
+xz
+bN
+io
+io
+EY
 rO
 rO
 rO
@@ -33713,30 +34549,30 @@ rO
 rO
 rO
 rO
+zo
+iP
+dR
+SA
+Xv
+zo
+zo
+bN
+Jk
+Jk
+zo
+bN
+zo
+zo
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+pj
+vr
+dR
+Gh
+pG
+MB
 rO
 rO
 rO
@@ -33915,6 +34751,13 @@ rO
 rO
 rO
 rO
+zo
+uW
+dE
+dE
+dR
+dR
+zo
 rO
 rO
 rO
@@ -33925,20 +34768,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+lf
+lf
+dR
+dR
+Aq
+MB
 rO
 rO
 rO
@@ -34117,6 +34953,13 @@ rO
 rO
 rO
 rO
+Jk
+dR
+dE
+dE
+dE
+dR
+Jk
 rO
 rO
 rO
@@ -34127,20 +34970,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+bN
+PU
+lf
+dR
+dR
+Yw
+bN
 rO
 rO
 rO
@@ -34319,6 +35155,13 @@ rO
 rO
 rO
 rO
+bN
+sG
+dE
+ir
+dE
+Yw
+bN
 rO
 rO
 rO
@@ -34329,20 +35172,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+MB
+xp
+lf
+dR
+dR
+SA
+MB
 rO
 rO
 rO
@@ -34521,6 +35357,13 @@ rO
 rO
 rO
 rO
+Jk
+ox
+dE
+dE
+dE
+dR
+Jk
 rO
 rO
 rO
@@ -34531,20 +35374,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+io
+io
+Jk
+io
+io
+zo
 rO
 rO
 rO
@@ -34723,13 +35559,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+aH
+dR
+Km
+dR
+dR
+zo
 rO
 rO
 rO
@@ -34925,13 +35761,13 @@ rO
 rO
 rO
 rO
-rO
-rO
-rO
-rO
-rO
-rO
-rO
+zo
+zo
+Jk
+bN
+Jk
+zo
+zo
 rO
 rO
 rO
@@ -65660,7 +66496,7 @@ Ic
 Ic
 Ic
 Ic
-Ic
+tE
 sO
 sO
 lv
@@ -70502,8 +71338,8 @@ KL
 KL
 KL
 KL
-KL
-KL
+hc
+hc
 KL
 KL
 KL
@@ -70703,9 +71539,9 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
+hc
+hc
+hc
 KL
 KL
 KL
@@ -70905,9 +71741,9 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
+hc
+hc
+hc
 KL
 KL
 KL
@@ -71105,12 +71941,12 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
 KL
 KL
 KL
@@ -71305,15 +72141,15 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+PH
 KL
 KL
 KL
@@ -71506,17 +72342,17 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
 KL
 KL
 KL
@@ -71707,25 +72543,25 @@ KL
 KL
 KL
 KL
+hc
+hc
+hc
+hc
+hc
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+up
+ql
+ql
+ql
+up
 KL
 KL
 KL
@@ -71909,25 +72745,25 @@ KL
 KL
 KL
 KL
+hc
+hc
+hc
 KL
 KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
+hc
+dJ
+dJ
+uN
+rl
 KL
 KL
 KL
@@ -72110,6 +72946,9 @@ KL
 KL
 KL
 KL
+hc
+hc
+hc
 KL
 KL
 KL
@@ -72118,18 +72957,15 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+dJ
+dJ
+uN
+rl
 KL
 KL
 KL
@@ -72312,6 +73148,9 @@ KL
 KL
 KL
 KL
+hc
+hc
+hc
 KL
 KL
 KL
@@ -72321,17 +73160,14 @@ KL
 KL
 KL
 KL
+hc
+hc
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+up
+ql
+ql
+ql
+up
 KL
 KL
 KL
@@ -72514,9 +73350,9 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
+hc
+hc
+PH
 KL
 KL
 KL
@@ -72716,9 +73552,9 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
+hc
+hc
+hc
 KL
 KL
 KL
@@ -72918,12 +73754,12 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
 KL
 KL
 KL
@@ -73120,13 +73956,13 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+hc
+hc
 KL
 KL
 KL
@@ -73324,12 +74160,12 @@ KL
 KL
 KL
 KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+hc
+hc
+Ws
 KL
 KL
 KL
@@ -73526,13 +74362,13 @@ KL
 KL
 KL
 KL
+hc
 KL
-KL
-KL
-KL
-KL
-KL
-KL
+hc
+hc
+hc
+Ws
+gL
 KL
 KL
 KL
@@ -113327,12 +114163,12 @@ sO
 Ic
 Ic
 sO
-Ic
-Ic
-Ic
-Ic
-nk
-Ic
+sO
+sO
+sO
+sO
+UO
+sO
 Ic
 nk
 nd
@@ -113528,15 +114364,15 @@ Ic
 Ic
 Ic
 Ic
+sO
+sO
+sO
+sO
+sO
+UO
+UO
 Ic
-Ic
-Ic
-Ic
-Ic
-nk
-nk
-Ic
-Ic
+sO
 Yr
 Ic
 Ic
@@ -113730,16 +114566,16 @@ Ic
 Ic
 Ic
 Ic
-Ic
-Ws
-Ws
+sO
 AQ
-Ic
-Ic
-Ic
-Ic
-Ic
-Ic
+AQ
+AQ
+sO
+sO
+sO
+sO
+sO
+sO
 Ic
 Ic
 Ic
@@ -113931,17 +114767,17 @@ Ic
 sO
 Ic
 Ic
-Ic
+sO
+AQ
+gL
 Ws
 Ws
 Ws
-Ws
-cB
 Ws
 Ws
 Ws
 sO
-Ic
+sO
 Ic
 Ic
 Ic
@@ -114133,6 +114969,8 @@ Ic
 Ic
 Ic
 Ic
+AQ
+AQ
 Ws
 Ws
 Ws
@@ -114141,9 +114979,7 @@ Ws
 Ws
 Ws
 Ws
-Ws
-Ws
-Ic
+sO
 Ic
 Ic
 Ic
@@ -114335,13 +115171,13 @@ Ic
 Ic
 Ic
 sO
-Ws
-Ws
-Ws
-Ws
-Ws
 AQ
-cB
+AQ
+Ws
+Ws
+Ws
+Ws
+Ws
 Ws
 Ws
 Ws
@@ -114537,14 +115373,14 @@ Ic
 Ic
 Ic
 Ic
-Ic
+sO
 AQ
 sO
 Ws
 Ws
 Ws
 Ws
-AQ
+Ws
 Ws
 Ic
 Ic
@@ -114739,8 +115575,8 @@ Ic
 Ic
 Ic
 Ic
-Ic
-Ic
+sO
+sO
 sO
 Ic
 Ws
@@ -114941,7 +115777,7 @@ Ic
 Ic
 Ic
 Ic
-Ic
+sO
 sO
 sO
 sO
@@ -114951,7 +115787,7 @@ Ws
 Ws
 Ws
 Ws
-Ic
+sO
 sO
 nk
 Ic
@@ -115150,11 +115986,11 @@ sO
 sO
 sO
 sO
-Ic
+sO
 Ws
 Ws
-Ic
-Ic
+sO
+sO
 nk
 Ic
 Ic
@@ -115352,11 +116188,11 @@ sO
 sO
 sO
 sO
-Ic
-Ic
+sO
+sO
 Ws
 Ws
-Ic
+sO
 Ic
 Ic
 UO
@@ -115553,12 +116389,12 @@ sO
 sO
 sO
 sO
-Ic
-Ic
-Ic
 sO
-Ic
-Ic
+sO
+sO
+sO
+sO
+sO
 Ic
 Ic
 Ic
@@ -115753,13 +116589,13 @@ sO
 sO
 sO
 sO
+sO
+sO
 Ic
 Ic
 Ic
-Ic
-Ic
-Ic
-Ic
+sO
+sO
 Ic
 Ic
 Ic
