@@ -8,7 +8,7 @@
 	"lyndvhar_forest.dmm",
 	"lyndvhar_swamp.dmm"
 	],
-	"traits": [{"Name": "lyndvhar_city", "Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true},
+	"traits": [{"Name": "lyndvhar_city", "Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true},
 	{"Name": "lyndvhar_decapitation", "Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true},
 	{"Name": "lyndvhar_forest", "Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true},
 	{"Name": "lyndvhar_swamp", "Up": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Up": true, "Down": true, "Turf Weather Effects": true}, {"Down": true, "Turf Weather Effects": true},
