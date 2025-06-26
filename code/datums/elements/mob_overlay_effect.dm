@@ -1,19 +1,5 @@
 ///The alpha mask used on mobs submerged in liquid turfs or standing on high ground
 #define MOB_MOVING_EFFECT_MASK "mob_moving_effect_mask"
-
-//This is the only practical way of writing these that actually produces sane lists
-/proc/alpha_mask_filter(x, y, icon/icon, render_source, flags)
-	. = list("type" = "alpha")
-	if(!isnull(x))
-		.["x"] = x
-	if(!isnull(y))
-		.["y"] = y
-	if(!isnull(icon))
-		.["icon"] = icon
-	if(!isnull(render_source))
-		.["render_source"] = render_source
-	if(!isnull(flags))
-		.["flags"] = flags
 ///mob_overlay_effect component. adds and removes
 /datum/element/mob_overlay_effect
 	element_flags = ELEMENT_BESPOKE | ELEMENT_DETACH
@@ -34,7 +20,7 @@
 	RegisterSignal(target, COMSIG_MOB_OVERLAY_FORCE_REMOVE, TYPE_PROC_REF(/datum/element/mob_overlay_effect, on_remove), override = TRUE)
 	RegisterSignal(target, COMSIG_MOB_OVERLAY_FORCE_UPDATE, TYPE_PROC_REF(/datum/element/mob_overlay_effect, on_add), override = TRUE)
 
-/datum/element/mob_overlay_effect/Detach(datum/source, force)
+/datum/element/mob_overlay_effect/Detach(datum/source)
 	. = ..()
 	UnregisterSignal(get_turf(source), COMSIG_TURF_EXITED)
 	UnregisterSignal(get_turf(source), COMSIG_TURF_ENTERED)
@@ -54,8 +40,23 @@
 
 /datum/element/mob_overlay_effect/proc/on_add(datum/source, datum/target)
 	SIGNAL_HANDLER
+	for(var/obj/structure/S in get_turf(target))
+		if(S.obj_flags & BLOCK_Z_OUT_DOWN)
+			return
+
+	if(isobj(target))
+		var/obj/obj = target
+		if(obj.obj_flags & IGNORE_SINK)
+			return
+
+	if(istype(target, /obj/structure/hotspring))
+		return
+
+	if(istype(target, /mob/living/simple_animal/hostile/retaliate/gator))
+		return
+
 	var/offset = 0
-	if(istype(target, /obj/structure/flora/roguetree))
+	if(istype(target, /obj/structure/flora/tree))
 		offset = -24
 	if(isitem(target))
 		offset += 7
