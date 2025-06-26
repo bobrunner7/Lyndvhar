@@ -414,7 +414,7 @@
 /datum/proc/LoadComponent(component_type, ...)
 	. = GetComponent(component_type)
 	if(!.)
-		return AddComponent(arglist(args))
+		return _AddComponent(arglist(args))
 
 /**
   * Removes the component from parent, ends up with a null parent
