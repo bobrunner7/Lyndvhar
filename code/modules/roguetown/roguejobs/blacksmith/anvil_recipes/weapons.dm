@@ -95,6 +95,12 @@
 	additional_items = list(/obj/item/grown/log/tree/small)
 	created_item = /obj/item/rogueweapon/mace/goden
 
+/datum/anvil_recipe/weapons/iron/greathammer
+	name = "Greathammer (+1 Small Log)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/mace/goden/greathammer
+
 /datum/anvil_recipe/weapons/iron/tossblade
 	name = "Iron Tossblades 4x"
 	req_bar = /obj/item/ingot/iron
@@ -273,6 +279,13 @@
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel, /obj/item/grown/log/tree/small)
 	created_item = /obj/item/rogueweapon/mace/goden/steel
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/steel/greathammer
+	name = "Greathammer (+1 Small Log)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/mace/goden/greathammer/steel
 	craftdiff = 3
 
 /datum/anvil_recipe/weapons/steel/tossblade
