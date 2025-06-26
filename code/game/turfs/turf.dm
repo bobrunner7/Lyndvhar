@@ -417,8 +417,12 @@
 		var/obj/O = AM
 		if(O.obj_flags & FROZEN)
 			O.make_unfrozen()
-	if(!(AM.atom_flags & Z_FALLING))
+	if(!AM.zfalling)
 		zFall(AM)
+	trigger_weather(AM)
+
+/turf/proc/is_plasteel_floor()
+	return FALSE
 
 /turf/proc/is_plasteel_floor()
 	return FALSE
