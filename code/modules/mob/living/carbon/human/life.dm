@@ -72,6 +72,7 @@
 		handle_liver()
 		update_rogfat()
 		update_rogstam()
+		handle_environment()
 		if(primary_charflaw && !primary_charflaw.ephemeral) // Changed to primary_charflaw
 			primary_charflaw.flaw_on_life(src) // Changed to primary_charflaw
 

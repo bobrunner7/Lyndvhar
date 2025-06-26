@@ -1025,6 +1025,31 @@
 	icon_state = "mossystone_edges"
 	mouse_opacity = 0
 
+/turf/open/floor/cobble/snow
+	icon_state = "snowcobble1"
+	footstep = FOOTSTEP_STONE
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	landsound = 'sound/foley/jumpland/stoneland.wav'
+	neighborlay = "snowcobbleedge"
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/dirt, 
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grassred, 
+						/turf/open/floor/rogue/grassyel, 
+						/turf/open/floor/rogue/grasscold,
+						/turf/open/floor/rogue/snowpatchy,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snowrough,)
+
+/turf/open/floor/cobble/snow/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
+
+/turf/open/floor/cobble/snow/Initialize()
+	. = ..()
+	icon_state = "snowcobble[rand(1,3)]"
+
 /turf/open/floor/rogue/cobblerock
 	icon_state = "cobblerock"
 	footstep = FOOTSTEP_STONE
@@ -1036,7 +1061,7 @@
 	smooth = SMOOTH_MORE
 	canSmoothWith = list(/turf/open/floor/rogue, 
 						/turf/closed/mineral, 
-						/turf/closed/wall/mineral)
+						/turf/closed/wall/mineral,)
 
 /turf/open/floor/rogue/cobblerock/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
@@ -1046,6 +1071,36 @@
 	desc = ""
 	icon = 'icons/turf/roguefloor.dmi'
 	icon_state = "cobblestone_edges"
+	mouse_opacity = 0
+
+/turf/open/floor/rogue/cobblerock/snow
+	icon_state = "snowcobblerock"
+	footstep = FOOTSTEP_STONE
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	landsound = 'sound/foley/jumpland/stoneland.wav'
+	neighborlay = "snowcobblerock"
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/open/floor/rogue, 
+						/turf/closed/mineral, 
+						/turf/closed/wall/mineral,
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grassred, 
+						/turf/open/floor/rogue/grassyel, 
+						/turf/open/floor/rogue/grasscold,
+						/turf/open/floor/rogue/snowpatchy,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snowrough,)
+
+/turf/open/floor/rogue/cobblerock/snow/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
+
+/obj/effect/decal/cobbleedge/snow
+	name = ""
+	desc = ""
+	icon = 'icons/turf/roguefloor.dmi'
+	icon_state = "snowcobble_edges"
 	mouse_opacity = 0
 
 /turf/open/floor/rogue/tile
