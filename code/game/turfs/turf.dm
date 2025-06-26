@@ -424,9 +424,6 @@
 /turf/proc/is_plasteel_floor()
 	return FALSE
 
-/turf/proc/is_plasteel_floor()
-	return FALSE
-
 // A proc in case it needs to be recreated or badmins want to change the baseturfs
 /turf/proc/assemble_baseturfs(turf/fake_baseturf_type)
 	var/static/list/created_baseturf_lists = list()
