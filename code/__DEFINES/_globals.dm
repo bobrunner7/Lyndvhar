@@ -58,7 +58,3 @@
 
 /// Create an typed null global
 #define GLOBAL_DATUM(X, Typepath) GLOBAL_RAW(Typepath/##X); GLOBAL_UNMANAGED(X)
-
-#define COMSIG_MOVABLE_TURF_ENTERED "movable_turf_entered"
-#define COMSIG_MOVABLE_TURF_EXITED "movable_turf_exited"
-
