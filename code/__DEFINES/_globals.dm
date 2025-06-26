@@ -67,6 +67,3 @@
 	#define COMPONENT_TURF_DENY_MOVEMENT  (1<<1)
 #define COMSIG_TURF_ENTERED "turf_entered"
 #define COMSIG_TURF_EXITED "turf_exited"
-
-#define START_PROCESSING(Processor, Datum) if (!(Datum.datum_flags & Processor.processing_flag)) {Datum.datum_flags |= Processor.processing_flag;Processor.processing += Datum}
-#define STOP_PROCESSING(Processor, Datum) Datum.datum_flags &= ~Processor.processing_flag;Processor.processing -= Datum
