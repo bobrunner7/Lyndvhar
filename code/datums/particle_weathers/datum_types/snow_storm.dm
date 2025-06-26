@@ -2,8 +2,7 @@
 /particles/weather/snow
 	icon_state             = list("cross"=2, "snow_1"=5, "snow_2"=2, "snow_3"=2,)
 	color                  = "#ffffff"
-	position               = generator("box", list(-500,-256,0), list(400,500,0))
-	grow			       = list(-0.01,-0.01)
+	position               = generator("box", list(-500,-500,5), list(500,500,0))
 	spin                   = generator("num",-10,10)
 	gravity                = list(0, -2, 0.1)
 	drift                  = generator("circle", 0, 3) // Some random movement for variation
@@ -12,7 +11,6 @@
 	maxSpawning           = 100
 	minSpawning           = 20
 	wind                  = 2
-	transform 			   = null
 
 /datum/particle_weather/snow_gentle
 	name = "Rain"
@@ -30,7 +28,7 @@
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1
 	target_trait = PARTICLEWEATHER_SNOW
-	forecast_tag = "snow"
+	weather_special_effect = /datum/weather_effect/snow
 
 //Makes you a little chilly
 /datum/particle_weather/snow_gentle/weather_act(mob/living/L)
@@ -49,17 +47,20 @@
 
 	minSeverity = 40
 	maxSeverity = 100
-
-	weather_duration_lower = 4 MINUTES
-	weather_duration_upper = 10 MINUTES
-
 	maxSeverityChange = 50
 	severitySteps = 50
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1
 	target_trait = PARTICLEWEATHER_SNOW
 	weather_special_effect = /datum/weather_effect/snow
-	forecast_tag = "snow"
+
+/datum/weather_effect
+	var/name = "effect"
+	var/probability = 0
+	var/datum/particle_weather/initiator_ref
+
+/datum/weather_effect/proc/effect_affect(turf/target_turf)
+	return FALSE
 
 /datum/weather_effect/snow
 	name = "snow effect"
@@ -105,12 +106,12 @@
 /turf/proc/apply_weather_effect(datum/weather_effect/effect)
 	SIGNAL_HANDLER
 
-	if(locate(/obj/structure/door) in src)
-		var/obj/structure/door/door = locate(/obj/structure/door) in src
+	if(locate(/obj/structure/mineral_door) in src)
+		var/obj/structure/mineral_door/door = locate(/obj/structure/mineral_door) in src
 		if(door.density)
 			return
-	if(locate(/obj/structure/window) in src)
-		var/obj/structure/window/door = locate(/obj/structure/window) in src
+	if(locate(/obj/structure/roguewindow) in src)
+		var/obj/structure/roguewindow/door = locate(/obj/structure/roguewindow) in src
 		if(!door.climbable)
 			return
 
@@ -123,7 +124,7 @@
 	name = "Snow"
 	desc = "Big pile of snow"
 	icon = 'icons/effects/snow.dmi'
-	icon_state = MAP_SWITCH("blank", "snow_1")
+	icon_state = "snow_1"
 	var/icon_prefix = "snow"
 	anchored = TRUE
 	density = FALSE
@@ -137,6 +138,7 @@
 
 /obj/structure/snow/Initialize(mapload, bleed_layers)
 	. = ..()
+	icon_state = "blank"
 	bleed_layer = bleed_layers
 	if(!bleed_layer)
 		bleed_layer = rand(1, 3)
@@ -146,42 +148,20 @@
 	START_PROCESSING(SSslowobj, src)
 
 	update_corners(TRUE)
-	update_appearance(UPDATE_OVERLAYS)
+	update_overlays()
 
 	update_visuals_effects(first = TRUE)
 
 /obj/structure/snow/Destroy(force)
 	update_visuals_effects(src, FALSE)
-
-	for(var/atom/movable/movable in get_turf(src))
-		if(movable.get_filter("mob_moving_effect_mask"))
-			animate(movable.get_filter("mob_moving_effect_mask"), y = -32, time = 0)
-			if(ismob(movable))
-				movable:update_vision_cone()
-			for(var/mob/living/carbon/human/human in view(movable, 7))
-				human.update_vision_cone()
-
 	STOP_PROCESSING(SSslowobj, src)
 	snowed_turf.snow = null
 	snowed_turf = null
 
 	. = ..()
 
-	for(var/obj/structure/snow/bordered_snow in orange(get_turf(src), 1))
-		if(!bordered_snow)
-			continue
-		if(bordered_snow == src)
-			continue
-		bordered_snow.update_corners(ignored = src)
-		bordered_snow.update_appearance(UPDATE_OVERLAYS)
-
-
 /obj/structure/snow/process(delta_time)
-	if(!SSParticleWeather.runningWeather)
-		damage_act(3)
-	else if(!istype(SSParticleWeather.runningWeather, /datum/weather_effect/snow))
-		damage_act(6)
-	update_appearance(UPDATE_OVERLAYS)
+	update_overlays()
 
 /obj/structure/snow/proc/get_slowdown()
 	return 1.5 * bleed_layer
@@ -190,13 +170,12 @@
 	SIGNAL_HANDLER
 
 	var/list/contained_mobs = list()
-	var/turf/turf = get_turf(src)
 	for(var/mob/living/contained_mob in contents)
 		contained_mobs += contained_mob
 		SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_REMOVE, contained_mob)
 
 	for(var/obj/structure/contained_structure in contents)
-		if(istype(contained_structure, /obj/structure/snow) || istype(contained_structure, /obj/structure/flora/grass/bush/wall))
+		if(istype(contained_structure, /obj/structure/snow) || istype(contained_structure, /obj/structure/flora/roguegrass/bush/wall))
 			continue
 		contained_mobs += contained_structure
 		SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_REMOVE, contained_structure)
@@ -211,12 +190,13 @@
 
 
 	if(first)
+		var/turf/turf = get_turf(src)
 		for(var/mob/living/contained_mob in turf.contents)
 			contained_mobs += contained_mob
 			SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_REMOVE, contained_mob)
 
 		for(var/obj/structure/contained_structure in turf.contents)
-			if(istype(contained_structure, /obj/structure/snow) || istype(contained_structure, /obj/structure/flora/grass/bush/wall))
+			if(istype(contained_structure, /obj/structure/snow) || istype(contained_structure, /obj/structure/flora/roguegrass/bush/wall))
 				continue
 			contained_mobs += contained_structure
 			SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_REMOVE, contained_structure)
@@ -228,6 +208,7 @@
 		for(var/obj/machinery/contained_machinery in turf.contents)
 			contained_mobs += contained_machinery
 			SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_REMOVE, contained_machinery)
+
 
 	RemoveElement(/datum/element/mob_overlay_effect)
 	if(replace)
@@ -245,7 +226,7 @@
 			contained_mobs += contained_machinery
 			SEND_SIGNAL(src, COMSIG_MOB_OVERLAY_FORCE_UPDATE, contained_machinery)
 
-/obj/structure/snow/proc/update_corners(propagate = FALSE, obj/structure/ignored)
+/obj/structure/snow/proc/update_corners(propagate = FALSE)
 	var/list/snow_dirs = list(list(), list(), list())
 	var/turf/turf = get_turf(src)
 	if(!turf)
@@ -259,12 +240,10 @@
 	for(var/obj/structure/snow/bordered_snow in orange(src, 1))
 		if(!bordered_snow)
 			continue
-		if(ignored == bordered_snow)
-			continue
 
 		if(propagate)
 			bordered_snow.update_corners()
-			bordered_snow.update_appearance(UPDATE_OVERLAYS)
+			bordered_snow.update_overlays()
 
 		var/direction = get_dir(src, bordered_snow)
 		for(var/deep = 1 to length(snow_dirs))
@@ -281,18 +260,21 @@
 
 /obj/structure/snow/update_overlays()
 	. = ..()
+	if(overlays)
+		overlays.Cut()
+
 	for(var/deep = 1 to length(snows_connections))
 		if(deep > bleed_layer)
 			continue
 
 		for(var/i = 1 to 4)
-			. += image(icon, "[icon_prefix]_[deep]_[snows_connections[deep][i]]", dir = 1<<(i-1))
+			overlays += image(icon, "[icon_prefix]_[deep]_[snows_connections[deep][i]]", dir = 1<<(i-1))
 
 	var/new_overlay = ""
 	for(var/i in diged)
 		if(diged[i] > world.time)
 			new_overlay += i
-	. += "[new_overlay]"
+	overlays += "[new_overlay]"
 
 /obj/structure/snow/proc/damage_act(damage)
 	if(progression > damage / 5)
@@ -306,7 +288,7 @@
 
 
 /obj/structure/snow/proc/weathered(datum/weather_effect/effect)
-	if(progression < bleed_layer * 32)
+	if(progression < bleed_layer * 8)
 		progression++
 	else
 		if(bleed_layer >= 3)
@@ -334,8 +316,16 @@
 		qdel(src)
 		return
 
+	switch(bleed_layer)
+		if(1)
+			layer = BELOW_OBJ_LAYER
+		if(2)
+			layer = BELOW_OBJ_LAYER
+		if(3)
+			layer = OBJ_LAYER
+
 	update_corners(TRUE)
-	update_appearance(UPDATE_OVERLAYS)
+	update_overlays()
 
 	update_visuals_effects()
 
@@ -345,7 +335,7 @@
 /obj/structure/snow/Crossed(atom/movable/arrived)
 	. = ..()
 	if(isliving(arrived))
-		set_diged_ways(REVERSE_DIR(arrived.dir))
+		set_diged_ways(GLOB.reverse_dir[arrived.dir])
 
 /obj/structure/snow/Uncrossed(atom/movable/gone)
 	. = ..()
@@ -354,7 +344,62 @@
 
 /obj/structure/snow/proc/set_diged_ways(dir)
 	diged["[dir]"] = world.time + 1 MINUTES
-	update_appearance(UPDATE_OVERLAYS)
+	update_overlays()
+
+/turf
+	var/list/wall_connections = list("0", "0", "0", "0")
+	var/neighbors_list = 0
+	var/special_icon = TRUE
+	var/list/blend_turfs = list()
+	var/list/noblend_turfs = list() //Turfs to avoid blending with
+	var/list/blend_objects = list() // Objects which to blend with
+	var/list/noblend_objects = list() //Objects to avoid blending with (such as children of listed blend objects.
+
+/turf/proc/update_connections(propagate = 0)
+	var/list/turf_dirs = list()
+
+	for(var/turf/turf in orange(src, 1))
+		switch(can_join_with(turf))
+			if(FALSE)
+				continue
+			if(TRUE)
+				turf_dirs += get_dir(src, turf)
+		if(propagate)
+			turf.update_connections()
+			turf.update_icon()
+
+	for(var/turf/turf in orange(src, 1))
+		var/success = 0
+		for(var/obj/obj in turf)
+			for(var/b_type in blend_objects)
+				if(istype(obj, b_type))
+					success = TRUE
+				for(var/nb_type in noblend_objects)
+					if(istype(obj, nb_type))
+						success = FALSE
+				if(success)
+					break
+			if(success)
+				break
+
+		if(success)
+			if(get_dir(src, turf) in GLOB.cardinals)
+				turf_dirs += get_dir(src, turf)
+
+	for(var/neighbor in turf_dirs)
+		neighbors_list |= neighbor
+	wall_connections = dirs_to_corner_states(turf_dirs)
+
+/turf/proc/can_join_with(turf/target_turf)
+	if(target_turf.type == type)
+		return TRUE
+	for(var/wb_type in blend_turfs)
+		for(var/nb_type in noblend_turfs)
+			if(istype(target_turf, nb_type))
+				return FALSE
+		if(istype(target_turf, wb_type))
+			return TRUE
+	return FALSE
 
 #define CORNER_NONE 0
 #define CORNER_COUNTERCLOCKWISE 1
