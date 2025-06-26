@@ -49,12 +49,6 @@
 		if(obj.obj_flags & IGNORE_SINK)
 			return
 
-	if(istype(target, /obj/structure/hotspring))
-		return
-
-	if(istype(target, /mob/living/simple_animal/hostile/retaliate/gator))
-		return
-
 	var/offset = 0
 	if(istype(target, /obj/structure/flora/tree))
 		offset = -24
