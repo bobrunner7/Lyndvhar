@@ -7688,7 +7688,7 @@
 "fJN" = (
 /obj/structure/mineral_door/wood/fancywood{
 	locked = 1;
-	lockid = "bath2";
+	lockid = "nightmaiden";
 	name = "room II"
 	},
 /turf/open/floor/rogue/tile/harem,
@@ -20052,7 +20052,7 @@
 "okR" = (
 /obj/structure/mineral_door/wood/fancywood{
 	locked = 1;
-	lockid = "bath3";
+	lockid = "nightmaiden";
 	name = "room III"
 	},
 /turf/open/floor/rogue/tile/brownbrick,
@@ -21157,7 +21157,7 @@
 "oYO" = (
 /obj/structure/mineral_door/wood/fancywood{
 	locked = 1;
-	lockid = "bath1";
+	lockid = "nightmaiden";
 	name = "room I"
 	},
 /turf/open/floor/rogue/tile/harem,
@@ -31368,7 +31368,8 @@
 "wyn" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
-	lockid = "nightmaiden"
+	lockid = "nightmaiden";
+	locked = 1
 	},
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/bath)
