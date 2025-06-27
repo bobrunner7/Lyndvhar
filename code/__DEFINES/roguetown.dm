@@ -46,13 +46,14 @@
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/dracon,\
-	/datum/species/galotian
+	
 
 #define RACES_DESPISED \
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
 	/datum/species/goblinp,\
-	/datum/species/kobold
+	/datum/species/kobold,\
+	/datum/species/galotian
 
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_ESTEEMED)
 
