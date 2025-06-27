@@ -9,13 +9,14 @@
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	classes = list("Fighter" = "Vagrant sellswords, deserters, and hardened vagabonds searching for purpose. Very few survive this life...many dying from their own foolish or desperate attempts at survival. Who will you be? ",
 					"Duelist" = "A thrill seeking duelist who foregoes armor in exchange for a more nimble fighting style.",
-					"Barbarian" = "A brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.")
+					"Barbarian" = "A brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
+					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying a silver blade. You believe in fighting your battles smartly to maximize your chance at conquerering your prey.")
 
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Fighter","Duelist","Barbarian")
+	var/classes = list("Fighter","Duelist","Barbarian", "Monster Hunter")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -163,5 +164,37 @@
 				neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 				beltl = /obj/item/rogueweapon/huntingknife
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
-
-		
+		if("Monster Hunter") // Int based fighter, you get a silver sword and basically nothing else as you spent all your starting power budget on that and your two potions!
+			to_chat(H, span_warning("You specialize in hunting down monsters and the undead, carrying a silver blade. You believe in fighting your battles smartly to maximize your chance at conquerering your prey."))
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/slings, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Medium armor training is here to make sure you're capped at 25% and this job is an int fighter so you get this for free. 
+			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
+			H.change_stat("strength", 1)
+			H.change_stat("speed", 1)
+			H.change_stat("intelligence", 4)
+			beltr = /obj/item/rogueweapon/sword/silver // Because of this and your high int you spawn with absolutely 0 armor. 
+			backr = /obj/item/rogueweapon/sword/iron/short
+			backl = /obj/item/storage/backpack/rogue/satchel
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			belt = /obj/item/storage/belt/rogue/leather
+			shoes = /obj/item/clothing/shoes/roguetown/boots
+			pants = /obj/item/clothing/under/roguetown/tights/black
+			cloak = /obj/item/clothing/cloak/cape/puritan
+			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+			head = /obj/item/clothing/head/roguetown/brimmed
+			gloves = /obj/item/clothing/gloves/roguetown/angle
+			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
+			beltl = pick(/obj/item/reagent_containers/glass/alchemical/strpot,
+						/obj/item/reagent_containers/glass/alchemical/spdpot)
