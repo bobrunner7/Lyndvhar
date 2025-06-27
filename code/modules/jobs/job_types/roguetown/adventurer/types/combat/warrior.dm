@@ -182,7 +182,7 @@
 			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
 			H.change_stat("strength", 1)
 			H.change_stat("speed", 1)
-			H.change_stat("intelligence", 4)
+			H.change_stat("intelligence", 5)
 			beltr = /obj/item/rogueweapon/sword/silver // Because of this and your high int you spawn with absolutely 0 armor. 
 			backr = /obj/item/rogueweapon/sword/iron/short
 			backl = /obj/item/storage/backpack/rogue/satchel
