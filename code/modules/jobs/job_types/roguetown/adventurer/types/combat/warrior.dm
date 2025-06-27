@@ -178,8 +178,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Medium armor training is here to make sure you're capped at 25% and this job is an int fighter so you get this for free. 
+			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // This is your replacement for armor training on this job.
 			H.cmode_music = 'sound/music/inquisitorcombat.ogg'
 			H.change_stat("strength", 1)
 			H.change_stat("speed", 1)
