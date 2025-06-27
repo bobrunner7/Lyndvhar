@@ -69,10 +69,10 @@
 		lst.Insert(1, result)
 		if(result in componentsubtypes)
 			datumname = "component"
-			target._AddComponent(arglist(lst))
+			target.AddComponent(arglist(lst))
 		else
 			datumname = "element"
-			target._AddElement(lst)
+			target.AddElement(arglist(lst))
 		log_admin("[key_name(usr)] has added [result] [datumname] to [key_name(src)].")
 		message_admins(span_notice("[key_name_admin(usr)] has added [result] [datumname] to [key_name_admin(src)]."))
 	if(href_list[VV_HK_CALLPROC])

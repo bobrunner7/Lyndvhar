@@ -13,3 +13,4 @@
 /// can't see value
 #define CONFIG_ENTRY_HIDDEN 2
 
+#define SIGNAL_HANDLER SHOULD_NOT_SLEEP(TRUE)

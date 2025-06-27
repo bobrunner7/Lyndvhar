@@ -350,7 +350,7 @@
   * If this tries to add an component to an incompatible type, the component will be deleted and the result will be `null`. This is very unperformant, try not to do it
   * Properly handles duplicate situations based on the `dupe_mode` var
   */
-/datum/proc/_AddComponent(new_type, ...)
+/datum/proc/AddComponent(new_type, ...)
 	var/datum/component/nt = new_type
 	var/dm = initial(nt.dupe_mode)
 	var/dt = initial(nt.dupe_type)
@@ -414,7 +414,7 @@
 /datum/proc/LoadComponent(component_type, ...)
 	. = GetComponent(component_type)
 	if(!.)
-		return _AddComponent(arglist(args))
+		return AddComponent(arglist(args))
 
 /**
   * Removes the component from parent, ends up with a null parent
