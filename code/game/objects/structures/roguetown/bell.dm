@@ -1,6 +1,6 @@
 /obj/structure/boatbell
 	name = "bell"
-	desc = "This is the doomspeller of Roguetown."
+	desc = "This is the doomspeller of Lyndvhar."
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "bell"
 	density = FALSE

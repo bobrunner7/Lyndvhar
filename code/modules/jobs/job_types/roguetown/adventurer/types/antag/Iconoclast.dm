@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/bandit/iconoclast
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 1 // We only want one of these.
-	cmode_music = 'sound/music/Iconoclast.ogg'
+	cmode_music = 'sound/music/combat_bandit.ogg'
 
 /datum/outfit/job/roguetown/bandit/iconoclast/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -35,6 +35,7 @@
 					/obj/item/needle/thorn = 1,
 					/obj/item/natural/cloth = 1,
 					/obj/item/flashlight/flare/torch = 1,
+					/obj/item/ritechalk = 1,
 					)
 	head = /obj/item/clothing/head/roguetown/roguehood
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
@@ -44,7 +45,8 @@
 	H.change_stat("endurance", 2) // This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
 	H.change_stat("constitution", 1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // We are going to be the lord's first heavy armor unarmed class
-
+	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC) 
+	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_monk(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

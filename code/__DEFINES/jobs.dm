@@ -279,6 +279,7 @@
 #define JDO_WENCH 27.3
 
 #define JDO_SOILSON 28
+#define JDO_BUTCHER 28.1
 
 #define JDO_VILLAGER 30
 #define JDO_ADVENTURER 30.1
@@ -344,7 +345,7 @@
 
 #define PEASANT_ROLES \
 	/datum/job/roguetown/villager,\
-	/datum/job/roguetown/nightmaiden,\
+	/datum/job/roguetown/nightswain,\
 	/datum/job/roguetown/beggar,\
 	/datum/job/roguetown/butcher,\
 	/datum/job/roguetown/cook,\

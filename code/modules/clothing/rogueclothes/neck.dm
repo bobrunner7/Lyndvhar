@@ -57,6 +57,43 @@
 					H.update_inv_neck()
 					H.update_inv_head()
 
+/obj/item/clothing/neck/roguetown/coif/cloth
+	name = "padded coif"
+	desc = "A simple coif made of cloth. Not very effective armor, but may soften weak blows and keeps the head and neck warm."
+	icon_state = "ccoif"
+	item_state = "ccoif"
+	flags_inv = HIDEHAIR
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
+	blocksound = SOFTHIT
+	body_parts_covered = NECK|HAIR|EARS|HEAD
+	armor = list("blunt" = 20, "slash" = 20, "stab" = 25, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_TWIST, BCLASS_BITE)
+	adjustable = CAN_CADJUST
+	toggle_icon_state = TRUE
+	sewrepair = TRUE
+	max_integrity = 150
+
+/obj/item/clothing/neck/roguetown/coif/cloth/AdjustClothes(mob/user)
+	if(loc == user)
+		if(adjustable == CAN_CADJUST)
+			adjustable = CADJUSTED
+			if(toggle_icon_state)
+				icon_state = "[initial(icon_state)]_t"
+			flags_inv = null
+			body_parts_covered = NECK
+			if(ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_neck()
+				H.update_inv_head()
+		else if(adjustable == CADJUSTED)
+			ResetAdjust(user)
+			flags_inv = HIDEHAIR
+			if(user)
+				if(ishuman(user))
+					var/mob/living/carbon/H = user
+					H.update_inv_neck()
+					H.update_inv_head()
+
 /obj/item/clothing/neck/roguetown/leather
 	name = "hardened leather gorget"
 	desc = "Sturdy. Durable. Will protect your neck from some good lumbering."
@@ -111,6 +148,36 @@
 					H.update_inv_neck()
 					H.update_inv_head()
 
+/obj/item/clothing/neck/roguetown/chaincoif/chainmantle
+	name = "chain mantle"
+	desc = "A more durable, thicker, piece of chain neck protection, though, this one only covers the neck and mouth when pulled up."
+	icon_state = "chainmantle"
+	max_integrity = 300
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 50, "fire" = 0, "acid" = 0)
+	body_parts_covered = NECK|MOUTH
+	slot_flags = ITEM_SLOT_NECK
+	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
+
+/obj/item/clothing/neck/roguetown/chaincoif/chainmantle/AdjustClothes(mob/user)
+	if(loc == user)
+		if(adjustable == CAN_CADJUST)
+			adjustable = CADJUSTED
+			if(toggle_icon_state)
+				icon_state = "[initial(icon_state)]_t"
+			flags_inv = null
+			body_parts_covered = NECK
+			if(ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_neck()
+				H.update_inv_head()
+		else if(adjustable == CADJUSTED)
+			ResetAdjust(user)
+			flags_inv = null
+			if(user)
+				if(ishuman(user))
+					var/mob/living/carbon/H = user
+					H.update_inv_neck()
+
 /obj/item/clothing/neck/roguetown/chaincoif/iron
 	name = "iron chain coif"
 	icon_state = "ichaincoif"
@@ -133,7 +200,7 @@
 		if(adjustable == CAN_CADJUST)
 			adjustable = CADJUSTED
 			if(toggle_icon_state)
-				icon_state = "chaincoif"
+				icon_state = "[initial(icon_state)]_h"
 			flags_inv = HIDEHAIR
 			body_parts_covered = NECK|HAIR|EARS|HEAD
 			if(ishuman(user))
@@ -143,7 +210,7 @@
 		else if(adjustable == CADJUSTED)
 			adjustable = CADJUSTED_MORE
 			if(toggle_icon_state)
-				icon_state = "chaincoif_t"
+				icon_state = "[initial(icon_state)]_t"
 			flags_inv = null
 			body_parts_covered = NECK
 			if(ishuman(user))
@@ -157,6 +224,11 @@
 			H.update_inv_neck()
 			H.update_inv_head()
 
+/obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	name = "iron full chain coif"
+	icon_state = "iron_fchaincoif"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 150
 
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"
@@ -170,6 +242,13 @@
 	body_parts_covered = NECK|MOUTH|NOSE
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_BITE)
 	blocksound = PLATEHIT
+	armor_class = ARMOR_CLASS_HEAVY //On neck slot, only checked to prevent choke grabs.
+
+/obj/item/clothing/neck/roguetown/bevor/iron
+	name = "iron bevor"
+	icon_state = "iron_bevor"
+	max_integrity = 150
+	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/neck/roguetown/gorget
 	name = "gorget"
@@ -235,6 +314,15 @@
 		return
 	qdel(src)
 */
+
+/obj/item/clothing/neck/roguetown/gorget/hoplite // Better than an iron gorget, not quite as good as a steel bervor
+	name = "ancient gorget"
+	desc = "A heavy collar of bronze alloy, meant to protect the neck."
+	icon_state = "aasimarneck"
+	item_state = "aasimarneck"
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "piercing" = 80, "fire" = 0, "acid" = 0)
+	max_integrity = 250
+	smeltresult = null // No bronze ingots yet
 
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
@@ -517,6 +605,46 @@
 	icon_state = "psybracelet"
 	item_state = null
 
+/obj/item/clothing/neck/roguetown/elfears
+	name = "elfear necklace"
+	desc = "A grim necklace made to show off the wearer's macabre collection of cut off elf ears."
+	icon_state = "elfears"
+
+/obj/item/clothing/neck/roguetown/menears
+	name = "menear necklace"
+	desc = "A grim necklace made to show off the wearer's macabre collection of cut off humen ears."
+	icon_state = "menears"
+
+/obj/item/clothing/neck/roguetown/mercmedal/zybatine
+	name = "desert rider chain"
+	desc = "A small, gilded neck-chain used to identify fellow slavers."
+	icon_state = "goldchain"
+
+/obj/item/clothing/neck/roguetown/mercmedal/grenzelhoft
+	name = "grenzelhoft gryphon of valor"
+	desc = "The fearsome beast of the Black Empire's heraldry, cast in brass. These service awards have lost much of their value since mercenaries started receiving them."
+	icon_state = "gryphon"
+
+/obj/item/clothing/neck/roguetown/mercmedal/underdweller
+	name = "underdweller compass"
+	desc = "A non-functional compass carried by seasoned miners as keepsake. Greed will light the way."
+	icon_state = "compass"
+
+/obj/item/clothing/neck/roguetown/mercmedal/blackoak
+	name = "black oak seedpouch"
+	desc = "A dark acorn resting in a canvas pouch. May your final resting place be the one life you give back to this world."
+	icon_state = "seedpouch"
+
+/obj/item/clothing/neck/roguetown/mercmedal/steppesman
+	name = "steppe effigy"
+	desc = "This straw doll is claimed to be a representation of Astrata. In truth, a homage to the steppe's wild spirits of yore."
+	icon_state = "effigy"
+
+/obj/item/clothing/neck/roguetown/mercmedal/jannisary
+	name = "jannisary medal"
+	desc = "Proof of veterancy among the Forvheipal Janissaries."
+	icon_state = "dogmedal"
+
 /*/obj/item/clothing/neck/roguetown/collar
 	name = "collar"
 	desc = "A band of leather which signifies bondage to another."
@@ -534,3 +662,25 @@
 /obj/item/clothing/neck/roguetown/collar/bell_collar/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_JINGLE_BELLS)*/
+
+/obj/item/clothing/neck/roguetown/luckcharm
+	name = "luck charm"
+	desc = "A cabbit's foot necklace. Some say it brings good luck."
+	icon_state = "luckcharm"
+	sellprice = 15
+	slot_flags = ITEM_SLOT_NECK
+	var/goodluckactivated = FALSE
+
+/obj/item/clothing/neck/roguetown/luckcharm/equipped(mob/living/carbon/human/user, slot)
+	. = ..()
+	if(slot == SLOT_NECK)
+		user.change_stat("fortune", 1) //how much luck stat it gives when equipped
+		goodluckactivated = TRUE
+	return
+
+/obj/item/clothing/neck/roguetown/luckcharm/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(goodluckactivated == TRUE)
+		user.change_stat("fortune", -1) //how much luck stat taken away when unequipped
+		goodluckactivated = FALSE
+	return

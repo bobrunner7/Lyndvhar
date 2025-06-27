@@ -68,13 +68,10 @@
 	. = ..()
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 
 /datum/roguestock/import/knight
-	name = "Knight Equipment Crate"
-	desc = "Kit for a Knight."
+	name = "Cataphract Crate"
+	desc = "Kit for a Cataphract."
 	item_type = /obj/structure/closet/crate/chest/steward/knight
 	export_price = 490
 	importexport_amt = 1
@@ -82,42 +79,42 @@
 /obj/structure/closet/crate/chest/steward/knight/Initialize()
 	. = ..()
 	new /obj/item/clothing/head/roguetown/helmet/heavy/knight(src)
-	new /obj/item/clothing/gloves/roguetown/plate(src)
-	new /obj/item/clothing/under/roguetown/platelegs(src)
+	new /obj/item/clothing/gloves/roguetown/chain/iron(src)
+	new /obj/item/clothing/under/roguetown/chainlegs/iron(src)
 	new /obj/item/clothing/cloak/tabard/knight/guard(src)
-	new /obj/item/clothing/neck/roguetown/bevor(src)
-	new /obj/item/clothing/suit/roguetown/armor/chainmail(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate/full(src)
-	new /obj/item/clothing/shoes/roguetown/boots/armor(src)
+	new /obj/item/clothing/neck/roguetown/chaincoif/full(src)
+	new /obj/item/clothing/suit/roguetown/armor/chainmail/iron(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/full/iron(src)
+	new /obj/item/clothing/shoes/roguetown/boots/armor/iron(src)
 	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/belt/rogue/leather/steel(src)
 	new /obj/item/rogueweapon/sword/long(src)
 
 
 /datum/roguestock/import/manatarms
-	name = "Man at Arms Equipment Crate"
-	desc = "Kit for a Man at Arms."
+	name = "Retinue Equipment Crate"
+	desc = "Standard crate of levy equipment."
 	item_type = /obj/structure/closet/crate/chest/steward/manatarms
 	export_price = 250
 	importexport_amt = 1
 
 /obj/structure/closet/crate/chest/steward/manatarms/Initialize()
 	. = ..()
-	new /obj/item/clothing/head/roguetown/helmet/bascinet(src)
-	new /obj/item/clothing/under/roguetown/chainlegs(src)
+	new /obj/item/clothing/head/roguetown/helmet/kettle(src)
+	new /obj/item/clothing/under/roguetown/chainlegs/iron(src)
 	new /obj/item/clothing/cloak/stabard/surcoat/guard(src)
-	new /obj/item/clothing/gloves/roguetown/plate(src)
+	new /obj/item/clothing/gloves/roguetown/chain/iron(src)
 	new /obj/item/clothing/neck/roguetown/gorget(src)
-	new /obj/item/clothing/suit/roguetown/armor/chainmail(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate/half(src)
-	new /obj/item/clothing/shoes/roguetown/boots/armor(src)
+	new /obj/item/clothing/suit/roguetown/armor/chainmail/iron(src)
+	new /obj/item/clothing/suit/roguetown/armor/leather/heavy(src)
+	new /obj/item/clothing/shoes/roguetown/boots/armor/iron(src)
 	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/belt/rogue/leather/steel(src)
 	new /obj/item/rogueweapon/spear(src)
 
 /datum/roguestock/import/crossbow
 	name = "Crossbows Crate"
-	desc = "A crate with 3 crossbows with 3 full quivers."
+	desc = "A crate with 2 crossbows with 2 full quivers."
 	item_type = /obj/structure/closet/crate/chest/steward/crossbow
 	export_price = 300
 	importexport_amt = 1
@@ -126,8 +123,6 @@
 	. = ..()
 	new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(src)
 	new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(src)
-	new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(src)
-	new /obj/item/quiver/bolts(src)
 	new /obj/item/quiver/bolts(src)
 	new /obj/item/quiver/bolts(src)
 

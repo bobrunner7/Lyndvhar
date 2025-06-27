@@ -155,20 +155,21 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 				log_game("Antagonists: Bandits")
 			*/ // We added bandits as a normal job slot, so this ain't needed
 
-			if(0 to 35)
+			if(0 to 50)
 				if(prob(50)) //Readded vampries from 90 to 100 pop and made it so it picks either wolves or vamps
 					pick_werewolves()
 				else
 					pick_vampires()
+				pick_aspirants()
 				log_game("Antagonists: Werewolves or Vampires & Bandits")
-			if(35 to 60)
+			if(50 to 70)
 				if(prob(50))
-					pick_bandits()
-				else
 					pick_rebels()
+				else
+					pick_aspirants()
 				pick_lich()
-				log_game("Antagonists: Lich & Bandits OR Rebels")
-			if(60 to 98)
+				log_game("Antagonists: Lich & Rebels OR Aspirants")
+			if(70 to 98)
 				pick_lich()
 				if(prob(50))
 					pick_werewolves()
@@ -178,7 +179,6 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 			if(98 to 100) //Should never happen but you know, would be pretty funny and can be tweaked later
 				pick_vampires() 
 				pick_werewolves()
-				pick_bandits()
 				pick_lich()
 				log_game("Darkness Comes!")
 
@@ -211,7 +211,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 	"Consort",
 	"Merchant",
 	"Priest",
-	"Household Guard")
+	"Cataphract")
 	var/num_bandits = 0
 	if(num_players() >= 10)
 		num_bandits = CLAMP(round(num_players() / 5), 4, 6)
@@ -271,8 +271,8 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 
 
 /datum/game_mode/chaosmode/proc/pick_aspirants()
-	var/list/possible_jobs_aspirants = list("Heir", "Heiress", "Garrison Captain", "Steward", "Hand", "Household Guard")
-	var/list/possible_jobs_helpers = list("Garrison Captain", "Heir", "Heiress", "Hand",  "Steward", "Household Guard")
+	var/list/possible_jobs_aspirants = list("Heir", "Heiress", "Retinue Captain", "Steward", "Hand", "Cataphract")
+	var/list/possible_jobs_helpers = list("Retinue Captain", "Heir", "Heiress", "Hand",  "Steward", "Cataphract")
 	var/list/rolesneeded = list("Aspirant","Loyalist","Supporter")
 
 	antag_candidates = get_players_for_role(ROLE_ASPIRANT)
@@ -365,7 +365,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 	restricted_jobs = list()
 
 /datum/game_mode/chaosmode/proc/pick_lich()
-	restricted_jobs = list("Viscount", "Consort", "Household Guard", "Garrison Captain")
+	restricted_jobs = list("Viscount", "Consort", "Knight", "Retinue Captain")
 	antag_candidates = get_players_for_role(ROLE_LICH)
 	var/datum/mind/lichman = pick_n_take(antag_candidates)
 	if(lichman)
@@ -397,11 +397,11 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 	"Priest",
 	"Acolyte",
 	"Cleric",
-	"Garrison Captain",
+	"Retinue Captain",
 	"Court Magician",
 	"Templar",
 	"Warden",
-	"Household Guard"
+	"Cataphract"
 	)
 	antag_candidates = get_players_for_role(ROLE_NBEAST)
 	antag_candidates = shuffle(antag_candidates)
@@ -443,11 +443,11 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 	"Priest",
 	"Acolyte",
 	"Cleric",
-	"Garrison Captain",
+	"Retinue Captain",
 	"Court Magician",
 	"Templar",
 	"Warden",
-	"Household Guard",
+	"Cataphract",
 	"Mortician",
 	"Desert Rider",
 	"Desert Rider Mercenary",

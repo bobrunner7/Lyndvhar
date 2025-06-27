@@ -57,12 +57,12 @@
 			H.change_stat("constitution", 1)
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-			armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			pants = /obj/item/clothing/under/roguetown/trou
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/rogueweapon/huntingknife = 1)
@@ -118,14 +118,17 @@
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-			H.cmode_music = 'sound/music/combat_rhaenvalian.ogg'
+			H.cmode_music = 'sound/music/combat_steppe.ogg'
 			H.set_blindness(0)
-			var/weapons = list("Katar","Axe","MY BARE HANDS!!!")
+			var/weapons = list("Katar","Steel Duster","Axe","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if ("Katar")
 					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					beltr = /obj/item/rogueweapon/katar
+				if ("Steel Duster")
+					H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+					beltr = /obj/item/rogueweapon/knuckles
 				if("Axe")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/boneaxe

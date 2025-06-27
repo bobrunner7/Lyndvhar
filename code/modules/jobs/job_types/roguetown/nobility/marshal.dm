@@ -6,9 +6,18 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_RESPECTED_UP
+	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/elf/dark,
+		/datum/species/aasimar,
+		/datum/species/demihuman
+	)
 	display_order = JDO_MARSHAL
-	tutorial = "You are an agent of the Viscount in matters of local law and levy, making sure that laws are pushed, verified and carried out by the retinue upon the citizenry. While you preside over the knights and men-at-arms, much of your work happens behind a desk, deferring to the Garrison Captain to make sure your will is carried out in the field."
+	tutorial = "You are an agent of the Viscount in matters of local law and levy, making sure that laws are pushed, verified and carried out by the retinue upon the citizenry. While you preside over the knights and men-at-arms, much of your work happens behind a desk, deferring to the Retinue Captain to make sure your will is carried out in the field."
 	whitelist_req = FALSE
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard) // /obj/effect/proc_holder/spell/self/convertrole/bog
@@ -24,11 +33,10 @@
 
 /datum/outfit/job/roguetown/marshal/pre_equip(mob/living/carbon/human/H)
 	..()
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	backl = /obj/item/storage/backpack/rogue/satchel
-	gloves = /obj/item/clothing/gloves/roguetown/angle
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/signal_horn = 1)
 	if(H.mind)

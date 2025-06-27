@@ -62,7 +62,8 @@
 		/datum/language/orcish,
 		/datum/language/draconic,
 		/datum/language/canilunzt,
-		/datum/language/grenzelhoftian
+		/datum/language/grenzelhoftian,
+		/datum/language/zybean
 	)
 		
 	var/list/choices = list()
@@ -214,6 +215,6 @@
 //HERETIC VIRTUES (there's only pne amd it's utility so I didn't want to make a whole file yet)
 
 /datum/virtue/heretic/seer
-	name = "(ASCENDANT) Seer"
-	desc = "You've spent your days studying the tales writ and told by the Ecclesiarchy's rejects and priests alike. You've grown to tell the followers by hunch and sight. They give themselves away so easily in this world slowly brewing to a fester."
+	name = "Heretical Visionary"
+	desc = "You've spent your days studying the ways of the occult and the methodology of all the Daemons. You've grown to tell the followers by hunch and sight. They give themselves away so easily in this world slowly brewing to a fester."
 	added_traits = list(TRAIT_HERETIC_SEER)

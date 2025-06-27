@@ -5,16 +5,7 @@
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark
-	)
-
+	allowed_races = RACES_ALL_KINDS
 	tutorial = "Hidden in the depths are ancient mechanical secrets, something your creed has taken it upon themselves to studying and understanding. To some these mechanical wonders may seem like magic, but you know their inner workings as well as you do stone, down to the last cog."
 
 	outfit = /datum/outfit/job/roguetown/artificer
@@ -36,6 +27,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/masonry, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/engineering, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)

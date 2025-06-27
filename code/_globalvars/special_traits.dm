@@ -50,6 +50,10 @@ GLOBAL_LIST_INIT(special_traits, build_special_traits())
 	apply_prefs_virtue(character, player)
 	if(player.prefs.loadout)
 		character.mind.special_items[player.prefs.loadout.name] += player.prefs.loadout.path
+	if(player.prefs.loadout2)
+		character.mind.special_items[player.prefs.loadout2.name] += player.prefs.loadout2.path
+	if(player.prefs.loadout3)
+		character.mind.special_items[player.prefs.loadout3.name] += player.prefs.loadout3.path
 
 /proc/apply_prefs_virtue(mob/living/carbon/human/character, client/player)
 	if (!player)
@@ -88,8 +92,11 @@ GLOBAL_LIST_INIT(special_traits, build_special_traits())
 	return FALSE
 
 /proc/apply_charflaw_equipment(mob/living/carbon/human/character, client/player)
-	if(character.charflaw)
-		character.charflaw.apply_post_equipment(character)
+	if(character.primary_charflaw)
+		character.primary_charflaw.apply_post_equipment(character)
+	if(islist(character.secondary_charflaws))
+		for(var/datum/charflaw/sf in character.secondary_charflaws)
+			sf.apply_post_equipment(character)
 
 /proc/apply_prefs_special(mob/living/carbon/human/character, client/player)
 	if(!player)

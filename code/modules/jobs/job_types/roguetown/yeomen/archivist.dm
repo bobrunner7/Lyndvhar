@@ -1,6 +1,6 @@
 /datum/job/roguetown/archivist
 	title = "Archivist"
-	tutorial = "The Archivist meticulously preserves and organizes ancient scrolls and tomes, safeguarding the collective knowledge of the realm for generations to come. Nobles and Peasants alike often seek your expertise on matters of history and fact, and your keenly-kept records on the events of this week will likely stand a testament to your Viscount's benevolence and their city's prosperity...or not. After all, you hold the true power: The power to dictate how the future generations will look back on these coming days."
+	tutorial = "Your craft is knowledge- the meticulous preservation and organization of ancient scrolls and tomes, safeguarding the collective knowledge of older folk for generations to come. Nobles and peasants alike often seek your expertise on matters of history and fact, and your keenly-kept records on the events of this week will likely stand a testament to your Viscount's benevolence and their city's prosperity...or not. After all, you hold the true power: The power to dictate how the future generations will look back on these coming days."
 	flag = ARCHIVIST
 	department_flag = YEOMEN
 	faction = "Station"
@@ -39,7 +39,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltl = /obj/item/storage/keyring/archivist
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	mask = /obj/item/clothing/mask/rogue/spectacles
 
 	if(H.mind)
@@ -61,11 +61,13 @@
 		H.grant_language(/datum/language/orcish)
 		H.grant_language(/datum/language/canilunzt)
 		H.grant_language(/datum/language/grenzelhoftian)
-		H.grant_language(/datum/language/draconic) // All but beast, which is associated with werewolves.
-		ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
+		H.grant_language(/datum/language/draconic)
+		H.grant_language(/datum/language/zybean) // All but beast, which is associated with Dendor and Werewolves.
+		ADD_TRAIT(H, TRAIT_SEEPRICES, type)
 		ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 		H.change_stat("strength", -1)
 		H.change_stat("constitution", -1)
 		H.change_stat("intelligence", 4)

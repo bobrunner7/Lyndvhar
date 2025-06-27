@@ -43,10 +43,11 @@
         "ugly": "hässlich",
         "very": "sehr",
         "water": "wasser",
-        "wine": "wein",
+        "beer": "bier",
         "wind": "wind",
         "with": "mit",
         "yes": "ja",
+        "yea": "ja",
         "young": "jung",
         "soldier": "soldat",
         "knight": "ritter",
@@ -83,6 +84,6 @@
 
     },
     "syllable": {
-
+        "w": "v"
     }
 }

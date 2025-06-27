@@ -1,5 +1,5 @@
 /datum/job/roguetown/captain
-	title = "Garrison Captain"
+	title = "Retinue Captain"
 	flag = GUARD_CAPTAIN
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -15,9 +15,7 @@
 		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "Your lineage is noble, and generations of strong, loyal knights have come before you. You served your time \
-	gracefully as knight of the Viscount, and now you've grown into a role which many men can only dream of becoming. \
-	Lead your men to victory--and keep them in line--and you will see this realm prosper under a thousand suns."
+	tutorial = "Your lineage is noble, and generations of strong, loyal knights have come before you. You served your time gracefully as one of the most prominent knights of the Viscount, and one of the most feared fighters in Lyndvhar.. and now you've grown into a role which many men can only dream of becoming. Lead your men to victory--and keep them in line--and you will see this city prosper under a thousand suns and be returned to its former glory."
 	display_order = JDO_GUARD_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
 
@@ -31,15 +29,15 @@
 	cmode_music = 'sound/music/combat_knight.ogg'
 
 /datum/outfit/job/roguetown/captain
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/captain
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	pants = /obj/item/clothing/under/roguetown/platelegs/captain
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
-	cloak = /obj/item/clothing/cloak/stabard
+	cloak = /obj/item/clothing/cloak/captain
 
 /datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
@@ -52,11 +50,14 @@
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "captain cape ([index])"
+			S.name = "captain's cape ([index])"
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
-		H.real_name = "Captain [prev_real_name]"
-		H.name = "Captain [prev_name]"
+		var/honorary = "Ser"
+		if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
+			honorary = "Dame"
+		H.real_name = "[honorary] [prev_real_name]"
+		H.name = "[honorary] [prev_name]"
 
 		for(var/X in peopleknowme)
 			for(var/datum/mind/MF in get_minds(X))
@@ -70,15 +71,13 @@
 
 /datum/advclass/captain/infantry
 	name = "Infantry Captain"
-	tutorial = "You've fought shoulder to shoulder with the realm's worthiest while embedded directly within \
-	massed infantry formations. As a peerless armed combatant and tactician both, you are a formidable presence \
-	on any battlefield."
+	tutorial = "You've fought shoulder to shoulder with the soldiery of Lyndhardtia while embedded directly within massed infantry formations in expedition. As a peerless armed combatant and tactician both, you are a formidable presence on any battlefield."
 	outfit = /datum/outfit/job/roguetown/captain/infantry
 	category_tags = list(CTAG_CAPTAIN)
 
 /datum/outfit/job/roguetown/captain/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
+	head = /obj/item/clothing/head/roguetown/helmet/visored/captain
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
 		/obj/item/storage/keyring/sheriff = 1,
@@ -134,7 +133,6 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		if("Bastard Sword & Shield")
 			beltr = /obj/item/rogueweapon/sword/long
 			backl = /obj/item/rogueweapon/shield/tower/metal
@@ -147,22 +145,21 @@
 
 /datum/advclass/captain/cavalry
 	name = "Cavalry Captain"
-	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through \
-	the soft flanks of enemy formations."
+	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
 
 /datum/outfit/job/roguetown/captain/cavalry/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
+	head = /obj/item/clothing/head/roguetown/helmet/visored/captain
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
 		/obj/item/storage/keyring/sheriff = 1,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
@@ -173,7 +170,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)

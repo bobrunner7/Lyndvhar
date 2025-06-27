@@ -132,17 +132,8 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark
-	)
-
-	tutorial = "You've studied for many decades under quite a number of master smiths. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will."
+	allowed_races = RACES_SHUNNED_UP
+	tutorial = "You've studied for many decades under quite a number of master smiths. Through many, many long enduring times of hardship and training, you have become a proper master at the smithy yourself. Whether it's cookware or tools of war, you're unmatched at the art of bending metal to your will- and you should never let any of these people forget that. Your hammer is the one that will keep this city moving, even if they do not understand it yet."
 
 	outfit = /datum/outfit/job/roguetown/blacksmith
 	display_order = JDO_BLACKSMITH
@@ -182,7 +173,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 		belt = /obj/item/storage/belt/rogue/leather
 		cloak = /obj/item/clothing/cloak/apron/blacksmith
-		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+		beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 		beltr = /obj/item/roguekey/blacksmith
 	else
 		pants = /obj/item/clothing/under/roguetown/trou
@@ -191,11 +182,12 @@
 		backr = /obj/item/storage/backpack/rogue/satchel
 		backpack_contents = list(/obj/item/rogueweapon/hammer = 1, /obj/item/rogueweapon/tongs = 1)
 		belt = /obj/item/storage/belt/rogue/leather
-		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+		beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 		beltr = /obj/item/roguekey/blacksmith
 		cloak = /obj/item/clothing/cloak/apron/blacksmith
 
-	H.change_stat("strength", 2)
-	H.change_stat("intelligence", 1)
-	H.change_stat("endurance", 2)
-	H.change_stat("constitution", 2)
+		H.change_stat("strength", 2)
+		H.change_stat("endurance", 1)
+		H.change_stat("constitution", 2)
+		H.change_stat("speed", -1)
+		H.change_stat("fortune", 2)

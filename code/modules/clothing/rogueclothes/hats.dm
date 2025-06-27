@@ -544,6 +544,23 @@
 	max_integrity = 50
 	sellprice = 50
 
+// Aasimar hoplite helmet
+/obj/item/clothing/head/roguetown/rare/hoplite
+	icon = 'icons/roguetown/clothing/head.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	name = "ancient helmet"
+	desc = "A weathered bronze helmet topped with a symbol of Astrata's sun."
+	icon_state = "aasimarhead"
+	item_state = "aasimarhead"
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	emote_environment = 3
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS|HIDEHAIR
+	blocksound = PLATEHIT
+	bloody_icon = 'icons/effects/blood64x64.dmi'
+	bloody_icon_state = "helmetblood_big"
+	
 /obj/item/clothing/head/roguetown/priesthat
 	name = "priest's hat"
 	desc = ""
@@ -664,27 +681,10 @@
 /obj/item/clothing/head/roguetown/helmet/kettle/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -710,27 +710,10 @@
 /obj/item/clothing/head/roguetown/helmet/sallet/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -760,27 +743,10 @@
 /obj/item/clothing/head/roguetown/helmet/sallet/visored/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -885,6 +851,26 @@
 	equip_delay_other = 4 SECONDS
 	strip_delay = 8 SECONDS
 	sellprice = 50
+
+/obj/item/clothing/head/roguetown/helmet/heavy/matthios
+	name = "gilded visage"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	desc = "All that glitters is not gold,"
+	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT|HIDEHAIR|HIDEFACIALHAIR
+	icon_state = "matthioshelm"
+	max_integrity = 600
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	bloody_icon = 'icons/effects/blood64.dmi'
+
+
+/obj/item/clothing/head/roguetown/helmet/heavy/matthios/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_COMMIE))
+		to_chat(user, "<font color='yellow'>UNWORTHY HANDS TOUCH THE VISAGE, CEASE OR BE PUNISHED</font>")
+		user.adjust_fire_stacks(5)
+		user.IgniteMob()
+		user.Stun(40)
+	..()
 
 /obj/item/clothing/head/roguetown/helmet/heavy/zizo
 	name = "darksteel barbute"
@@ -993,25 +979,8 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/feather) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
-		detail_color = colors[choice]
+		var/choice = input(user, "Choose a color.", "Plume") as anything in colorlist
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
@@ -1029,6 +998,14 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
+//................. Captain's Helmet .............. //
+/obj/item/clothing/head/roguetown/helmet/visored/captain
+	name = "captain's helmet"
+	desc = "An elegant barbute, fitted with the gold trim and polished metal of nobility."
+	icon = 'icons/roguetown/clothing/special/captain.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	icon_state = "capbarbute"
+	
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
 	name = "armet"
 	desc = "Holy lamb, sacrificial hero, blessed idiot - Psydon endures. Will you endure alongside Him, as a knight of humenity, or crumble before temptation?"
@@ -1062,53 +1039,20 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/feather) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
-		detail_color = colors[choice]
-		detail_tag = "_detail"
+		var/choice = input(user, "Choose a color.", "Plume") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
+		detail_color = colorlist[choice]
+		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
 			var/mob/living/carbon/H = user
 			H.update_inv_head()
 	if(istype(W, /obj/item/natural/cloth) && !altdetail_tag)
-		var/list/altcolors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-		var/choicealt = input(user, "Choose a color.", "Orle") as anything in altcolors
+		var/choicealt = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		altdetail_color = altcolors[choicealt]
+		altdetail_color = colorlist[choicealt]
 		altdetail_tag = "_detailalt"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1157,27 +1101,10 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/bucket/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1255,54 +1182,20 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
 			var/mob/living/carbon/H = user
 			H.update_inv_head()
 	if(istype(W, /obj/item/natural/feather) && !altdetail_tag)
-		var/list/altcolors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choicealt = input(user, "Choose a color.", "Plume") as anything in altcolors
+		var/choicealt = input(user, "Choose a color.", "Plume") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		altdetail_color = altcolors[choicealt]
+		altdetail_color = colorlist[choicealt]
 		altdetail_tag = "_detailalt"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1442,25 +1335,8 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/feather) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
-		detail_color = colors[choice]
+		var/choice = input(user, "Choose a color.", "Plume") as anything in colorlist
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
@@ -1511,25 +1387,8 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/feather) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
-		detail_color = colors[choice]
+		var/choice = input(user, "Choose a color.", "Plume") as anything in colorlist
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
@@ -1538,27 +1397,10 @@
 			var/mob/living/carbon/H = user
 			H.update_inv_head()
 	if(istype(W, /obj/item/natural/cloth) && !altdetail_tag)
-		var/list/altcolors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choicealt = input(user, "Choose a color.", "Orle") as anything in altcolors
+		var/choicealt = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		altdetail_color = altcolors[choicealt]
+		altdetail_color = colorlist[choicealt]
 		altdetail_tag = "_detailalt"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1597,27 +1439,10 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/valorian/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1691,27 +1516,10 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth/attackby(obj/item/W, mob/living/user, params)
 	..()
 	if(istype(W, /obj/item/natural/cloth) && !detail_tag)
-		var/list/colors = list(
-		"Swan White"="#ffffff",
-		"Lavender"="#865c9c",
-		"Royal Purple"="#5E4687",
-		"Wine Rouge"="#752B55",
-		"Sow's skin"="#CE929F",
-		"Knight's Red"="#933030",
-		"Madroot Red"="#AD4545",
-		"Marigold Orange"="#E2A844",
-		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
-		"Bog Green"="#375B48",
-		"Seafoam Green"="#49938B",
-		"Woad Blue"="#395480",
-		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
-
-		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
+		var/choice = input(user, "Choose a color.", "Orle") as anything in colorlist
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
 		user.transferItemToLoc(W, src, FALSE, FALSE)
-		detail_color = colors[choice]
+		detail_color = colorlist[choice]
 		detail_tag = "_detail"
 		update_icon()
 		if(loc == user && ishuman(user))
@@ -1826,6 +1634,18 @@
 
 /obj/item/clothing/head/roguetown/wizhat/black
 	icon_state = "wizardhatblack"
+
+/obj/item/clothing/head/roguetown/wizhat/necromancer
+	name = "necromancer hat"
+	desc = "Used to distinguish dangerous necromancers from senile old men."
+	icon_state = "necromancerhat"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	dynamic_hair_suffix = "+generic"
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	sewrepair = TRUE
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEFACE|HIDEHAIR
 
 /obj/item/clothing/head/roguetown/wizhat/gen
 	icon_state = "wizardhatgen"
@@ -2173,3 +1993,45 @@
 	desc = "A winged version of the elven barbute. They have always been known for their vanity."
 	icon_state = "elven_barbute_winged"
 	item_state = "elven_barbute_winged"
+
+/obj/item/clothing/head/roguetown/helmet/heavy/zadhelm
+	name = "zad helmet"
+	desc = "A zad-shaped steel bascinet helmet protecting the head and ears."
+	icon_state = "zadhelm"
+	item_state = "zadhelm"
+	emote_environment = 3
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+	smelt_bar_num = 2
+	sellprice = 85
+
+//............... Rare Helmets ............... //
+///obj/item/clothing/head/roguetown/helmet/rare
+/obj/item/clothing/head/roguetown/rare
+	name = "rare helmet template"
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	bloody_icon = 'icons/effects/blood64x64.dmi'
+	bloody_icon_state = "helmetblood_big"
+	blocksound = PLATEHIT	//DELETE AFTER REPATH
+	equip_delay_self = 3 SECONDS
+	unequip_delay_self = 3 SECONDS
+	resistance_flags = FIRE_PROOF // These are all metallic DELETE AFTER REPATH
+	anvilrepair = /datum/skill/craft/armorsmithing	//DELETE AFTER REPATH
+	smeltresult = /obj/item/ingot/steel
+	
+//............... Bladesinger Helmet ............... //
+/obj/item/clothing/head/roguetown/rare/elfplate // Unique Bladesinger kit
+    name = "elvish plate helmet"
+    desc = "A bizarrely lightweight helmet of alloyed dark elven steel, offering unparalleled protection for elite bladesingers."
+    icon_state = "elfhead"
+    item_state = "elfhead"
+    allowed_race = list(/datum/species/elf/dark)
+    clothing_flags = CANT_SLEEP_IN
+    armor_class = ARMOR_CLASS_MEDIUM
+    body_parts_covered = HEAD|HAIR|NOSE
+    flags_inv = HIDEEARS|HIDEHAIR
+    block2add = FOV_BEHIND
+    armor = list("blunt" = 90, "slash" = 50, "stab" = 60, "piercing" = 70, "fire" = 0, "acid" = 0)

@@ -85,8 +85,8 @@
 		to_chat(L, "*----*")
 		if(ishuman(usr))
 			var/mob/living/carbon/human/M = usr
-			if(M.charflaw)
-				to_chat(M, "<span class='info'>[M.charflaw.desc]</span>")
+			if(M.primary_charflaw)
+				to_chat(M, "<span class='info'>[M.primary_charflaw.desc]</span>")
 				to_chat(M, "*----*")
 			if(M.mind)
 				if(M.mind.language_holder)
@@ -253,10 +253,13 @@
 		add_overlay(hud.object_overlay)
 
 
+
 /atom/movable/screen/inventory/hand
 	nomouseover =  TRUE
 	var/mutable_appearance/handcuff_overlay
 	var/static/mutable_appearance/blocked_overlay = mutable_appearance('icons/mob/screen_gen.dmi', "blocked")
+	var/static/mutable_appearance/fingerless_overlay = mutable_appearance('icons/mob/screen_gen.dmi', "fingerless")
+	var/static/mutable_appearance/grabbed_overlay = mutable_appearance('icons/mob/screen_gen.dmi', "grabbed")
 	var/held_index = 0
 
 /atom/movable/screen/inventory/hand/update_overlays()
@@ -277,6 +280,10 @@
 		if(held_index)
 			if(!C.has_hand_for_held_index(held_index))
 				. += blocked_overlay
+			else if(!C.has_hand_for_held_index(held_index, TRUE))
+				. += fingerless_overlay
+			else if(C.check_arm_grabbed(held_index))
+				. += grabbed_overlay
 
 	if(held_index == hud.mymob.active_hand_index)
 		. += "hand_active"
@@ -1561,9 +1568,9 @@
 	if(ishuman(usr))
 		var/mob/living/carbon/human/M = usr
 		if(modifiers["left"])
-			if(M.charflaw)
+			if(M.primary_charflaw)
 				to_chat(M, "*----*")
-				to_chat(M, span_info("[M.charflaw.desc]"))
+				to_chat(M, span_info("[M.primary_charflaw.desc]"))
 			to_chat(M, "*--------*")
 			var/list/already_printed = list()
 			var/list/pos_stressors = M.get_positive_stressors()

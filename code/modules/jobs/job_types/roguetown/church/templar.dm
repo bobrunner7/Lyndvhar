@@ -40,7 +40,7 @@
 
 /datum/advclass/templar/monk
 	name = "Monk"
-	tutorial = "You are a monk of the Church, trained in pugilism and acrobatics. You bear no armor but your faith, and your hands are lethal weapons in service to your God."
+	tutorial = "You are a monk of the Church, trained in pugilism and acrobatics. You bear no armor but your faith, and your hands are lethal weapons in service to your Patron."
 	outfit = /datum/outfit/job/roguetown/templar/monk
 	
 	category_tags = list(CTAG_TEMPLAR)
@@ -77,13 +77,13 @@
 		if(/datum/patron/divine/malum)
 			neck = /obj/item/clothing/neck/roguetown/psicross/malum
 			cloak = /obj/item/clothing/cloak/tabard/crusader/malum
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
@@ -189,11 +189,10 @@
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	armor = /obj/item/clothing/suit/roguetown/armor/plate	///Half-Plate not fullplate
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
@@ -202,7 +201,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
@@ -279,13 +278,13 @@
 		if("Plaguebringer Sickles")
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/pestrasickle(H), TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/pestrasickle(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE) // actually makes them usable for the templar.
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE) // actually makes them usable for the templar.
 		if("Forgefiend")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/malumflamm(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		if("Summer Scythe")
 			H.put_in_hands(new /obj/item/rogueweapon/halberd/bardiche/scythe(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE) // again, needs skill to actually use the weapon
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE) // again, needs skill to actually use the weapon
 		if("Cackle Lash")
 			H.put_in_hands(new /obj/item/rogueweapon/whip/xylix(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)

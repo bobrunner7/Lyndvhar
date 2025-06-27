@@ -114,14 +114,6 @@
 /datum/species/lizardfolk/qualifies_for_rank(rank, list/features)
 	return TRUE
 
-/datum/species/lizardfolk/on_species_gain(mob/living/carbon/C, datum/species/old_species)
-	..()
-	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
-
-/datum/species/lizardfolk/on_species_loss(mob/living/carbon/C)
-	. = ..()
-	UnregisterSignal(C, COMSIG_MOB_SAY)
-
 /datum/species/lizardfolk/get_random_body_markings(list/passed_features)
 	return assemble_body_markings_from_set(GLOB.body_marking_sets_by_type[/datum/body_marking_set/bellyscale], passed_features, src)
 
@@ -151,3 +143,21 @@
 	returned["mcolor2"] = second_color
 	returned["mcolor3"] = second_color
 	return returned
+
+/datum/species/lizardfolk/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	. = ..()
+	RegisterSignal(C, COMSIG_MOB_SAY , PROC_REF(handle_speech))
+	// adds lizard specific emotes
+	C.verbs += list(
+		/mob/proc/hiss,
+		/mob/proc/growl,
+	)
+
+/datum/species/lizardfolk/on_species_loss(mob/living/carbon/C)
+    . = ..()
+    UnregisterSignal(C, COMSIG_MOB_SAY)
+    // Remove lizard-specific emotes
+    C.verbs -= list(
+        /mob/proc/hiss,
+        /mob/proc/growl,
+    )

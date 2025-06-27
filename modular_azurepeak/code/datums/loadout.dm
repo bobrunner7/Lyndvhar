@@ -177,6 +177,14 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/under/roguetown/skirt
 
 //ACCESSORIES
+/datum/loadout_item/cowbellcollar
+	name = "Cowbell Collar"
+	path = /obj/item/clothing/neck/roguetown/collar/leather/bell/cow
+
+/datum/loadout_item/catbellcollar
+	name = "Catbell Collar"
+	path = /obj/item/clothing/neck/roguetown/collar/leather/bell
+
 /datum/loadout_item/stockings
 	name = "Stockings"
 	path = /obj/item/clothing/under/roguetown/tights/stockings
@@ -216,6 +224,14 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/feather
 	name = "Feather"
 	path = /obj/item/natural/feather
+
+/datum/loadout_item/elfears
+	name = "Elfear Necklace"
+	path = /obj/item/clothing/neck/roguetown/elfears
+
+/datum/loadout_item/menears
+	name = "Menear Necklace"
+	path = /obj/item/clothing/neck/roguetown/menears
 
 /datum/loadout_item/collar
 	name = "Collar"

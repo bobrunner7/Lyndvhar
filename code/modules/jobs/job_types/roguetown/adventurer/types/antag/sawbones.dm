@@ -41,6 +41,7 @@
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
 	H.change_stat("speed", 1)
 	H.change_stat("intelligence", 2)
 	H.change_stat("perception", 1) //azure peak really outdid themselves with needless buffs

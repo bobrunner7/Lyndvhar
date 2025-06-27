@@ -150,3 +150,54 @@
 		"Salvumite" = SKIN_COLOR_SALVUMITE,             // Was Kazengun
 		"Saltlian" = SKIN_COLOR_SALTLIAN
 	)
+
+/datum/species/demihuman/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	. = ..()
+	RegisterSignal(C, COMSIG_MOB_SAY , PROC_REF(handle_speech))
+	// adds Demihuman specific emotes
+	C.verbs += list(
+        /mob/proc/howl,
+        /mob/proc/growl,
+		/mob/proc/meow,
+		/mob/proc/purr,
+		/mob/proc/moo,
+		/mob/proc/bark,
+		/mob/proc/growl,
+		/mob/proc/bleat,
+		/mob/proc/caw,
+		/mob/proc/peep,
+		/mob/proc/hoot,
+		/mob/proc/squeak,
+		/mob/proc/hiss,
+		/mob/proc/phiss,
+		/mob/proc/howl,
+		/mob/proc/cackle,
+		/mob/proc/whine,
+		/mob/proc/chitter,
+		/mob/proc/flutter,
+	)
+
+/datum/species/demihuman/on_species_loss(mob/living/carbon/C)
+    . = ..()
+    UnregisterSignal(C, COMSIG_MOB_SAY)
+    // Remove demihuman-specific emotes
+    C.verbs -= list(
+        /mob/proc/howl, //
+        /mob/proc/growl, //
+		/mob/proc/meow, //
+		/mob/proc/purr, //
+		/mob/proc/moo,
+		/mob/proc/bark, //
+		/mob/proc/growl, //
+		/mob/proc/bleat, //
+		/mob/proc/caw, //
+		/mob/proc/peep, //
+		/mob/proc/hoot, //
+		/mob/proc/squeak, //
+		/mob/proc/hiss, //
+		/mob/proc/phiss, //
+		/mob/proc/cackle, //
+		/mob/proc/whine, //
+		/mob/proc/chitter,
+		/mob/proc/flutter,
+    )

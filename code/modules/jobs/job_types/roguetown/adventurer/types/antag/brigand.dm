@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/brigand
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/combat_bandit_brigand.ogg'
+	cmode_music = 'sound/music/combat_bandit.ogg'
 
 /datum/outfit/job/roguetown/bandit/brigand/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -43,6 +43,7 @@
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", -2)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
 	var/weapons = list("Battleaxe & Cudgel","Flail & Shield")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons

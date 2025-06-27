@@ -5,20 +5,10 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/aasimar,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT)
 
-	tutorial = "Working under the tutelage of the court physician, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
+	tutorial = "Working under the tutelage of the Practitioner, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
 
 	outfit = /datum/outfit/job/roguetown/apothecary
 

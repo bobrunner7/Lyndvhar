@@ -37,6 +37,26 @@
 	penfactor = 25
 	item_d_type = "stab"
 
+/datum/intent/mace/smash/great
+	name = "smash"
+	penfactor = 100
+	chargetime = 2 SECONDS
+	damfactor = 1.35
+	swingdelay = 20
+	releasedrain = 20
+
+/datum/intent/mace/strike/awkward
+	name = "strike"
+	attack_verb = list("awkardly smashes")
+	damfactor = 0.5
+
+/datum/intent/mace/strike/great
+	name = "strike"
+	damfactor = 1.25
+	swingdelay = 10
+	penfactor = 95
+	releasedrain = 8
+
 //blunt objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/mace
@@ -427,3 +447,22 @@
 	damfactor = 0.9
 	item_d_type = "stab"
 	releasedrain = 8
+
+/obj/item/rogueweapon/mace/goden/greathammer
+	name = "Iron Greathammer"
+	desc = "A warhammer with a hefty head meant to break through armor through sheer destructive force."
+	icon_state = "iron_greathammer"
+	possible_item_intents = list(/datum/intent/mace/strike/awkward)
+	gripped_intents = list(/datum/intent/mace/strike/great, /datum/intent/mace/smash/great)
+	force = 17
+	force_wielded = 36
+	minstr = 13
+	wbalance = -2
+	wdefense = 1
+
+/obj/item/rogueweapon/mace/goden/greathammer/steel
+	name = "Steel Greathammer"
+	icon_state = "steel_greathammer"
+	force = 20
+	force_wielded = 40
+	wdefense = 1.5

@@ -18,25 +18,25 @@
 	var/namechance = rand(1,6)
 	switch(namechance)
 		if(1)
-			name = "Hoardmaster Skyblue"
+			name = "GILDWYRM"
 		if(2)
-			name = "Hoardmaster Thea"
+			name = "GILDWYRM"
 		if(3)
-			name = "Hoardmaster Radagon"
+			name = "GILDWYRM"
 		if(4)
-			name = "Hoardmaster Shiver"
+			name = "GILDWYRM"
 		if(5)
-			name = "Hoardmaster Deathbringer"
+			name = "GILDWYRM"
 		if(6)
-			name = "Hoardmaster Darkstalker"
+			name = "GILDWYRM"
 
 /obj/structure/roguemachine/Hoardmaster/examine(mob/user)
 	. = ..()
 	if(user.mind?.has_antag_datum(/datum/antagonist/bandit))
-		. += "Formerly a covetous creature, this one now shares its Hoard with the Freefolk. Protecting the transactor's Hoard, and trading it for Favor."
+		. += "A statue depicting Gildwyrm, a beast of Graggaroid creation that served as the mount for Graggar's physical form during the Bloodwake. It radiates an aura of dread and power."
 		return
 	else
-		. += "Some mean looking statue of a dragon. Something about it makes me uneasy, like its eyes are following me."
+		. += "Some mean looking statue of a.. dragon? Drake? You do not know what this symbolizes. Something about it makes me uneasy, like its eyes are following me. Everytime I look at it my spine shivers.."
 		return
 
 /obj/structure/roguemachine/Hoardmaster/Topic(href, href_list)
@@ -52,7 +52,7 @@
 		var/datum/antagonist/bandit/B = M.mind.has_antag_datum(/datum/antagonist/bandit)
 		var/path = text2path(href_list["buy"])
 		if(!ispath(path, /datum/supply_pack))
-			message_admins("silly MOTHERFUCKER [usr.key] IS TRYING TO BUY A [path] WITH THE HOARDMASTER")
+			message_admins("[usr.key] is trying to buy a [path] with the Gildwyrm. Laugh at them!")
 			return
 		var/datum/supply_pack/PA = SSmerchant.supply_packs[path]
 		var/cost = PA.cost
@@ -82,7 +82,7 @@
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	var/contents
-	contents = "<center>Wishes for the Free<BR>"
+	contents = "<center>MATTHIOSITE BLESSINGS<BR>"
 	contents += "<a href='?src=[REF(src)];change=1'>Your favor:</a> [B.favor]<BR>"
 
 
@@ -94,7 +94,7 @@
 			unlocked_cats+="Sellsword"
 		if("Sawbones")
 			unlocked_cats+="Sawbones"
-		if("Hedge Knight")
+		if("Hedge Cataphract")
 			unlocked_cats+="Knight"
 		if("Rogue Mage")
 			unlocked_cats+="Mage"

@@ -6,7 +6,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/blacksmith
 
-	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
+	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER, CTAG_ADVENTURER)
 
 /datum/outfit/job/roguetown/adventurer/blacksmith/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -39,21 +39,17 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE) // The strongest fists in the land.
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE) // The strongest fists in the land.
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/engineering, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/smelting, 3, TRUE)
 		H.change_stat("strength", 1)
-		H.change_stat("endurance", 2)
-		H.change_stat("constitution", 2)
+		H.change_stat("constitution", 1)
 		H.change_stat("speed", -1)
-		H.change_stat("fortune", 1)

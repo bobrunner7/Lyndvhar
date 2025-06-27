@@ -136,7 +136,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/knight
-	name = "Household Guard"
+	name = "Cataphract"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/sheriff
@@ -144,7 +144,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guard_captain
-	name = "Garrison Captain"
+	name = "Retinue Captain"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/barkeep
@@ -168,7 +168,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/physician
-	name = "Court Physician"
+	name = "Practitioner"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guardsman
@@ -252,7 +252,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/nightmaiden
-	name = "Bathhouse Attendant"
+	name = "Nightmaiden"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/merchant
@@ -395,7 +395,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/wapprentice
-	name = "Magicians Associate"
+	name = "Magicians Apprentice"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/apothecary
@@ -415,7 +415,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/sapprentice
-	name = "Smithy Apprentice"
+	name = "Apprentice Smith"
 	icon_state = "arrow"
 
 //goblin

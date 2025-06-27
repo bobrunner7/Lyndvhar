@@ -40,18 +40,19 @@
 /datum/outfit/job/roguetown/woodsman/pre_equip(mob/living/carbon/human/H)
 	..()
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/woad
-	armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	pants = /obj/item/clothing/under/roguetown/tights
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	r_hand = /obj/item/rogueweapon/woodstaff
+	r_hand = /obj/item/rogueweapon/woodstaff/wise
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/storage/keyring/velder  = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
@@ -64,14 +65,14 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 4, TRUE)
 		H.change_stat("perception", 2)
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", -1)
@@ -79,3 +80,4 @@
 		H.change_stat("intelligence", 3)
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/teach) // we are going to try something fun here

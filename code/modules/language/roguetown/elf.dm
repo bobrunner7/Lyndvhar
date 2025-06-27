@@ -1,6 +1,6 @@
 /datum/language/elvish
 	name = "Elfish"
-	desc = ""
+	desc = "The old tongue of the world, crafted even before the Celestial. Believed to have been the first language, all elves to this day still use it."
 	speech_verb = "states"
 	ask_verb = "questions"
 	exclaim_verb = "shouts"

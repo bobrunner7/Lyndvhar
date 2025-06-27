@@ -21,7 +21,7 @@
 			playsound(src, 'modular_hearthstone/sound/items/bogguardhorn.ogg', 100, TRUE)
 		if("Watchman", "Sergeant", "Man at Arms")
 			playsound(src, 'modular_hearthstone/sound/items/watchhorn.ogg', 100, TRUE)
-		if("Garrison Captain", "Marshal", "Household Guard")
+		if("Retinue Captain", "Marshal", "Cataphract")
 			playsound(src, 'modular_hearthstone/sound/items/rghorn.ogg', 100, TRUE)
 		else
 			playsound(src, 'modular_hearthstone/sound/items/signalhorn.ogg', 100, TRUE)
@@ -108,9 +108,9 @@
 			if("Watchman", "Sergeant", "Man at Arms")
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/watchhorn.ogg', 35, FALSE, pressure_affected = FALSE)
 				to_chat(player, span_warning("I hear the horn of the Garrison somewhere[disttext],[dirtext],[placetext]"))
-			if("Garrison Captain", "Marshal", "Household Guard")
+			if("Retinue Captain", "Marshal", "Cataphract")
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/rghorn.ogg', 35, FALSE, pressure_affected = FALSE)
-				to_chat(player, span_warning("I hear the horn of the Household Guard somewhere[disttext],[dirtext],[placetext]"))
+				to_chat(player, span_warning("I hear the horn of a Cataphract somewhere[disttext],[dirtext],[placetext]"))
 			else
 				player.playsound_local(get_turf(player), 'modular_hearthstone/sound/items/signalhorn.ogg', 35, FALSE, pressure_affected = FALSE)
 				to_chat(player, span_warning("I hear the signal horn somewhere[disttext], [dirtext],[placetext]"))

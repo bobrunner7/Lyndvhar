@@ -1,6 +1,6 @@
 /datum/language/thievescant
 	name = "Trickster's Tongue"
-	desc = ""
+	desc = "A tongue used by thieves and other ne'er-do-wells to masquerade their conversations."
 	speech_verb = "murmurs"
 	ask_verb = "questions"
 	exclaim_verb = "shouts"

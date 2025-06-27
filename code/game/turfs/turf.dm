@@ -399,6 +399,9 @@
 
 /turf/Entered(atom/movable/AM)
 	..()
+	SEND_SIGNAL(src, COMSIG_TURF_ENTERED, AM)
+	SEND_SIGNAL(AM, COMSIG_MOVABLE_TURF_ENTERED, src)
+
 	if(explosion_level && AM.ex_check(explosion_id))
 		AM.ex_act(explosion_level)
 
@@ -410,7 +413,7 @@
 /turf/open/Entered(atom/movable/AM)
 	..()
 	//melting
-	if(isobj(AM) && src.temperature > T0C)
+	if(isobj(AM) && temperature > 273.15)
 		var/obj/O = AM
 		if(O.obj_flags & FROZEN)
 			O.make_unfrozen()

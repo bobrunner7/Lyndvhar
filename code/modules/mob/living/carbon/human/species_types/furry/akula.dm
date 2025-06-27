@@ -151,9 +151,24 @@
 	return randname
 
 /datum/species/akula/on_species_gain(mob/living/carbon/C, datum/species/old_species)
-	..()
-	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+    . = ..()
+    RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+    // Add akula-specific emotes
+    C.verbs += list(
+        /mob/proc/growl,
+        /mob/proc/whine,
+		/mob/proc/bark,
+		/mob/proc/hiss,
+    )
 
 /datum/species/akula/on_species_loss(mob/living/carbon/C)
-	. = ..()
-	UnregisterSignal(C, COMSIG_MOB_SAY)
+    . = ..()
+    UnregisterSignal(C, COMSIG_MOB_SAY)
+    // Remove akula-specific emotes
+    C.verbs -= list(
+        /mob/proc/growl,
+        /mob/proc/whine,
+		/mob/proc/bark,
+		/mob/proc/hiss,
+    )
+

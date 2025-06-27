@@ -15,17 +15,16 @@
 		H.real_name = "Sister [prev_real_name]"
 		H.name = "Sister [prev_name]"
 		neck = /obj/item/clothing/neck/roguetown/psicross/silver
-		pants = /obj/item/clothing/under/roguetown/chainlegs
-		wrists = /obj/item/clothing/wrists/roguetown/bracers
-		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-		belt = /obj/item/storage/belt/rogue/leather/black
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+		pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+		shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+		belt = /obj/item/storage/belt/rogue/leather/steel
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 		id = /obj/item/clothing/ring/silver
 		backl = /obj/item/storage/backpack/rogue/satchel
 		head = /obj/item/clothing/head/roguetown/helmet/nun
 		cloak = /obj/item/clothing/cloak/battlenun
-		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
 		backpack_contents = list(/obj/item/storage/keyring/orthodoxist = 1)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)

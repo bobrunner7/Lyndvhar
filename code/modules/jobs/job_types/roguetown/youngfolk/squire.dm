@@ -5,20 +5,16 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_SQUIRE = 20)
 
+	cmode_music = 'sound/music/combat_guard2.ogg'
+
 	tutorial = "Your folks said you were going to be something, they had better aspirations for you than the life of a peasant. You practiced the basics \
 		in the field alongside your friends, swordfighting with sticks, chasing rabbits with grain flail, and helping around the house lifting heavy \
-		bags of grain. The Knights took notice of your potential and brought you on as one of their personal wards. You're going to be something someday."
+		bags of grain. The Cataphracts took notice of your potential and brought you on as one of their personal wards. You're going to be something someday."
 	outfit = /datum/outfit/job/roguetown/squire
 	display_order = JDO_SQUIRE
 	give_bank_account = TRUE
@@ -66,7 +62,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif
+		/obj/item/clothing/neck/roguetown/coif
 	)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
@@ -81,10 +77,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.change_stat("strength", 1)
-		H.change_stat("perception", 1)
-		H.change_stat("constitution", 1)
-		H.change_stat("intelligence", 1)
-		H.change_stat("speed", 1)
+		H.change_stat("endurance", 1)
 	ADD_TRAIT(H, TRAIT_SQUIRE_REPAIR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
@@ -104,7 +97,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif
+		/obj/item/clothing/neck/roguetown/coif
 	)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
@@ -118,10 +111,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.change_stat("strength", 1)
-		H.change_stat("perception", 1)
 		H.change_stat("constitution", 1)
-		H.change_stat("intelligence", 1)
-		H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_SQUIRE_REPAIR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
@@ -155,7 +145,7 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger,
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif,
+		/obj/item/clothing/neck/roguetown/coif
 		)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
@@ -167,11 +157,10 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 		H.change_stat("perception", 1)
-		H.change_stat("constitution", 1)
-		H.change_stat("intelligence", 1)
 		H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_SQUIRE_REPAIR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

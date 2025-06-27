@@ -5,16 +5,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark
-	)
-
+	allowed_races = RACES_SHUNNED_UP
 	tutorial = "Adventurers and warriors alike have two exit plans; the early grave or even earlier retirement. As the proud owner of the Fool's Flagon, you took the latter. You even have an assortment of staff to help you, and plenty of business from the famished townsfolk looking to eat, weary travelers looking to rest, and characters of dubious repute seeking their own sort of success. Your bladework has gotten a little rusty, and the church across the street gives you the odd evil eye for the extra 'delights' of the bathhouse--but, well...you can't win 'em all!"
 
 	outfit = /datum/outfit/job/roguetown/barkeep
@@ -59,12 +50,10 @@
 	else
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
-	H.change_stat("strength", 1) ///7 points (weighted)
+	H.change_stat("strength", 1)
 	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", 1)
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CICERONE, TRAIT_GENERIC)

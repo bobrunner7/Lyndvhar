@@ -1,6 +1,6 @@
 /datum/language/draconic
 	name = "Draconic"
-	desc = ""
+	desc = "A language primarily used by the reptilian species of Calmirixial of old. Still used extensively to this day by their ancestors."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "roars"

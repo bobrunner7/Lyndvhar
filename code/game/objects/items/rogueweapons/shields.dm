@@ -87,22 +87,34 @@
 	dropshrink = 0.8
 	coverage = 40
 
-/obj/item/rogueweapon/shield/wood/attack_right(mob/user)
-	if(!overlays.len)
-		var/icon/J = new('icons/roguetown/weapons/wood_heraldry.dmi')
-		var/list/istates = J.IconStates()
-		var/picked_name = input(user, "Choose a Heraldry", "ROGUETOWN", name) as null|anything in sortList(istates)
-		if(!picked_name)
-			picked_name = "none"
-		var/mutable_appearance/M = mutable_appearance('icons/roguetown/weapons/wood_heraldry.dmi', picked_name)
-		add_overlay(M)
-		var/mutable_appearance/MU = mutable_appearance(icon, "woodsh_detail")
-		MU.alpha = 114
-		add_overlay(MU)
-		if(alert("Are you pleased with your heraldry?", "Heraldry", "Yes", "No") != "Yes")
-			cut_overlays()
-	else
+/obj/item/rogueweapon/shield/attack_right(mob/user)
+	if(overlays.len)
 		..()
+		return
+
+	var/icon/J = new('icons/roguetown/weapons/shield_heraldry.dmi')
+	var/list/istates = J.IconStates()
+	for(var/icon_s in istates)
+		if(!findtext(icon_s, "[icon_state]_"))
+			istates.Remove(icon_s)
+			continue
+		istates.Add(replacetextEx(icon_s, "[icon_state]_", ""))
+		istates.Remove(icon_s)
+
+	if(!istates.len)
+		..()
+		return
+
+	var/picked_name = input(user, "Choose a Heraldry", "ROGUETOWN", name) as null|anything in sortList(istates)
+	if(!picked_name)
+		picked_name = "none"
+	var/mutable_appearance/M = mutable_appearance('icons/roguetown/weapons/shield_heraldry.dmi', "[icon_state]_[picked_name]")
+	M.appearance_flags = NO_CLIENT_COLOR
+	add_overlay(M)
+	if(alert("Are you pleased with your heraldry?", "Heraldry", "Yes", "No") != "Yes")
+		cut_overlays()
+
+	update_icon()
 
 /obj/item/rogueweapon/shield/wood/getonmobprop(tag)
 	. = ..()
@@ -154,10 +166,40 @@
 			if("onback")
 				return list("shrink" = 0.6,"sx" = 1,"sy" = 4,"nx" = 1,"ny" = 2,"wx" = 3,"wy" = 3,"ex" = 0,"ey" = 2,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 8,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
 
+/obj/item/rogueweapon/shield/tower/hoplite
+	name = "ancient shield"
+	desc = "A gigantic, bronze reinforced shield that covers the entire body. An aasimar relic from an era long past."
+	icon_state = "boeotian"
+	force = 20
+	throwforce = 10
+	throw_speed = 1
+	throw_range = 3
+	wlength = WLENGTH_NORMAL
+	wbalance = -1 // Heavy, big shield
+	resistance_flags = null
+	flags_1 = CONDUCT_1
+	wdefense = 11
+	coverage = 75 // Rare shield from unique job, gets a tiny bit of additional coverage
+	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	max_integrity = 500
+	blade_dulling = DULLING_BASH
+	sellprice = 150 // A noble collector would love to get their hands on one of these
+	smeltresult = null // No bronze ingots yet
+
+/obj/item/rogueweapon/shield/tower/hoplite/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = -5,"sy" = -1,"nx" = 6,"ny" = -1,"wx" = 0,"wy" = -2,"ex" = 0,"ey" = -2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 1,"eflip" = 0)
+			if("onback")
+				return list("shrink" = 0.6,"sx" = 1,"sy" = 4,"nx" = 1,"ny" = 2,"wx" = 3,"wy" = 3,"ex" = 0,"ey" = 2,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 8,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
+
 /obj/item/rogueweapon/shield/tower/metal
 	name = "kite shield"
 	desc = "A kite-shaped iron shield. Reliable and sturdy."
-	icon_state = "ironsh"
+	icon_state = "kitesh"
 	force = 20
 	throwforce = 10
 	throw_speed = 1
@@ -182,22 +224,11 @@
 				return list("shrink" = 0.6,"sx" = 1,"sy" = 4,"nx" = 1,"ny" = 2,"wx" = 3,"wy" = 3,"ex" = 0,"ey" = 2,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 8,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
 	return ..()
 
-/obj/item/rogueweapon/shield/tower/metal/attack_right(mob/user)
-	if(!overlays.len)
-		var/icon/J = new('icons/roguetown/weapons/shield_heraldry.dmi')
-		var/list/istates = J.IconStates()
-		var/picked_name = input(user, "Choose a Heraldry", "ROGUETOWN", name) as null|anything in sortList(istates)
-		if(!picked_name)
-			picked_name = "none"
-		var/mutable_appearance/M = mutable_appearance('icons/roguetown/weapons/shield_heraldry.dmi', picked_name)
-		add_overlay(M)
-		var/mutable_appearance/MU = mutable_appearance(icon, "ironsh_detail")
-		MU.alpha = 50
-		add_overlay(MU)
-		if(alert("Are you pleased with your heraldry?", "Heraldry", "Yes", "No") != "Yes")
-			cut_overlays()
-	else
-		..()
+/obj/item/rogueweapon/shield/tower/spidershield
+	name = "spider shield"
+	desc = "A bulky shield of spike-like lengths molten together. The motifs evoke anything but safety and protection."
+	icon_state = "spidershield"
+	coverage = 55
 
 /obj/item/rogueweapon/shield/buckler
 	name = "buckler shield"
@@ -244,7 +275,7 @@
 /obj/item/rogueweapon/shield/heater
 	name = "heater shield"
 	desc = "A sturdy wood and leather shield. Made to not be too encumbering while still providing good protection."
-	icon_state = "heatershield"
+	icon_state = "heatersh"
 	force = 15
 	throwforce = 10
 	dropshrink = 0.8
@@ -252,22 +283,6 @@
 	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	max_integrity = 200
-
-/obj/item/rogueweapon/shield/heater/attack_hand(mob/user)
-	if(!overlays.len)
-		var/icon/J = new('icons/roguetown/weapons/heater_heraldry.dmi')
-		var/list/istates = J.IconStates()
-		var/picked_name = input(user, "Choose a Heraldry", "ROGUETOWN", name) as null|anything in sortList(istates)
-		if(!picked_name)
-			picked_name = "none"
-		var/mutable_appearance/M = mutable_appearance('icons/roguetown/weapons/heater_heraldry.dmi', picked_name)
-		M.alpha = 178
-		add_overlay(M)
-		var/mutable_appearance/MU = mutable_appearance(icon, "heatershield_detail")
-		MU.alpha = 114
-		add_overlay(MU)
-	else
-		..()
 
 /obj/item/rogueweapon/shield/heater/getonmobprop(tag)
 	. = ..()

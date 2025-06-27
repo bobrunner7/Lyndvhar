@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_ALL_KINDS
 	tutorial = "Some say you're a strange individual, some say you're a cheat, while some claim you're a savant in the art of sausage making. Without your skilled hands and knifework, most of the livestocks' meat around the town would rot to waste before it could be eaten."
 
 	outfit = /datum/outfit/job/roguetown/beastmaster
@@ -19,12 +19,12 @@
 /datum/outfit/job/roguetown/beastmaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 5, TRUE)
@@ -39,6 +39,7 @@
 		/obj/item/reagent_containers/food/snacks/rogue/truffles,
 		/obj/item/reagent_containers/powder/salt = 3,
 		/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette = 2,
+		/obj/item/roguekey/walls
 		)
 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -52,3 +53,6 @@
 		H.change_stat("endurance", 1)
 		H.change_stat("intelligence", 1)
 		H.change_stat("speed", -1)
+	ADD_TRAIT(H, TRAIT_CICERONE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)

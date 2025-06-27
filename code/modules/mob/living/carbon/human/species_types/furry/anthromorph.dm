@@ -123,14 +123,6 @@
 		/datum/descriptor_choice/prominent_four_wild,
 	)
 
-/datum/species/anthromorph/on_species_gain(mob/living/carbon/C, datum/species/old_species)
-	..()
-	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
-
-/datum/species/anthromorph/on_species_loss(mob/living/carbon/C)
-	. = ..()
-	UnregisterSignal(C, COMSIG_MOB_SAY)
-
 /datum/species/anthromorph/check_roundstart_eligible()
 	return TRUE
 
@@ -173,3 +165,223 @@
 	returned["mcolor3"] = third_color
 	return returned
 
+/datum/species/anthromorph/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	. = ..()
+	RegisterSignal(C, COMSIG_MOB_SAY , PROC_REF(handle_speech))
+	// adds anthro specific emotes
+	C.verbs += list(
+        /mob/proc/howl,
+        /mob/proc/growl,
+		/mob/proc/meow,
+		/mob/proc/purr,
+		/mob/proc/moo,
+		/mob/proc/bark,
+		/mob/proc/growl,
+		/mob/proc/bleat,
+		/mob/proc/caw,
+		/mob/proc/peep,
+		/mob/proc/hoot,
+		/mob/proc/squeak,
+		/mob/proc/hiss,
+		/mob/proc/phiss,
+		/mob/proc/howl,
+		/mob/proc/cackle,
+		/mob/proc/whine,
+		/mob/proc/chitter,
+		/mob/proc/flutter,
+	)
+
+/datum/species/anthromorph/on_species_loss(mob/living/carbon/C)
+    . = ..()
+    UnregisterSignal(C, COMSIG_MOB_SAY)
+    // Remove anthro-specific emotes
+    C.verbs -= list(
+        /mob/proc/howl, //
+        /mob/proc/growl, //
+		/mob/proc/meow, //
+		/mob/proc/purr, //
+		/mob/proc/moo, //
+		/mob/proc/bark, //
+		/mob/proc/growl, //
+		/mob/proc/bleat, //
+		/mob/proc/caw, //
+		/mob/proc/peep, //
+		/mob/proc/hoot, //
+		/mob/proc/squeak, //
+		/mob/proc/hiss, //
+		/mob/proc/phiss, //
+		/mob/proc/cackle, //
+		/mob/proc/whine, //
+		/mob/proc/chitter,
+		/mob/proc/flutter,
+    )
+
+/mob/proc/hiss()
+	set name = "Hiss"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("hiss")
+	next_move = world.time + 30
+
+/mob/proc/phiss()
+	set name = "PHiss"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("phiss")
+	next_move = world.time + 30
+
+/mob/proc/growl()
+    set name = "Growl"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("growl")
+    next_move = world.time + 20
+
+/mob/proc/howl()
+    set name = "Howl"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("howl")
+    next_move = world.time + 90 // 9 second cooldown
+
+/mob/proc/whine()
+    set name = "Whine"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("whine")
+    next_move = world.time + 30
+
+/mob/proc/bark()
+    set name = "Bark"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("bark")
+    next_move = world.time + 3
+
+/mob/proc/squeak()
+    set name = "Squeak"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("Squeak")
+    next_move = world.time + 3
+
+/mob/proc/cackle()
+    set name = "Cackle"
+    set category = "Noises"
+    if(stat != CONSCIOUS)
+        return
+    if(next_move > world.time)
+        return
+    emote("cackle")
+    next_move = world.time + 30
+
+/mob/proc/meow()
+	set name = "Meow"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("meow")
+	next_move = world.time + 3
+
+/mob/proc/purr()
+	set name = "Purr"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("purr")
+	next_move = world.time + 3 // 0.3 second cooldown
+
+/mob/proc/hoot()
+	set name = "Hoot"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("hoot")
+	next_move = world.time + 9 
+
+/mob/proc/caw()
+	set name = "Caw"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("caw")
+	next_move = world.time + 9 
+
+/mob/proc/peep()
+	set name = "Peep"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("peep")
+	next_move = world.time + 9 
+
+/mob/proc/bleat()
+	set name = "Bleat"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("bleat")
+	next_move = world.time + 50 
+
+/mob/proc/moo()
+	set name = "Moo"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("moo")
+	next_move = world.time + 50
+
+/mob/proc/chitter()
+	set name = "Chitter"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("chitter")
+	next_move = world.time + 50
+
+/mob/proc/flutter()
+	set name = "Flutter"
+	set category = "Noises"
+	if(stat != CONSCIOUS)
+		return
+	if(next_move > world.time)
+		return
+	emote("flutter")
+	next_move = world.time + 50

@@ -1,6 +1,6 @@
 /datum/advclass/knighterrant
 	name = "Knight Errant"
-	tutorial = "You are a Knight-Errant, a wandering noble from a distant land. Your armor bears the crest of a great house, and your blade carries the weight of your chivalry. Whether driven by glory, a sense of adventure or a quest for purpose, your journey has brought you to Lyndhardtia."
+	tutorial = "You are a Knight-Errant, a wandering noble from a distant province. Your armor bears the crest of a great house, and your blade carries the weight of your chivalry. Whether driven by glory, a sense of adventure or a quest for purpose, your journey has brought you to Lyndvhar."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/knight
@@ -31,14 +31,14 @@
 */
 /datum/outfit/job/roguetown/adventurer/knight/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You are a knight from a distant land, a scion of a noble house visiting Lyndhardtia for one reason or another."))
+	to_chat(H, span_warning("You are a knight from a distant province of Lyndhardtia, a scion of a noble house coming to Lyndvhar for one reason or another."))
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	cloak = /obj/item/clothing/cloak/tabard/knight
-	neck = /obj/item/clothing/neck/roguetown/bevor
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/steel

@@ -146,7 +146,7 @@
 							break
 					return
 	if(W.firefuel)
-		if (alert(usr, "Fuel the [src] with [W]?", "ROGUETOWN", "Fuel", "Smelt") != "Fuel")
+		if (alert(usr, "Fuel the [src] with [W]?", "LYNDVHAR", "Fuel", "Smelt") != "Fuel")
 			return TRUE //returns true if the answer is no, we don't want to feed it
 		if(initial(fueluse))
 			if(fueluse > initial(fueluse) - 5 SECONDS)

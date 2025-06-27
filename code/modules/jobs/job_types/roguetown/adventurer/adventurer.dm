@@ -66,4 +66,4 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 		return
 	status_flags &= ~GODMODE
 	REMOVE_TRAIT(src, TRAIT_PACIFISM, HUGBOX_TRAIT)
-	to_chat(src, span_danger("The warm feeling vanishes. Danger surrounds me- my divine protection has vanished."))
+	to_chat(src, span_danger("The warm feeling vanishes. Danger surrounds me.. my divine protection has vanished."))

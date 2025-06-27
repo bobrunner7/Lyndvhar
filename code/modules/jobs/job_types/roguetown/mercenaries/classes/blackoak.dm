@@ -9,6 +9,7 @@
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/blackoak
 	category_tags = list(CTAG_MERCENARY)
+	traits_applied = list(TRAIT_OUTLANDER)
 
 /datum/outfit/job/roguetown/mercenary/blackoak/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -20,12 +21,12 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/elven
 	backl = /obj/item/storage/backpack/rogue/satchel
 	r_hand = /obj/item/rogueweapon/halberd/bardiche
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+	beltl = /obj/item/rogueweapon/huntingknife/idagger
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	pants = /obj/item/clothing/under/roguetown/tights/random
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	backr = /obj/item/gwstrap
-	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/storage/belt/rogue/pouch/coins/poor)
+	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/storage/belt/rogue/pouch/coins/poor, /obj/item/clothing/neck/roguetown/mercmedal/blackoak)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -42,3 +43,5 @@
 		H.change_stat("strength", 1)
 		H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+

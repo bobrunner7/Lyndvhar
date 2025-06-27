@@ -32,9 +32,8 @@
 	head = /obj/item/clothing/head/roguetown/bardhat
 	mouth = /obj/item/alch/rosa
 	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
-	neck = /obj/item/clothing/neck/roguetown/leather
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/valorian
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -46,13 +45,13 @@
 	backr = /obj/item/rogue/instrument/guitar
 	backpack_contents = list(
 					/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
-					/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
 					/obj/item/lockpick = 1,
 					/obj/item/flashlight/flare/torch = 1,
 					/obj/item/roguekey/mercenary = 1
 					)
 	H.change_stat("strength", 1)
 	H.change_stat("intelligence", 1)
-	H.change_stat("speed", 3)
+	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)

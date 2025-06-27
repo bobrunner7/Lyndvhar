@@ -1,5 +1,5 @@
 /datum/job/roguetown/knight
-	title = "Household Guard"		//Knights, but their role is far more clear this way.
+	title = "Cataphract"
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -10,12 +10,14 @@
 		/datum/species/elf/wood,
 		/datum/species/human/halfelf,
 		/datum/species/dwarf/mountain,
+		/datum/species/elf/dark,
 		/datum/species/aasimar,
 		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the city as the Viscount's personal household guard. You listen to your Liege and the Captain of the Guard, defending your Lord and city."
+	allowed_patrons = ALL_DIVINE_PATRONS
+	tutorial = "You have served from squire all the way to where you stand now. After years of training, you were officially knighted by the Viscount and placed at their side as one of their formal Retinue. You are the last line of defense against any threat that may harm this city and its denizens, and would rather die than see such harm befall them."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight
@@ -36,7 +38,7 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
-		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/surcoat/guard))
+		if(istype(H.cloak, /obj/item/clothing/cloak/tabard/knight/guard))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
@@ -59,17 +61,16 @@
 					H.mind.person_knows_me(MF)
 
 /datum/outfit/job/roguetown/knight
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	cloak = /obj/item/clothing/cloak/tabard/knight/guard
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	belt = /obj/item/storage/belt/rogue/leather/black
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	belt = /obj/item/storage/belt/rogue/leather/steel
+	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/storage/keyring/guardcastle = 1)
 
 /datum/advclass/knight/heavy
-	name = "Heavy Knight"
-	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, and maces. People may fear the mounted knights, but they should truly fear those who come off their mount.."
+	name = "Heavy Cataphract"
+	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, and maces. People may fear the mounted Cataphract, but they should truly fear those who come off their mount.."
 	outfit = /datum/outfit/job/roguetown/knight/heavy
 
 	category_tags = list(CTAG_ROYALGUARD)
@@ -121,13 +122,12 @@
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 	
 
-	neck = /obj/item/clothing/neck/roguetown/bevor
-	armor = /obj/item/clothing/suit/roguetown/armor/plate		//this is actually steel half-plate, full plate is plate/full. given because they are SLOW.
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron	//this is actually a steel cuirass, not half plate.
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
@@ -135,6 +135,7 @@
 		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
 		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
 		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
 		"Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet,
 		"None"
 	)
@@ -144,8 +145,8 @@
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
 
 /datum/advclass/knight/footknight
-	name = "Foot Knight"
-	tutorial = "You are accustomed to traditional foot-soldier training in swords, flails, and shields. You are not as used to riding a mount as other knights, but you are the finest of all with the versatile combination of a shield and weapon!"
+	name = "Light Cataphract"
+	tutorial = "You are accustomed to traditional foot-soldier training in swords, flails, and shields. You are not as used to riding a mount as other Cataphract, but you are the finest of all with the versatile combination of a shield and weapon!"
 	outfit = /datum/outfit/job/roguetown/knight/footknight
 
 	category_tags = list(CTAG_ROYALGUARD)
@@ -194,10 +195,10 @@
 			beltr = /obj/item/rogueweapon/flail/sflail		//these steel flails spawn in the armory anyways
 			backl = /obj/item/rogueweapon/shield/tower/metal
 
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates		//given because it's less durability than the steel cuirass but is actually heavy, making use of their heavy skill, unlike cuirass
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
@@ -205,6 +206,7 @@
 		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
 		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
 		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
 		"Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet,
 		"None"
 	)
@@ -215,7 +217,7 @@
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
 
 /datum/advclass/knight/mountedknight
-	name = "Mounted Knight"
+	name = "Mounted Cataphract"
 	tutorial = "You are the picture-perfect knight from a high tale, knowledgeable in riding steeds into battle. You specialize in weapons most useful on a saiga including spears, swords and maces, but know your way around a shield."
 	outfit = /datum/outfit/job/roguetown/knight/mountedknight
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
@@ -237,7 +239,7 @@
 	//Normal shared skill section.
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -270,16 +272,17 @@
 			beltr = /obj/item/quiver/arrows
 			beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates	//given because it's less durability than the steel cuirass but is actually heavy, making use of their heavy skill, unlike cuirass
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
 		"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
 		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
 		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
 		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
 		"Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet,
 		"None"
 	)
@@ -290,8 +293,8 @@
 
 
 /datum/advclass/knight/irregularknight
-	name = "Royal Champion"
-	tutorial = "Your skillset is abnormal for a knight. Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in medium armor, your evasive skills will only truly shine if you don even lighter protection."
+	name = "Champion Duelist"
+	tutorial = "Your skillset is abnormal for a Cataphract. Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in medium armor, your evasive skills will only truly shine if you don even lighter protection."
 	outfit = /datum/outfit/job/roguetown/knight/irregularknight
 
 	category_tags = list(CTAG_ROYALGUARD)
@@ -342,7 +345,6 @@
 
 		if("Estoc")
 			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		
 		if("Sabre + Buckler")
 			r_hand = /obj/item/rogueweapon/sword/sabre
@@ -351,21 +353,24 @@
 		if("Light Armor")
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy
 		if("Medium Armor")
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 
 	var/helmets = list(
-		"Pigface Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
-		"Bascinet"				= /obj/item/clothing/head/roguetown/helmet/bascinet,
-		"Sallet"				= /obj/item/clothing/head/roguetown/helmet/sallet,
-		"Visored Sallet"		= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
+		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
+		"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
+		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
+		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
+		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
+		"Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet,
 		"None"
 	)
 	
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
 	if(helmchoice != "None")
 		head = helmets[helmchoice]

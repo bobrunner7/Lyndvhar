@@ -112,14 +112,6 @@
 /datum/species/vulpkanin/qualifies_for_rank(rank, list/features)
 	return TRUE
 
-/datum/species/vulpkanin/on_species_gain(mob/living/carbon/C, datum/species/old_species)
-	. = ..()
-	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
-
-/datum/species/vulpkanin/on_species_loss(mob/living/carbon/C)
-	. = ..()
-	UnregisterSignal(C, COMSIG_MOB_SAY)
-
 /datum/species/vulpkanin/get_random_features()
 	var/list/returned = MANDATORY_FEATURE_LIST
 	var/main_color
@@ -149,3 +141,23 @@
 
 /datum/species/vulpkanin/get_random_body_markings(list/passed_features)
 	return assemble_body_markings_from_set(GLOB.body_marking_sets_by_type[/datum/body_marking_set/bellysockstertiary], passed_features, src)
+
+/datum/species/vulpkanin/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	. = ..()
+	RegisterSignal(C, COMSIG_MOB_SAY , PROC_REF(handle_speech))
+	// adds vulpkanin specific emotes
+	C.verbs += list(
+        /mob/proc/growl,
+		/mob/proc/cackle,
+		/mob/proc/whine,
+	)
+
+/datum/species/vulpkanin/on_species_loss(mob/living/carbon/C)
+    . = ..()
+    UnregisterSignal(C, COMSIG_MOB_SAY)
+    // Remove vulpkanin-specific emotes
+    C.verbs -= list(
+        /mob/proc/growl,
+		/mob/proc/cackle,
+		/mob/proc/whine,
+    )

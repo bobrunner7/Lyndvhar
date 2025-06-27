@@ -1,6 +1,6 @@
 /datum/language/hellspeak
 	name = "Infernal"
-	desc = ""
+	desc = "A grinding, hissing language used by tieflings and others. Considered a fell omen by most to hear."
 	speech_verb = "says"
 	ask_verb = "asks"
 	exclaim_verb = "yells"

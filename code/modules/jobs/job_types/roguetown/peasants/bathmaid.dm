@@ -1,6 +1,6 @@
 /datum/job/roguetown/nightmaiden
-	title = "Bathhouse Attendant"
-	f_title = "Bathhouse Attendant"
+	title = "Nightswain"
+	f_title = "Nightmaiden"
 	flag = WENCH
 	department_flag = PEASANTS
 	faction = "Station"
@@ -11,7 +11,7 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "Most would decry the humble bath attendant as a desperate fool tempting others into bedsheets for money--only sometimes, you say! You work under your Bathmaster in the communal bathhouse, keeping it and the guests in turn as tidy as they please. Wash laundry, tend mild wounds, and deftly wash your patrons with soap and a skilled 'caress', for this is your craft."
+	tutorial = "Most would decry the workers of the Baths under the tavern as desperate fools tempting others into bedsheets for mammons- and unfortuantely, you have found yourself as one of those. You work under your Bathmaster in the communal bathhouse, keeping it and the guests in turn as tidy as they please. Wash laundry, tend mild wounds, and deftly wash your patrons with soap and a skilled 'caress', for this is your craft. Perhaps you will eventually make enough coin to get out of here."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	advclass_cat_rolls = list(CTAG_NIGHTMAIDEN = 20)
@@ -32,12 +32,12 @@
 		H.become_blind("advsetup") // Classes are for aesthetic clothing only, mechanically they're identical.
 
 /datum/outfit/job/roguetown/nightmaiden
-	name = "Bathhouse Attendant"
+	name = "Nightmaiden"
 	// This is just a base outfit, the actual outfits are defined in the advclasses
 
 /datum/advclass/nightmaiden
-	name = "Bath Attendant"
-	tutorial = "Most would decry the humble bath attendant as a desperate fool tempting others into bedsheets for money--only sometimes, you say! You work under your Bathmaster in the communal bathhouse, keeping it and the guests in turn as tidy as they please. Wash laundry, tend mild wounds, and deftly wash your patrons with soap and a skilled 'caress', for this is your craft."
+	name = "Attendant"
+	tutorial = "You are the zili-a-dozen of the baths, one of many simply working to either pay off a debt, or other. Deftly entertain, wash, and give a skilled 'caress' to those who pay. Perhaps you will eventually make enough coin to get out of here."
 	outfit = /datum/outfit/job/roguetown/nightmaiden/attendant
 	category_tags = list(CTAG_NIGHTMAIDEN)
 
@@ -79,7 +79,7 @@
 
 /datum/advclass/nightmaiden/concubine
 	name = "Concubine"
-	tutorial = "Unlike your fellow bath attendants who maintain a professional facade, you have abandoned all pretense. You are a prized possession of the nobility, adorned in exotic silks and gold. Your role is to provide companionship, entertainment, and pleasure."
+	tutorial = "Unlike your fellow attendants who maintain a professional facade, you have abandoned all pretense. You are a prized possession of the baths, adorned in exotic silks and gold. Your role is to provide companionship, entertainment, and pleasure for an extensive fee."
 	outfit = /datum/outfit/job/roguetown/nightmaiden/concubine
 	category_tags = list(CTAG_NIGHTMAIDEN)
 
@@ -125,7 +125,7 @@
 
 	// Let the concubine choose an instrument
 	var/weapons = list("Harp","Lute","Accordion","Guitar","Hurdy-Gurdy","Viola","Vocal Talisman","Flute")
-	var/weapon_choice = input("Choose your instrument.", "TAKE UP ARMS") as anything in weapons
+	var/weapon_choice = input("Choose your instrument.", "TAKE UP YOUR INSTRUMENT") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Harp")

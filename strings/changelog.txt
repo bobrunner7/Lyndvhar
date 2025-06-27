@@ -1,7 +1,3 @@
-- The city is near-completion and able to be played properly for a full round.
-- Multiple dungeons littered around the game area to explore and spelunk.
-- Replacing racial stats with statpacks completely. Now you can be a super fast orc, or a slow but strong elf.
-- Full adjustment of racial locks and racial lore to fit the server setting.
-- Complete overhaul of the Inhumen. Similar to what you know, but no longer the same.
-- Complete rewriting of the Pantheon. Same gist, but written without AI.
-- And many more..
+To see new changes, keep up to date with our github, which you can find here:
+
+https://github.com/LYNDVHAR-NOBILITY/Lyndvhar

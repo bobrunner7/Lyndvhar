@@ -1,20 +1,12 @@
 /datum/job/roguetown/wapprentice
-	title = "Magicians Associate"
+	title = "Magicians Apprentice"
 	flag = MAGEAPPRENTICE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/tieberian,
-		/datum/species/elf/dark,
-		/datum/species/demihuman
-	)
+	allowed_races = RACES_SHUNNED_UP
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	advclass_cat_rolls = list(CTAG_WAPPRENTICE = 20)
 
@@ -48,7 +40,7 @@
 		H.become_blind("advsetup")
 		
 /datum/advclass/wapprentice/associate
-	name = "Magicians Associate"
+	name = "Arcyne Novitiate"
 	tutorial = "You were once an apprentice, though through your studies and practice you've mastered the basics of the arcyne. You now spend your days working under your master, honing your skills so that you might one day be considered a true master yourself."
 	outfit = /datum/outfit/job/roguetown/wapprentice/associate
 		
@@ -87,7 +79,7 @@
 				H.cmode_music = 'sound/music/combat_cult.ogg'
 		
 /datum/advclass/wapprentice/alchemist
-	name = "Alchemist Associate"
+	name = "Alchemist Apprentice"
 	tutorial = "During your studies, you became less focused on the arcyne and instead turned yourself to your true passion, alchemy. Through the art of transmutation, you have learned that the elements (much like the arcyne) can be maniupulated and bent to your will."
 	outfit = /datum/outfit/job/roguetown/wapprentice/alchemist
 	
@@ -126,7 +118,7 @@
 				H.cmode_music = 'sound/music/combat_cult.ogg'
 		
 /datum/advclass/wapprentice/apprentice
-	name = "Magicians Apprentice"
+	name = "Arcyne Adept"
 	tutorial = "Your master once saw potential in you, although you are uncertain if they still do, given how rigorous and difficult your studies have been. The path to using magic is a treacherous and untamed one, and you are still decades away from calling yourself even a journeyman in the field. Listen and serve, and someday you will earn your hat."
 	outfit = /datum/outfit/job/roguetown/wapprentice/apprentice
 	

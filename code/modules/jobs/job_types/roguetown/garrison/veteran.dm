@@ -7,15 +7,8 @@
 	spawn_positions = 1
 
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
-	allowed_races = list(
-		/datum/species/human/northern,
-		/datum/species/elf/wood,
-		/datum/species/human/halfelf,
-		/datum/species/dwarf/mountain,
-		/datum/species/aasimar,
-		/datum/species/halforc,
-		/datum/species/dracon
-	)
+	allowed_races = RACES_SHUNNED_UP
+	allowed_patrons = ALL_DIVINE_PATRONS
 	tutorial = "You've known combat your entire life. There isn't a way to kill a man you havent practiced in the tapestries of war itself. You wouldn't call yourself a hero--those belong to the men left rotting in the fields where you honed your ancient trade. You don't sleep well at night anymore, you don't like remembering what you've had to do to survive these turbulent times. Trading adventure for stable pay was the only logical solution, and maybe someday you'll get to lay down the blade and rest your weary body..."
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 	advclass_cat_rolls = list(CTAG_VETERAN = 20)
@@ -26,7 +19,7 @@
 	max_pq = null
 	round_contrib_points = 2
 
-	cmode_music = 'sound/music/combat_guard.ogg'
+	cmode_music = 'sound/music/combat_guard2.ogg'
 
 /datum/job/roguetown/veteran/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
@@ -55,16 +48,17 @@
 // Normal veteran start, from the olden days.
 
 /datum/outfit/job/roguetown/vet/battlemaster/pre_equip(mob/living/carbon/human/H)
-	neck = /obj/item/clothing/neck/roguetown/bevor
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	beltl = /obj/item/rogueweapon/sword/sabre
 	beltr = /obj/item/storage/keyring/guardcastle
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	cloak = /obj/item/clothing/cloak/half/vet
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
@@ -80,7 +74,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 		H.change_stat("speed", 1)
@@ -95,9 +89,9 @@
 
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.cmode_music = 'sound/music/combat_duelist.ogg'
+	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) // Veterans are supposed to be good trainers to pass down their martial skills. Ditto for the rest of the Vet jobs.
+	H.cmode_music = 'sound/music/combat_guard2.ogg'
 
 /datum/advclass/veteran/footman
 	name = "Retired Footman"
@@ -111,18 +105,17 @@
 /datum/outfit/job/roguetown/vet/footman/pre_equip(mob/living/carbon/human/H)
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half // Meant to be better than man-at-arms, but worse than knight. No heavy armor!! This is a cuirass, not half-plate.
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	gloves = /obj/item/clothing/gloves/roguetown/plate
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	head = /obj/item/clothing/head/roguetown/helmet/sallet
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	beltl = /obj/item/rogueweapon/sword
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	beltl = /obj/item/rogueweapon/sword/falchion
 	beltr = /obj/item/storage/keyring/guardcastle
-	backr = /obj/item/storage/backpack/rogue/satchel/black
-	backl = /obj/item/rogueweapon/shield/tower/metal
-	r_hand = /obj/item/rogueweapon/spear/billhook
-	belt = /obj/item/storage/belt/rogue/leather/black
+	backr = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/rogueweapon/shield/tower
+	r_hand = /obj/item/rogueweapon/spear
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
 	if(H.mind)
@@ -132,14 +125,14 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE) // this is a kinda scary skill to give them, surely it won't go wrong though.
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE) // two handed weapons require a LOT of stamina.
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) // two handed weapons require a LOT of stamina.
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 		H.change_stat("intelligence", 1)
@@ -156,10 +149,11 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC)
 
 /datum/advclass/veteran/calvaryman
-	name = "Tarnished Knight"
-	tutorial = "You were once a member of a knightly calvary regiment, a prestigious title. You were ontop of the world, the townspeople rejoiced when you rode through their streets. Now, all you can hear is the screams of your brothers-in-arms as they fell. You specialize in mounted warfare."
+	name = "Tarnished Cataphract"
+	tutorial = "You were once a member of a heavy cataphract regiment, a prestigious title. You were ontop of the world, the townspeople rejoiced when you rode through their streets. Now, all you can hear is the screams of your brothers-in-arms as they fell. You specialize in mounted warfare."
 	outfit = /datum/outfit/job/roguetown/vet/calvaryman
 
 	category_tags = list(CTAG_VETERAN)
@@ -167,17 +161,16 @@
 // You get a SAIGA. Saigas are pretty good, you lose out on your legendary weapon skills and you suck more on foot though.
 
 /datum/outfit/job/roguetown/vet/calvaryman/pre_equip(mob/living/carbon/human/H)
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/	////Former knights should have knightly armour. 
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half	////Former knights should have knightly armour. 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	gloves = /obj/item/clothing/gloves/roguetown/plate
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	beltr = /obj/item/storage/keyring/guardcastle
-	backr = /obj/item/storage/backpack/rogue/satchel/black
-	belt = /obj/item/storage/belt/rogue/leather/black
+	backr = /obj/item/storage/backpack/rogue/satchel
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
 	if(H.mind)
@@ -212,9 +205,8 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC) // retired knight!
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC)
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Sword + Recurve Bow","Axe + Crossbow","Spear + Shield")
@@ -245,16 +237,16 @@
 // Former Bogmaster maybe? I feel like that'd be cooler than just an archer guy. 
 
 /datum/outfit/job/roguetown/vet/scout/pre_equip(mob/living/carbon/human/H)
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
+	neck = /obj/item/clothing/neck/roguetown/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	beltl = /obj/item/quiver/arrows
 	beltr = /obj/item/flashlight/flare/torch/lantern
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
@@ -267,7 +259,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE) // I very rarely see ranged weapons outside of PVE. Maybe this'll fix that?
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
@@ -276,6 +268,12 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 		H.change_stat("strength", -1)
 		H.change_stat("perception", 3) // you are OLD you have OLD EYES. this is to counter that debuff so you can be OBSERVANT. You sacrifice your strength and armor, so.
 		H.change_stat("intelligence", 2)
@@ -290,4 +288,6 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC) // You should really be parrying anyways, you have legendary/master skills....
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.cmode_music = 'sound/music/combat_rogue.ogg'
+	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC)
+	H.cmode_music = 'sound/music/combat_guard2.ogg'

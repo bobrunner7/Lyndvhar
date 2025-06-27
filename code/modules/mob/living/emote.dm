@@ -1297,15 +1297,6 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_meow()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Meow"
-		set category = "Noises"
-		emote("meow", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
-
 /datum/emote/living/purr
 	key = "purr"
 	key_third_person = "purrs!"
@@ -1314,15 +1305,6 @@
 	message_muffled = "makes a muffled sound!"
 	vary = TRUE
 	show_runechat = FALSE
-
-/mob/living/carbon/human/verb/emote_purr()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Purr"
-		set category = "Noises"
-		emote("purr", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
 
 /datum/emote/living/moo
 	key = "moo"
@@ -1333,15 +1315,6 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_moo()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Moo"
-		set category = "Noises"
-		emote("moo", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
-
 /datum/emote/living/bark
 	key = "bark"
 	key_third_person = "barks!"
@@ -1350,15 +1323,6 @@
 	message_muffled = "makes a muffled sound!"
 	vary = TRUE
 	show_runechat = FALSE
-
-/mob/living/carbon/human/verb/emote_bark()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Bark"
-		set category = "Noises"
-		emote("bark", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
 
 /datum/emote/living/growl
 	key = "growl"
@@ -1369,15 +1333,6 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_growl()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Growl"
-		set category = "Noises"
-		emote("growl", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
-
 /datum/emote/living/bleat
 	key = "bleat"
 	key_third_person = "bleats!"
@@ -1387,14 +1342,125 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_bleat()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Bleat"
-		set category = "Noises"
-		emote("bleat", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/datum/emote/living/caw
+	key = "caw"
+	key_third_person = "caws!"
+	message = "caws!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/peep
+	key = "peep"
+	key_third_person = "peeps!"
+	message = "peeps!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/hoot
+	key = "hoot"
+	key_third_person = "hoots!"
+	message = "hoots!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/squeak
+	key = "squeak"
+	key_third_person = "squeaks!"
+	message = "squeaks!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/hiss
+	key = "hiss"
+	key_third_person = "hisses!"
+	message = "hisses!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/phiss
+	key = "phiss"
+	key_third_person = "hisses!"
+	message = "hisses!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/howl
+	key = "howl"
+	key_third_person = "howls!"
+	message = "howls!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/cackle
+	key = "cackle"
+	key_third_person = "cackles!"
+	message = "cackles!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/whine
+	key = "whine"
+	key_third_person = "whines."
+	message = "whines."
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	message_muffled = "makes a muffled sound!"
+	vary = TRUE
+	show_runechat = FALSE
+
+/datum/emote/living/snap
+	key = "snap"
+	key_third_person = "finger snaps!"
+	message = "finger snaps!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	show_runechat = FALSE
+
+/mob/living/carbon/human/verb/emote_snap()
+	set name = "Snap"
+	set category = "Noises"
+
+	emote("snap", intentional = TRUE)
+
+/datum/emote/living/snap2
+	key = "snap2"
+	key_third_person = "finger snaps twice!"
+	message = "finger snaps twice!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	show_runechat = FALSE
+
+/mob/living/carbon/human/verb/emote_snap2()
+	set name = "Snap2"
+	set category = "Noises"
+
+	emote("snap2", intentional = TRUE)
+
+/datum/emote/living/snap3
+	key = "snap3"
+	key_third_person = "finger snaps thrice!"
+	message = "finger snaps thrice!"
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	show_runechat = FALSE
+
+/mob/living/carbon/human/verb/emote_snap3()
+	set name = "Snap3"
+	set category = "Noises"
+
+	emote("snap3", intentional = TRUE)
 
 /datum/emote/living/chitter
 	key = "chitter"
@@ -1405,15 +1471,6 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_chitter()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/moth))
-		set name = "Chitter"
-		set category = "Noises"
-		emote("chitter", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
-
 /datum/emote/living/flutter
 	key = "flutter"
 	key_third_person = "flutters!"
@@ -1421,11 +1478,3 @@
 	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_flutter()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/moth))
-		set name = "Flutter"
-		set category = "Noises"
-		emote("flutter", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your back doesn't do that"))
-		return

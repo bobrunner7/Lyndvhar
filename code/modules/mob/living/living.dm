@@ -39,8 +39,9 @@
 /mob/living/onZImpact(turf/T, levels)
 	if(HAS_TRAIT(src, TRAIT_NOFALLDAMAGE2))
 		return
-	if(HAS_TRAIT(src, TRAIT_NOFALLDAMAGE1))
+	if(HAS_TRAIT(src, TRAIT_NOFALLDAMAGE1) && !IsOffBalanced())
 		if(levels <= 2)
+			OffBalance(40)
 			return
 	var/points
 	for(var/i in 2 to levels)
@@ -342,7 +343,7 @@
 			return FALSE
 	return TRUE
 
-/mob/living/start_pulling(atom/movable/AM, state, force = pull_force, supress_message = FALSE, obj/item/item_override)
+/mob/living/start_pulling(atom/movable/AM, state, force = pull_force, supress_message = FALSE, obj/item/item_override, accurate = FALSE)
 	if(!AM || !src)
 		return FALSE
 	if(!(AM.can_be_pulled(src, state, force)))
@@ -395,7 +396,7 @@
 		if(iscarbon(M))
 			var/mob/living/carbon/C = M
 			var/obj/item/grabbing/O = new()
-			var/used_limb = C.find_used_grab_limb(src)
+			var/used_limb = C.find_used_grab_limb(src, accurate)
 			O.name = "[C]'s [parse_zone(used_limb)]"
 			var/obj/item/bodypart/BP = C.get_bodypart(check_zone(used_limb))
 			C.grabbedby += O
@@ -850,18 +851,6 @@
 	reset_offsets("wall_press")
 	update_wallpress_slowdown()
 
-
-/mob/living/proc/update_pixelshift(turf/T, atom/newloc, direct)
-	if(!pixelshifted)
-		reset_offsets("pixel_shift")
-		return FALSE
-	pixelshifted = FALSE
-	pixelshift_x = 0
-	pixelshift_y = 0
-	pixelshift_layer = 0
-	layer = 4
-	reset_offsets("pixel_shift")
-
 /mob/living/Move(atom/newloc, direct, glide_size_override)
 
 	var/old_direction = dir
@@ -873,9 +862,6 @@
 
 	if(wallpressed)
 		update_wallpress(T, newloc, direct)
-
-	if(pixelshifted)
-		update_pixelshift(T, newloc, direct)
 
 	if(lying)
 		if(direct & EAST)
@@ -1082,10 +1068,21 @@
 	else if(!cmode && L.cmode)
 		combat_modifier -= 0.3
 
-	resist_chance = clamp((((4 + (((STASTR - L.STASTR)/2) + wrestling_diff)) * 10 + rand(-5, 10)) * combat_modifier), 5, 95)
+	var/obj/item/puller_hand = pulledby.get_active_held_item()
+	if(isitem(puller_hand))
+		if(!istype(puller_hand, /obj/item/grabbing) && puller_hand.wlength > WLENGTH_SHORT)  // so you can't pummel them with a weapon
+			combat_modifier += 0.25
 
-	if(moving_resist && client) //we resisted by trying to move
-		client.move_delay = world.time + 20
+	resist_chance += ((((STASTR - L.STASTR)/2) + wrestling_diff) * 7 + rand(-5, 5))
+	resist_chance *= combat_modifier
+	resist_chance = clamp(resist_chance, 7, 95)
+
+	// if(moving_resist && client) //we resisted by trying to move
+	client?.move_delay = world.time + 20
+	changeNext_move(CLICK_CD_RESIST)
+	rogfat_add(rand(4,9))
+	pulledby.rogfat_add(rand(2,5))
+
 	if(prob(resist_chance))
 		rogfat_add(rand(5,15))
 		visible_message(span_warning("[src] breaks free of [pulledby]'s grip!"), \
@@ -1094,6 +1091,11 @@
 		log_combat(pulledby, src, "broke grab")
 		pulledby.changeNext_move(CLICK_CD_GRABBING)
 		pulledby.stop_pulling()
+		var/wrestling_cooldown_reduction = 0
+		if(pulledby?.mind?.get_skill_level(/datum/skill/combat/wrestling))
+			wrestling_cooldown_reduction = 0.2 SECONDS * pulledby.mind.get_skill_level(/datum/skill/combat/wrestling)
+		TIMER_COOLDOWN_START(src, "broke_free", max(0, 2.5 SECONDS - wrestling_cooldown_reduction))
+		playsound(src.loc, 'sound/combat/grabbreak.ogg', 50, TRUE, -1)
 		return FALSE
 	else
 		rogfat_add(rand(5,15))
@@ -1119,7 +1121,9 @@
 							visible_message(span_warning("[src] struggles to break free from [pulledby]'s grip!"), \
 											span_warning("I struggle against [pulledby]'s grip!"), null, null, pulledby)
 							to_chat(pulledby, span_warning("[src] struggles against my grip!"))
-							return FALSE
+							playsound(src.loc, 'sound/combat/grabstruggle.ogg', 50, TRUE, -1)
+							client?.move_delay = world.time + 20
+							return TRUE
 	return ..()
 
 /mob/living/proc/resist_buckle()
@@ -1569,7 +1573,7 @@
 		if(!lying_prev)
 			fall(!canstand_involuntary)
 		layer = LYING_MOB_LAYER //so mob lying always appear behind standing mobs
-		if (pixelshifted)
+		if(is_shifted)
 			layer = 3.99 + pixelshift_layer //So mobs can pixelshift layers while lying down
 	else
 		if(layer == LYING_MOB_LAYER)
@@ -1749,7 +1753,7 @@
 
 ///Checks if the user is incapacitated or on cooldown.
 /mob/living/proc/can_look_up()
-	return !((next_move > world.time) || incapacitated(ignore_restraints = TRUE))
+	return !(incapacitated(ignore_restraints = TRUE))
 
 /**
  * look_up Changes the perspective of the mob to any openspace turf above the mob
@@ -1851,7 +1855,7 @@
 		return
 	if(!can_look_up())
 		return
-	changeNext_move(CLICK_CD_MELEE)
+	changeNext_move(CLICK_CD_RAPID)
 	if(m_intent != MOVE_INTENT_SNEAK)
 		visible_message(span_info("[src] looks up."))
 	var/turf/ceiling = get_step_multiz(src, UP)
@@ -1880,15 +1884,6 @@
 
 	if(T.can_see_sky())
 		do_time_change()
-
-	var/ttime = 10
-	if(STAPER > 5)
-		ttime = 10 - (STAPER - 5)
-		if(ttime < 0)
-			ttime = 0
-
-	if(!do_after(src, ttime, target = src))
-		return
 	reset_perspective(ceiling)
 	update_cone_show()
 //	RegisterSignal(src, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(stop_looking)) //We stop looking up if we move.

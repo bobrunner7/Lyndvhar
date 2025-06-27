@@ -1,6 +1,6 @@
 /datum/language/dwarvish
 	name = "Dwarfish"
-	desc = ""
+	desc = "The tones and speech of the dwarves. Used extensively in their mountain holds, every single Dwarf is required to learn it before they come of age and gain the right to grow a beard."
 	speech_verb = "blabbers"
 	ask_verb = "asks"
 	exclaim_verb = "shouts"

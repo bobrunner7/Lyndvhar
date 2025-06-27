@@ -6,8 +6,17 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = RACES_RESPECTED_UP
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/dwarf/mountain,
+		/datum/species/elf/dark,
+		/datum/species/aasimar,
+		/datum/species/demihuman
+	)
 	allowed_sexes = list(MALE, FEMALE)
+	allowed_patrons = ALL_DIVINE_PATRONS
 	outfit = /datum/outfit/job/roguetown/hand
 	advclass_cat_rolls = list(CTAG_HAND = 20)
 	display_order = JDO_HAND
@@ -85,8 +94,8 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 		H.change_stat("strength", 2)
-		H.change_stat("perception", 3)
-		H.change_stat("intelligence", 3)
+		H.change_stat("perception", 2)
+		H.change_stat("intelligence", 2)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
@@ -101,18 +110,11 @@
 /datum/outfit/job/roguetown/hand/spymaster/pre_equip(mob/living/carbon/human/H)
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/dtace = 1, /obj/item/storage/keyring/hand = 1, /obj/item/lockpickring/mundane)
-	if(H.dna.species.type in NON_DWARVEN_RACE_TYPES)
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/shadowrobe
-		cloak = /obj/item/clothing/cloak/half/shadowcloak
-		gloves = /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves
-		mask = /obj/item/clothing/mask/rogue/shepherd/shadowmask
-		pants = /obj/item/clothing/under/roguetown/trou/shadowpants
-	else
-		cloak = /obj/item/clothing/cloak/raincloak/mortus //cool spymaster cloak
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		backr = /obj/item/storage/backpack/rogue/satchel/black
-		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
-		pants = /obj/item/clothing/under/roguetown/tights/black
+	cloak = /obj/item/clothing/cloak/raincloak/mortus //no more drow larping
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	backr = /obj/item/storage/backpack/rogue/satchel/black
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
+	pants = /obj/item/clothing/under/roguetown/tights/black
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
@@ -132,7 +134,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 5, TRUE) // not like they're gonna break into the vault.
 	H.change_stat("strength", -2)
 	H.change_stat("perception", 2)
-	H.change_stat("speed", 4)
+	H.change_stat("speed", 3)
 	H.change_stat("intelligence", 2)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

@@ -80,6 +80,22 @@
 	max_integrity = 800
 	integrity_failure = 0.1
 
+/obj/structure/roguewindow/harem1
+	name = "exotic window"
+	icon_state = "harem1-solid"
+	base_state = "harem1-solid"
+
+/obj/structure/roguewindow/harem2
+	name = "exotic window"
+	icon_state = "harem2-solid"
+	base_state = "harem2-solid"
+	opacity = TRUE
+
+/obj/structure/roguewindow/harem3
+	name = "exotic window"
+	icon_state = "harem3-solid"
+	base_state = "harem3-solid"
+
 /obj/structure/roguewindow/openclose/Initialize()
 	lockdir = dir
 	icon_state = base_state
@@ -125,6 +141,16 @@
 			open_up(user)
 	else
 		to_chat(user, span_warning("The window doesn't close from this side."))
+
+/obj/structure/roguewindow/openclose/attackby(obj/item/attacking_item, mob/user, params)
+	if(istype(attacking_item, /obj/item/rogueweapon/huntingknife/idagger) && !climbable && !user.cmode)
+		to_chat(user, span_notice("I start trying to pry the window open..."))
+		if(do_after(user, 60, target = src))
+			playsound(src, 'sound/foley/doors/windowup.ogg', 100, FALSE)
+			src.force_open()
+	else
+		return ..()
+
 
 /obj/structure/roguewindow/proc/open_up(mob/user)
 	visible_message(span_info("[user] opens [src]."))

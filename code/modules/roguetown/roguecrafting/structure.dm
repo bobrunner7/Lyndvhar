@@ -76,6 +76,33 @@
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 3
 
+/datum/crafting_recipe/roguetown/structure/display_stand
+	name = "display stand"
+	reqs = list(/obj/item/grown/log/tree/small = 2, /obj/item/grown/log/tree/stick = 2)
+	result = /obj/structure/mannequin
+	verbage_simple = "construct"
+	verbage = "constructs"
+	craftdiff = 2
+	skillcraft = /datum/skill/craft/carpentry
+
+/datum/crafting_recipe/roguetown/structure/mannequin_female
+	name = "mannequin (female)"
+	reqs = list(/obj/item/grown/log/tree/small = 2, /obj/item/grown/log/tree/stick = 2)
+	result = /obj/structure/mannequin/male/female
+	verbage_simple = "construct"
+	verbage = "constructs"
+	craftdiff = 2
+	skillcraft = /datum/skill/craft/carpentry
+
+/datum/crafting_recipe/roguetown/structure/mannequin_male
+	name = "mannequin (male)"
+	reqs = list(/obj/item/grown/log/tree/small = 2, /obj/item/grown/log/tree/stick = 2)
+	result = /obj/structure/mannequin/male
+	verbage_simple = "construct"
+	verbage = "constructs"
+	craftdiff = 2
+	skillcraft = /datum/skill/craft/carpentry
+
 /datum/crafting_recipe/roguetown/structure/barrel
 	name = "wooden barrel"
 	result = /obj/structure/fermenting_barrel/crafted
@@ -86,6 +113,16 @@
 
 /obj/structure/fermenting_barrel/crafted
 	sellprice = 6
+
+/datum/crafting_recipe/roguetown/structure/meathook
+	name = "meat hook"
+	result = /obj/structure/meathook
+	reqs = list(/obj/item/grown/log/tree = 2,
+				/obj/item/rope = 1)
+	verbage_simple = "construct"
+	verbage = "constructs"
+	skillcraft = /datum/skill/craft/crafting
+	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/roguebin
 	name = "wooden bin"
@@ -392,6 +429,14 @@
 	verbage_simple = "build"
 	verbage = "builds"
 
+/datum/crafting_recipe/roguetown/structure/pyre
+	name = "pyre"
+	result = /obj/machinery/light/rogue/campfire/pyre
+	reqs = list(/obj/item/grown/log/tree/small = 4)
+	verbage_simple = "build"
+	verbage = "builds"
+
+
 /datum/crafting_recipe/roguetown/structure/cookpit
 	name = "hearth"
 	result = /obj/machinery/light/rogue/hearth
@@ -667,3 +712,30 @@
 	verbage = "assembles"
 	skillcraft = /datum/skill/craft/alchemy
 	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/structure/boat
+	name = "boat"
+	result = /obj/vehicle/ridden/boat
+	reqs = list(/obj/item/grown/log/tree/small = 7, /obj/item/rope)
+	verbage_simple = "build"
+	verbage = "build"
+	skillcraft = /datum/skill/craft/carpentry
+	craftdiff = 3
+
+/datum/crafting_recipe/roguetown/structure/bearrug
+	name = "bearpelt rug"
+	result = /obj/structure/bearpelt
+	reqs = list(/obj/item/natural/fur/direbear = 2, /obj/item/natural/head/direbear = 1)
+	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/structure/foxrug
+	name = "foxpelt rug"
+	result = /obj/structure/foxpelt
+	reqs = list(/obj/item/natural/fur/fox = 2, /obj/item/natural/head/fox = 1)
+	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/structure/bobcatrug
+	name = "lynxpelt rug"
+	result = /obj/structure/bobcatpelt
+	reqs = list(/obj/item/natural/fur/bobcat = 2)	//Gives no head for lynx, plus it's the smallest rug anyway.
+	craftdiff = 0

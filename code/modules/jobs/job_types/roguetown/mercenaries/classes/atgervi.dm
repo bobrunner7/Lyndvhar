@@ -8,7 +8,7 @@
 	traits_applied = list(TRAIT_OUTLANDER)
 
 /datum/outfit/job/roguetown/mercenary/atgervi
-	allowed_patrons = ALL_INHUMEN_PATRONS
+	//allowed_patrons = ALL_INHUMEN_PATRONS
 
 /datum/outfit/job/roguetown/mercenary/atgervi/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -47,7 +47,7 @@
 			gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 			pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 			backr = /obj/item/rogueweapon/shield/atgervi
 			backl = /obj/item/storage/backpack/rogue/satchel/black
@@ -55,8 +55,11 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/flashlight/flare/torch
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
-			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)	
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+
 			H.cmode_music = 'sound/music/combat_vagarian.ogg'
 		if("Shaman")
 			H.set_blindness(0)
@@ -79,18 +82,18 @@
 			gloves = /obj/item/clothing/gloves/roguetown/plate/atgervi
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 			pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/flashlight/flare/torch
+			backpack_contents = list(/obj/item/roguekey/mercenary)
 
 			ADD_TRAIT(H, TRAIT_STRONGBITE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC) //No weapons. Just beating them to death as God intended.
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC) //Their entire purpose is to rip people apart with their hands and teeth. I don't think they'd be too preturbed to see someone lose a limb.
 			ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC) //Either no armor, or light armor.
-			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_shaman.ogg'
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/rogueweapon/huntingknife)
 
@@ -112,6 +115,9 @@
 	desc = "Thick fur pants made to endure the coldest winds, offering a share of protection from fang and claw of beast or men alike."
 	icon_state = "atgervi_pants"
 	item_state = "atgervi_pants"
+	armor = list("blunt" = 55, "slash" = 70, "stab" = 55, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_BITE, BCLASS_TWIST)
+	max_integrity = 300
 	
 /obj/item/clothing/gloves/roguetown/angle/atgervi
 	name = "fur-lined leather gloves"
@@ -153,6 +159,9 @@
 	desc = "A pair of strong leather boots, designed to endure battle and the chill of the north both."
 	icon_state = "atgervi_boots"
 	item_state = "atgervi_boots"
+	max_integrity = 200
+	armor = list("blunt" = 55, "slash" = 55, "stab" = 50, "piercing" = 35, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_CUT, BCLASS_BITE)
 
 /obj/item/rogueweapon/shield/atgervi
 	name = "kite shield"
@@ -178,8 +187,9 @@
 				return list("shrink" = 0.7,"sx" = -17,"sy" = -15,"nx" = -15,"ny" = -15,"wx" = -12,"wy" = -15,"ex" = -18,"ey" = -15,"nturn" = 0,"sturn" = 0,"wturn" = 180,"eturn" = 0,"nflip" = 8,"sflip" = 0,"wflip" = 1,"eflip" = 0,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
 
 /obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi
-	name = "Bearded Axe"
+	name = "bearded axe"
 	desc = "A large axe easily wielded in one hand or two, With a large hooked axehead to tearing into flesh and armor and ripping it away brutally."
+	force = 26
 	icon_state = "atgervi_axe"
 	item_state = "atgervi_axe"
 	lefthand_file = 'icons/mob/inhands/weapons/rogue_lefthand.dmi'

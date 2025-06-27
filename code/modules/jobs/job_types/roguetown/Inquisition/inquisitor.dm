@@ -54,19 +54,19 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	cloak = /obj/item/clothing/cloak/cape/inquisitor
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/puritan
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	beltl = /obj/item/rogueweapon/sword/rapier
 	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
@@ -79,10 +79,10 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 		H.change_stat("strength", 1)
-		H.change_stat("endurance", 2)
-		H.change_stat("perception", 3)
+		H.change_stat("constitution", -1)
+		H.change_stat("perception", 1)
 		H.change_stat("speed", 2)
-		H.change_stat("intelligence", 3)
+		H.change_stat("intelligence", 2)
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
@@ -104,22 +104,22 @@
 /datum/outfit/job/roguetown/inquisitor/muscle/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blk
-	belt = /obj/item/storage/belt/rogue/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	neck = /obj/item/clothing/neck/roguetown/psicross/silver
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blk
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	pants = /obj/item/clothing/under/roguetown/chainlegs/blk
+	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	cloak = /obj/item/clothing/cloak/psydontabard
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/roguehood/psydon
 	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
 	beltl = /obj/item/rogueweapon/mace/silver
 	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
@@ -136,7 +136,7 @@
 		H.change_stat("strength", 2)
 		H.change_stat("endurance", 2) 
 		H.change_stat("constitution", 2)
-		H.change_stat("speed", -1)
+		H.change_stat("speed", -2)
 
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
@@ -182,10 +182,10 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
 	backpack_contents = list(/obj/item/storage/keyring/inquisitor = 1, /obj/item/rogueweapon/huntingknife/idagger/silver)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
@@ -195,12 +195,12 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
-		H.change_stat("strength", 2)
-		H.change_stat("endurance", 2)
-		H.change_stat("constitution", 3)
-		H.change_stat("perception", 3)
-		H.change_stat("speed", 1)
-		H.change_stat("intelligence", 3)
+		H.change_stat("strength", 1)
+		H.change_stat("endurance", 1)
+		H.change_stat("constitution", 2)
+		H.change_stat("perception", 1)
+		H.change_stat("speed", -1)
+		H.change_stat("intelligence", 2)
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)

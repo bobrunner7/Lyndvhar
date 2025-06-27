@@ -30,6 +30,9 @@
 	desc = "The Archdaemon GRAGGAR was the second to be born from the sins of mortalkind. He represents all aspects of total rage, wroth, destruction, as well as murderous conquest. The strongest fighter of the Archdaemons, he crafted the ORCS and the GOBLINS in his own image and visage to fight alongside the daemons and TIEFLINGS of ZIZO. "
 	worshippers = "Prisoners, Murderers and the Cruel"
 	mob_traits = list(TRAIT_HORDE, TRAIT_ORGAN_EATER)
+	t1 = /obj/effect/proc_holder/spell/self/call_to_slaughter
+	t2 = /obj/effect/proc_holder/spell/invoked/projectile/blood_net
+	t3 = /obj/effect/proc_holder/spell/invoked/revel_in_slaughter
 	confess_lines = list(
 		"GRAGGAR IS THE BEAST I WORSHIP!",
 		"THROUGH VIOLENCE, DIVINITY!",
@@ -58,6 +61,9 @@
 	desc = "The Archdaemon BAOTHA was the final one to be born from the sins of mortalkind. She is the complete and physical embodiment of all unrestrained lust, as well as immense degeneracy. Destruction of the vow of marriage, and mass addiction only follow in her wake, as her mere presence would awaken the worst aspects of the very things that Eora represents. Due to this, Baotha is an extreme opposite to her, and they are both mortal enemies. "
 	worshippers = "Perverts, Gamblers, Drunkards, and Bards"
 	mob_traits = list(TRAIT_DEPRAVED, TRAIT_CRACKHEAD)
+	t1 = /obj/effect/proc_holder/spell/invoked/baothablessings
+	t2 = /obj/effect/proc_holder/spell/invoked/projectile/blowingdust
+	t3 = /obj/effect/proc_holder/spell/invoked/painkiller
 	confess_lines = list(
 		"BAOTHA DEMANDS PLEASURE!",
 		"LIVE, LAUGH, LOVE!",

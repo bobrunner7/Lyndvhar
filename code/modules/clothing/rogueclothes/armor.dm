@@ -243,8 +243,6 @@
 		STR.max_w_class = WEIGHT_CLASS_NORMAL
 		STR.max_items = 3
 
-
-
 /obj/item/clothing/suit/roguetown/armor/cuirass/iron/shadowplate
 	name = "scourge breastplate"
 	desc = "More form over function, this armor is fit for demonstration of might rather than open combat. The aged gilding slowly tarnishes away."
@@ -270,7 +268,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/shadowrobe
 	name = "stalker robe"
-	desc = "A thick robe in royal purple, befitting the hand, while remaining easy for them to slip about in.."
+	desc = "A thick robe in royal purple, while remaining easy for them to slip about in.."
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	icon_state = "shadowrobe"
 
@@ -352,6 +350,9 @@
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS
 	max_integrity = 300
 	sellprice = 55
+
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/black
+	color = "#646464"
 
 /obj/item/clothing/suit/roguetown/armor/leather/vaquerocoat
 	name = "vaquero's coat"
@@ -680,6 +681,47 @@
 	smelt_bar_num = 4
 	sellprice = 240
 
+/obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	name = "iron plate armor"
+	desc = "Full plate made of iron. Leg protecting tassets, groin cup, armored vambraces."
+	icon_state = "iron_plate"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 300
+	sellprice = 160
+
+/obj/item/clothing/suit/roguetown/armor/plate/hoplite
+	name = "ancient plate armor"
+	desc = "A battered set of bronze plate armor. Intricate runes and carvings once adorned the pieces, but most have faded with age."
+	icon_state = "aasimarplate"
+	item_state = "aasimarplate"
+	armor = list("blunt" = 100, "slash" = 100, "stab" = 95, "piercing" = 100, "fire" = 0, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS
+	max_integrity = 500
+	anvilrepair = /datum/skill/craft/armorsmithing
+	equip_delay_self = 6 SECONDS
+	unequip_delay_self = 6 SECONDS
+	equip_delay_other = 3 SECONDS
+	strip_delay = 4 SECONDS
+	armor_class = ARMOR_CLASS_HEAVY
+	sellprice = 300
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios
+	name = "gilded fullplate"
+	desc = "Often, you have heard that told,"
+	icon_state = "matthiosarmor"
+	max_integrity = 700	
+
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/matthios/dropped(mob/living/carbon/human/user)
+	. = ..()
+	if(QDELETED(src))
+		return
+	qdel(src)
+
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/zizo
 	name = "darksteel fullplate"
@@ -845,6 +887,54 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
+/obj/item/clothing/suit/roguetown/armor/captain
+	name = "captain's brigandine"
+	desc = "A coat with plates specifically tailored and forged for the captain of Lyndvhar."
+	icon_state = "capplate"
+	icon = 'icons/roguetown/clothing/special/captain.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	detail_tag = "_detail"
+	detail_color = CLOTHING_BLUE
+	blocksound = SOFTHIT
+	equip_delay_self = 4 SECONDS
+	unequip_delay_self = 4 SECONDS
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	sellprice = 170
+	clothing_flags = CANT_SLEEP_IN
+	armor_class = ARMOR_CLASS_HEAVY
+	armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	max_integrity = 450
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
+	do_sound_plate = TRUE
+
+/obj/item/clothing/suit/roguetown/armor/captain/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/suit/roguetown/armor/captain/lordcolor(primary,secondary)
+	detail_color = primary
+	update_icon()
+
+/obj/item/clothing/suit/roguetown/armor/captain/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/suit/roguetown/armor/captain/Destroy()
+	GLOB.lordcolor -= src
+	return ..()
+
+
 /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/Initialize()
 	. = ..()
 	if(GLOB.lordprimary)
@@ -983,5 +1073,27 @@
 	smelt_bar_num = 2
 	sellprice = 380
 
+//................ Snowflake Plate ............... //
+/obj/item/clothing/suit/roguetown/armor/rare
+	name = "rare armor template"
+	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
+	
+/obj/item/clothing/suit/roguetown/armor/rare/elfplate
+    name = "dark elf plate"
+    desc = "A fine suit of sleek, moulded dark elf metal. Its interlocking nature and light weight allow for increased maneuverability."
+    icon_state = "elfchest"
+    item_state = "elfchest"
+    allowed_race = list(/datum/species/elf/dark)
+    equip_delay_self = 2 SECONDS
+    unequip_delay_self = 2 SECONDS
+    max_integrity = 350
+    armor = list("blunt" = 80, "slash" = 70, "stab" = 75, "piercing" = 70, "fire" = 0, "acid" = 0)
+    prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST)
+
+
+    armor_class = ARMOR_CLASS_MEDIUM // Elven craft, also a cuirass
+    body_parts_covered = CHEST|GROIN|VITALS|ARMS
 
 

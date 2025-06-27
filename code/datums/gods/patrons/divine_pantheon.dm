@@ -8,6 +8,7 @@
 	domain = "Goddess of the Sun, Day, and Order"
 	desc = "Considered the eldest sibling of the Pantheon, ASTRATA is the Mother Goddess of the Sun. It is widely believed that Astrata came first, and through loneliness at being alone, she created her siblings in her own image. She oversees all the other members of the Pantheon as its leader. However, she is considered to be one of the more aggressive and prideful of the Ten. Her doctrine is one of zealotry- complete devotion to her and the order of the Gods."
 	worshippers = "The Noble Hearted, Zealots and Farmers"
+	mob_traits = list(TRAIT_APRICITY)
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
@@ -67,10 +68,14 @@
 	domain = "God of Justice, Glory, Battle"
 	desc = "At the advent of the BLOODWAKE, one God showed more ferocity against the forces of the ARCHDAEMONS than the others- and that was RAVOX. The patron God of all warfare and strife, there is no equal to Ravox in combat, and he is the guardian of his siblings in the PANTHEON. He was one of the few Gods in the Bloodwake that the Archdaemons truly feared opposing, as his chivalric wrath was endless. It is believed that Ravox personally slew the Archdaemon GRAGGAR in open combat, eliminating his part in the grand war."
 	worshippers = "Warriors, Sellswords & those who seek Justice"
+	mob_traits = list(TRAIT_SHARPER_BLADES, TRAIT_JUSTICARSIGHT)
+	t1 = /obj/effect/proc_holder/spell/self/divine_strike
+	t2 = /obj/effect/proc_holder/spell/self/call_to_arms
+	t3 = /obj/effect/proc_holder/spell/invoked/persistence
 	confess_lines = list(
 		"RAVOX IS JUSTICE!",
 		"THROUGH STRIFE, GRACE!",
-		"THE DRUMS OF WAR BEAT IN MY CHEST!",
+		"THROUGH PERSISTENCE, GLORY!",
 	)
 
 /datum/patron/divine/necra

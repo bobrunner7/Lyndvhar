@@ -68,6 +68,11 @@
 /datum/intent/sword/chop/falx
 	penfactor = 40
 
+/datum/intent/sword/chop/awful // This is for pure thrusting swords with very little slashing power as an absolute last resort.
+	name = "cleave"
+	attack_verb = list("awkwardly cleaves", "poorly splits")
+	damfactor = 0.5
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
@@ -581,12 +586,23 @@
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
-	desc = "A single edged blade to slice and chop with."
+	desc = "A single edged 'knife' to slice and chop with. For all intents and legalities this is a knife. Not a sword."
 	icon_state = "imesser"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
 	gripped_intents = null
+	associated_skill = /datum/skill/combat/knives
 	minstr = 4
 	wdefense = 2
+
+/obj/item/rogueweapon/sword/messer
+	name = "steel messer"
+	desc = "A single edged 'knife' to slice and chop with. For all intents and legalities this is a knife. Not a sword."
+	icon_state = "smesser"
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
+	gripped_intents = null
+	associated_skill = /datum/skill/combat/knives
+	minstr = 4
+	wdefense = 2.5
 
 /obj/item/rogueweapon/sword/sabre
 	name = "sabre"
@@ -611,6 +627,11 @@
 	icon_state = "decsaber"
 	sellprice = 140
 	wbalance = 1.2 //ENGRAVINGS, they provide *some* tactical advantage whatsoever.
+
+/obj/item/rogueweapon/sword/sabre/stalker
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust/short)
+	desc = "A once elegant blade of mythril, diminishing under the suns gaze"
+	icon_state = "spidersaber"
 
 /obj/item/rogueweapon/sword/rapier
 	name = "rapier"
@@ -1137,3 +1158,52 @@
 				"eastabove" = 1,
 				"westabove" = 0,
 				)
+
+// Hoplite Kophesh
+/obj/item/rogueweapon/sword/khopesh
+	name = "ancient khopesh"
+	desc = "A bronze weapon of war from the era of Bloodwake. This blade is older than a few elven generations, but has been very well-maintained and still keeps a good edge."
+	force = 22 // Unique weapon from rare job, slightly more force than most one-handers
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/chop, /datum/intent/sword/strike)
+	gripped_intents = null
+	icon = 'icons/roguetown/weapons/64.dmi'
+	icon_state = "khopesh"
+	item_state = "khopesh"
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	pixel_y = -16
+	pixel_x = -16
+	dropshrink = 0.75
+	bigboy = 1 // WHY DOES THIS FUCKING VARIABLE CONTROL WHETHER THE BLOOD OVERLAY WORKS ON 64x64 WEAPONS
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
+	smeltresult = null // No bronze ingots yet
+	max_blade_int = 300
+	max_integrity = 300
+	minstr = 10 // Even though it's technically one-handed, you gotta have some muscle to wield this thing
+	wdefense = 3 // Lower than average sword defense (meant to pair with a shield)
+	wbalance = -1 // Likely weighted towards the blade, for deep cuts and chops
+	sellprice = 200 // A noble collector would love to get his/her hands on one of these blades
+
+//................ Kriegsmesser ............... //
+/obj/item/rogueweapon/sword/long/kriegsmesser
+	name = "elven kriegsmesser"
+	desc = "A long, curved elven blade. It's metal is of a high quality, yet still light, crafted by the greatest elven bladesmiths."
+	icon_state = "kriegsmesser"
+	wdefense = 4
+	minstr = 8
+	sellprice = 120
+	force = 20
+	force_wielded = 32
+	max_integrity = 300
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/strike)
+
+/obj/item/rogueweapon/sword/long/kriegsmesser/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = -6,"sy" = 6,"nx" = 6,"ny" = 7,"wx" = 0,"wy" = 5,"ex" = -1,"ey" = 7,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -50,"sturn" = 40,"wturn" = 50,"eturn" = -50,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
+			if("wielded")
+				return list("shrink" = 0.6,"sx" = 9,"sy" = -4,"nx" = -7,"ny" = 1,"wx" = -9,"wy" = 2,"ex" = 10,"ey" = 2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 5,"sturn" = -190,"wturn" = -170,"eturn" = -10,"nflip" = 4,"sflip" = 4,"wflip" = 1,"eflip" = 0)
+			if("onback")
+				return list("shrink" = 0.6,"sx" = -1,"sy" = 3,"nx" = -1,"ny" = 2,"wx" = 3,"wy" = 4,"ex" = -1,"ey" = 5,"nturn" = 0,"sturn" = 0,"wturn" = 70,"eturn" = 20,"nflip" = 1,"sflip" = 1,"wflip" = 1,"eflip" = 1,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)

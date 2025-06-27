@@ -298,7 +298,7 @@
 		play_failure_sound(user, target, target_zone, tool)
 		if(user.client?.prefs.showrolls)
 			if(try_to_fail)
-				to_chat(user, span_warning("Intentional surgery fail... [success_prob]%"))
+				to_chat(user, span_warning("Intentional surgery failure from rough handling. Attempt a weak touch if unintentional... [success_prob]%"))
 			else
 				to_chat(user, span_warning("Surgery fail... [success_prob]%"))
 		return FALSE

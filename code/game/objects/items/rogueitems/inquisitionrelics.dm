@@ -35,7 +35,7 @@
 			to_chat(user, span_info("I have chosen the relic, may HE guide my hand."))
 			opened = TRUE
 			icon_state = "chestweird1open"
-		
+
 
 // Soul Churner - Music box which applies magic resistance to Inquisition members, greatly mood debuffs everyone not a Psydon worshipper.
 /obj/item/psydonmusicbox
@@ -135,6 +135,7 @@
 	var/graggarlines =list("'ANOINTED! TEAR THIS VALORIAN'S HEAD OFF!'", "'ANOINTED! SHATTER THE BOX, AND WE WILL KILL THEM TOGETHER!'", "'GRAGGAR, GIVE ME STRENGTH TO BREAK MY BONDS!'")
 	var/baothalines =list("'I miss the warmth of ozium... There is no feeling in here for me...'", "'Debauched one, rescue me from this contraption, I have such things to share with you.'", "'MY PERFECTION WAS TAKEN FROM ME BY THESE VALORIAN MONSTERS!'")
 	var/psydonianlines =list("'FREE US! FREE US! WE HAVE SUFFERED ENOUGH!'", "'PLEASE, RELEASE US!", "WE MISS OUR FAMILIES'", "'WHEN WE ESCAPE, WE ARE GOING TO CHASE YOU INTO YOUR GRAVE.'")
+	var/godlesslines =list("You hear fourteen incoherent whispers stacking over eachother in quick succession emnante from the box- Each being slowly churned away as the tune goes on.", "The solemn tune from the box is backed up by the undertone of fourteen successive cries of incoherent wailing.", "You hear fourteen simultanious calls for help- Until they're suddenly churned away by the solemn tune.", "You hear fourteen voices begging for freedom but the solemn tune is already churning them away.")
 
 
 /datum/status_effect/buff/cranking_soulchurner/on_creation(mob/living/new_owner, stress, colour)
@@ -228,10 +229,14 @@
 						H.apply_status_effect(/datum/status_effect/buff/churnernegative)
 					if(/datum/patron/divine/ravox)
 						to_chat(H, (span_hypnophrase("A voice calls out from the song for you...")))
-						to_chat(H, (span_cultsmall(pick(ravoxlines))))		
+						to_chat(H, (span_cultsmall(pick(ravoxlines))))
 						H.add_stress(/datum/stressevent/soulchurner)
 						H.apply_status_effect(/datum/status_effect/buff/churnernegative)
-
+					if(/datum/patron/godless)
+						to_chat(H, (span_hypnophrase("Voices call out from the song for you...")))
+						H.add_stress(/datum/stressevent/soulchurnerpsydon)
+						to_chat(H, (span_cultsmall(pick(godlesslines))))
+						H.apply_status_effect(/datum/status_effect/buff/churnernegative)
 
 /obj/item/flashlight/flare/torch/lantern/psycenser
 	name = "Golgatha"
@@ -290,7 +295,7 @@
 	if(on && next_smoke < world.time)
 		new /obj/effect/temp_visual/censer_dust(get_turf(src))
 		next_smoke = world.time + smoke_interval
-		
+
 
 /obj/item/flashlight/flare/torch/lantern/psycenser/turn_off()
 	playsound(src.loc, 'sound/items/censer_off.ogg', 100)
@@ -340,7 +345,7 @@
 				user.visible_message(span_info("[user] holds \the [src] over \the [A]..."))
 				if(do_after(user, 50, target = A))
 					H.apply_status_effect(/datum/status_effect/buff/censerbuff)
-					to_chat(H, span_notice("The comet dust invigorates you."))
+					to_chat(H, span_notice("A shard of arcyne power invigorates you."))
 					playsound(H, 'sound/magic/holyshield.ogg', 100)
 					new /obj/effect/temp_visual/censer_dust(get_turf(H))
 			else
@@ -370,7 +375,7 @@
 	silver = makesilver
 	if(pre_blessed)
 		apply_bless()
-		
+
 /datum/component/psyblessed/proc/on_examine(datum/source, mob/user, list/examine_list)
 	if(!is_blessed)
 		examine_list += span_info("<font color = '#cfa446'>This object may be blessed by a fragmemt of faith. Until then, its impure alloying of silver-and-steel cannot blight inhumen foes on its own.</font>")

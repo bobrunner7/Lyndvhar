@@ -319,7 +319,7 @@
 
 	contents += "</center><BR>"
 
-	var/list/unlocked_cats = list("Apparel","Tools","Seeds","Luxury","Raw Materials")
+	var/list/unlocked_cats = list("Apparel","Tools","Seeds","Luxury","Raw Materials","Armor","Weapons","Consumable","Wardrobe","Alcohols","Livestock") //Added the unlockable categories by default. Revert this or rework this later, its a lowpop contingency.
 	if(upgrade_flags & UPGRADE_ARMOR)
 		unlocked_cats+="Armor"
 	if(upgrade_flags & UPGRADE_WEAPONS)

@@ -35,7 +35,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 3, TRUE)
 			head = /obj/item/clothing/head/roguetown/roguehood
-			mask = /obj/item/clothing/mask/rogue/facemask/steel
+			mask = /obj/item/clothing/mask/rogue/ragmask/black
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			pants = /obj/item/clothing/under/roguetown/tights/black
@@ -44,7 +44,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/storage/backpack/rogue/satchel
 			beltr = /obj/item/storage/belt/rogue/surgery_bag/full
-			beltl = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/flashlight/flare/torch
 			backpack_contents = list(/obj/item/reagent_containers/powder/spice = 2, /obj/item/reagent_containers/powder/ozium = 1, /obj/item/reagent_containers/powder/moondust = 2, /obj/item/rogueweapon/huntingknife = 1)
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 2)
@@ -71,7 +71,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/storage/backpack/rogue/satchel
 			beltr = /obj/item/rogueweapon/mace/cudgel
-			beltl = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/flashlight/flare/torch
 			backpack_contents = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead = 1, /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena = 1, /obj/item/reagent_containers/glass/bottle/rogue/beer/blackgoat = 1, /obj/item/reagent_containers/glass/bottle/rogue/elfred = 1, /obj/item/reagent_containers/glass/bottle/rogue/elfblue = 1, /obj/item/rogueweapon/huntingknife = 1)
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 1)
@@ -129,7 +129,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/storage/backpack/rogue/satchel
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-			beltl = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/flashlight/flare/torch
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut
 			backpack_contents = list(/obj/item/clothing/neck/roguetown/psicross/silver = 3, /obj/item/clothing/neck/roguetown/psicross = 2, /obj/item/clothing/neck/roguetown/psicross/wood = 1, /obj/item/rogueweapon/huntingknife = 1)
 			H.change_stat("intelligence", 3)
@@ -138,7 +138,7 @@
 			H.change_stat("constitution", 1)
 
 		if ("Scholar")
-			to_chat(H, span_warning("You are a scholar traveling the world in order to write a book about your ventures. You trade in stories and tales of your travels."))
+			to_chat(H, span_warning("You are a scholar traveling the world in order to write a book about your ventures. You trade in stories and tales of your travels and perform what little tricks of arcyne you have been able to muster within yourself to make coin."))
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
@@ -148,16 +148,17 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/alchemy, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 			head = /obj/item/clothing/head/roguetown/roguehood/black
 			mask = /obj/item/clothing/mask/rogue/spectacles/golden
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shirt = /obj/item/clothing/suit/roguetown/shirt/robe/mageyellow
 			belt = /obj/item/storage/belt/rogue/leather/black
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backr = /obj/item/storage/backpack/rogue/satchel
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-			beltl = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/flashlight/flare/torch
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			backpack_contents = list(/obj/item/paper/scroll = 3, /obj/item/book/rogue/knowledge1 = 1, /obj/item/reagent_containers/glass/bottle/rogue/manapot = 1, /obj/item/reagent_containers/glass/bottle/rogue/strongmanapot = 1, /obj/item/natural/feather = 1, /obj/item/roguegem/amethyst = 1)

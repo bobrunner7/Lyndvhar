@@ -13,7 +13,7 @@
 			recipient.mind?.adjust_spellpoints(2)
 	else
 		recipient.mind?.adjust_spellpoints(2) // 2 extra spellpoints since you don't get any spell point from the skill anymore
-
+/*
 /datum/virtue/combat/devotee
 	name = "Devotee"
 	desc = "Though not officially of the Church, my relationship with my chosen Patron is strong enough to grant me the most minor of their blessings. I've also kept a psycross of my deity. Combat-oriented classes get a weaker version of this virtue."
@@ -75,6 +75,7 @@
 			recipient.mind?.special_items["Ravox Psycross"] =/obj/item/clothing/neck/roguetown/psicross/ravox
 		if(/datum/patron/divine/malum)
 			recipient.mind?.special_items["Malum Psycross"] = /obj/item/clothing/neck/roguetown/psicross/malum
+*/
 
 /datum/virtue/combat/duelist
 	name = "Duelist Apprentice"

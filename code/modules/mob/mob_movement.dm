@@ -106,6 +106,12 @@
 	if(mob.force_moving)
 		return FALSE
 
+	if(mob.shifting)
+		mob.pixel_shift(direct)
+		return FALSE
+	else if(mob.is_shifted)
+		mob.unpixel_shift()
+
 	var/mob/living/L = mob  //Already checked for isliving earlier
 	if(L.incorporeal_move)	//Move though walls
 		Process_Incorpmove(direct)
@@ -223,10 +229,10 @@
 			to_chat(src, span_warning("I'm restrained! I can't move!"))
 			return TRUE
 		else
-//			return mob.resist_grab(1)
-			move_delay = world.time + 10
-			to_chat(src, span_warning("I can't move!"))
-			return TRUE
+			return mob.resist_grab(TRUE)
+			// move_delay = world.time + 10
+			// to_chat(src, "<span class='warning'>I can't move!</span>")
+			// return TRUE
 
 /**
   * Allows mobs to ignore density and phase through objects

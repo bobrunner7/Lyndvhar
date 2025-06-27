@@ -209,7 +209,9 @@
 	minstr = 6
 	grid_width = 32
 	grid_height = 64
-
+	embedding = list(
+		"embed_chance" = 0,
+	)
 /obj/item/rogueweapon/whip/getonmobprop(tag)
 	. = ..()
 	if(tag)

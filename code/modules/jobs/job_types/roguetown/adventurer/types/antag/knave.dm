@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/knave
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/combat_bandit2.ogg'
+	cmode_music = 'sound/music/combat_bandit.ogg'
 
 /datum/outfit/job/roguetown/bandit/knave/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -37,6 +37,7 @@
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
 	H.adjust_blindness(-3)
 	var/weapons = list("Crossbow & Dagger", "Bow & Sword")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons

@@ -21,12 +21,25 @@
 	createditem_num = 1
 	craftdiff = 0
 
+/datum/anvil_recipe/armor/iron/fullchaincoif
+	name = "Full Chain Coif"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/full/iron
+	createditem_num = 1
+	craftdiff = 2
+
 /datum/anvil_recipe/armor/iron/gorget
 	name = "Gorget"
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/clothing/neck/roguetown/gorget
 	createditem_num = 1
 	craftdiff = 0
+
+/datum/anvil_recipe/armor/iron/bevor
+	name = "Bevor"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/neck/roguetown/bevor/iron
+	craftdiff = 2
 
 /datum/anvil_recipe/armor/iron/gorget
 	name = "Ringed Gorget"
@@ -38,6 +51,13 @@
 	req_bar = /obj/item/ingot/iron
 	additional_items = list(/obj/item/ingot/iron)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+
+/datum/anvil_recipe/armor/iron/fullplate
+	name = "Full-Plate Armour (+3 Iron, +1 Cured Leather)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron, /obj/item/ingot/iron, /obj/item/ingot/iron, /obj/item/natural/hide/cured)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	craftdiff = 4
 
 /datum/anvil_recipe/armor/iron/chainglove
 	name = "Chain Gauntlets"
@@ -171,6 +191,13 @@
 	name = "Chain Coif"
 	req_bar = /obj/item/ingot/steel
 	created_item = /obj/item/clothing/neck/roguetown/chaincoif
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/steel/chainmantle
+	name = "Chain Mantle"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle
 	createditem_num = 1
 	craftdiff = 2
 

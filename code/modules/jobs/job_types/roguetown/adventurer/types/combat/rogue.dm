@@ -26,7 +26,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backr = /obj/item/rogueweapon/shovel
@@ -72,7 +72,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 			backl = /obj/item/storage/backpack/rogue/satchel
 			belt = /obj/item/storage/belt/rogue/leather/knifebelt/iron
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless
@@ -89,7 +89,7 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
@@ -174,13 +174,13 @@
 			beltl = /obj/item/flashlight/flare/torch/lantern
 			beltr = /obj/item/rogueweapon/sword/cutlass
 			backpack_contents = list(/obj/item/bomb = 1, /obj/item/lockpick = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/parrying = 1)
-			H.cmode_music = 'sound/music/jukeboxes/oldschool/Sea_Shanty2.ogg'
+			H.cmode_music = 'sound/music/combat_swashbuckler.ogg'
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)

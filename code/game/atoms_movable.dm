@@ -192,7 +192,14 @@
 	var/move_dir = get_dir(pulling.loc, A)
 	if(!Process_Spacemove(move_dir))
 		return FALSE
+	var/turf/pre_turf = get_turf(pulling)
 	pulling.Move(get_step(pulling.loc, move_dir), move_dir, glide_size)
+	var/turf/post_turf = get_turf(pulling)
+	if(pre_turf.snow && !post_turf.snow)
+		SEND_SIGNAL(pre_turf.snow, COMSIG_MOB_OVERLAY_FORCE_REMOVE, pulling)
+		if(ismob(src))
+			var/mob/source = src
+			source.update_vision_cone()
 	return TRUE
 
 /mob/living/Move_Pulled(atom/A)
@@ -699,7 +706,7 @@
 
 /atom/movable/CanPass(atom/movable/mover, turf/target)
 	if(mover in buckled_mobs)
-		return 1
+		return TRUE
 	return ..()
 
 // called when this atom is removed from a storage item, which is passed on as S. The loc variable is already set to the new destination before this is called.

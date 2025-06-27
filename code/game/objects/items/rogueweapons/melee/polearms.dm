@@ -115,8 +115,7 @@
 	animname = "stab"
 	blade_class = BCLASS_STAB
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	reach = 2
-	penfactor = 30
+	penfactor = 35
 	damfactor = 1.2
 	chargetime = 1
 	recovery = 20
@@ -573,10 +572,10 @@
 
 /obj/item/rogueweapon/estoc
 	name = "estoc"
-	desc = "A sword possessed of a quite long and tapered blade that is intended to be thrust between the \
-	gaps in an opponent's armor. The hilt is wrapped tight in black leather."
+	desc = "A thrusting variation of a longsword meant to be used highly effectively against armored opponents with its pointed edge at the cost of terrible slashing performance. Barely usable one-handed."
 	icon_state = "estoc"
 	icon = 'icons/roguetown/weapons/64.dmi'
+	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BACK
 	pixel_y = -16
 	pixel_x = -16
 	inhand_x_dimension = 64
@@ -584,24 +583,24 @@
 	force = 12
 	force_wielded = 25
 	possible_item_intents = list(
-		/datum/intent/sword/chop,
+		/datum/intent/sword/chop/awful,
 		/datum/intent/sword/strike,
 	)
 	gripped_intents = list(
 		/datum/intent/sword/thrust/estoc,
 		/datum/intent/sword/lunge,
-		/datum/intent/sword/chop,
+		/datum/intent/sword/chop/awful,
 		/datum/intent/sword/strike,
 	)
 	bigboy = TRUE
 	gripsprite = TRUE
-	wlength = WLENGTH_GREAT
+	wlength = WLENGTH_LONG
 	w_class = WEIGHT_CLASS_BULKY
 	minstr = 8
 	smeltresult = /obj/item/ingot/steel
 	associated_skill = /datum/skill/combat/swords
 	max_blade_int = 300
-	wdefense = 4
+	wdefense = 5 //Since you're supposed to two hand this will be 8 in most scenarios.
 	smelt_bar_num = 2
 	embedding = list("embed_chance" = 0)
 
@@ -665,6 +664,24 @@
 	force = 18
 	force_wielded = 28
 	max_integrity = 250
+
+/obj/item/rogueweapon/spear/hoplite
+	force = 25 // Unique weapon from rare job, less unwieldy if used with one hand
+	force_wielded = 30
+	name = "ancient spear"
+	desc = "A humble spear with a bronze head, a rare survivor from the battles long past that nearly destroyed Beowricke."
+	icon_state = "bronzespear"
+	max_blade_int = 300
+	max_integrity = 300
+	smeltresult = null // No bronze ingots yet, unfortunately
+	sellprice = 120 // A noble collector would love to get his/her hands on one of these spears
+
+/obj/item/rogueweapon/spear/hoplite/winged // Winged version has +1 weapon defence and sells for a bit more, but is identical otherwise
+	name = "ancient winged spear"
+	desc = "A spear with a winged bronze head, a rare survivor from the battles long past that nearly destroyed Beowricke."
+	icon_state = "bronzespear_winged"
+	wdefense = 5
+	sellprice = 150 // A noble collector would love to get his/her hands on one of these spears
 
 /obj/item/rogueweapon/fishspear
 	force = 20
