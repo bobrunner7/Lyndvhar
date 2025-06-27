@@ -17,8 +17,8 @@
 	attack_verb = "slash"
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	possible_ages = ALL_AGES_LIST
-	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mta.dmi'
-	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fma.dmi'
+	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mslm.dmi'
+	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fslm.dmi'
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
 	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
 	soundpack_m = /datum/voicepack/male
@@ -47,10 +47,6 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
-		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted,
-		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
-		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
 		)
 	bodypart_features = list(
 		/datum/bodypart_feature/hair/head,
@@ -58,23 +54,15 @@
 	)
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,
-		/datum/customizer/bodypart_feature/hair/head/humanoid,
+		/datum/customizer/bodypart_feature/hair/head/galotian,
 		/datum/customizer/bodypart_feature/hair/facial/humanoid,
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/organ/tail/anthro,
-		/datum/customizer/organ/tail_feature/anthro,
-		/datum/customizer/organ/snout/anthro,
-		/datum/customizer/organ/ears/anthro,
 		/datum/customizer/organ/horns/anthro,
-		/datum/customizer/organ/frills/anthro,
-		/datum/customizer/organ/wings/anthro,
-		/datum/customizer/organ/neck_feature/anthro,
-		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
-		/datum/customizer/organ/breasts/animal,
-		/datum/customizer/organ/vagina/anthro,
+		/datum/customizer/organ/penis/galotian,
+		/datum/customizer/organ/breasts/galotian,
+		/datum/customizer/organ/vagina/galotian,
 		)
 	body_marking_sets = list(
 		/datum/body_marking_set/none,
@@ -117,10 +105,6 @@
 		/datum/descriptor_choice/face_exp,
 		/datum/descriptor_choice/skin_all,
 		/datum/descriptor_choice/voice,
-		/datum/descriptor_choice/prominent_one_wild,
-		/datum/descriptor_choice/prominent_two_wild,
-		/datum/descriptor_choice/prominent_three_wild,
-		/datum/descriptor_choice/prominent_four_wild,
 	)
 
 /datum/species/galotian/on_species_gain(mob/living/carbon/C, datum/species/old_species)
@@ -168,25 +152,172 @@
 	))
 
 /datum/species/human/galotian/random_name(gender,unique,lastname)
+	var/list/names
+	if(gender == MALE)
+		names = world.file2list('strings/rt/names/galotian/mslm.txt')
+	else
+		names = world.file2list('strings/rt/names/galotian/fslm.txt')
+
 	var/randname
 	if(unique)
-		if(gender == MALE)
-			for(var/i in 1 to 10)
-				randname = pick( world.file2list("strings/rt/names/elf/elfwm.txt") )
-				if(!findname(randname))
-					break
-		if(gender == FEMALE)
-			for(var/i in 1 to 10)
-				randname = pick( world.file2list("strings/rt/names/elf/elfwf.txt") )
-				if(!findname(randname))
-					break
+		for(var/i in 1 to 10)
+			randname = pick(names)
+			if(!findname(randname))
+				break
 	else
-		if(gender == MALE)
-			randname = pick( world.file2list("strings/rt/names/elf/elfwm.txt") )
-		if(gender == FEMALE)
-			randname = pick( world.file2list("strings/rt/names/elf/elfwf.txt") )
-	randname += " Halfelven"
+		randname = pick(names)
 	return randname
 
 /datum/species/human/galotian/random_surname()
 	return ""
+
+// Galotian-specific hair styles using Slime_Hair.dmi
+/datum/sprite_accessory/hair/head/galotian
+	abstract_type = /datum/sprite_accessory/hair/head/galotian
+	icon = 'icons/roguetown/mob/slime_hair.dmi'
+
+/datum/sprite_accessory/hair/head/galotian/slimerite
+	name = "Slime Bob"
+	icon_state = "slimerite"
+
+/datum/sprite_accessory/hair/head/galotian/slimerite2
+	name = "Slime Short A"
+	icon_state = "slimerite2"
+
+/datum/sprite_accessory/hair/head/galotian/slimerite3
+	name = "Slime Short B"
+	icon_state = "slimerite3"
+
+/datum/sprite_accessory/hair/head/galotian/slimeburns
+	name = "Slime Burns"
+	icon_state = "slimeburn"
+
+/datum/sprite_accessory/hair/head/galotian/slimeside
+	name = "Slime Side Hair"
+	icon_state = "slimeside"
+
+/datum/sprite_accessory/hair/head/galotian/slimeside2 // Corrected: Unique type path
+	name = "Slime Side Hair N"
+	icon_state = "slimeside2"
+
+/datum/sprite_accessory/hair/head/galotian/slimebedhair // Corrected: Unique type path
+	name = "Slime Bed Hair"
+	icon_state = "slimebedhair"
+
+/datum/sprite_accessory/hair/head/galotian/slimewretch // Corrected: Unique type path
+	name = "Slime Wretch"
+	icon_state = "slimewretch"
+
+// Customizer to make the hair styles available in character creation for Galotians.
+/datum/customizer_choice/bodypart_feature/hair/head/galotian
+	name = "Hair"
+	sprite_accessories = list(/datum/sprite_accessory/hair/head/bald, 
+	/datum/sprite_accessory/hair/head/galotian/slimerite,
+	/datum/sprite_accessory/hair/head/galotian/slimerite2, 
+	/datum/sprite_accessory/hair/head/galotian/slimerite3, 
+	/datum/sprite_accessory/hair/head/galotian/slimeside, 
+	/datum/sprite_accessory/hair/head/galotian/slimeside2,
+	/datum/sprite_accessory/hair/head/galotian/slimeburns,
+	/datum/sprite_accessory/hair/head/galotian/slimewretch, 
+	/datum/sprite_accessory/hair/head/galotian/slimebedhair)
+
+/datum/customizer/bodypart_feature/hair/head/galotian
+	customizer_choices = list(/datum/customizer_choice/bodypart_feature/hair/head/galotian)
+
+// Galotian-specific organs
+
+// Breasts
+/datum/sprite_accessory/organ/breasts/galotian
+	abstract_type = /datum/sprite_accessory/organ/breasts/galotian
+	icon = 'icons/roguetown/mob/slime_organs1.dmi'
+	var/breast_size
+
+/datum/sprite_accessory/organ/breasts/galotian/size_flat
+	name = "Flat"
+	breast_size = 0
+	icon_state = "slime_0_FRONT"
+
+/datum/sprite_accessory/organ/breasts/galotian/size_very_small
+	name = "Very Small"
+	breast_size = 1
+	icon_state = "slime_1_ADJ"
+
+/datum/sprite_accessory/organ/breasts/galotian/size_small
+	name = "Small"
+	breast_size = 2
+	icon_state = "slime_2_ADJ"
+
+/datum/sprite_accessory/organ/breasts/galotian/size_normal
+	name = "Normal"
+	breast_size = 3
+	icon_state = "slime_3_ADJ"
+
+/datum/sprite_accessory/organ/breasts/galotian/size_large
+	name = "Large"
+	breast_size = 4
+	icon_state = "slime_4_ADJ"
+
+/datum/sprite_accessory/organ/breasts/galotian/size_enormous
+	name = "Enormous"
+	breast_size = 5
+	icon_state = "slime_5_ADJ"
+
+/datum/customizer_choice/organ/breasts/galotian
+	name = "Breasts"
+	sprite_accessories = list(
+		/datum/sprite_accessory/organ/breasts/galotian/size_flat,
+		/datum/sprite_accessory/organ/breasts/galotian/size_very_small,
+		/datum/sprite_accessory/organ/breasts/galotian/size_small,
+		/datum/sprite_accessory/organ/breasts/galotian/size_normal,
+		/datum/sprite_accessory/organ/breasts/galotian/size_large,
+		/datum/sprite_accessory/organ/breasts/galotian/size_enormous
+	)
+
+/datum/customizer/organ/breasts/galotian
+	customizer_choices = list(/datum/customizer_choice/organ/breasts/galotian)
+
+// Penis
+/datum/sprite_accessory/organ/penis/galotian
+	abstract_type = /datum/sprite_accessory/organ/penis/galotian
+	icon = 'icons/roguetown/mob/slime_organs3.dmi'
+	var/penis_size
+
+/datum/sprite_accessory/organ/penis/galotian/size_small
+	name = "Small"
+	penis_size = 1
+	icon_state = "slime_1_FRONT"
+
+/datum/sprite_accessory/organ/penis/galotian/size_normal
+	name = "Normal"
+	penis_size = 2
+	icon_state = "slime_2_FRONT"
+
+/datum/sprite_accessory/organ/penis/galotian/size_large
+	name = "Large"
+	penis_size = 3
+	icon_state = "slime_3_FRONT"
+
+/datum/customizer_choice/organ/penis/galotian
+	name = "Penis"
+	sprite_accessories = list(/datum/sprite_accessory/organ/penis/galotian/size_small, 
+	/datum/sprite_accessory/organ/penis/galotian/size_normal, 
+	/datum/sprite_accessory/organ/penis/galotian/size_large)
+
+/datum/customizer/organ/penis/galotian
+	customizer_choices = list(/datum/customizer_choice/organ/penis/galotian)
+
+// Vagina
+/datum/sprite_accessory/organ/vagina/galotian
+	abstract_type = /datum/sprite_accessory/organ/vagina/galotian
+	icon = 'icons/roguetown/mob/slime_organs3.dmi'
+
+/datum/sprite_accessory/organ/vagina/galotian/normal
+	name = "Normal"
+	icon_state = "slime_FRONT"
+
+/datum/customizer_choice/organ/vagina/galotian
+	name = "Vagina"
+	sprite_accessories = list(/datum/sprite_accessory/organ/vagina/galotian/normal)
+
+/datum/customizer/organ/vagina/galotian
+	customizer_choices = list(/datum/customizer_choice/organ/vagina/galotian)
