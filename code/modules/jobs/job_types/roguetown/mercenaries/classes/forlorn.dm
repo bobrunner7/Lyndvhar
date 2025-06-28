@@ -56,11 +56,11 @@
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/jannisary)
 		if("Forvheipal Sharpshooter")
 			H.set_blindness(0)
-			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's ranged janissary, wielding a longbow and relying on their agility to avoid blows."))
-			H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
+			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's ranged janissary, wielding javelins and relying on their agility to avoid blows."))
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
@@ -83,8 +83,8 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
+			beltl = /obj/item/rogueweapon/sword/iron/messer
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			beltl = /obj/item/quiver/arrows
 			backr = /obj/item/storage/backpack/rogue/satchel
-			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
+			backl = /obj/item/quiver/javelin/iron
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/jannisary)
