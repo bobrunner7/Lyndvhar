@@ -148,6 +148,7 @@
 		/datum/sprite_accessory/tail/tiger,
 		/datum/sprite_accessory/tail/twocat,
 		/datum/sprite_accessory/tail/wolf,
+		/datum/sprite_accessory/tail/pinecone
 		)
 
 /datum/customizer/organ/tail/anthro
@@ -214,4 +215,5 @@
 		/datum/sprite_accessory/tail/tiger,
 		/datum/sprite_accessory/tail/twocat,
 		/datum/sprite_accessory/tail/wolf,
+		/datum/sprite_accessory/tail/pinecone
 		)
