@@ -4,6 +4,8 @@
 	crate_name = "merchant guild's crate"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
+// Iron Weapons
+
 /datum/supply_pack/rogue/weapons/sword
 	name = "Iron Sword"
 	cost = 20
@@ -46,12 +48,44 @@
 					/obj/item/rogueweapon/flail,
 				)
 
+/datum/supply_pack/rogue/weapons/messer
+	name = "Iron Messer"
+	cost = 20
+	contains = list(
+					/obj/item/rogueweapon/sword/iron/messer,
+				)
+
+/datum/supply_pack/rogue/weapons/shortsword
+	name = "Iron Shortsword"
+	cost = 15
+	contains = list(
+					/obj/item/rogueweapon/sword/iron/short,
+				)
+
+/datum/supply_pack/rogue/weapons/shortsword
+	name = "Iron Shortsword"
+	cost = 15
+	contains = list(
+					/obj/item/rogueweapon/sword/iron/short,
+				)
+
+// Steel Weapons //
+
 /datum/supply_pack/rogue/weapons/daggerss
 	name = "Steel Dagger"
 	cost = 60
 	contains = list(
 					/obj/item/rogueweapon/huntingknife/idagger/steel,
 				)
+
+/datum/supply_pack/rogue/weapons/steel_sword
+	name = "Steel Bastard Sword"
+	cost = 90
+	contains = list(
+					/obj/item/rogueweapon/sword/long,
+				)
+
+// Shields //
 
 /datum/supply_pack/rogue/weapons/shield
 	name = "Wooden Shield"
@@ -60,19 +94,23 @@
 					/obj/item/rogueweapon/shield/wood,
 				)
 
+// Ranged //
+
 /datum/supply_pack/rogue/weapons/crossbow
 	name = "Crossbow"
-	cost = 30
+	cost = 40
 	contains = list(
 					/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
 				)
 
 /datum/supply_pack/rogue/weapons/recurvebow
 	name = "Recurve Bow"
-	cost = 20
+	cost = 30
 	contains = list(
 					/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
 				)
+
+// Merc imports //
 
 /datum/supply_pack/rogue/weapons/saildagger
 	name = "Sail Dagger"
@@ -116,6 +154,8 @@
 	contains = list(
 					/obj/item/rogueweapon/stoneaxe/woodcut/pick,
 	)
+
+// Ranged Ammo+Quivers //
 
 /datum/supply_pack/rogue/weapons/quiver
 	name = "Quiver"
