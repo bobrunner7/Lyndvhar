@@ -8,12 +8,13 @@
 	maximum_possible_slots = 2
 	traits_applied = list(TRAIT_OUTLANDER)
 	classes = list("Sorcerer" = "You are a learned magi and a scholar, having spent your life studying the arcyne and its ways.", 
-					"Spellsinger" = "You belong to a school of bards renowned for their study of both the arcane and the arts.")
+					"Spellsinger" = "You belong to a school of bards renowned for their study of both the arcane and the arts.",
+					"Spellblade" = "mjpaddtext")
 
 /datum/outfit/job/roguetown/adventurer/mage/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Sorcerer","Spellsinger")
+	var/classes = list("Sorcerer","Spellsinger","Spellblade")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -81,7 +82,7 @@
 			H.change_stat("intelligence", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
-			H.mind.adjust_spellpoints(3)
+			H.mind.adjust_spellpoints(4)
 			H.cmode_music = 'sound/music/combat_bard.ogg'
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
@@ -105,3 +106,41 @@
 					backr = /obj/item/rogue/instrument/viola
 				if("Vocal Talisman")
 					backr = /obj/item/rogue/instrument/vocals
+		if("Spellblade") // Spellblade blading out here. You get enchant weapon and SoW plus 2 SP
+			to_chat(H, span_warning("You are skilled in both the arcyne art and the art of the blade. Instead of wearing armor or being quick on your feet you use both your arcyne tricks and intelligence to protect yourself."))
+			head = /obj/item/clothing/head/roguetown/bucklehat
+			shoes = /obj/item/clothing/shoes/roguetown/boots
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			gloves = /obj/item/clothing/gloves/roguetown/angle
+			belt = /obj/item/storage/belt/rogue/leather
+			backl = /obj/item/storage/backpack/rogue/satchel
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
+			H.change_stat("strength", 1)
+			H.change_stat("intelligence", 3)
+			H.change_stat("constitution", 1)
+			H.change_stat("perception", -2)
+			H.mind.adjust_spellpoints(2)
+			H.cmode_music = 'sound/music/combat_bard.ogg'
+			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee. May end up removing mage armor because I don't think it fits the class.
+			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
+			var/weapons = list("Old Longsword", "Sabre & Wooden Shield")
+			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			switch(weapon_choice)
+				if("Old Longsword")
+					beltr = /obj/item/rogueweapon/sword/long/heirloom
+				if("Sabre & Wooden Shield")
+					beltr = /obj/item/rogueweapon/sword/sabre
+					backr = /obj/item/rogueweapon/shield/wood
