@@ -9,7 +9,7 @@
 	traits_applied = list(TRAIT_OUTLANDER)
 	classes = list("Sorcerer" = "You are a learned magi and a scholar, having spent your life studying the arcyne and its ways.", 
 					"Spellsinger" = "You belong to a school of bards renowned for their study of both the arcane and the arts.",
-					"Spellblade" = "mjpaddtext")
+					"Spellblade" = "You learnt the art of both the blade while also acquiring a small modicum of arcyne tricks.")
 
 /datum/outfit/job/roguetown/adventurer/mage/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -134,7 +134,7 @@
 			H.mind.adjust_spellpoints(2)
 			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee. May end up removing mage armor because I don't think it fits the class.
+			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee as their magic SP is super restrictive.
 			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
 			var/weapons = list("Old Longsword", "Sabre & Wooden Shield")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
