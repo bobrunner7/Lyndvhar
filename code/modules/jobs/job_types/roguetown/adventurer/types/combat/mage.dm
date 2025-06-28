@@ -132,7 +132,7 @@
 			H.change_stat("constitution", 1)
 			H.change_stat("perception", -2)
 			H.mind.adjust_spellpoints(2)
-			H.cmode_music = 'sound/music/combat_bard.ogg'
+			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee. May end up removing mage armor because I don't think it fits the class.
 			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
