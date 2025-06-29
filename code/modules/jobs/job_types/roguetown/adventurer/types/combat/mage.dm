@@ -49,7 +49,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
-			H.mind.adjust_spellpoints(5)
+			H.mind.adjust_spellpoints(7)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_ARCYNE_T3, TRAIT_GENERIC)
@@ -82,7 +82,7 @@
 			H.change_stat("intelligence", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
-			H.mind.adjust_spellpoints(4)
+			H.mind.adjust_spellpoints(5)
 			H.cmode_music = 'sound/music/combat_bard.ogg'
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
@@ -108,7 +108,6 @@
 					backr = /obj/item/rogue/instrument/vocals
 		if("Spellblade") // Spellblade blading out here. You get enchant weapon and SoW plus 2 SP
 			to_chat(H, span_warning("You are skilled in both the arcyne art and the art of the blade. Instead of wearing armor or being quick on your feet you use both your arcyne tricks and intelligence to protect yourself."))
-			head = /obj/item/clothing/head/roguetown/bucklehat
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
