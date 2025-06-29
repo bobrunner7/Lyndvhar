@@ -185,12 +185,11 @@
 			H.change_stat("speed", 1)
 			H.change_stat("intelligence", 5)
 			beltr = /obj/item/rogueweapon/sword/silver // Because of this and your high int you spawn with absolutely 0 armor. 
-			backr = /obj/item/rogueweapon/sword/iron/short
 			backl = /obj/item/storage/backpack/rogue/satchel
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 			belt = /obj/item/storage/belt/rogue/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			pants = /obj/item/clothing/under/roguetown/tights/black
+			pants = /obj/item/clothing/under/roguetown/trou/leather
 			cloak = /obj/item/clothing/cloak/cape/puritan
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			head = /obj/item/clothing/head/roguetown/brimmed
