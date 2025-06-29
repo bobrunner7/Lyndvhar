@@ -97,7 +97,7 @@
 	name = "Daemon Hunter"
 	tutorial = "Your specialty in the Inquisition was never fruitful in terms of espionage and stealth or the mystic miracles of Psydon. You had a unique talent in busting down doors to secret churches and worship spots, extracting confessions on the spot out of those who did not yield to Psydon, and driving out the Daemons with a silver blade. Face down the FORCES OF EVIL with whips and chains. You are Psydon's fist."
 	outfit = /datum/outfit/job/roguetown/inquisitor/muscle
-	cmode_music = 'sound/music/templarofpsydonia.ogg'
+	cmode_music = 'sound/music/combat_old.ogg'
 
 	category_tags = list(CTAG_INQUISITOR)
 
