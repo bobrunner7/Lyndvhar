@@ -131,7 +131,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("constitution", 1)
 			H.change_stat("perception", -2)
-			H.mind.adjust_spellpoints(2)
+			H.mind.adjust_spellpoints(3)
 			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee as their magic SP is super restrictive.
