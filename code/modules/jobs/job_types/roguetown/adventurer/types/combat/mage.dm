@@ -83,7 +83,7 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			H.mind.adjust_spellpoints(5)
-			H.cmode_music = 'sound/music/combat_bard.ogg'
+			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
