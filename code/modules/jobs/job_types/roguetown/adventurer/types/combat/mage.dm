@@ -49,7 +49,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
-			H.mind.adjust_spellpoints(5)
+			H.mind.adjust_spellpoints(7)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_ARCYNE_T3, TRAIT_GENERIC)
@@ -82,7 +82,7 @@
 			H.change_stat("intelligence", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
-			H.mind.adjust_spellpoints(4)
+			H.mind.adjust_spellpoints(5)
 			H.cmode_music = 'sound/music/combat_bard.ogg'
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
@@ -131,7 +131,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("constitution", 1)
 			H.change_stat("perception", -2)
-			H.mind.adjust_spellpoints(2)
+			H.mind.adjust_spellpoints(4)
 			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee as their magic SP is super restrictive.
