@@ -180,7 +180,7 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // This is your replacement for armor training on this job.
 			ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC) // So you can both clown on people for being dumber than you and actually assess people.
-			H.cmode_music = 'sound/music/combat_old.ogg'
+
 			H.change_stat("strength", 1)
 			H.change_stat("speed", 1)
 			H.change_stat("intelligence", 5)
