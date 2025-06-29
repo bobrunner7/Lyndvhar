@@ -68,7 +68,7 @@
 			H.change_stat("speed", 2)
 
 		if("Assassin")
-			to_chat(H, span_warning("You've lived the life of a hired killer and have spent your time training with blades and crossbows alike."))
+			to_chat(H, span_warning("You've lived the life of a hired killer and have spent your time training with blades and bows alike."))
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -79,9 +79,9 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
 			backl = /obj/item/storage/backpack/rogue/satchel
-			beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
-			beltr = /obj/item/quiver/bolts
-			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+			beltl = /obj/item/rogueweapon/huntingknife/idagger
+			beltr = /obj/item/quiver/arrows
+			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)

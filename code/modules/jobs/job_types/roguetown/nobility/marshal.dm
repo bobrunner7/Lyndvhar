@@ -28,7 +28,7 @@
 	min_pq = 4
 	max_pq = null
 	round_contrib_points = 3
-	cmode_music = 'sound/music/combat_guard.ogg'
+	cmode_music = 'sound/music/combat_guard2.ogg'
 	advclass_cat_rolls = list (CTAG_MARSHAL = 20)
 
 /datum/outfit/job/roguetown/marshal/pre_equip(mob/living/carbon/human/H)

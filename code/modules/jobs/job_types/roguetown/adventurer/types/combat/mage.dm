@@ -83,7 +83,7 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
 			H.mind.adjust_spellpoints(5)
-			H.cmode_music = 'sound/music/combat_bard.ogg'
+			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
@@ -108,11 +108,11 @@
 					backr = /obj/item/rogue/instrument/vocals
 		if("Spellblade") // Spellblade blading out here. You get enchant weapon and SoW plus 2 SP
 			to_chat(H, span_warning("You are skilled in both the arcyne art and the art of the blade. Instead of wearing armor or being quick on your feet you use both your arcyne tricks and intelligence to protect yourself."))
-			head = /obj/item/clothing/head/roguetown/bucklehat
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-			gloves = /obj/item/clothing/gloves/roguetown/angle
+			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -131,16 +131,16 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("constitution", 1)
 			H.change_stat("perception", -2)
-			H.mind.adjust_spellpoints(4)
+			H.mind.adjust_spellpoints(3)
 			H.cmode_music = 'sound/music/combat_old.ogg'
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC) // Gave them this so they can use their Int score in melee as their magic SP is super restrictive.
 			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
-			var/weapons = list("Old Longsword", "Sabre & Wooden Shield")
+			var/weapons = list("Old Longsword", "Sabre & Buckler")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Old Longsword")
 					beltr = /obj/item/rogueweapon/sword/long/heirloom
-				if("Sabre & Wooden Shield")
+				if("Sabre & Buckler")
 					beltr = /obj/item/rogueweapon/sword/sabre
-					backr = /obj/item/rogueweapon/shield/wood
+					backr = /obj/item/rogueweapon/shield/buckler
