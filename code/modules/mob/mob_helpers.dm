@@ -593,6 +593,7 @@
 	var/aimheight = 11
 	var/cmode_music = list(
 						'sound/music/combat_old.ogg',
+						'sound/music/combat.ogg',
 						)
 
 /mob/proc/aimheight_change(input)
