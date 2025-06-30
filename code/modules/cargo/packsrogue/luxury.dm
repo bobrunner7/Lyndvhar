@@ -135,3 +135,16 @@
 	name = "Signet"
 	cost = 220
 	contains = list(/obj/item/clothing/ring/signet)
+
+
+/datum/supply_pack/rogue/food/coffeebeans
+	name = "Coffee Beans"
+	cost = 30
+	contains = list(
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+				)
