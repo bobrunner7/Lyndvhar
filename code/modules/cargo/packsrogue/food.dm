@@ -122,3 +122,15 @@
 					/obj/item/reagent_containers/food/snacks/fish/clownfish,
 					/obj/item/reagent_containers/food/snacks/fish/clownfish,
 				)
+
+/datum/supply_pack/rogue/food/coffeebeans
+	name = "Coffee Beans"
+	cost = 60
+	contains = list(
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+					/obj/item/reagent_containers/food/snacks/grown/coffeebeans,
+				)

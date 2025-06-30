@@ -483,6 +483,22 @@
 					playsound(src, "bubbles", 30, TRUE)
 					pot.reagents.add_reagent(/datum/reagent/water/rosewater, 32)
 					pot.reagents.remove_reagent(/datum/reagent/water, 1)
+			if(istype(W, /obj/item/reagent_containers/food/snacks/grown/coffeebeansroasted))
+				if(!pot.reagents.has_reagent(/datum/reagent/water, 33))
+					to_chat(user, "<span class='notice'>Not enough water.</span>")
+					return TRUE
+				if(pot.reagents.chem_temp < 374)
+					to_chat(user, "<span class='warning'>[pot] isn't boiling!</span>")
+					return
+				if(do_after(user,2 SECONDS, target = src))
+					user.visible_message("<span class='info'>[user] places [W] into the pot.</span>")
+					playsound(src.loc, 'sound/items/Fish_out.ogg', 20, TRUE)
+					pot.reagents.remove_reagent(/datum/reagent/water, 32)
+					qdel(W)
+					sleep(900)
+					playsound(src, "bubbles", 30, TRUE)
+					pot.reagents.add_reagent(/datum/reagent/consumable/caffeine/coffee, 32)
+					pot.reagents.remove_reagent(/datum/reagent/water, 1)
 	. = ..()
 
 //////////////////////////////////
