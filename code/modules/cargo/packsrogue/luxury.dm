@@ -137,7 +137,7 @@
 	contains = list(/obj/item/clothing/ring/signet)
 
 
-/datum/supply_pack/rogue/food/coffeebeans
+/datum/supply_pack/rogue/luxury/coffeebeans
 	name = "Coffee Beans"
 	cost = 30
 	contains = list(
