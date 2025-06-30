@@ -56,9 +56,9 @@
 	output_reagents = list(/datum/reagent/medicine/healthpot = 81,/datum/reagent/additive = 81)
 
 /datum/alch_cauldron_recipe/rosewater_potion
-	recipe_name = "Rose Water"
+	recipe_name = "Rose Tea"
 	smells_like = "roses"
-	output_reagents = list(/datum/reagent/medicine/rosewater = 81)
+	output_reagents = list(/datum/reagent/water/rosewater = 81)
 
 /datum/alch_cauldron_recipe/mana_potion
 	recipe_name = "Arcane Elixir"

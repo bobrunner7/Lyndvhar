@@ -57,17 +57,17 @@
 	..()
 	. = 1
 
-/datum/reagent/medicine/rosewater
-	name = "Rose Water"
+/datum/reagent/water/rosewater
+	name = "Rose Tea"
 	description = "Steeped rose petals with mild regeneration."
 	reagent_state = LIQUID
 	color = "#f398b6"
-	taste_description = "floral"
+	taste_description = "floral sweetness"
 	overdose_threshold = 0
 	metabolization_rate = REAGENTS_METABOLISM
 	alpha = 173
 
-/datum/reagent/medicine/rosewater/on_mob_life(mob/living/carbon/M)
+/datum/reagent/medicine/water/on_mob_life(mob/living/carbon/M)
 	. = ..()
 	if (M.mob_biotypes & MOB_BEAST)
 		M.adjustFireLoss(0.5*REM)
@@ -75,11 +75,6 @@
 		M.adjustBruteLoss(-0.1*REM)
 		M.adjustFireLoss(-0.1*REM)
 		M.adjustOxyLoss(-0.1, 0)
-		var/list/our_wounds = M.get_wounds()
-		if (LAZYLEN(our_wounds))
-			var/upd = M.heal_wounds(1)
-			if (upd)
-				M.update_damage_overlays()
 
 /datum/reagent/medicine/gender_potion
 	name = "Gender Potion"
