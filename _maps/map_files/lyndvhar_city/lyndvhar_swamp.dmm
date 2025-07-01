@@ -6,6 +6,10 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"aA" = (
+/obj/effect/spawner/roguemap/hauntpile,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
 "aK" = (
 /obj/structure/flora/rock,
 /turf/open/floor/rogue/naturalstone,
@@ -42,6 +46,13 @@
 /obj/structure/flora/roguetree/stump,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"cH" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
 "cI" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
@@ -70,6 +81,9 @@
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"el" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
 "eZ" = (
 /obj/structure/stairs{
 	dir = 1
@@ -135,6 +149,11 @@
 /mob/living/carbon/human/species/skeleton/npc/ambush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"if" = (
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/pelt,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/mountains)
 "ig" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -168,6 +187,13 @@
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"jH" = (
+/obj/structure/closet/crate/roguecloset/inn/south,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
 "jN" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -198,6 +224,13 @@
 "kI" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/bog)
+"lc" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/mountains)
 "lt" = (
 /obj/structure/closet/crate/chest/wicker,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
@@ -286,6 +319,19 @@
 /obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
+"qq" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 4;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/mountains)
 "qL" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
 /turf/open/floor/rogue/naturalstone,
@@ -298,6 +344,11 @@
 "rd" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/bog)
+"sw" = (
+/obj/machinery/light/rogue/cauldron,
+/obj/structure/ritualcircle/zizo,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/mountains)
 "sY" = (
 /obj/structure/roguetent,
 /turf/open/floor/rogue/twig,
@@ -435,10 +486,19 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"wU" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
 "xc" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"xV" = (
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/mountains)
 "xX" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/grassyel,
@@ -481,6 +541,17 @@
 /obj/structure/roguetent,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"Bo" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 4;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/mountains)
 "Br" = (
 /obj/structure/fluff/railing/wood{
 	icon_state = "woodrailing";
@@ -514,6 +585,14 @@
 /obj/item/reagent_containers/glass/bowl,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
+"Cb" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/structure/rack/rogue/shelf,
+/obj/effect/spawner/lootdrop/potion_ingredient/herb,
+/obj/effect/spawner/lootdrop/potion_ingredient/herb,
+/obj/effect/spawner/lootdrop/potion_ingredient/herb,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
 "Cp" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grassyel,
@@ -634,6 +713,19 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"Ky" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/herbseed/artemisia,
+/obj/item/herbseed/atropa,
+/obj/item/herbseed/benedictus,
+/obj/item/herbseed/calendula,
+/obj/item/herbseed/euphrasia,
+/obj/item/herbseed/hypericum,
+/obj/item/herbseed/paris,
+/obj/item/herbseed/taraxacum,
+/obj/item/herbseed/symphitum,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/mountains)
 "KA" = (
 /obj/structure/flora/roguetree,
 /turf/open/water/swamp/deep,
@@ -679,6 +771,11 @@
 "NY" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"Ob" = (
+/obj/structure/ritualcircle/zizo,
+/obj/structure/wonder,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
 "OM" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/rogue/dirt,
@@ -735,6 +832,10 @@
 /mob/living/carbon/human/species/skeleton/npc/ambush,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
+"Te" = (
+/obj/structure/fluff/alch,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/mountains)
 "TX" = (
 /obj/structure/fermenting_barrel/random/water,
 /turf/open/floor/rogue/wood,
@@ -743,6 +844,18 @@
 /obj/structure/flora/roguetree/stump,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
+"Ui" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/structure/rack/rogue/shelf,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/obj/effect/spawner/lootdrop/potion_ingredient,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
+"Uy" = (
+/obj/effect/spawner/roguemap/hauntpile,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/mountains)
 "Ve" = (
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
@@ -775,7 +888,14 @@
 /area/rogue/under/cavewet/bogcaves)
 "Xk" = (
 /obj/structure/closet/crate/drawer,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
+"Xm" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/seeds/apple,
+/turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/mountains)
 "XA" = (
 /turf/open/floor/rogue/dirt/road,
@@ -790,6 +910,20 @@
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
+"Yy" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/mortar,
+/obj/item/pestle,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/mountains)
+"YR" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/mountains)
 "YS" = (
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
@@ -799,12 +933,22 @@
 /obj/item/cooking/pan,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
+"Zo" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 4;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/mountains)
 "Zs" = (
 /obj/item/natural/bone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Zv" = (
 /obj/structure/closet/crate/drawer,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/mountains)
 "Zz" = (
@@ -58713,7 +58857,7 @@ KI
 fo
 Vn
 ob
-bW
+aA
 uD
 mo
 KI
@@ -59504,7 +59648,7 @@ KI
 KI
 KI
 KI
-KI
+el
 KI
 KI
 KI
@@ -59633,11 +59777,11 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
+el
 KI
 KI
 KI
@@ -59765,11 +59909,11 @@ KI
 KI
 KI
 KI
+el
 KI
 KI
 KI
-KI
-KI
+el
 KI
 aM
 fo
@@ -59901,12 +60045,12 @@ gx
 fo
 aM
 KI
-KI
+el
 aM
 aM
-dx
-dx
-dx
+Te
+sw
+Yy
 fo
 XO
 QG
@@ -60027,18 +60171,18 @@ KI
 KI
 KI
 fo
+YR
+wU
 ob
-ob
-ob
-ob
+cH
 fo
 KI
-KI
-Dp
-ob
+el
+aM
+Cb
 dx
-dx
-dx
+xV
+xV
 fo
 QG
 QG
@@ -60160,17 +60304,17 @@ KI
 KI
 fo
 dx
-dx
+Uy
 dx
 dx
 fo
 KI
-KI
+el
 aM
-ob
+Ui
 dx
 dx
-dx
+Xm
 fo
 QG
 QG
@@ -60297,12 +60441,12 @@ dx
 dx
 fo
 KI
-KI
+el
 yC
 ob
 dx
-dx
-dx
+Uy
+Ky
 fo
 QG
 QG
@@ -60425,13 +60569,13 @@ KI
 fo
 Zv
 iO
-dx
-dx
+lc
+lc
 fo
 KI
-KI
+el
 aM
-ob
+jH
 dx
 dx
 aM
@@ -60561,10 +60705,10 @@ Dp
 fo
 aM
 KI
-KI
+el
 Dp
 ob
-dx
+Uy
 dx
 fo
 QG
@@ -60692,8 +60836,8 @@ KI
 KI
 KI
 KI
-KI
-KI
+el
+el
 Dp
 ob
 dx
@@ -60823,13 +60967,13 @@ KI
 KI
 KI
 KI
-KI
-KI
+el
+el
 KI
 aM
 aM
-dx
-dx
+Zv
+if
 fo
 QG
 QG
@@ -60954,8 +61098,8 @@ KI
 KI
 KI
 KI
-KI
-KI
+el
+el
 KI
 KI
 KI
@@ -61085,8 +61229,8 @@ KI
 KI
 KI
 KI
-KI
-KI
+el
+el
 KI
 KI
 KI
@@ -61217,7 +61361,7 @@ KI
 KI
 KI
 KI
-KI
+el
 KI
 KI
 KI
@@ -61346,10 +61490,10 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
 KI
 KI
 KI
@@ -61477,8 +61621,8 @@ KI
 KI
 KI
 KI
-KI
-KI
+el
+el
 KI
 KI
 KI
@@ -61607,9 +61751,9 @@ KI
 KI
 KI
 KI
+el
 KI
-KI
-KI
+el
 KI
 KI
 KI
@@ -61738,10 +61882,10 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
 KI
 KI
 KI
@@ -61868,11 +62012,11 @@ XO
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
+el
 KI
 KI
 KI
@@ -62000,9 +62144,9 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
+el
+el
+el
 KI
 KI
 KI
@@ -62131,9 +62275,9 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
+el
+el
+el
 KI
 KI
 KI
@@ -62262,9 +62406,9 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
+el
+el
+el
 KI
 KI
 KI
@@ -62394,10 +62538,10 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
 KI
 KI
 KI
@@ -62525,11 +62669,11 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
+el
 KI
 KI
 KI
@@ -62656,12 +62800,12 @@ KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
+el
+el
 KI
 KI
 KI
@@ -62783,17 +62927,17 @@ QG
 QG
 QG
 QG
+qq
+Zo
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+Ob
+el
+el
+el
 KI
 KI
 KI
@@ -62917,14 +63061,14 @@ QG
 QG
 QG
 QG
+qq
+Zo
 KI
 KI
-KI
-KI
-KI
-KI
-KI
-KI
+el
+el
+el
+el
 KI
 KI
 KI
@@ -63051,16 +63195,16 @@ QG
 QG
 QG
 QG
+qq
+KI
+el
+el
+el
 KI
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
-KI
+Zo
 XO
 QG
 QG
@@ -63184,14 +63328,14 @@ QG
 QG
 QG
 QG
+qq
+Zo
+Zo
 KI
 KI
 KI
-KI
-KI
-KI
-KI
-KI
+Zo
+Bo
 QG
 QG
 QG
@@ -63319,9 +63463,9 @@ QG
 QG
 QG
 QG
-KI
-KI
-KI
+qq
+Zo
+Bo
 QG
 QG
 QG
