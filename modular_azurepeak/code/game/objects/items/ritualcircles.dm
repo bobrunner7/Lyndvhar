@@ -479,7 +479,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 
 /obj/structure/ritualcircle/graggar
 	name = "Rune of Violence"
-	desc = "A Holy Rune of Graggar."
+	desc = "A Daemonic Rune to the Archdaemon, Graggar."
 	// icon_state = "graggar_chalky"
 	var/graggarrites = list("Rite of Armaments")
 
@@ -497,11 +497,11 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	switch(riteselection) // put ur rite selection here
 		if("Rite of Armaments")
 			if(do_after(user, 50))
-				user.say("Motive force, oh, violence!!")
+				user.say("GRAGGAR, WITNESS THIS VIOLENCE!!")
 				if(do_after(user, 50))
-					user.say("A gorgeous buffet of violence, for you, for you!!")
+					user.say("A GORGEOUS BUFFET OF BLOOD AND VIOLENCE, FOR YOU, FOR YOU!!")
 					if(do_after(user, 50))
-						user.say("A slaughter awaits!!")
+						user.say("THE SLAUGHTER AWAITS US!!")
 						if(do_after(user, 50))
 							//icon_state = "graggar_active" when we have one
 							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
