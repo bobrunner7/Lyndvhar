@@ -19,7 +19,6 @@
 		M.reagents.remove_reagent(/datum/reagent/medicine/healthpot, 2) //No overhealing.
 	if(M.blood_volume < BLOOD_VOLUME_NORMAL)
 		M.blood_volume = min(M.blood_volume+20, BLOOD_VOLUME_MAXIMUM)
-	var/list/wCount = M.get_wounds()
 	if(volume > 0.99)
 		M.adjustBruteLoss(-1.75*REM, 0)
 		M.adjustFireLoss(-1.75*REM, 0)
