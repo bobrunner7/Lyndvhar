@@ -1,76 +1,89 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ai" = (
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "aN" = (
-/obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
 	},
+/turf/closed/wall/mineral/rogue/wood,
+/area/rogue/outdoors/bog)
+"aW" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"bO" = (
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet/bogcaves)
+"ct" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"cU" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"db" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"dK" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
 	layer = 2.7;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"aW" = (
-/turf/open/water/swamp,
-/area/rogue/outdoors/bog)
-"bG" = (
-/obj/structure/flora/newtree,
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"cI" = (
-/obj/effect/landmark/start/adventurer,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"cU" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"db" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"dC" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"dK" = (
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet/bogcaves)
-"ep" = (
-/obj/structure/stairs{
-	dir = 1
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "fx" = (
-/obj/structure/flora/rock/pile,
+/obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
+"gV" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"hd" = (
+/obj/structure/far_travel,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
 "hj" = (
 /turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"hC" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"hO" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "ig" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
-"iG" = (
-/obj/structure/flora/roguegrass/bush,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"jw" = (
-/obj/structure/flora/roguetree/stump,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"jN" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
 "jS" = (
 /obj/structure/fluff/railing/wood{
 	icon_state = "woodrailing";
@@ -79,27 +92,7 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"jX" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"ll" = (
-/obj/machinery/light/rogue/campfire/longlived,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"lL" = (
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"lR" = (
+"kj" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
 	layer = 2.7;
@@ -107,10 +100,9 @@
 	},
 /turf/closed/wall/mineral/rogue/wood,
 /area/rogue/outdoors/bog)
-"lZ" = (
-/obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
+"lR" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/bog)
@@ -118,22 +110,10 @@
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cavewet/bogcaves)
 "mR" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/flora/roguetree/stump/burnt,
-/turf/open/floor/rogue/dirt,
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
 "mY" = (
-/obj/structure/fluff/buysign{
-	name = "TERRORBOG";
-	desc = "BEWARE ALL YE ENTER"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"nv" = (
 /obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
@@ -142,31 +122,11 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "oR" = (
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
-/turf/open/floor/rogue/dirt,
+/obj/effect/landmark/start/adventurerlate,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "py" = (
 /obj/structure/flora/roguetree,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"pA" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 4;
-	pixel_x = 8
-	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "pQ" = (
@@ -184,153 +144,30 @@
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"qL" = (
-/obj/item/natural/rock,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"qS" = (
-/obj/effect/decal/cleanable/blood,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"rd" = (
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/bog)
-"ro" = (
-/obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"rK" = (
-/obj/effect/landmark/start/adventurerlate,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"sZ" = (
+"pW" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
-"td" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
-/turf/closed/wall/mineral/rogue/wood,
-/area/rogue/outdoors/bog)
-"tv" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"tZ" = (
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"uf" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"uj" = (
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
-"uS" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"uZ" = (
-/obj/structure/fluff/traveltile{
-	aportalgoesto = "swampout";
-	aportalid = "swampin"
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"ww" = (
-/obj/structure/flora/roguetree/stump/burnt,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"xc" = (
+"ra" = (
 /obj/structure/flora/roguetree/burnt,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"xn" = (
-/obj/effect/decal/cleanable/blood/gibs/torso,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"yH" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"zq" = (
-/obj/structure/table/wood{
-	dir = 10;
-	icon_state = "tablewood2"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"zK" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/swamp/deep,
-/area/rogue/outdoors/bog)
-"AP" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Br" = (
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Ca" = (
-/obj/structure/far_travel,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"Cp" = (
-/obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
-"Eb" = (
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"El" = (
-/obj/structure/bed/rogue/bedroll,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Fn" = (
-/obj/structure/flora/roguetree/stump/log,
-/turf/open/floor/rogue/dirt,
+"rd" = (
+/turf/open/transparent/openspace,
 /area/rogue/outdoors/bog)
-"Hd" = (
-/obj/structure/flora/rock/pile/largejungle,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Ii" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
+"sl" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
 	},
-/turf/open/floor/rogue/dirt,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"Jt" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
+"sY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	layer = 2.8;
@@ -338,23 +175,15 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"JC" = (
-/obj/effect/landmark/mapGenerator/rogue/bog,
-/turf/closed/mineral/rogue/bedrock,
-/area/rogue/outdoors/bog)
-"JV" = (
-/obj/effect/landmark/mapGenerator/rogue/cave,
-/turf/closed/mineral/rogue/bedrock,
+"sZ" = (
+/obj/structure/flora/rock,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
-"KA" = (
-/obj/structure/flora/roguetree,
-/turf/open/water/swamp/deep,
-/area/rogue/outdoors/bog)
-"KN" = (
-/obj/structure/stairs,
+"td" = (
+/obj/effect/landmark/start/adventurer,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"KY" = (
+"ts" = (
 /obj/structure/stairs{
 	icon_state = "stairs";
 	dir = 4
@@ -364,10 +193,152 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"LH" = (
+"tN" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"tZ" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"uf" = (
+/obj/structure/flora/newtree,
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"uj" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"uS" = (
+/turf/open/water/swamp,
+/area/rogue/outdoors/bog)
+"uZ" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "swampout";
+	aportalid = "swampin"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"vB" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"vG" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"vW" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"wj" = (
 /turf/open/water/swamp,
 /area/rogue/under/cavewet/bogcaves)
-"Nq" = (
+"ww" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"xc" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"xF" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/bog)
+"xX" = (
+/obj/effect/landmark/mapGenerator/rogue/cave,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cavewet/bogcaves)
+"yH" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"zK" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bog)
+"Be" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Br" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Bu" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"BF" = (
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"Cp" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"CM" = (
+/obj/structure/fluff/buysign{
+	name = "TERRORBOG";
+	desc = "BEWARE ALL YE ENTER"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Eb" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"El" = (
+/obj/structure/bed/rogue/bedroll,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Et" = (
+/obj/machinery/light/rogue/campfire/longlived,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"FG" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
 	layer = 2.7;
@@ -375,18 +346,91 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/bog)
-"Nw" = (
-/obj/structure/flora/newtree,
+"GF" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"GK" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 8;
+	pixel_x = -4
+	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Hd" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Hh" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Iw" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"IQ" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"JC" = (
+/obj/effect/landmark/mapGenerator/rogue/bog,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/bog)
+"Kc" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"KA" = (
+/obj/structure/flora/roguetree,
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/bog)
+"KK" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"KN" = (
+/obj/structure/stairs,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"KY" = (
+/obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"NJ" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "NY" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"OM" = (
-/obj/structure/flora/rock,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Ph" = (
+"Oy" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 4;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Pj" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"PQ" = (
 /obj/structure/fluff/railing/wood{
 	icon_state = "woodrailing";
 	dir = 8;
@@ -400,63 +444,46 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "Qx" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"RD" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = -12
 	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"RU" = (
-/obj/item/natural/bone,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"SC" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Uk" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	layer = 2.8;
 	pixel_x = 8
 	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Tp" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
 	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Ve" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/flora/roguetree/stump/burnt,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "Vk" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
+/obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Wp" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "YS" = (
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
 "Zz" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
-/turf/open/floor/rogue/twig,
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
 
 (1,1,1) = {"
@@ -589,7 +616,7 @@ my
 my
 my
 my
-JV
+xX
 "}
 (2,1,1) = {"
 my
@@ -18213,8 +18240,8 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
+KA
+KA
 pQ
 pQ
 pQ
@@ -18344,8 +18371,8 @@ pQ
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 pQ
@@ -18473,9 +18500,9 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -18604,8 +18631,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -18734,9 +18761,9 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -18841,9 +18868,9 @@ zK
 YS
 zK
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -18865,8 +18892,8 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -19173,9 +19200,9 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 zK
@@ -19249,7 +19276,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19272,6 +19299,40 @@ zK
 YS
 YS
 YS
+KA
+YS
+YS
+YS
+zK
+YS
+YS
+KA
+YS
+YS
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+YS
+YS
+YS
+YS
+KA
+KA
+KA
+YS
 YS
 YS
 YS
@@ -19280,42 +19341,8 @@ zK
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -19380,8 +19407,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -19404,7 +19431,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19412,8 +19439,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -19433,8 +19460,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -19447,7 +19474,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19486,8 +19513,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -19512,7 +19539,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19537,6 +19564,40 @@ YS
 YS
 YS
 YS
+KA
+YS
+YS
+YS
+zK
+YS
+YS
+YS
+KA
+KA
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+YS
+KA
+KA
+YS
+YS
+zK
+zK
+YS
 YS
 YS
 YS
@@ -19546,42 +19607,8 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -19617,7 +19644,7 @@ pQ
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19643,7 +19670,7 @@ YS
 zK
 zK
 YS
-YS
+KA
 YS
 YS
 YS
@@ -19669,26 +19696,7 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
 YS
 YS
 YS
@@ -19698,6 +19706,25 @@ YS
 YS
 YS
 YS
+KA
+KA
+KA
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+KA
+KA
+YS
 YS
 zK
 YS
@@ -19713,8 +19740,8 @@ zK
 zK
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 zK
 pQ
@@ -19748,33 +19775,7 @@ pQ
 pQ
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-zK
-NY
-NY
-YS
-NY
-YS
-NY
-YS
-NY
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-zK
-zK
-YS
-YS
+KA
 YS
 YS
 YS
@@ -19783,6 +19784,32 @@ zK
 NY
 NY
 YS
+NY
+YS
+NY
+YS
+NY
+YS
+YS
+YS
+YS
+zK
+zK
+YS
+YS
+YS
+zK
+zK
+YS
+YS
+KA
+YS
+YS
+YS
+zK
+NY
+NY
+YS
 YS
 YS
 NY
@@ -19797,35 +19824,11 @@ YS
 zK
 zK
 YS
+KA
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-zK
-YS
+KA
 YS
 YS
 YS
@@ -19837,6 +19840,30 @@ YS
 YS
 YS
 YS
+YS
+KA
+KA
+KA
+YS
+YS
+zK
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+KA
+YS
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
 zK
 zK
 zK
@@ -19846,7 +19873,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 zK
 pQ
@@ -19879,41 +19906,13 @@ pQ
 pQ
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-NY
-YS
-NY
-NY
-NY
-YS
-NY
-zK
+KA
+KA
 YS
 YS
 YS
 YS
 zK
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-NY
-NY
 NY
 YS
 NY
@@ -19925,19 +19924,8 @@ zK
 YS
 YS
 YS
+YS
 zK
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
 YS
 YS
 YS
@@ -19951,6 +19939,45 @@ YS
 YS
 YS
 zK
+NY
+NY
+NY
+YS
+NY
+NY
+NY
+YS
+NY
+zK
+YS
+YS
+YS
+zK
+zK
+zK
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
 zK
 YS
 YS
@@ -19958,7 +19985,7 @@ YS
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -20060,7 +20087,7 @@ YS
 zK
 YS
 zK
-YS
+KA
 YS
 YS
 YS
@@ -20090,11 +20117,7 @@ zK
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-zK
+KA
 YS
 YS
 YS
@@ -20102,6 +20125,7 @@ zK
 YS
 YS
 YS
+zK
 YS
 YS
 YS
@@ -20109,6 +20133,9 @@ YS
 YS
 YS
 YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -20164,7 +20191,7 @@ YS
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 zK
@@ -20192,11 +20219,33 @@ YS
 zK
 YS
 zK
+KA
 YS
 YS
 YS
 YS
 YS
+KA
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+zK
+zK
+YS
+YS
+YS
+zK
+YS
+YS
+YS
+zK
 YS
 YS
 YS
@@ -20207,37 +20256,15 @@ YS
 YS
 YS
 zK
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-zK
-YS
-YS
-YS
 zK
 YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 YS
@@ -20274,7 +20301,7 @@ pQ
 pQ
 YS
 YS
-YS
+KA
 zK
 YS
 YS
@@ -20297,7 +20324,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 zK
@@ -20306,8 +20333,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -20348,8 +20375,8 @@ zK
 zK
 zK
 YS
-YS
-YS
+KA
+KA
 zK
 zK
 YS
@@ -20364,8 +20391,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -20405,8 +20432,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 zK
 YS
 YS
@@ -20429,47 +20456,17 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
 YS
 zK
 zK
-YS
-YS
-zK
-zK
 zK
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
+KA
 YS
 YS
 YS
@@ -20484,6 +20481,36 @@ YS
 YS
 YS
 zK
+zK
+YS
+YS
+zK
+zK
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+KA
+YS
+zK
 YS
 YS
 YS
@@ -20495,15 +20522,15 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
 YS
 YS
 YS
-YS
+KA
 YS
 zK
 YS
@@ -20536,8 +20563,8 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
+KA
+KA
 zK
 YS
 YS
@@ -20562,62 +20589,10 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-zK
-zK
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-zK
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 YS
@@ -20631,11 +20606,63 @@ YS
 YS
 YS
 YS
+YS
+KA
+KA
+KA
+KA
+KA
+KA
+YS
+zK
+zK
+zK
+zK
+zK
 zK
 YS
 YS
 YS
 YS
+YS
+YS
+zK
+zK
+YS
+YS
+YS
+YS
+zK
+zK
+zK
+YS
+YS
+YS
+YS
+YS
+KA
+YS
+zK
+zK
+YS
+YS
+YS
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+KA
+YS
+YS
+YS
+zK
+YS
+YS
+KA
+KA
 zK
 YS
 YS
@@ -20668,7 +20695,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 zK
 YS
@@ -20686,7 +20713,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 zK
 YS
@@ -20745,28 +20772,28 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 zK
 zK
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
 zK
 zK
 YS
 YS
+YS
+YS
+YS
+YS
+YS
+KA
+KA
+YS
+YS
+YS
+zK
+zK
+YS
+KA
 YS
 zK
 YS
@@ -20817,8 +20844,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -20858,7 +20885,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -20877,20 +20904,20 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 zK
-zK
-YS
-YS
 zK
 YS
 YS
+zK
 YS
 YS
 YS
 YS
 YS
+YS
+KA
 YS
 YS
 YS
@@ -20938,16 +20965,48 @@ zK
 zK
 zK
 zK
-Ph
+PQ
 Br
 Br
-oR
+GK
 zK
 zK
 YS
 YS
 YS
 YS
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
 YS
 YS
 YS
@@ -20958,39 +21017,7 @@ YS
 YS
 YS
 YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
 YS
 YS
 YS
@@ -21009,7 +21036,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21066,7 +21093,7 @@ pQ
 pQ
 YS
 zK
-Ph
+PQ
 Br
 Br
 Br
@@ -21074,7 +21101,7 @@ NY
 NY
 NY
 NY
-oR
+GK
 zK
 YS
 YS
@@ -21122,7 +21149,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21142,7 +21169,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21197,16 +21224,16 @@ pQ
 pQ
 pQ
 zK
-Ph
+PQ
 hj
 hj
 NY
 xc
-tZ
-Nw
-Nw
-tZ
-Ii
+gV
+Pj
+Pj
+gV
+hC
 zK
 zK
 zK
@@ -21254,7 +21281,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21274,8 +21301,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -21329,18 +21356,18 @@ pQ
 pQ
 pQ
 Br
-iG
+Kc
 hj
 hj
 hj
 hj
-tZ
-Nw
-tZ
-db
+gV
+Pj
+gV
+KY
 NY
 Br
-oR
+GK
 hj
 hj
 YS
@@ -21386,7 +21413,7 @@ pQ
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21467,11 +21494,11 @@ xc
 hj
 hj
 hj
-tZ
+gV
 hj
 hj
-Nw
-tZ
+Pj
+gV
 pU
 hj
 hj
@@ -21518,7 +21545,7 @@ pQ
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21550,7 +21577,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 zK
@@ -21602,8 +21629,8 @@ hj
 hj
 hj
 hj
-Nw
-tZ
+Pj
+gV
 hj
 hj
 hj
@@ -21650,7 +21677,7 @@ pQ
 pQ
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21682,7 +21709,7 @@ zK
 zK
 zK
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21728,7 +21755,7 @@ NY
 NY
 NY
 NY
-jw
+GF
 hj
 hj
 hj
@@ -21782,7 +21809,7 @@ pQ
 pQ
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -21814,7 +21841,7 @@ NY
 NY
 zK
 YS
-YS
+KA
 YS
 YS
 zK
@@ -21858,8 +21885,8 @@ pQ
 pQ
 NY
 NY
-tZ
-tZ
+gV
+gV
 NY
 NY
 hj
@@ -21946,7 +21973,7 @@ NY
 NY
 zK
 zK
-YS
+KA
 YS
 YS
 zK
@@ -21989,10 +22016,10 @@ pQ
 pQ
 NY
 NY
-tZ
-Nw
-tZ
-iG
+gV
+Pj
+gV
+Kc
 hj
 hj
 hj
@@ -22000,7 +22027,7 @@ hj
 hj
 hj
 hj
-tZ
+gV
 Cp
 NY
 pQ
@@ -22047,11 +22074,11 @@ pQ
 YS
 YS
 YS
+KA
 YS
 YS
 YS
-YS
-YS
+KA
 YS
 YS
 zK
@@ -22078,7 +22105,7 @@ NY
 NY
 NY
 zK
-YS
+KA
 YS
 YS
 zK
@@ -22119,10 +22146,10 @@ pQ
 pQ
 pQ
 pQ
-tZ
-tZ
-Nw
-tZ
+gV
+gV
+Pj
+gV
 ww
 hj
 hj
@@ -22130,10 +22157,10 @@ hj
 ww
 NY
 hj
-tZ
-tZ
-tZ
-jw
+gV
+gV
+gV
+GF
 NY
 pQ
 pQ
@@ -22179,11 +22206,11 @@ pQ
 YS
 YS
 YS
+KA
 YS
 YS
 YS
-YS
-YS
+KA
 YS
 YS
 zK
@@ -22210,15 +22237,7 @@ NY
 NY
 NY
 zK
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-zK
+KA
 YS
 YS
 zK
@@ -22226,6 +22245,14 @@ zK
 YS
 YS
 YS
+zK
+YS
+YS
+zK
+zK
+YS
+YS
+KA
 YS
 pQ
 pQ
@@ -22251,19 +22278,19 @@ pQ
 pQ
 pQ
 NY
-tZ
-Nw
-Nw
-tZ
+gV
+Pj
+Pj
+gV
 NY
 hj
 hj
 hj
 NY
-jw
+GF
 NY
-tZ
-tZ
+gV
+gV
 xc
 NY
 NY
@@ -22312,36 +22339,12 @@ YS
 YS
 YS
 YS
+KA
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-zK
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-zK
+KA
+KA
 YS
 YS
 YS
@@ -22351,6 +22354,25 @@ YS
 YS
 YS
 zK
+zK
+YS
+YS
+YS
+YS
+zK
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+zK
+YS
+YS
+YS
+YS
 YS
 YS
 YS
@@ -22359,6 +22381,11 @@ zK
 YS
 YS
 YS
+YS
+zK
+YS
+YS
+KA
 YS
 pQ
 pQ
@@ -22383,19 +22410,19 @@ pQ
 pQ
 NY
 NY
-tZ
-bG
-Nw
-db
+gV
+uf
+Pj
+KY
 hj
 hj
 hj
 NY
-iG
-tZ
-tZ
-tZ
-tZ
+Kc
+gV
+gV
+gV
+gV
 NY
 NY
 NY
@@ -22444,15 +22471,15 @@ YS
 YS
 YS
 YS
+KA
+KA
 YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -22490,7 +22517,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 pQ
 pQ
@@ -22515,19 +22542,19 @@ NY
 NY
 xc
 NY
-tZ
-tZ
-Nw
-tZ
+gV
+gV
+Pj
+gV
 hj
 hj
 hj
 xc
-tZ
-Nw
-Nw
-tZ
-tZ
+gV
+Pj
+Pj
+gV
+gV
 NY
 NY
 pQ
@@ -22577,8 +22604,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -22592,37 +22619,37 @@ zK
 zK
 YS
 YS
+KA
+KA
+YS
+YS
+zK
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+zK
+zK
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+YS
 YS
 YS
 YS
 YS
 zK
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-zK
-zK
-zK
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
+KA
 YS
 YS
 pQ
@@ -22647,19 +22674,19 @@ xc
 NY
 NY
 NY
-jw
-tZ
+GF
+gV
 NY
 NY
 hj
 hj
 hj
 NY
-tZ
-Nw
-Nw
-Nw
-Nw
+gV
+Pj
+Pj
+Pj
+Pj
 NY
 NY
 pQ
@@ -22710,6 +22737,7 @@ YS
 YS
 YS
 YS
+KA
 YS
 YS
 YS
@@ -22722,9 +22750,8 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -22754,7 +22781,7 @@ YS
 YS
 zK
 YS
-YS
+KA
 YS
 YS
 pQ
@@ -22777,7 +22804,7 @@ pQ
 NY
 NY
 NY
-cU
+KK
 NY
 pU
 NY
@@ -22788,10 +22815,10 @@ hj
 NY
 NY
 NY
-tZ
-tZ
-Nw
-tZ
+gV
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -22843,7 +22870,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -22855,38 +22882,38 @@ zK
 YS
 YS
 YS
+KA
+YS
+YS
+YS
+zK
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+zK
+zK
+YS
 YS
 YS
 YS
 YS
 zK
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-zK
-zK
-YS
-YS
-YS
 YS
 YS
 zK
 YS
-YS
-zK
-YS
-YS
+KA
 YS
 YS
 YS
@@ -22918,13 +22945,13 @@ hj
 hj
 NY
 NY
-dC
-tZ
+mR
+gV
 Cp
-tZ
-Nw
+gV
+Pj
 NY
-tZ
+gV
 NY
 pQ
 pQ
@@ -22976,8 +23003,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -22985,8 +23012,8 @@ YS
 zK
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -23037,12 +23064,12 @@ pQ
 pQ
 pQ
 pQ
-Ca
-cI
-rK
+hd
+td
+oR
 NY
 hj
-iG
+Kc
 hj
 hj
 hj
@@ -23050,12 +23077,12 @@ NY
 NY
 pU
 Cp
-tZ
-tZ
-tZ
-tZ
-tZ
-tZ
+gV
+gV
+gV
+gV
+gV
+gV
 NY
 NY
 pQ
@@ -23109,6 +23136,7 @@ YS
 YS
 YS
 YS
+KA
 YS
 YS
 YS
@@ -23116,8 +23144,7 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
 YS
 YS
 YS
@@ -23169,9 +23196,9 @@ pQ
 pQ
 pQ
 pQ
-Ca
-cI
-rK
+hd
+td
+oR
 hj
 hj
 hj
@@ -23181,13 +23208,13 @@ hj
 hj
 hj
 hj
-tZ
-tZ
-tZ
-tZ
-tZ
-tZ
-tZ
+gV
+gV
+gV
+gV
+gV
+gV
+gV
 xc
 NY
 pQ
@@ -23248,8 +23275,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -23301,9 +23328,9 @@ pQ
 pQ
 pQ
 pQ
-Ca
-cI
-rK
+hd
+td
+oR
 hj
 hj
 hj
@@ -23317,7 +23344,7 @@ hj
 NY
 hj
 hj
-nv
+mY
 NY
 NY
 NY
@@ -23433,9 +23460,9 @@ pQ
 pQ
 pQ
 pQ
-Ca
-cI
-rK
+hd
+td
+oR
 hj
 hj
 hj
@@ -23444,15 +23471,15 @@ hj
 hj
 NY
 NY
-lL
-lL
+Vk
+Vk
 hj
 hj
 NY
 hj
 NY
-tZ
-tZ
+gV
+gV
 NY
 pQ
 pQ
@@ -23568,7 +23595,7 @@ pQ
 pQ
 hj
 NY
-mY
+CM
 NY
 NY
 hj
@@ -23579,11 +23606,11 @@ hj
 NY
 NY
 NY
-tZ
-tZ
+gV
+gV
 NY
-tZ
-tZ
+gV
+gV
 xc
 NY
 pQ
@@ -23703,19 +23730,19 @@ NY
 NY
 NY
 NY
-jw
+GF
 NY
 NY
 NY
 NY
 hj
 NY
-tZ
-tZ
-Nw
+gV
+gV
+Pj
 NY
-tZ
-tZ
+gV
+gV
 NY
 NY
 pQ
@@ -23783,9 +23810,9 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -23832,23 +23859,23 @@ pQ
 pQ
 NY
 xc
-tZ
-Nw
-tZ
-tZ
+gV
+Pj
+gV
+gV
 NY
-cU
+KK
 NY
 NY
 hj
-jw
-tZ
-Nw
-Nw
-Nw
+GF
+gV
+Pj
+Pj
+Pj
 NY
-tZ
-tZ
+gV
+gV
 NY
 NY
 pQ
@@ -23911,10 +23938,10 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 YS
@@ -23963,24 +23990,24 @@ pQ
 pQ
 pQ
 NY
-tZ
-tZ
-tZ
-tZ
-tZ
+gV
+gV
+gV
+gV
+gV
 Cp
 NY
 NY
 hj
 hj
 hj
-tZ
-Nw
-Nw
-Nw
+gV
+Pj
+Pj
+Pj
 NY
-tZ
-tZ
+gV
+gV
 NY
 NY
 pQ
@@ -24041,9 +24068,9 @@ zK
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -24095,22 +24122,22 @@ pQ
 pQ
 pQ
 NY
-tZ
-tZ
-db
-tZ
-Nw
-tZ
+gV
+gV
+KY
+gV
+Pj
+gV
 NY
 NY
 pU
 hj
 hj
 NY
-tZ
-tZ
-db
-tZ
+gV
+gV
+KY
+gV
 NY
 ww
 NY
@@ -24173,7 +24200,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -24227,22 +24254,22 @@ pQ
 pQ
 pQ
 NY
-Nw
-tZ
+Pj
+gV
 ww
-tZ
-Nw
-tZ
-tZ
+gV
+Pj
+gV
+gV
 NY
 NY
 NY
 hj
 NY
 Cp
-tZ
-tZ
-tZ
+gV
+gV
+gV
 NY
 NY
 xc
@@ -24359,13 +24386,13 @@ pQ
 pQ
 pQ
 pQ
-tZ
-tZ
-tZ
-tZ
-tZ
-Nw
-tZ
+gV
+gV
+gV
+gV
+gV
+Pj
+gV
 NY
 NY
 xc
@@ -24492,12 +24519,12 @@ pQ
 pQ
 pQ
 NY
-tZ
-tZ
-tZ
-tZ
-Nw
-Nw
+gV
+gV
+gV
+gV
+Pj
+Pj
 NY
 NY
 NY
@@ -24506,7 +24533,7 @@ hj
 hj
 NY
 NY
-tZ
+gV
 NY
 NY
 NY
@@ -24561,7 +24588,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 YS
 YS
@@ -24626,23 +24653,23 @@ pQ
 NY
 NY
 NY
-Nw
-tZ
-tZ
-Nw
-tZ
+Pj
+gV
+gV
+Pj
+gV
 NY
-iG
+Kc
 hj
 hj
 hj
 hj
 ww
-Nw
-tZ
-tZ
-tZ
-jw
+Pj
+gV
+gV
+gV
+GF
 NY
 pQ
 pQ
@@ -24693,7 +24720,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 YS
 YS
@@ -24760,9 +24787,9 @@ NY
 NY
 NY
 NY
-tZ
-tZ
-tZ
+gV
+gV
+gV
 NY
 NY
 NY
@@ -24770,10 +24797,10 @@ hj
 hj
 hj
 NY
-tZ
+gV
 Cp
-tZ
-tZ
+gV
+gV
 NY
 NY
 pQ
@@ -24825,7 +24852,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 YS
 YS
@@ -24892,9 +24919,9 @@ NY
 xc
 NY
 pU
-tZ
+gV
 Cp
-tZ
+gV
 NY
 pU
 NY
@@ -24902,10 +24929,10 @@ NY
 hj
 hj
 NY
-tZ
-tZ
-tZ
-tZ
+gV
+gV
+gV
+gV
 NY
 NY
 pQ
@@ -24958,7 +24985,7 @@ pQ
 pQ
 YS
 YS
-YS
+KA
 YS
 YS
 zK
@@ -25024,21 +25051,21 @@ NY
 NY
 ww
 NY
-Nw
-Nw
-tZ
-tZ
+Pj
+Pj
+gV
+gV
 NY
 NY
 NY
 hj
 hj
-jw
-tZ
-tZ
-tZ
-tZ
-tZ
+GF
+gV
+gV
+gV
+gV
+gV
 xc
 NY
 pQ
@@ -25087,10 +25114,10 @@ pQ
 pQ
 pQ
 pQ
+KA
 YS
 YS
-YS
-YS
+KA
 YS
 YS
 NY
@@ -25156,22 +25183,22 @@ pQ
 NY
 NY
 NY
-Nw
-Nw
-tZ
-tZ
+Pj
+Pj
+gV
+gV
 NY
-iG
+Kc
 NY
 NY
 hj
 pU
-iG
-tZ
-Nw
-tZ
-tZ
-tZ
+Kc
+gV
+Pj
+gV
+gV
+gV
 NY
 pQ
 pQ
@@ -25219,7 +25246,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -25287,11 +25314,11 @@ pQ
 pQ
 NY
 NY
-tZ
-tZ
-Nw
-Nw
-tZ
+gV
+gV
+Pj
+Pj
+gV
 NY
 NY
 NY
@@ -25299,11 +25326,11 @@ NY
 hj
 hj
 NY
-Nw
-Nw
-tZ
-Nw
-tZ
+Pj
+Pj
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -25350,8 +25377,8 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -25420,22 +25447,22 @@ pQ
 NY
 NY
 NY
-tZ
-Nw
-bG
-Nw
-tZ
-tZ
+gV
+Pj
+uf
+Pj
+gV
+gV
 NY
 xc
 NY
 hj
 NY
-tZ
-Nw
-tZ
-Nw
-tZ
+gV
+Pj
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -25482,7 +25509,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -25553,23 +25580,23 @@ pQ
 NY
 NY
 NY
-tZ
-Nw
-Nw
-tZ
-tZ
-tZ
+gV
+Pj
+Pj
+gV
+gV
+gV
 NY
 pU
 hj
 hj
-tZ
-tZ
-tZ
-tZ
-tZ
+gV
+gV
+gV
+gV
+gV
 NY
-Ii
+hC
 zK
 pQ
 pQ
@@ -25614,7 +25641,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -25656,7 +25683,7 @@ YS
 YS
 zK
 zK
-Ph
+PQ
 pQ
 pQ
 pQ
@@ -25685,23 +25712,23 @@ pQ
 NY
 xc
 NY
-tZ
-tZ
-tZ
-tZ
-tZ
-Nw
-tZ
+gV
+gV
+gV
+gV
+gV
+Pj
+gV
 NY
 hj
 hj
 hj
 NY
-Nw
-Nw
-tZ
+Pj
+Pj
+gV
 zK
-Jt
+RD
 zK
 pQ
 pQ
@@ -25746,36 +25773,36 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
-YS
-zK
-zK
-zK
-NY
-NY
-zK
-YS
-YS
+KA
 YS
 YS
 zK
-NY
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
 zK
 zK
 NY
 NY
+zK
+YS
+YS
+YS
+YS
+zK
+NY
+YS
+zK
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+zK
+NY
+NY
 NY
 NY
 NY
@@ -25787,7 +25814,7 @@ YS
 YS
 zK
 zK
-Ph
+PQ
 NY
 pQ
 pQ
@@ -25817,22 +25844,22 @@ pQ
 NY
 NY
 NY
-tZ
-tZ
+gV
+gV
 Cp
-tZ
-Nw
-Nw
-tZ
+gV
+Pj
+Pj
+gV
 NY
 hj
 hj
 hj
 hj
-tZ
-tZ
+gV
+gV
 NY
-Ii
+hC
 zK
 YS
 YS
@@ -25877,7 +25904,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 zK
@@ -25918,7 +25945,7 @@ YS
 YS
 zK
 zK
-Ph
+PQ
 NY
 NY
 pQ
@@ -25952,19 +25979,19 @@ NY
 NY
 xc
 NY
-tZ
-tZ
-tZ
-tZ
-iG
+gV
+gV
+gV
+gV
+Kc
 NY
 hj
 hj
 NY
 xc
-tZ
+gV
 NY
-Jt
+RD
 zK
 YS
 YS
@@ -26009,7 +26036,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 zK
@@ -26041,7 +26068,7 @@ NY
 hj
 hj
 NY
-lL
+Vk
 NY
 zK
 zK
@@ -26049,7 +26076,7 @@ YS
 YS
 YS
 zK
-Ph
+PQ
 NY
 NY
 xc
@@ -26083,10 +26110,10 @@ NY
 NY
 NY
 NY
-jw
+GF
 NY
-tZ
-tZ
+gV
+gV
 NY
 NY
 NY
@@ -26094,8 +26121,8 @@ hj
 hj
 pU
 NY
-Vk
-Jt
+sY
+RD
 zK
 YS
 YS
@@ -26141,24 +26168,24 @@ pQ
 pQ
 pQ
 pQ
+KA
 YS
 YS
-YS
-zK
-zK
-NY
-zK
-NY
 zK
 zK
 NY
+zK
+NY
+zK
+zK
+NY
 YS
 YS
 YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -26183,7 +26210,7 @@ zK
 zK
 pT
 NY
-cU
+KK
 NY
 NY
 pQ
@@ -26219,21 +26246,21 @@ NY
 NY
 xc
 NY
-jw
+GF
 NY
 NY
 xc
 hj
 hj
-Jt
+RD
 zK
 zK
 zK
 YS
 YS
+KA
 YS
 YS
-YS
 pQ
 pQ
 pQ
@@ -26273,7 +26300,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -26288,8 +26315,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -26300,7 +26327,7 @@ zK
 NY
 NY
 NY
-lL
+Vk
 NY
 hj
 hj
@@ -26312,7 +26339,7 @@ zK
 zK
 zK
 zK
-SC
+tZ
 NY
 xc
 NY
@@ -26349,24 +26376,24 @@ NY
 xc
 NY
 NY
-Vk
-Vk
+sY
+sY
 NY
 xc
 NY
 pU
 hj
-Qx
+NJ
 zK
 zK
 zK
 zK
 YS
+KA
 YS
 YS
 YS
 YS
-YS
 pQ
 pQ
 pQ
@@ -26405,7 +26432,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -26419,7 +26446,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -26478,79 +26505,79 @@ pQ
 pQ
 NY
 NY
-Vk
-Vk
-Uk
+sY
+sY
+hO
 zK
 NY
-tv
-Vk
-mR
-Vk
+vW
+sY
+Ve
+sY
 hj
-Qx
+NJ
 zK
 zK
 zK
 YS
 YS
+KA
 YS
 YS
 YS
 YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+KA
 YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
+zK
+zK
 YS
 YS
 zK
 zK
-YS
-YS
-zK
-zK
 zK
 zK
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -26608,8 +26635,8 @@ pQ
 pQ
 pQ
 pQ
-Vk
-Uk
+sY
+hO
 zK
 zK
 zK
@@ -26619,8 +26646,60 @@ zK
 zK
 zK
 zK
-Wp
-Qx
+yH
+NJ
+zK
+YS
+YS
+YS
+YS
+KA
+YS
+YS
+YS
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+KA
+YS
+YS
+YS
+zK
 zK
 YS
 YS
@@ -26629,59 +26708,7 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
 YS
 YS
 YS
@@ -26703,7 +26730,7 @@ hj
 NY
 NY
 hj
-lL
+Vk
 hj
 hj
 hj
@@ -26751,20 +26778,20 @@ YS
 YS
 zK
 zK
-aN
-KY
+sl
+ts
 zK
 YS
 YS
 YS
 YS
+KA
 YS
 YS
 YS
 YS
 YS
 YS
-YS
 pQ
 pQ
 pQ
@@ -26800,7 +26827,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -26883,8 +26910,8 @@ YS
 YS
 YS
 YS
-lR
-td
+kj
+aN
 YS
 YS
 YS
@@ -26893,10 +26920,10 @@ YS
 YS
 YS
 YS
+KA
+KA
 YS
 YS
-YS
-YS
 pQ
 pQ
 pQ
@@ -26931,8 +26958,8 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -26972,7 +26999,7 @@ zK
 zK
 zK
 zK
-pA
+Oy
 NY
 NY
 NY
@@ -27027,50 +27054,46 @@ YS
 YS
 YS
 YS
+KA
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+KA
+KA
 YS
 YS
 YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
 YS
 YS
 YS
@@ -27078,8 +27101,12 @@ zK
 YS
 YS
 YS
+zK
 YS
 YS
+YS
+KA
+KA
 YS
 YS
 YS
@@ -27194,7 +27221,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -27208,9 +27235,9 @@ YS
 zK
 zK
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 zK
@@ -27227,7 +27254,7 @@ xc
 hj
 hj
 hj
-lL
+Vk
 NY
 NY
 NY
@@ -27237,9 +27264,9 @@ YS
 YS
 YS
 zK
-pA
+Oy
 NY
-cU
+KK
 NY
 NY
 pQ
@@ -27325,22 +27352,22 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
-YS
-YS
-YS
-zK
-zK
+KA
+KA
 YS
 YS
 YS
 zK
 zK
+YS
+YS
+YS
+zK
+zK
 zK
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -27352,7 +27379,7 @@ YS
 zK
 NY
 NY
-lL
+Vk
 NY
 NY
 NY
@@ -27370,7 +27397,7 @@ YS
 YS
 zK
 zK
-pA
+Oy
 NY
 NY
 NY
@@ -27457,7 +27484,7 @@ pQ
 pQ
 pQ
 pQ
-YS
+KA
 YS
 YS
 YS
@@ -27487,7 +27514,7 @@ NY
 NY
 NY
 NY
-lL
+Vk
 hj
 hj
 xc
@@ -27503,7 +27530,7 @@ YS
 YS
 zK
 zK
-pA
+Oy
 NY
 xc
 pQ
@@ -27588,8 +27615,8 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -27631,8 +27658,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 zK
 zK
@@ -27719,8 +27746,8 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -27763,12 +27790,12 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
 zK
-pA
+Oy
 jS
 pQ
 pQ
@@ -27849,9 +27876,9 @@ pQ
 pQ
 pQ
 pQ
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -27894,7 +27921,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -28021,12 +28048,12 @@ zK
 zK
 zK
 YS
+KA
+KA
 YS
 YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -28154,10 +28181,10 @@ zK
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 YS
@@ -28252,7 +28279,7 @@ YS
 YS
 zK
 YS
-YS
+KA
 YS
 YS
 zK
@@ -28287,6 +28314,7 @@ YS
 YS
 YS
 YS
+KA
 YS
 YS
 YS
@@ -28294,9 +28322,8 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
 YS
 pQ
 pQ
@@ -28338,7 +28365,7 @@ pQ
 pQ
 pQ
 pQ
-ep
+tN
 NY
 NY
 YS
@@ -28375,16 +28402,16 @@ pQ
 YS
 YS
 YS
-YS
-YS
-YS
-zK
+KA
 YS
 YS
 zK
 YS
 YS
+zK
 YS
+YS
+KA
 YS
 YS
 NY
@@ -28426,8 +28453,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 pQ
@@ -28470,7 +28497,7 @@ zK
 pQ
 pQ
 pQ
-ep
+tN
 NY
 NY
 YS
@@ -28506,7 +28533,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -28515,7 +28542,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 NY
@@ -28557,8 +28584,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -28638,7 +28665,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -28646,7 +28673,7 @@ YS
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 NY
@@ -28689,7 +28716,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -28755,19 +28782,10 @@ YS
 zK
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 YS
@@ -28778,6 +28796,15 @@ YS
 zK
 YS
 YS
+YS
+KA
+YS
+YS
+YS
+YS
+zK
+YS
+KA
 YS
 YS
 YS
@@ -28820,8 +28847,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -28887,29 +28914,29 @@ NY
 zK
 YS
 YS
+KA
 YS
 YS
 YS
 YS
 YS
+KA
 YS
+YS
+YS
+zK
+zK
+YS
+YS
+YS
+KA
 YS
 YS
 YS
 YS
 zK
-zK
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
+KA
 YS
 YS
 NY
@@ -28925,8 +28952,8 @@ NY
 zK
 NY
 YS
-YS
-YS
+KA
+KA
 zK
 YS
 YS
@@ -28951,8 +28978,8 @@ zK
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -29019,12 +29046,12 @@ NY
 zK
 YS
 YS
+KA
 YS
 YS
 YS
 YS
-YS
-YS
+KA
 YS
 YS
 YS
@@ -29034,7 +29061,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29056,6 +29083,16 @@ NY
 NY
 NY
 YS
+KA
+KA
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
 YS
 YS
 YS
@@ -29067,23 +29104,13 @@ YS
 YS
 YS
 YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
 zK
 zK
 zK
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -29129,7 +29156,7 @@ pQ
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29151,7 +29178,7 @@ NY
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29168,7 +29195,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 zK
@@ -29188,20 +29215,13 @@ NY
 NY
 YS
 YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
 YS
 zK
+zK
+YS
+YS
+YS
 YS
 YS
 YS
@@ -29209,12 +29229,19 @@ YS
 YS
 YS
 zK
+YS
+YS
+YS
+YS
+YS
+YS
+zK
 zK
 zK
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29261,8 +29288,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -29283,6 +29310,10 @@ zK
 zK
 YS
 YS
+KA
+YS
+YS
+zK
 YS
 YS
 YS
@@ -29290,17 +29321,13 @@ zK
 YS
 YS
 YS
-zK
 YS
 YS
 YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
 YS
 YS
 zK
@@ -29319,8 +29346,8 @@ NY
 NY
 NY
 YS
-YS
-YS
+KA
+KA
 zK
 zK
 YS
@@ -29335,7 +29362,7 @@ YS
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29345,7 +29372,7 @@ zK
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29432,7 +29459,12 @@ YS
 zK
 zK
 YS
+KA
+KA
 YS
+YS
+zK
+zK
 YS
 YS
 YS
@@ -29441,17 +29473,12 @@ zK
 YS
 YS
 YS
-zK
-zK
 YS
 YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
 YS
 zK
 YS
@@ -29467,7 +29494,7 @@ YS
 zK
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29476,8 +29503,8 @@ zK
 zK
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -29565,37 +29592,8 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -29609,6 +29607,35 @@ YS
 YS
 YS
 YS
+YS
+zK
+YS
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+YS
+KA
+KA
+YS
+YS
+YS
+zK
+zK
+YS
+YS
+KA
+KA
 YS
 YS
 YS
@@ -29699,35 +29726,7 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-YS
+KA
 YS
 YS
 YS
@@ -29740,6 +29739,34 @@ zK
 YS
 YS
 YS
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+YS
+YS
+YS
+KA
+YS
+YS
+YS
+YS
+zK
+zK
+YS
+KA
+KA
 YS
 YS
 YS
@@ -29862,7 +29889,7 @@ pQ
 pQ
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29870,7 +29897,7 @@ YS
 zK
 zK
 YS
-YS
+KA
 YS
 YS
 YS
@@ -29994,7 +30021,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 YS
 YS
@@ -30127,7 +30154,7 @@ pQ
 pQ
 pQ
 YS
-YS
+KA
 YS
 YS
 YS
@@ -30210,9 +30237,33 @@ YS
 zK
 zK
 YS
+KA
+YS
+YS
+zK
+zK
 YS
 YS
 YS
+YS
+YS
+YS
+zK
+zK
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
 zK
 zK
 YS
@@ -30220,30 +30271,6 @@ YS
 YS
 YS
 YS
-YS
-zK
-zK
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-zK
-zK
-YS
-YS
-YS
-YS
-YS
 pQ
 pQ
 pQ
@@ -30259,8 +30286,8 @@ pQ
 pQ
 pQ
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -30324,8 +30351,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -30342,40 +30369,40 @@ zK
 zK
 YS
 YS
+KA
+YS
+zK
 YS
 YS
+YS
+YS
+YS
+YS
+YS
+zK
+zK
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
+NY
 zK
 YS
 YS
 YS
 YS
 YS
-YS
-YS
-zK
-zK
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-NY
-zK
-YS
-YS
-YS
-YS
-YS
 pQ
 pQ
 pQ
@@ -30392,8 +30419,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -30458,7 +30485,7 @@ pQ
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -30525,13 +30552,13 @@ pQ
 pQ
 YS
 YS
+KA
+KA
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -30590,8 +30617,8 @@ pQ
 pQ
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 zK
 zK
@@ -30658,11 +30685,11 @@ pQ
 pQ
 YS
 YS
+KA
+KA
+KA
 YS
-YS
-YS
-YS
-YS
+KA
 YS
 pQ
 pQ
@@ -30792,8 +30819,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 pQ
 pQ
 pQ
@@ -30858,10 +30885,10 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
-YS
+KA
+KA
+KA
+KA
 YS
 YS
 zK
@@ -30994,7 +31021,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 YS
@@ -31262,9 +31289,9 @@ YS
 YS
 YS
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 YS
 YS
@@ -31392,8 +31419,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 YS
@@ -31534,8 +31561,8 @@ YS
 YS
 zK
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 zK
@@ -31666,7 +31693,7 @@ YS
 zK
 zK
 YS
-YS
+KA
 YS
 YS
 zK
@@ -31797,7 +31824,7 @@ zK
 zK
 zK
 YS
-YS
+KA
 YS
 YS
 zK
@@ -31929,7 +31956,7 @@ zK
 YS
 YS
 YS
-YS
+KA
 YS
 zK
 zK
@@ -32060,8 +32087,8 @@ YS
 YS
 YS
 YS
-YS
-YS
+KA
+KA
 YS
 zK
 NY
@@ -42695,7 +42722,7 @@ pQ
 pQ
 uj
 uj
-qL
+Bu
 Eb
 uj
 pQ
@@ -42955,10 +42982,10 @@ pQ
 pQ
 pQ
 pQ
-sZ
+pW
 uj
 Eb
-Hd
+ai
 uj
 uj
 uj
@@ -43084,16 +43111,16 @@ rd
 rd
 pQ
 pQ
-qL
+Bu
 Eb
-LH
-LH
+wj
+wj
 uj
 uj
 uj
 uj
 uj
-sZ
+pW
 pQ
 pQ
 "}
@@ -43223,9 +43250,9 @@ Eb
 uj
 uj
 uj
-LH
-LH
-LH
+wj
+wj
+wj
 pQ
 pQ
 "}
@@ -43357,7 +43384,7 @@ uj
 uj
 Eb
 uj
-LH
+wj
 pQ
 pQ
 "}
@@ -43484,12 +43511,12 @@ uj
 uj
 Eb
 uj
-LH
-LH
+wj
+wj
 uj
 Eb
-LH
-LH
+wj
+wj
 pQ
 pQ
 "}
@@ -43616,11 +43643,11 @@ uj
 uj
 pQ
 pQ
-sZ
+pW
 uj
 Eb
-qL
-LH
+Bu
+wj
 pQ
 pQ
 pQ
@@ -44044,8 +44071,8 @@ rd
 rd
 rd
 rd
-lZ
-lZ
+xF
+xF
 rd
 rd
 rd
@@ -44176,8 +44203,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44308,8 +44335,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44408,12 +44435,12 @@ pQ
 pQ
 pQ
 pQ
-qL
+Bu
 Eb
-LH
-LH
+wj
+wj
 Eb
-OM
+sZ
 pQ
 pQ
 "}
@@ -44440,8 +44467,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44543,7 +44570,7 @@ Eb
 Eb
 Eb
 Eb
-LH
+wj
 Eb
 Eb
 pQ
@@ -44572,8 +44599,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44673,7 +44700,7 @@ pQ
 Eb
 Eb
 Eb
-ro
+cU
 Eb
 Eb
 Eb
@@ -44704,8 +44731,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44805,7 +44832,7 @@ Eb
 Eb
 Eb
 El
-qS
+fx
 Eb
 Eb
 Eb
@@ -44836,8 +44863,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -44939,7 +44966,7 @@ Eb
 Eb
 Eb
 Eb
-fx
+IQ
 Eb
 Eb
 pQ
@@ -44968,8 +44995,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -45068,8 +45095,8 @@ pQ
 Eb
 Eb
 Eb
-ll
-RU
+Et
+Hh
 Eb
 Eb
 Eb
@@ -45100,8 +45127,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 rd
 rd
 rd
@@ -45198,15 +45225,15 @@ pQ
 pQ
 pQ
 Eb
-jN
+Hd
 Eb
-xn
-yH
-yH
-yH
+Be
+Qx
+Qx
+Qx
 Eb
 Eb
-qL
+Bu
 pQ
 "}
 (80,1,3) = {"
@@ -45232,8 +45259,8 @@ rd
 rd
 rd
 rd
-Nq
-Zz
+FG
+lR
 NY
 rd
 rd
@@ -45330,8 +45357,8 @@ rd
 pQ
 pQ
 Eb
-zq
-qS
+Tp
+fx
 El
 Eb
 Eb
@@ -45468,8 +45495,8 @@ Eb
 Eb
 Eb
 Eb
-dK
-dK
+bO
+bO
 Eb
 pQ
 "}
@@ -45498,7 +45525,7 @@ rd
 NY
 NY
 NY
-ep
+tN
 rd
 rd
 rd
@@ -45600,8 +45627,8 @@ Eb
 Eb
 Eb
 Eb
-dK
-dK
+bO
+bO
 Eb
 pQ
 "}
@@ -45630,7 +45657,7 @@ rd
 rd
 NY
 NY
-ep
+tN
 rd
 rd
 rd
@@ -45729,10 +45756,10 @@ pQ
 Eb
 Eb
 Eb
-uS
+db
 Eb
-dK
-dK
+bO
+bO
 Eb
 pQ
 pQ
@@ -45858,14 +45885,14 @@ rd
 pQ
 pQ
 pQ
-OM
+sZ
 Eb
 Eb
 Eb
 Eb
 Eb
 Eb
-fx
+IQ
 pQ
 pQ
 "}
@@ -46124,7 +46151,7 @@ pQ
 pQ
 pQ
 pQ
-qL
+Bu
 Eb
 Eb
 pQ
@@ -60117,8 +60144,8 @@ pQ
 pQ
 KA
 KA
-aW
-Fn
+uS
+Iw
 pU
 NY
 uZ
@@ -60248,9 +60275,9 @@ pQ
 pQ
 KA
 KA
-aW
-aW
-aW
+uS
+uS
+uS
 hj
 hj
 uZ
@@ -60379,10 +60406,10 @@ pQ
 pQ
 KA
 KA
-aW
-Fn
-aW
-aW
+uS
+Iw
+uS
+uS
 hj
 hj
 uZ
@@ -60511,9 +60538,9 @@ rd
 pT
 NY
 NY
-aW
-pU
-xc
+uS
+KY
+ra
 hj
 hj
 NY
@@ -60642,10 +60669,10 @@ rd
 rd
 pT
 xc
-iG
-aW
-NY
-NY
+Cp
+uS
+gV
+gV
 hj
 hj
 NY
@@ -60772,12 +60799,12 @@ rd
 rd
 rd
 rd
-uf
-Vk
-Vk
-Vk
-Vk
-mY
+dK
+sY
+ct
+ct
+ct
+CM
 hj
 hj
 xc
@@ -61043,7 +61070,7 @@ rd
 KN
 hj
 hj
-cU
+KK
 NY
 pQ
 pQ
@@ -61300,14 +61327,14 @@ rd
 rd
 rd
 rd
-jX
-AP
-AP
-AP
-AP
+vG
+vB
+vB
+aW
+aW
+gV
 NY
-NY
-iG
+Kc
 NY
 pQ
 pQ
@@ -61435,9 +61462,9 @@ rd
 pT
 NY
 NY
-xc
-NY
-YS
+ra
+gV
+gV
 KA
 NY
 NY
@@ -61567,12 +61594,12 @@ rd
 pT
 NY
 py
-iG
-NY
-aW
-aW
-jw
-NY
+Kc
+gV
+uS
+uS
+Zz
+gV
 pQ
 pQ
 pQ
@@ -61697,14 +61724,14 @@ rd
 rd
 rd
 pT
-jw
-aW
-aW
-NY
-aW
-Fn
-xc
-NY
+GF
+uS
+uS
+gV
+uS
+Iw
+ra
+gV
 pQ
 pQ
 pQ
@@ -61829,14 +61856,14 @@ rd
 rd
 rd
 pT
-aW
-aW
-YS
-KA
-aW
-NY
-NY
-NY
+uS
+uS
+gV
+BF
+uS
+gV
+gV
+gV
 pQ
 pQ
 pQ
@@ -61963,12 +61990,12 @@ rd
 pT
 xc
 pU
-NY
-NY
-NY
-NY
-py
-NY
+gV
+gV
+gV
+gV
+BF
+gV
 NY
 pQ
 pQ
@@ -62095,12 +62122,12 @@ rd
 pQ
 NY
 NY
-aW
-jw
-NY
-NY
-NY
-NY
+uS
+GF
+gV
+gV
+gV
+gV
 NY
 pQ
 pQ
@@ -62226,13 +62253,13 @@ rd
 rd
 pQ
 pQ
-aW
-aW
+uS
+uS
 NY
 NY
-jw
-aW
-aW
+GF
+uS
+uS
 pU
 NY
 pQ
@@ -62359,11 +62386,11 @@ pQ
 pQ
 pQ
 NY
-aW
+uS
 NY
-Fn
-aW
-aW
+Iw
+uS
+uS
 NY
 NY
 NY
@@ -62496,7 +62523,7 @@ NY
 NY
 NY
 NY
-jw
+GF
 NY
 NY
 pQ
