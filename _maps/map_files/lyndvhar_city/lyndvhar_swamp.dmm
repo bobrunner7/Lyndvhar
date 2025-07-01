@@ -1,57 +1,58 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ai" = (
-/obj/structure/rack/rogue,
-/obj/item/clothing/head/roguetown/helmet/leather/minershelm,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"aW" = (
-/obj/effect/decal/cleanable/blood/gibs/torso,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"bG" = (
 /obj/effect/landmark/mapGenerator/rogue/cave,
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cavewet/bogcaves)
-"bO" = (
+"aN" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"bG" = (
+/mob/living/carbon/human/species/skeleton/npc/ambush,
+/turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
 "bP" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/cavewet/bogcaves)
-"ct" = (
-/obj/structure/rack/rogue,
-/obj/item/rogueweapon/pick,
+"cc" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
 "cI" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"cU" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/turf/open/floor/rogue/dirt,
+/obj/machinery/light/rogue/torchholder/r,
+/obj/structure/bed/rogue/bedroll,
+/turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
-"db" = (
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"dv" = (
-/obj/structure/flora/roguetree/stump/log,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"dM" = (
-/obj/structure/closet/crate/chest/neu,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+"cU" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
-"ep" = (
+"cV" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"db" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"dC" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"dK" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
 	layer = 2.7;
@@ -59,46 +60,52 @@
 	},
 /obj/structure/fluff/railing/wood{
 	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
+	dir = 4;
+	pixel_x = 8
 	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"dM" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"eX" = (
+/obj/structure/flora/roguetree/stump/log,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "eZ" = (
-/obj/item/natural/rock,
+/obj/structure/flora/newtree,
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"fx" = (
+/obj/machinery/light/rogue/campfire/longlived,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
-"fx" = (
-/mob/living/carbon/human/species/skeleton/npc/ambush,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
 "ga" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
+/obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"gK" = (
-/obj/structure/rack/rogue,
-/obj/item/clothing/head/roguetown/helmet/leather/minershelm,
-/obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
+"gK" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"gV" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
 "hd" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
+/obj/effect/landmark/start/adventurer,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "hj" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"hO" = (
+"hC" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"ie" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = -12
 	},
@@ -110,23 +117,38 @@
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
 "iG" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/rogue/naturalstone,
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
 "iO" = (
-/obj/effect/landmark/start/adventurerlate,
-/turf/open/floor/rogue/dirt/road,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "jr" = (
-/obj/structure/rack/rogue/shelf/biggest,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
-/turf/open/floor/rogue/dirt,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/closed/wall/mineral/rogue/wood,
+/area/rogue/outdoors/bog)
+"jw" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
 "jN" = (
-/obj/structure/flora/rock,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
+/turf/open/water/swamp,
+/area/rogue/outdoors/bog)
 "jS" = (
 /obj/structure/fluff/railing/wood{
 	icon_state = "woodrailing";
@@ -135,11 +157,34 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"jX" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
 "kj" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
-"kH" = (
+"ll" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"lC" = (
+/obj/structure/flora/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"lL" = (
+/obj/structure/stairs,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"lR" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	layer = 2.8;
@@ -147,32 +192,19 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"ly" = (
-/obj/structure/flora/roguetree,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"lC" = (
-/obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
+"lZ" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
 	},
 /obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
+	pixel_y = -12
 	},
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"lL" = (
-/obj/structure/stairs,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
 "my" = (
 /turf/closed/mineral/rogue/bedrock,
-/area/rogue/under/cavewet/bogcaves)
-"mY" = (
-/obj/structure/roguetent,
-/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
 "nB" = (
 /obj/structure/flora/roguegrass/water/reeds,
@@ -184,19 +216,6 @@
 /area/rogue/under/cavewet/bogcaves)
 "py" = (
 /obj/structure/flora/roguetree,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"pA" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 4;
-	pixel_x = 8
-	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "pQ" = (
@@ -214,64 +233,99 @@
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"qe" = (
-/turf/open/water/swamp,
+"pW" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/head/roguetown/helmet/leather/minershelm,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
+"pX" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
+"qe" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"qA" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "qL" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
+"qS" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
+"ra" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/reagent_containers/glass/bowl,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
 "rd" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/bog)
-"ro" = (
-/obj/structure/flora/rock/pile,
-/turf/open/floor/rogue/dirt,
+"rK" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"sl" = (
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/bog)
+"sn" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
 "sY" = (
-/turf/closed/wall/mineral/rogue/tent{
-	dir = 1
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"td" = (
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 8;
+	pixel_x = -4
 	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"tl" = (
+/turf/closed/wall/mineral/rogue/tent,
 /area/rogue/under/cavewet/bogcaves)
-"sZ" = (
+"tv" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"uf" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
 	layer = 2.7;
 	pixel_y = 7
 	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/bog)
-"td" = (
-/obj/structure/table/wood{
-	dir = 10;
-	icon_state = "tablewood2"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"tl" = (
-/obj/machinery/light/rogue/campfire/longlived,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"tn" = (
-/turf/closed/wall/mineral/rogue/tent{
-	dir = 4
-	},
-/area/rogue/under/cavewet/bogcaves)
-"tv" = (
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"tB" = (
-/obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
-	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "uj" = (
 /turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"um" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "uZ" = (
 /obj/structure/fluff/traveltile{
@@ -280,51 +334,41 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"vi" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
+"ww" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"wO" = (
+/turf/open/water/swamp,
+/area/rogue/under/cavewet/bogcaves)
+"xc" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"xn" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
 	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/bog)
+"yP" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	layer = 2.8;
 	pixel_x = 8
 	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"vW" = (
-/obj/structure/flora/newtree,
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"wj" = (
-/obj/structure/flora/roguetree/stump,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"ww" = (
 /obj/structure/flora/roguetree/stump/burnt,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"xc" = (
-/obj/structure/flora/roguetree/burnt,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"xF" = (
-/obj/structure/flora/rock/pile,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"yH" = (
-/obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
-"yP" = (
-/obj/structure/far_travel,
-/turf/open/floor/rogue/dirt/road,
+"yX" = (
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
 "zq" = (
-/obj/structure/stairs{
-	dir = 1
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
@@ -332,8 +376,17 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
+"Aw" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"AP" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "Be" = (
-/turf/open/water/swamp,
+/obj/structure/flora/rock/pile/largejungle,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Br" = (
 /obj/structure/fluff/railing/wood{
@@ -344,16 +397,12 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "Bu" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"BF" = (
-/obj/structure/table/wood{
-	dir = 10;
-	icon_state = "tablewood2"
-	},
-/obj/item/reagent_containers/glass/bowl,
-/turf/open/floor/rogue/dirt,
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"Bx" = (
+/turf/open/water/cleanshallow,
 /area/rogue/under/cavewet/bogcaves)
 "Cp" = (
 /obj/structure/flora/roguegrass/bush,
@@ -365,9 +414,9 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
 "DF" = (
-/obj/item/roguebin/water/gross,
+/obj/structure/flora/roguetree/stump,
 /turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
+/area/rogue/outdoors/bog)
 "Eb" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
@@ -376,62 +425,46 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Et" = (
-/obj/structure/roguetent,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"Fn" = (
-/turf/closed/wall/mineral/rogue/tent,
-/area/rogue/under/cavewet/bogcaves)
-"FG" = (
-/mob/living/carbon/human/species/skeleton/npc/ambush,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"FS" = (
-/obj/structure/table/wood{
-	dir = 10;
-	icon_state = "tablewood2"
-	},
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
-/obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"Go" = (
 /obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
+	dir = 1
 	},
-/turf/open/floor/rogue/twig,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"Gx" = (
+"Fn" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
+"GF" = (
 /obj/structure/bed/rogue/bedroll,
 /mob/living/carbon/human/species/skeleton/npc/ambush,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
-"GF" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt,
+"GK" = (
+/obj/effect/landmark/start/adventurerlate,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"Hd" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/twig,
 /area/rogue/outdoors/bog)
 "Hm" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Ii" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"IR" = (
+/obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"Iw" = (
-/obj/item/natural/bone,
+"Jl" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"IJ" = (
-/obj/structure/flora/rock/pile/largejungle,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Jt" = (
-/turf/open/water/cleanshallow,
 /area/rogue/under/cavewet/bogcaves)
 "JC" = (
 /obj/effect/landmark/mapGenerator/rogue/bog,
@@ -439,220 +472,187 @@
 /area/rogue/outdoors/bog)
 "JQ" = (
 /obj/structure/fluff/railing/wood{
-	pixel_y = -12
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
 	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/bog)
-"Kc" = (
-/obj/structure/rack/rogue,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
 /turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"JV" = (
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
+"Kc" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
+"Kr" = (
+/obj/structure/far_travel,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
 "KA" = (
 /obj/structure/flora/roguetree,
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
+"KK" = (
+/mob/living/carbon/human/species/skeleton/npc/ambush,
+/obj/structure/bed/rogue/bedroll,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
 "KN" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
 "KQ" = (
 /obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
+	dir = 8;
+	pixel_x = -8
 	},
-/obj/structure/flora/roguetree/stump/burnt,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Lh" = (
-/obj/structure/flora/newtree,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
-"Lw" = (
-/obj/structure/rack/rogue,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+"Lg" = (
+/obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cavewet/bogcaves)
+/area/rogue/outdoors/bog)
 "LH" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
+	dir = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Nv" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/head/roguetown/helmet/leather/minershelm,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
+"NJ" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/guard,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
-"Nq" = (
+"NY" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/bog)
+"Pj" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
+"PK" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/pick,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cavewet/bogcaves)
+"PS" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
+	},
+/obj/structure/fluff/railing/wood{
+	pixel_y = -12
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/bog)
+"Qs" = (
 /obj/structure/fluff/buysign{
 	name = "TERRORBOG";
 	desc = "BEWARE ALL YE ENTER"
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"Nw" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"NY" = (
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Om" = (
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
+"QD" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
 	},
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Oq" = (
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/fluff/railing/wood{
-	pixel_y = -12
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Oy" = (
-/obj/structure/flora/roguetree/stump,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"OR" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
-"Pj" = (
-/obj/structure/fluff/railing/wood{
-	icon_state = "woodrailing";
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
+/area/rogue/under/cavewet/bogcaves)
 "QE" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
-"Rx" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
-/turf/closed/wall/mineral/rogue/wood,
-/area/rogue/outdoors/bog)
-"RD" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_y = 7
-	},
+/obj/structure/flora/rock/pile,
 /turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/bog)
+/area/rogue/under/cavewet/bogcaves)
 "RU" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
 /area/rogue/under/cavewet/bogcaves)
 "Uh" = (
-/obj/structure/flora/roguegrass/bush,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
 "Vk" = (
-/obj/structure/rack/rogue,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet/bogcaves)
-"Vp" = (
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"Vs" = (
-/obj/structure/flora/roguetree/burnt,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/bog)
 "VC" = (
-/obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/floor/rogue/naturalstone,
+/mob/living/carbon/human/species/skeleton/npc/ambush,
+/turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
 "VP" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet/bogcaves)
+"Wp" = (
 /obj/structure/fluff/railing/wood{
+	icon_state = "woodrailing";
 	dir = 8;
-	pixel_x = -8
+	pixel_x = -4
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog)
-"VW" = (
-/obj/structure/roguetent,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
-"Wk" = (
-/obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"Wn" = (
-/mob/living/carbon/human/species/skeleton/npc/ambush,
+"Xs" = (
 /obj/structure/bed/rogue/bedroll,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
-"WA" = (
-/obj/effect/landmark/start/adventurer,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/bog)
-"Xt" = (
-/obj/structure/bed/rogue/bedroll,
-/turf/open/floor/rogue/twig,
-/area/rogue/under/cavewet/bogcaves)
-"Xv" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/bog)
 "XA" = (
-/turf/open/floor/rogue/dirt/road,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Ye" = (
-/obj/machinery/light/rogue/torchholder/r,
-/obj/structure/bed/rogue/bedroll,
-/turf/open/floor/rogue/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
 /area/rogue/under/cavewet/bogcaves)
 "YS" = (
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
-"Zo" = (
-/obj/structure/flora/roguetree/wise,
+"Zs" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_y = 7
+	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog)
-"Zz" = (
-/obj/structure/rack/rogue,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet/bogcaves)
+"ZC" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/bog)
 
 (1,1,1) = {"
 my
@@ -784,7 +784,7 @@ my
 my
 my
 my
-bG
+ai
 "}
 (2,1,1) = {"
 my
@@ -19687,7 +19687,7 @@ YS
 YS
 YS
 zK
-NY
+xc
 NY
 YS
 NY
@@ -19845,7 +19845,7 @@ YS
 zK
 zK
 zK
-NY
+xc
 NY
 YS
 YS
@@ -19954,7 +19954,7 @@ NY
 YS
 NY
 YS
-NY
+xc
 YS
 NY
 YS
@@ -20115,7 +20115,7 @@ NY
 NY
 NY
 YS
-NY
+xc
 zK
 YS
 YS
@@ -20215,7 +20215,7 @@ YS
 zK
 NY
 YS
-NY
+xc
 NY
 NY
 NY
@@ -20243,7 +20243,7 @@ zK
 NY
 NY
 YS
-NY
+xc
 NY
 YS
 NY
@@ -20743,7 +20743,7 @@ zK
 zK
 NY
 NY
-NY
+xc
 zK
 zK
 zK
@@ -21133,10 +21133,10 @@ zK
 zK
 zK
 zK
-Pj
+Wp
 Br
 Br
-Oq
+td
 zK
 zK
 YS
@@ -21261,7 +21261,7 @@ my
 my
 YS
 zK
-Pj
+Wp
 Br
 Br
 Br
@@ -21269,7 +21269,7 @@ NY
 NY
 NY
 NY
-Oq
+td
 zK
 YS
 YS
@@ -21329,7 +21329,7 @@ zK
 zK
 NY
 NY
-NY
+xc
 NY
 NY
 zK
@@ -21392,16 +21392,16 @@ my
 my
 my
 zK
-Pj
+Wp
 hj
 hj
 NY
 xc
-tv
-Lh
-Lh
-tv
-Ii
+gV
+Pj
+Pj
+gV
+pX
 zK
 zK
 zK
@@ -21524,18 +21524,18 @@ my
 my
 my
 Br
-Uh
-hj
-hj
-hj
-hj
 tv
-Lh
-tv
-Bu
+hj
+hj
+hj
+hj
+gV
+Pj
+gV
+Aw
 NY
 Br
-Oq
+td
 hj
 hj
 YS
@@ -21662,11 +21662,11 @@ xc
 hj
 hj
 hj
-tv
+gV
 hj
 hj
-Lh
-tv
+Pj
+gV
 pU
 hj
 hj
@@ -21726,7 +21726,7 @@ NY
 NY
 zK
 NY
-NY
+xc
 zK
 YS
 YS
@@ -21790,15 +21790,15 @@ my
 NY
 ww
 NY
-GF
+dC
 NY
 hj
 hj
 hj
 hj
 hj
-Lh
-Nw
+Pj
+ZC
 hj
 hj
 hj
@@ -21923,7 +21923,7 @@ NY
 NY
 NY
 NY
-wj
+DF
 hj
 hj
 hj
@@ -21987,7 +21987,7 @@ YS
 zK
 zK
 NY
-NY
+xc
 NY
 NY
 zK
@@ -22053,8 +22053,8 @@ my
 my
 NY
 NY
-tv
-tv
+gV
+gV
 NY
 NY
 hj
@@ -22138,7 +22138,7 @@ zK
 NY
 NY
 NY
-NY
+xc
 zK
 zK
 KA
@@ -22184,10 +22184,10 @@ my
 my
 NY
 NY
+gV
+Pj
+gV
 tv
-Lh
-tv
-Uh
 hj
 hj
 hj
@@ -22195,7 +22195,7 @@ hj
 hj
 hj
 hj
-tv
+gV
 Cp
 NY
 pQ
@@ -22314,10 +22314,10 @@ my
 my
 my
 my
-tv
-tv
-Lh
-tv
+gV
+gV
+Pj
+gV
 ww
 hj
 hj
@@ -22325,10 +22325,10 @@ hj
 ww
 NY
 hj
-tv
-tv
-tv
-wj
+gV
+gV
+gV
+DF
 NY
 pQ
 pQ
@@ -22400,7 +22400,7 @@ zK
 NY
 NY
 NY
-NY
+xc
 NY
 NY
 NY
@@ -22446,19 +22446,19 @@ my
 my
 my
 NY
-tv
-Lh
-Lh
-tv
+gV
+Pj
+Pj
+gV
 NY
 hj
 hj
 hj
 NY
-wj
+DF
 NY
-tv
-tv
+gV
+gV
 xc
 NY
 NY
@@ -22534,7 +22534,7 @@ NY
 NY
 NY
 NY
-NY
+xc
 NY
 zK
 YS
@@ -22578,19 +22578,19 @@ my
 my
 NY
 NY
-tv
-vW
-Lh
-Bu
+gV
+eZ
+Pj
+Aw
 hj
 hj
 hj
 NY
-Uh
 tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
 NY
 NY
 NY
@@ -22710,19 +22710,19 @@ NY
 NY
 xc
 NY
-tv
-tv
-Lh
-tv
+gV
+gV
+Pj
+gV
 hj
 hj
 hj
 xc
-tv
-Lh
-Lh
-tv
-tv
+gV
+Pj
+Pj
+gV
+gV
 NY
 NY
 pQ
@@ -22795,7 +22795,7 @@ zK
 NY
 NY
 NY
-NY
+xc
 NY
 NY
 NY
@@ -22842,19 +22842,19 @@ xc
 NY
 NY
 NY
-wj
-tv
+DF
+gV
 NY
 NY
 hj
 hj
 hj
 NY
-tv
-Lh
-Lh
-Lh
-Lh
+gV
+Pj
+Pj
+Pj
+Pj
 NY
 NY
 pQ
@@ -22931,7 +22931,7 @@ NY
 NY
 NY
 NY
-NY
+xc
 NY
 NY
 NY
@@ -22972,7 +22972,7 @@ my
 NY
 NY
 NY
-GF
+dC
 NY
 pU
 NY
@@ -22983,10 +22983,10 @@ hj
 NY
 NY
 NY
-tv
-tv
-Lh
-tv
+gV
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -23057,7 +23057,7 @@ YS
 zK
 NY
 NY
-NY
+xc
 NY
 NY
 NY
@@ -23113,13 +23113,13 @@ hj
 hj
 NY
 NY
-Nw
-tv
+ZC
+gV
 Cp
-tv
-Lh
+gV
+Pj
 NY
-tv
+gV
 NY
 pQ
 pQ
@@ -23195,11 +23195,11 @@ NY
 NY
 NY
 NY
+xc
 NY
 NY
 NY
-NY
-NY
+xc
 NY
 NY
 zK
@@ -23232,12 +23232,12 @@ my
 my
 my
 my
-yP
-WA
-iO
+Kr
+hd
+GK
 NY
 hj
-Uh
+tv
 hj
 hj
 hj
@@ -23245,12 +23245,12 @@ NY
 NY
 pU
 Cp
-tv
-tv
-tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
+gV
+gV
 NY
 NY
 pQ
@@ -23364,9 +23364,9 @@ my
 my
 my
 my
-yP
-WA
-iO
+Kr
+hd
+GK
 hj
 hj
 hj
@@ -23376,13 +23376,13 @@ hj
 hj
 hj
 hj
-tv
-tv
-tv
-tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
+gV
+gV
+gV
 xc
 NY
 pQ
@@ -23456,6 +23456,7 @@ NY
 NY
 NY
 NY
+xc
 NY
 NY
 NY
@@ -23464,8 +23465,7 @@ NY
 NY
 NY
 NY
-NY
-NY
+xc
 NY
 zK
 zK
@@ -23496,9 +23496,9 @@ my
 my
 my
 my
-yP
-WA
-iO
+Kr
+hd
+GK
 hj
 hj
 hj
@@ -23512,7 +23512,7 @@ hj
 NY
 hj
 hj
-Zo
+Lg
 NY
 NY
 NY
@@ -23593,7 +23593,7 @@ NY
 NY
 NY
 NY
-NY
+xc
 NY
 NY
 NY
@@ -23628,9 +23628,9 @@ my
 my
 my
 my
-yP
-WA
-iO
+Kr
+hd
+GK
 hj
 hj
 hj
@@ -23639,15 +23639,15 @@ hj
 hj
 NY
 NY
-db
-db
+IR
+IR
 hj
 hj
 NY
 hj
 NY
-tv
-tv
+gV
+gV
 NY
 pQ
 pQ
@@ -23763,7 +23763,7 @@ my
 my
 hj
 NY
-Nq
+Qs
 NY
 NY
 hj
@@ -23774,11 +23774,11 @@ hj
 NY
 NY
 NY
-tv
-tv
+gV
+gV
 NY
-tv
-tv
+gV
+gV
 xc
 NY
 pQ
@@ -23856,7 +23856,7 @@ zK
 zK
 zK
 zK
-NY
+xc
 NY
 NY
 NY
@@ -23898,19 +23898,19 @@ NY
 NY
 NY
 NY
-wj
+DF
 NY
 NY
 NY
 NY
 hj
 NY
-tv
-tv
-Lh
+gV
+gV
+Pj
 NY
-tv
-tv
+gV
+gV
 NY
 NY
 pQ
@@ -24027,23 +24027,23 @@ my
 my
 NY
 xc
-tv
-Lh
-tv
-tv
+gV
+Pj
+gV
+gV
 NY
-GF
+dC
 NY
 NY
 hj
-wj
-tv
-Lh
-Lh
-Lh
+DF
+gV
+Pj
+Pj
+Pj
 NY
-tv
-tv
+gV
+gV
 NY
 NY
 pQ
@@ -24158,24 +24158,24 @@ my
 my
 my
 NY
-tv
-tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
+gV
 Cp
 NY
 NY
 hj
 hj
 hj
-tv
-Lh
-Lh
-Lh
+gV
+Pj
+Pj
+Pj
 NY
-tv
-tv
+gV
+gV
 NY
 NY
 pQ
@@ -24290,22 +24290,22 @@ my
 my
 my
 NY
-tv
-tv
-Bu
-tv
-Lh
-tv
+gV
+gV
+Aw
+gV
+Pj
+gV
 NY
 NY
 pU
 hj
 hj
 NY
-tv
-tv
-Bu
-tv
+gV
+gV
+Aw
+gV
 NY
 ww
 NY
@@ -24422,22 +24422,22 @@ my
 my
 my
 NY
-Lh
-tv
+Pj
+gV
 ww
-tv
-Lh
-tv
-tv
+gV
+Pj
+gV
+gV
 NY
 NY
 NY
 hj
 NY
 Cp
-tv
-tv
-tv
+gV
+gV
+gV
 NY
 NY
 xc
@@ -24554,13 +24554,13 @@ my
 my
 my
 my
-tv
-tv
-tv
-tv
-tv
-Lh
-tv
+gV
+gV
+gV
+gV
+gV
+Pj
+gV
 NY
 NY
 xc
@@ -24687,12 +24687,12 @@ my
 my
 my
 NY
-tv
-tv
-tv
-tv
-Lh
-Lh
+gV
+gV
+gV
+gV
+Pj
+Pj
 NY
 NY
 NY
@@ -24701,7 +24701,7 @@ hj
 hj
 NY
 NY
-tv
+gV
 NY
 NY
 NY
@@ -24821,23 +24821,23 @@ my
 NY
 NY
 NY
-Lh
-tv
-tv
-Lh
-tv
+Pj
+gV
+gV
+Pj
+gV
 NY
-Uh
+tv
 hj
 hj
 hj
 hj
 ww
-Lh
-tv
-tv
-tv
-wj
+Pj
+gV
+gV
+gV
+DF
 NY
 pQ
 pQ
@@ -24955,9 +24955,9 @@ NY
 NY
 NY
 NY
-tv
-tv
-tv
+gV
+gV
+gV
 NY
 NY
 NY
@@ -24965,10 +24965,10 @@ hj
 hj
 hj
 NY
-tv
+gV
 Cp
-tv
-tv
+gV
+gV
 NY
 NY
 pQ
@@ -25087,9 +25087,9 @@ NY
 xc
 NY
 pU
-tv
+gV
 Cp
-tv
+gV
 NY
 pU
 NY
@@ -25097,10 +25097,10 @@ NY
 hj
 hj
 NY
-tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
 NY
 NY
 pQ
@@ -25219,21 +25219,21 @@ NY
 NY
 ww
 NY
-Lh
-Lh
-tv
-tv
+Pj
+Pj
+gV
+gV
 NY
 NY
 NY
 hj
 hj
-wj
-tv
-tv
-tv
-tv
-tv
+DF
+gV
+gV
+gV
+gV
+gV
 xc
 NY
 pQ
@@ -25351,22 +25351,22 @@ my
 NY
 NY
 NY
-Lh
-Lh
-tv
-tv
+Pj
+Pj
+gV
+gV
 NY
-Uh
+tv
 NY
 NY
 hj
 pU
-Uh
 tv
-Lh
-tv
-tv
-tv
+gV
+Pj
+gV
+gV
+gV
 NY
 pQ
 pQ
@@ -25482,11 +25482,11 @@ my
 my
 NY
 NY
-tv
-tv
-Lh
-Lh
-tv
+gV
+gV
+Pj
+Pj
+gV
 NY
 NY
 NY
@@ -25494,11 +25494,11 @@ NY
 hj
 hj
 NY
-Lh
-Lh
-tv
-Lh
-tv
+Pj
+Pj
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -25615,22 +25615,22 @@ my
 NY
 NY
 NY
-tv
-Lh
-vW
-Lh
-tv
-tv
+gV
+Pj
+eZ
+Pj
+gV
+gV
 NY
 xc
 NY
 hj
 NY
-tv
-Lh
-tv
-Lh
-tv
+gV
+Pj
+gV
+Pj
+gV
 NY
 NY
 pQ
@@ -25748,23 +25748,23 @@ my
 NY
 NY
 NY
-tv
-Lh
-Lh
-tv
-tv
-tv
+gV
+Pj
+Pj
+gV
+gV
+gV
 NY
 pU
 hj
 hj
-tv
-tv
-tv
-tv
-tv
+gV
+gV
+gV
+gV
+gV
 NY
-Ii
+pX
 zK
 pQ
 pQ
@@ -25851,7 +25851,7 @@ YS
 YS
 zK
 zK
-Pj
+Wp
 my
 my
 my
@@ -25880,23 +25880,23 @@ my
 NY
 xc
 NY
-tv
-tv
-tv
-tv
-tv
-Lh
-tv
-GF
+gV
+gV
+gV
+gV
+gV
+Pj
+gV
+dC
 hj
 hj
 hj
 NY
-Lh
-Lh
-tv
+Pj
+Pj
+gV
 zK
-Om
+db
 zK
 pQ
 pQ
@@ -25982,7 +25982,7 @@ YS
 YS
 zK
 zK
-Pj
+Wp
 NY
 my
 my
@@ -26012,22 +26012,22 @@ my
 NY
 NY
 NY
-tv
-tv
+gV
+gV
 Cp
-tv
-Lh
-Lh
-tv
+gV
+Pj
+Pj
+gV
 NY
 hj
 hj
 hj
 hj
-tv
-tv
+gV
+gV
 NY
-Ii
+pX
 zK
 YS
 YS
@@ -26113,7 +26113,7 @@ YS
 YS
 zK
 zK
-Pj
+Wp
 NY
 NY
 my
@@ -26147,19 +26147,19 @@ NY
 NY
 xc
 NY
+gV
+gV
+gV
+gV
 tv
-tv
-tv
-tv
-Uh
 NY
 hj
 hj
 NY
 xc
-tv
+gV
 NY
-Om
+db
 zK
 YS
 YS
@@ -26236,7 +26236,7 @@ NY
 hj
 hj
 NY
-db
+IR
 NY
 zK
 zK
@@ -26244,7 +26244,7 @@ YS
 YS
 YS
 zK
-Pj
+Wp
 NY
 NY
 xc
@@ -26278,10 +26278,10 @@ NY
 NY
 NY
 NY
-wj
+DF
 NY
-tv
-tv
+gV
+gV
 NY
 NY
 NY
@@ -26289,8 +26289,8 @@ hj
 hj
 pU
 NY
-kH
-Om
+JQ
+db
 zK
 YS
 YS
@@ -26378,7 +26378,7 @@ zK
 zK
 pT
 NY
-GF
+dC
 NY
 NY
 my
@@ -26414,88 +26414,88 @@ NY
 NY
 xc
 NY
-wj
+DF
 NY
 NY
 xc
 hj
 hj
-Om
-zK
-zK
-zK
-YS
-YS
-KA
-YS
-YS
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-KA
-YS
-YS
-YS
-NY
-NY
-zK
-NY
-NY
-zK
-YS
-YS
-YS
-YS
-YS
-KA
-KA
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-NY
-NY
-NY
 db
+zK
+zK
+zK
+YS
+YS
+KA
+YS
+YS
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+pQ
+KA
+YS
+YS
+YS
+NY
+NY
+zK
+NY
+NY
+zK
+YS
+YS
+YS
+YS
+YS
+KA
+KA
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+NY
+NY
+NY
+IR
 NY
 hj
 hj
@@ -26507,7 +26507,7 @@ zK
 zK
 zK
 zK
-ep
+LH
 NY
 xc
 NY
@@ -26544,14 +26544,14 @@ NY
 xc
 NY
 NY
-kH
-kH
+JQ
+JQ
 NY
 xc
 NY
 pU
 hj
-hd
+jX
 zK
 zK
 zK
@@ -26673,17 +26673,17 @@ my
 my
 NY
 NY
-kH
-kH
-ga
+JQ
+JQ
+lZ
 zK
 NY
-RD
-kH
-KQ
-kH
+iO
+JQ
+yP
+JQ
 hj
-hd
+jX
 zK
 zK
 zK
@@ -26803,8 +26803,8 @@ my
 my
 my
 my
-kH
-ga
+JQ
+lZ
 zK
 zK
 zK
@@ -26814,8 +26814,8 @@ zK
 zK
 zK
 zK
-cI
-hd
+uf
+jX
 zK
 YS
 YS
@@ -26898,7 +26898,7 @@ hj
 NY
 NY
 hj
-db
+IR
 hj
 hj
 hj
@@ -26946,8 +26946,8 @@ YS
 YS
 zK
 zK
-lC
-tB
+Zs
+PS
 zK
 YS
 YS
@@ -27078,8 +27078,8 @@ YS
 YS
 YS
 YS
-Rx
-hO
+jr
+ie
 YS
 YS
 YS
@@ -27167,7 +27167,7 @@ zK
 zK
 zK
 zK
-pA
+dK
 NY
 NY
 NY
@@ -27422,7 +27422,7 @@ xc
 hj
 hj
 hj
-db
+IR
 NY
 NY
 NY
@@ -27432,9 +27432,9 @@ YS
 YS
 YS
 zK
-pA
+dK
 NY
-GF
+dC
 NY
 NY
 my
@@ -27547,7 +27547,7 @@ YS
 zK
 NY
 NY
-db
+IR
 NY
 NY
 NY
@@ -27565,7 +27565,7 @@ YS
 YS
 zK
 zK
-pA
+dK
 NY
 NY
 NY
@@ -27682,7 +27682,7 @@ NY
 NY
 NY
 NY
-db
+IR
 hj
 hj
 xc
@@ -27698,7 +27698,7 @@ YS
 YS
 zK
 zK
-pA
+dK
 NY
 xc
 my
@@ -27963,7 +27963,7 @@ YS
 YS
 YS
 zK
-pA
+dK
 jS
 my
 my
@@ -28403,7 +28403,7 @@ pQ
 pQ
 NY
 NY
-NY
+xc
 YS
 YS
 YS
@@ -28533,7 +28533,7 @@ pQ
 pQ
 pQ
 pQ
-zq
+Et
 NY
 NY
 YS
@@ -28665,7 +28665,7 @@ zK
 pQ
 pQ
 pQ
-zq
+Et
 NY
 NY
 YS
@@ -28681,7 +28681,7 @@ YS
 YS
 zK
 NY
-NY
+xc
 NY
 NY
 zK
@@ -29075,7 +29075,7 @@ YS
 zK
 zK
 NY
-NY
+xc
 YS
 NY
 NY
@@ -29341,7 +29341,7 @@ zK
 NY
 YS
 NY
-NY
+xc
 NY
 zK
 YS
@@ -29602,7 +29602,7 @@ YS
 YS
 zK
 NY
-NY
+xc
 NY
 NY
 NY
@@ -29737,7 +29737,7 @@ NY
 NY
 NY
 NY
-NY
+xc
 NY
 NY
 zK
@@ -30035,7 +30035,7 @@ YS
 YS
 YS
 YS
-zK
+YS
 YS
 YS
 YS
@@ -30263,42 +30263,42 @@ YS
 zK
 zK
 NY
-NY
-NY
-zK
-zK
-zK
-YS
-YS
-YS
-zK
-zK
-YS
-YS
-YS
-zK
-YS
-zK
-YS
-YS
-YS
-YS
-YS
-YS
-zK
-zK
-NY
-NY
-NY
-zK
-zK
+xc
 NY
 zK
 zK
 zK
+YS
+YS
+YS
+zK
+zK
+YS
+YS
+YS
+zK
+YS
+zK
+YS
+YS
+YS
+YS
+YS
+YS
+zK
+zK
+NY
+NY
+NY
+zK
+zK
+NY
 zK
 zK
 zK
+YS
+YS
+YS
 zK
 zK
 YS
@@ -30420,17 +30420,17 @@ zK
 zK
 NY
 NY
+xc
 NY
 NY
 NY
-NY
-NY
+xc
 NY
 NY
 NY
 NY
 hj
-NY
+xc
 NY
 zK
 zK
@@ -30567,8 +30567,8 @@ NY
 NY
 zK
 YS
-YS
-YS
+KA
+KA
 YS
 YS
 my
@@ -30699,7 +30699,7 @@ NY
 NY
 zK
 YS
-YS
+KA
 YS
 YS
 YS
@@ -30812,10 +30812,10 @@ zK
 zK
 NY
 NY
+xc
 NY
 NY
-NY
-NY
+xc
 NY
 hj
 NY
@@ -30953,7 +30953,7 @@ hj
 NY
 NY
 NY
-NY
+xc
 NY
 zK
 zK
@@ -31082,7 +31082,7 @@ hj
 NY
 hj
 NY
-GF
+dC
 NY
 NY
 NY
@@ -31095,7 +31095,7 @@ YS
 YS
 YS
 YS
-YS
+KA
 YS
 YS
 my
@@ -31225,9 +31225,9 @@ zK
 zK
 zK
 YS
-YS
-YS
-YS
+KA
+KA
+KA
 YS
 my
 my
@@ -31342,16 +31342,16 @@ NY
 zK
 NY
 NY
-NY
+xc
 NY
 hj
 hj
 NY
 NY
+xc
 NY
 NY
-NY
-NY
+xc
 NY
 NY
 NY
@@ -31740,10 +31740,10 @@ my
 my
 my
 my
-tn
-mY
-VW
-tn
+Ye
+sn
+hC
+Ye
 my
 my
 my
@@ -31873,12 +31873,12 @@ my
 my
 my
 uj
-XA
-XA
-XA
+JV
+JV
+JV
 Eb
-Jt
-Jt
+Bx
+Bx
 Eb
 uj
 my
@@ -32006,10 +32006,10 @@ my
 my
 uj
 uj
-XA
-XA
+JV
+JV
 Eb
-Jt
+Bx
 Eb
 Eb
 uj
@@ -32139,15 +32139,15 @@ my
 my
 uj
 uj
-XA
+JV
 Eb
 Eb
 oR
 uj
-tn
-tn
-tn
-tn
+Ye
+Ye
+Ye
+Ye
 my
 my
 my
@@ -32269,17 +32269,17 @@ my
 my
 my
 my
-cU
+ga
 uj
-XA
-XA
-BF
-yH
+JV
+JV
+ra
+gK
 uj
-Fn
-Wn
-Xt
-sY
+tl
+KK
+Xs
+QD
 my
 my
 my
@@ -32395,23 +32395,23 @@ my
 my
 my
 my
-Zz
-DF
-cU
+VP
+ll
+ga
 my
 bP
 kj
 uj
 uj
-fx
-XA
-BF
-yH
-XA
-Et
-Vp
-Vp
-sY
+bG
+JV
+ra
+gK
+JV
+qS
+Kc
+Kc
+QD
 my
 my
 my
@@ -32526,24 +32526,24 @@ zK
 my
 my
 my
-Kc
-XA
+dM
+JV
 qL
 Eb
 my
 bP
 kj
-XA
-XA
-XA
-XA
-XA
-XA
-XA
-Fn
-Ye
-Wn
-sY
+JV
+JV
+JV
+JV
+JV
+JV
+JV
+tl
+cI
+KK
+QD
 my
 my
 my
@@ -32659,18 +32659,18 @@ my
 my
 my
 Eb
-XA
+JV
 Eb
-XA
+JV
 my
 bP
 kj
 uj
-XA
-XA
-XA
-XA
-XA
+JV
+JV
+JV
+JV
+JV
 uj
 RU
 RU
@@ -32791,16 +32791,16 @@ my
 my
 my
 Eb
-Vk
-Lw
-XA
+Bu
+iG
+JV
 my
 my
 my
-cU
+ga
 Eb
-XA
-XA
+JV
+JV
 uj
 uj
 uj
@@ -32922,22 +32922,22 @@ my
 my
 my
 uj
-XA
-XA
-LH
-XA
-sY
+JV
+JV
+NJ
+JV
+QD
 uj
 my
 my
 Eb
 Eb
-XA
-XA
-tn
-tn
-tn
-tn
+JV
+JV
+Ye
+Ye
+Ye
+Ye
 my
 my
 my
@@ -33053,23 +33053,23 @@ my
 my
 my
 my
-cU
+ga
 uj
-XA
+JV
 Eb
 Eb
-mY
-XA
+sn
+JV
 my
 my
 Eb
 oR
 Eb
-XA
-Fn
+JV
+tl
 CM
-Gx
-sY
+GF
+QD
 my
 my
 my
@@ -33186,22 +33186,22 @@ my
 my
 my
 my
-jr
+qe
 uj
 Eb
 Eb
-mY
-XA
-XA
-XA
-Jt
-Jt
-XA
-XA
-Et
-Vp
-Wk
-sY
+sn
+JV
+JV
+JV
+Bx
+Bx
+JV
+JV
+qS
+Kc
+jw
+QD
 my
 my
 my
@@ -33322,14 +33322,14 @@ my
 my
 Eb
 Eb
-sY
-XA
-XA
-XA
-XA
-XA
-XA
-XA
+QD
+JV
+JV
+JV
+JV
+JV
+JV
+JV
 RU
 RU
 RU
@@ -33454,18 +33454,18 @@ my
 my
 my
 my
-sY
+QD
 Eb
 Eb
 Eb
 oR
-XA
-XA
-XA
-Fn
-gK
-ai
-sY
+JV
+JV
+JV
+tl
+Nv
+pW
+QD
 my
 my
 my
@@ -33591,13 +33591,13 @@ my
 my
 Eb
 Eb
-XA
-XA
+JV
+JV
 uj
-Fn
-Vp
-FG
-sY
+tl
+Kc
+VC
+QD
 my
 my
 my
@@ -33723,13 +33723,13 @@ my
 my
 my
 Eb
-tn
-tn
-Et
-Vp
-Vp
-Vp
-sY
+Ye
+Ye
+qS
+Kc
+Kc
+Kc
+QD
 my
 my
 my
@@ -33856,12 +33856,12 @@ my
 my
 my
 my
-sY
-Vp
-Vp
-FG
-Vp
-sY
+QD
+Kc
+Kc
+VC
+Kc
+QD
 my
 my
 my
@@ -33990,10 +33990,10 @@ my
 my
 RU
 RU
-ct
-ct
-FS
-sY
+PK
+PK
+cc
+QD
 my
 my
 my
@@ -34125,7 +34125,7 @@ RU
 RU
 RU
 RU
-sY
+QD
 my
 my
 my
@@ -42890,7 +42890,7 @@ pQ
 pQ
 uj
 uj
-eZ
+XA
 Eb
 uj
 pQ
@@ -43150,10 +43150,10 @@ pQ
 pQ
 pQ
 pQ
-ro
+QE
 uj
 Eb
-IJ
+Be
 uj
 uj
 uj
@@ -43279,16 +43279,16 @@ rd
 rd
 pQ
 pQ
-eZ
+XA
 Eb
-Be
-Be
+wO
+wO
 uj
 uj
 uj
 uj
 uj
-ro
+QE
 pQ
 pQ
 "}
@@ -43418,9 +43418,9 @@ Eb
 uj
 uj
 uj
-Be
-Be
-Be
+wO
+wO
+wO
 pQ
 pQ
 "}
@@ -43552,7 +43552,7 @@ uj
 uj
 Eb
 uj
-Be
+wO
 pQ
 pQ
 "}
@@ -43679,12 +43679,12 @@ uj
 uj
 Eb
 uj
-Be
-Be
+wO
+wO
 uj
 Eb
-Be
-Be
+wO
+wO
 pQ
 pQ
 "}
@@ -43811,11 +43811,11 @@ uj
 uj
 pQ
 pQ
-ro
+QE
 uj
 Eb
-eZ
-Be
+XA
+wO
 pQ
 pQ
 pQ
@@ -44239,8 +44239,8 @@ rd
 rd
 rd
 rd
-Go
-Go
+xn
+xn
 rd
 rd
 rd
@@ -44371,8 +44371,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -44503,8 +44503,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -44603,12 +44603,12 @@ pQ
 pQ
 pQ
 pQ
-eZ
+XA
 Eb
-Be
-Be
+wO
+wO
 Eb
-jN
+lC
 pQ
 pQ
 "}
@@ -44635,8 +44635,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -44738,7 +44738,7 @@ Eb
 Eb
 Eb
 Eb
-Be
+wO
 Eb
 Eb
 pQ
@@ -44767,8 +44767,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -44868,7 +44868,7 @@ pQ
 Eb
 Eb
 Eb
-VC
+cU
 Eb
 Eb
 Eb
@@ -44899,8 +44899,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -45000,7 +45000,7 @@ Eb
 Eb
 Eb
 El
-bO
+aN
 Eb
 Eb
 Eb
@@ -45031,8 +45031,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -45134,7 +45134,7 @@ Eb
 Eb
 Eb
 Eb
-xF
+cV
 Eb
 Eb
 pQ
@@ -45163,8 +45163,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -45263,8 +45263,8 @@ pQ
 Eb
 Eb
 Eb
-tl
-Iw
+fx
+qA
 Eb
 Eb
 Eb
@@ -45295,8 +45295,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 rd
 rd
 rd
@@ -45393,15 +45393,15 @@ pQ
 pQ
 pQ
 Eb
-dM
+rK
 Eb
-aW
-iG
-iG
-iG
+AP
+Fn
+Fn
+Fn
 Eb
 Eb
-eZ
+XA
 pQ
 "}
 (80,1,3) = {"
@@ -45427,8 +45427,8 @@ rd
 rd
 rd
 rd
-sZ
-JQ
+Hd
+sl
 NY
 rd
 rd
@@ -45525,8 +45525,8 @@ rd
 pQ
 pQ
 Eb
-td
-bO
+Jl
+aN
 El
 Eb
 Eb
@@ -45558,7 +45558,7 @@ rd
 rd
 rd
 rd
-GF
+dC
 NY
 NY
 NY
@@ -45663,8 +45663,8 @@ Eb
 Eb
 Eb
 Eb
-Jt
-Jt
+Bx
+Bx
 Eb
 pQ
 "}
@@ -45693,7 +45693,7 @@ rd
 NY
 NY
 NY
-zq
+Et
 rd
 rd
 rd
@@ -45795,8 +45795,8 @@ Eb
 Eb
 Eb
 Eb
-Jt
-Jt
+Bx
+Bx
 Eb
 pQ
 "}
@@ -45825,7 +45825,7 @@ rd
 rd
 NY
 NY
-zq
+Et
 rd
 rd
 rd
@@ -45924,10 +45924,10 @@ pQ
 Eb
 Eb
 Eb
-Hm
+um
 Eb
-Jt
-Jt
+Bx
+Bx
 Eb
 pQ
 pQ
@@ -46053,14 +46053,14 @@ rd
 pQ
 pQ
 pQ
-jN
+lC
 Eb
 Eb
 Eb
 Eb
 Eb
 Eb
-xF
+cV
 pQ
 pQ
 "}
@@ -46319,7 +46319,7 @@ pQ
 pQ
 pQ
 pQ
-eZ
+XA
 Eb
 Eb
 pQ
@@ -60312,8 +60312,8 @@ pQ
 pQ
 KA
 KA
-qe
-dv
+jN
+eX
 pU
 NY
 uZ
@@ -60443,9 +60443,9 @@ pQ
 pQ
 KA
 KA
-qe
-qe
-qe
+jN
+jN
+jN
 hj
 hj
 uZ
@@ -60574,10 +60574,10 @@ pQ
 pQ
 KA
 KA
-qe
-dv
-qe
-qe
+jN
+eX
+jN
+jN
 hj
 hj
 uZ
@@ -60706,9 +60706,9 @@ rd
 pT
 NY
 NY
-qe
-Bu
-Vs
+jN
+Aw
+sY
 hj
 hj
 NY
@@ -60838,9 +60838,9 @@ rd
 pT
 xc
 Cp
-qe
-tv
-tv
+jN
+gV
+gV
 hj
 hj
 NY
@@ -60967,12 +60967,12 @@ rd
 rd
 rd
 rd
-vi
-kH
-QE
-QE
-QE
-Nq
+lR
+JQ
+Vk
+Vk
+Vk
+Qs
 hj
 hj
 xc
@@ -61238,7 +61238,7 @@ rd
 KN
 hj
 hj
-GF
+dC
 NY
 pQ
 pQ
@@ -61495,14 +61495,14 @@ rd
 rd
 rd
 rd
-OR
-VP
-VP
-Xv
-Xv
-tv
-NY
 Uh
+zq
+zq
+KQ
+KQ
+gV
+NY
+tv
 NY
 pQ
 pQ
@@ -61630,9 +61630,9 @@ rd
 pT
 NY
 NY
-Vs
-tv
-tv
+sY
+gV
+gV
 KA
 NY
 NY
@@ -61762,12 +61762,12 @@ rd
 pT
 NY
 py
-Uh
 tv
-qe
-qe
-Oy
-tv
+gV
+jN
+jN
+Hm
+gV
 pQ
 pQ
 pQ
@@ -61892,14 +61892,14 @@ rd
 rd
 rd
 pT
-wj
-qe
-qe
-tv
-qe
-dv
-Vs
-tv
+DF
+jN
+jN
+gV
+jN
+eX
+sY
+gV
 pQ
 pQ
 pQ
@@ -62024,14 +62024,14 @@ rd
 rd
 rd
 pT
-qe
-qe
-tv
-ly
-qe
-tv
-tv
-tv
+jN
+jN
+gV
+yX
+jN
+gV
+gV
+gV
 pQ
 pQ
 pQ
@@ -62158,12 +62158,12 @@ rd
 pT
 xc
 pU
-tv
-tv
-tv
-tv
-ly
-tv
+gV
+gV
+gV
+gV
+yX
+gV
 NY
 pQ
 pQ
@@ -62290,12 +62290,12 @@ rd
 pQ
 NY
 NY
-qe
-wj
-tv
-tv
-tv
-tv
+jN
+DF
+gV
+gV
+gV
+gV
 NY
 pQ
 pQ
@@ -62421,13 +62421,13 @@ rd
 rd
 pQ
 pQ
-qe
-qe
+jN
+jN
 NY
 NY
-wj
-qe
-qe
+DF
+jN
+jN
 pU
 NY
 pQ
@@ -62554,11 +62554,11 @@ pQ
 pQ
 pQ
 NY
-qe
+jN
 NY
-dv
-qe
-qe
+eX
+jN
+jN
 NY
 NY
 NY
@@ -62691,7 +62691,7 @@ NY
 NY
 NY
 NY
-wj
+DF
 NY
 NY
 pQ
