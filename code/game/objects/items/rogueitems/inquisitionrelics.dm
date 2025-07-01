@@ -254,7 +254,7 @@
 /obj/item/flashlight/flare/torch/lantern/psycenser/examine(mob/user)
 	. = ..()
 	if(fuel > 0)
-		. += span_info("If opened, it may bless Psydon weapons and those of Psydon faith.")
+		. += span_info("If opened, it may bless Psydonic weapons and those of Psydonic faith.")
 		. += span_warning("Smashing a creature with it open will create a devastating explosion and render it useless.")
 	if(fuel <= 0)
 		. += span_info("It is gone.")
