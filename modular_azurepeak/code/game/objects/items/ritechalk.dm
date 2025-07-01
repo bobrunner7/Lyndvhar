@@ -13,50 +13,50 @@
 	var/ritechoices = list()
 	switch (user.patron?.type)
 		if(/datum/patron/inhumen/zizo)
-			ritechoices+="Rune of ZIZO" 
+			ritechoices+="Rune of Ambition" 
 		if(/datum/patron/inhumen/matthios)
-			ritechoices+="Rune of Transaction" 
+			ritechoices+="Rune of Envy" 
 		if(/datum/patron/divine/astrata)
-			ritechoices+="Rune of Sun"
+			ritechoices+="Rune of the Sun"
 		if(/datum/patron/divine/noc)
-			ritechoices+="Rune of Moon"
+			ritechoices+="Rune of the Moon"
 		if(/datum/patron/divine/dendor)
 			ritechoices+="Rune of Beasts"
 		if(/datum/patron/divine/malum)
-			ritechoices+="Rune of Forge"
+			ritechoices+="Rune of the Forge"
 		if(/datum/patron/divine/xylix)
 			ritechoices+="Rune of Trickery"
 		if(/datum/patron/divine/necra)
 			ritechoices+="Rune of Death"
 		if(/datum/patron/divine/pestra)
-			ritechoices+="Rune of Plague"
+			ritechoices+="Rune of the Plague"
 		if(/datum/patron/divine/eora)
 			ritechoices+="Rune of Love"
 		if(/datum/patron/divine/ravox)
 			ritechoices+="Rune of War"
 		if(/datum/patron/divine/abyssor)
-			ritechoices+="Rune of Storm"
+			ritechoices+="Rune of the Storm"
 
 	var/runeselection = input(user, "Which rune shall I inscribe?", src) as null|anything in ritechoices
 	var/turf/step_turf = get_step(get_turf(user), user.dir)
 	switch(runeselection)
-		if("Rune of Sun")
+		if("Rune of the Sun")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Radiance..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/astrata(step_turf)
-		if("Rune of Moon")
-			to_chat(user, span_cultsmall("I begin inscribing the rune of His Wisdom"))
+		if("Rune of the Moon")
+			to_chat(user, span_cultsmall("I begin inscribing the rune of His Wisdom..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/noc(step_turf)
 		if("Rune of Beasts")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Madness"))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of His Madness..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/dendor(step_turf)
-		if("Rune of Forge")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Their Craft..."))
+		if("Rune of the Forge")
+			to_chat(user,span_cultsmall("I begin inscribing the rune of His Craft..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/malum(step_turf)
@@ -70,7 +70,7 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/necra(step_turf)
-		if("Rune of Plague")
+		if("Rune of the Plague")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Plague..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
@@ -85,18 +85,18 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/ravox(step_turf)
-		if("Rune of Storm")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Storm..."))
+		if("Rune of the Storm")
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Storm..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/abyssor(step_turf)
-		if("Rune of ZIZO")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Knowledge..."))
+		if("Rune of Ambition")
+			to_chat(user,span_cultsmall("I begin inscribing the rune of HER RIGHTEOUS POWER..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/zizo(step_turf)
 		if("Rune of Transaction")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Transactions"))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of HIS ENVIOUS HANDS..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/matthios(step_turf)
