@@ -970,7 +970,7 @@
 "cw" = (
 /obj/structure/roguemachine/Hoardmaster{
 	name = "GILDWYRM";
-	desc = "A statue depicting Gildwyrm, a beast of Graggaroid creation that served as the mount for Graggar's physical form during the Bloodwake. It radiates an aura of dread and power."
+	desc = "A statue depicting Gildwyrm, a beast of Matthiosite creation that served as the mount for the physical form of Matthios during the Bloodwake. It radiates an aura of dread and power."
 	},
 /turf/open/floor/rogue/grassred,
 /area/rogue/indoors/banditcamp)
