@@ -315,3 +315,19 @@
 /obj/item/rogueweapon/stoneaxe/silver/psyaxe/ComponentInitialize()
 	. = ..()				//Pre-blessed, +5 force, +100 blade int, +100 int, +2 def, make silver.
 	AddComponent(/datum/component/psyblessed, TRUE, 5, 100, 100, 2, TRUE)
+
+/obj/item/rogueweapon/greataxe/steel/doublehead/graggar
+	name = "vicious greataxe"
+	desc = "A greataxe who's edge thrums with the motive force, violence, oh, sweet violence!"
+	icon_state = "graggargaxe"
+	force = 20
+	force_wielded = 40
+	icon = 'icons/roguetown/weapons/64.dmi'
+
+/obj/item/rogueweapon/greataxe/steel/doublehead/graggar/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_HORDE))
+		to_chat(user, "<font color='red'>UNWORTHY HANDS TOUCHING THIS AXE, CEASE OR BE PUNISHED!</font>")
+		user.adjust_fire_stacks(5)
+		user.IgniteMob()
+		user.Stun(40)
+	..()

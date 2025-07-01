@@ -16,6 +16,8 @@
 			ritechoices+="Rune of Ambition" 
 		if(/datum/patron/inhumen/matthios)
 			ritechoices+="Rune of Envy" 
+		if(/datum/patron/inhumen/graggar)
+			ritechoices+="Rune of Violence"
 		if(/datum/patron/divine/astrata)
 			ritechoices+="Rune of the Sun"
 		if(/datum/patron/divine/noc)
@@ -100,3 +102,8 @@
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/matthios(step_turf)
+		if("Rune of Violence")
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Slaughter"))
+			if(do_after(user, 30, src))
+				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
+				new /obj/structure/ritualcircle/graggar(step_turf)

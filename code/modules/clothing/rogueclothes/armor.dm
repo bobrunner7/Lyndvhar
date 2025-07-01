@@ -1097,3 +1097,17 @@
     body_parts_covered = CHEST|GROIN|VITALS|ARMS
 
 
+/obj/item/clothing/suit/roguetown/armor/plate/fluted/graggar
+	name = "vicious half-plate"
+	desc = "A fluted half-plate armour-set which stirs with the same violence driving our world. This inner motive makes it far less restrictive."
+	armor_class = ARMOR_CLASS_MEDIUM
+	max_integrity = 500 // We are probably one of the best medium armor sets. At higher integ than most(heavy armor levels, pretty much. But worse resistances, we get the bonus over the other sets of being medium and being unequippable.)
+	icon_state = "graggarplate"
+
+/obj/item/clothing/suit/roguetown/armor/plate/fluted/graggar/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_HORDE))
+		to_chat(user, "<font color='red'>UNWORTHY HANDS TOUCHING THIS ARMOR, CEASE OR BE RENDED ASUNDER!</font>")
+		user.adjust_fire_stacks(5)
+		user.IgniteMob()
+		user.Stun(40)
+	..()

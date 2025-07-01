@@ -480,3 +480,18 @@
 	icon_state = "monkpants"
 	item_state = "monkpants"
 	naledicolor = TRUE
+
+/obj/item/clothing/under/roguetown/platelegs/graggar
+	name = "vicious leggings"
+	desc = "Plate chausses which stir with the innate violence driving our world"
+	icon_state = "graggarplatelegs"
+	max_integrity = 400 // Good good resistances, but less crit resist than the other ascendant armors. In trade, we can take off our pants to repair, and they are medium rather than heavy.
+	armor = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/under/roguetown/platelegs/graggar/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_HORDE))
+		to_chat(user, "<font color='red'>UNWORTHY HANDS TOUCHING THIS ARMOR, CEASE OR BE RENDED ASUNDER!</font>")
+		user.adjust_fire_stacks(5)
+		user.IgniteMob()
+		user.Stun(40)
+	..()
