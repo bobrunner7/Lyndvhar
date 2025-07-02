@@ -79,8 +79,8 @@
 
 /datum/virtue/combat/duelist
 	name = "Duelist Apprentice"
-	desc = "I have trained under a duelist of considerable skill, and always have my trusty rapier close at hand. (+1 to Swords and Knives, Up to Journeyman, Minimum Apprentice. Stashed rapier.)"
-	added_stashed_items = list("Rapier" = /obj/item/rogueweapon/sword/rapier)
+	desc = "I have trained under a duelist of decent skill, and always have my trusty rapier close at hand. (+1 to Swords and Knives, Up to Journeyman, Minimum Apprentice. Stashed steel sword.)"
+	added_stashed_items = list("Steel Sword" = /obj/item/rogueweapon/sword)
 
 /datum/virtue/combat/duelist/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/swords) < SKILL_LEVEL_APPRENTICE)
@@ -95,9 +95,9 @@
 		handle_skills(recipient)
 
 /datum/virtue/combat/executioner
-	name = "Executioner Apprentice"
-	desc = "I have trained under a skilled executioner, and always have my trusty exeuctioner's axe close at hand. (+1 to Axes and Whips/Flails, Up to Journeyman, Minimum Apprentice. Stashed battleaxe.)"
-	added_stashed_items = list("Battleaxe" = /obj/item/rogueweapon/stoneaxe/battle)
+	name = "Woodcutter Apprentice"
+	desc = "I have trained under a skilled woodcutter, and always have my axe close at hand. (+1 to Axes and Whips/Flails, Up to Journeyman, Minimum Apprentice. Stashed woodcutter's axe.)"
+	added_stashed_items = list("Woodcutter's Axe" = /obj/item/rogueweapon/stoneaxe/woodcut)
 
 /datum/virtue/combat/executioner/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/whipsflails) < SKILL_LEVEL_APPRENTICE)
@@ -113,8 +113,8 @@
 
 /datum/virtue/combat/militia
 	name = "Militiaman Apprentice"
-	desc = "I have trained under a skilled militiaman, and always have my trusty billhook close at hand. (+1 to Maces and Polearms, Up to Journeyman, Minimum Apprentice. Stashed billhook.)"
-	added_stashed_items = list("Billhook" = /obj/item/rogueweapon/spear/billhook)
+	desc = "I have trained under a skilled militiaman, and always have my trusty spear close at hand. (+1 to Maces and Polearms, Up to Journeyman, Minimum Apprentice. Stashed spear.)"
+	added_stashed_items = list("Spear" = /obj/item/rogueweapon/spear)
 
 /datum/virtue/combat/militia/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/polearms) < SKILL_LEVEL_APPRENTICE)
