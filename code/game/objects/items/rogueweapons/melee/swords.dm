@@ -767,12 +767,11 @@
 	max_blade_int = 300
 	wdefense = 7
 
-// Thrusting variant of the Shortsword.
+// Thrusting variant of the Shortsword. Uses worse rapier intents.
 
 /obj/item/rogueweapon/sword/smallsword
 	name = "smallsword"
 	desc = "A short length steel thrusting sword with absolutely no edge meant for fashion and everyday carry."
-	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "smallsword"
 	possible_item_intents = list(/datum/intent/sword/thrust/rapier/smallsword)
 	gripped_intents = null
