@@ -142,6 +142,12 @@
 	created_item = /obj/item/rogueweapon/sword/rapier
 	craftdiff = 2
 
+/datum/anvil_recipe/weapons/steel/smallsword
+	name = "Smallsword"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/smallsword
+	craftdiff = 1
+
 /datum/anvil_recipe/weapons/steel/cutlass
 	name = "Cutlass"
 	req_bar = /obj/item/ingot/steel
