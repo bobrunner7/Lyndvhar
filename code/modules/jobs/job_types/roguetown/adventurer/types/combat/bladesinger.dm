@@ -9,6 +9,7 @@
 	category_tags = list(CTAG_ADVENTURER)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
 	min_pq = 2
+	H.cmode_music = 'sound/music/combat_delf.ogg'
 
 
 /datum/outfit/job/roguetown/adventurer/bladesinger/pre_equip(mob/living/carbon/human/H)

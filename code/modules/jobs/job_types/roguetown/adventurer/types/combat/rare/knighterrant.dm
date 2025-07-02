@@ -87,3 +87,4 @@
 		H.change_stat("strength", 1)
 		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 1)
+		H.cmode_music = 'sound/music/combat_knight.ogg'
