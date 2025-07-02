@@ -316,13 +316,40 @@
 	. = ..()				//Pre-blessed, +5 force, +100 blade int, +100 int, +2 def, make silver.
 	AddComponent(/datum/component/psyblessed, TRUE, 5, 100, 100, 2, TRUE)
 
+
 /obj/item/rogueweapon/greataxe/steel/doublehead/graggar
 	name = "vicious greataxe"
 	desc = "A greataxe who's edge thrums with the motive force, violence, oh, sweet violence!"
 	icon_state = "graggargaxe"
-	force = 20
-	force_wielded = 40
+	force = 25
+	force_wielded = 50
+	max_blade_int = 300
+	smeltresult = /obj/item/ingot/steel
+	smelt_bar_num = 2
+	gripped_intents = list(/datum/intent/axe/cut/battle ,/datum/intent/axe/chop/battle, /datum/intent/axe/bash)
+	minstr = 10
+	wdefense = 4
 	icon = 'icons/roguetown/weapons/64.dmi'
+	icon = 'icons/roguetown/weapons/64.dmi'
+	lefthand_file = 'icons/mob/inhands/weapons/rogue_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/rogue_righthand.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	pixel_x = -16
+	pixel_y = -16
+	bigboy = TRUE
+	gripsprite = TRUE
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/rogueweapon/greataxe/steel/doublehead/graggar/getonmobprop(tag)
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.5,"sx" = -8,"sy" = -1,"nx" = 9,"ny" = -1,"wx" = -4,"wy" = -1,"ex" = 3,"ey" = -1,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -45,"sturn" = 45,"wturn" = 45,"eturn" = -45,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0,"wielded")
+			if("wielded")
+				return list("shrink" = 0.5,"sx" = 4,"sy" = -4,"nx" = -6,"ny" = -3,"wx" = -8,"wy" = -4,"ex" = 8,"ey" = -4,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0,"onback")
+	return ..()
+
 
 /obj/item/rogueweapon/greataxe/steel/doublehead/graggar/pickup(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_HORDE))
