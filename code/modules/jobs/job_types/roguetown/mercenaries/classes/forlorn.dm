@@ -14,7 +14,7 @@
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
-	var/classes = list("Forvheipal Light Infantry","Forvheipal Sharpshooter")
+	var/classes = list("Forvheipal Light Infantry","Forvheipal Javelineer")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -56,7 +56,7 @@
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/clothing/neck/roguetown/mercmedal/jannisary)
 		if("Forvheipal Sharpshooter")
 			H.set_blindness(0)
-			to_chat(H, span_warning("The Forvheipal Sharpshooters are the Zapyrixian Order's ranged janissary, wielding javelins and relying on their agility to avoid blows."))
+			to_chat(H, span_warning("The Forvheipal Javelineers are the Zapyrixian Order's ranged janissary, wielding javelins and relying on their agility to avoid blows."))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
