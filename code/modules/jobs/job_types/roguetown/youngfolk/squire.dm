@@ -11,7 +11,6 @@
 		/datum/species/human/halfelf,
 		/datum/species/dwarf/mountain,
 		/datum/species/elf/dark,
-		/datum/species/aasimar,
 		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
