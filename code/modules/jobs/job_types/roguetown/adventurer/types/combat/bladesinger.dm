@@ -8,8 +8,6 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/bladesinger
 	category_tags = list(CTAG_ADVENTURER)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER)
-	min_pq = 2
-
 
 /datum/outfit/job/roguetown/adventurer/bladesinger/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -38,3 +36,4 @@
 		head = /obj/item/clothing/head/roguetown/rare/elfplate
 		neck = /obj/item/clothing/neck/roguetown/chaincoif
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	H.cmode_music = 'sound/music/combat_delf.ogg'

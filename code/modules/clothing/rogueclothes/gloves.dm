@@ -283,3 +283,17 @@
     break_sound = 'sound/foley/breaksound.ogg'
     drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
     anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/gloves/roguetown/plate/graggar
+	name = "vicious gauntlets"
+	desc = "Plate gauntlets which carry the motive force of this world, violence."
+	max_integrity = 500
+	icon_state = "graggarplategloves"
+
+/obj/item/clothing/gloves/roguetown/plate/graggar/pickup(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_HORDE))
+		to_chat(user, "<font color='red'>UNWORTHY HANDS TOUCHING THIS ARMOR, CEASE OR BE RENDED ASUNDER!</font>")
+		user.adjust_fire_stacks(5)
+		user.IgniteMob()
+		user.Stun(40)
+	..()

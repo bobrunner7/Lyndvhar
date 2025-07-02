@@ -33,7 +33,7 @@
 /obj/structure/roguemachine/Hoardmaster/examine(mob/user)
 	. = ..()
 	if(user.mind?.has_antag_datum(/datum/antagonist/bandit))
-		. += "A statue depicting Gildwyrm, a beast of Graggaroid creation that served as the mount for Graggar's physical form during the Bloodwake. It radiates an aura of dread and power."
+		. += "A statue depicting Gildwyrm, a beast of Matthiosite creation that served as the mount for the physical form of Matthios during the Bloodwake. It radiates an aura of dread and power."
 		return
 	else
 		. += "Some mean looking statue of a.. dragon? Drake? You do not know what this symbolizes. Something about it makes me uneasy, like its eyes are following me. Everytime I look at it my spine shivers.."

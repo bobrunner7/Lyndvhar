@@ -18,7 +18,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/datum/species/demihuman
 	)
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_patrons = ALL_DIVINE_PATRONS
 
 	spells = list(
 		/obj/effect/proc_holder/spell/self/grant_title,

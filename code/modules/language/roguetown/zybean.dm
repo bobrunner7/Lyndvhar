@@ -1,6 +1,6 @@
 /datum/language/zybean
 	name = "Zybean"
-	desc = ""
+	desc = "Language of the Zybantu peoples of the Ziggurat, considered by many quite difficult to learn if not experienced with the syllables."
 	speech_verb = "states"
 	ask_verb = "questions"
 	exclaim_verb = "shouts"
