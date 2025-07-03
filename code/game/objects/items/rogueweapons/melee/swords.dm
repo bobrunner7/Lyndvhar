@@ -767,6 +767,31 @@
 	max_blade_int = 300
 	wdefense = 7
 
+// Thrusting variant of the Shortsword. Uses worse rapier intents.
+
+/obj/item/rogueweapon/sword/smallsword
+	name = "smallsword"
+	desc = "A short length steel thrusting sword with absolutely no edge meant for fashion and everyday carry."
+	icon_state = "smallsword"
+	possible_item_intents = list(/datum/intent/sword/thrust/rapier/smallsword)
+	gripped_intents = null
+	parrysound = list(
+		'sound/combat/parry/bladed/bladedthin (1).ogg',
+		'sound/combat/parry/bladed/bladedthin (2).ogg',
+		'sound/combat/parry/bladed/bladedthin (3).ogg',
+		)
+	swingsound = BLADEWOOSH_SMALL
+	minstr = 3
+	force = 19
+	wdefense = 4.5 // Can't be two handed.
+	wbalance = 1
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_NORMAL
+
+/datum/intent/sword/thrust/rapier/smallsword
+	damfactor = 1
+	penfactor = 25
+
 /obj/item/rogueweapon/sword/cutlass
 	name = "cutlass"
 	desc = "A blade commonly used by the pirates and sailors of Lyndhardtia's coast."

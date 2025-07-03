@@ -79,8 +79,8 @@
 
 /datum/virtue/combat/duelist
 	name = "Duelist Apprentice"
-	desc = "I have trained under a duelist of decent skill, and always have my trusty rapier close at hand. (+1 to Swords and Knives, Up to Journeyman, Minimum Apprentice. Stashed steel sword.)"
-	added_stashed_items = list("Steel Sword" = /obj/item/rogueweapon/sword)
+	desc = "I have trained under a duelist of decent skill, and always have my trusty rapier close at hand. (+1 to Swords and Knives, Up to Journeyman, Minimum Apprentice. Stashed steel smallsword.)"
+	added_stashed_items = list("Steel Smallsword" = /obj/item/rogueweapon/sword/smallsword)
 
 /datum/virtue/combat/duelist/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/swords) < SKILL_LEVEL_APPRENTICE)
