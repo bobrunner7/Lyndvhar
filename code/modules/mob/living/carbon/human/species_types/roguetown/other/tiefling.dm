@@ -117,7 +117,8 @@
 		"Voibion" = SKIN_COLOR_VOIBION,
 		"Chyerno" = SKIN_COLOR_CHYERNO,
 		"Zierzati" = SKIN_COLOR_ZIERZATI,
-		"Yolzuthboc" = SKIN_COLOR_YOLZUTHBOC
+		"Yolzuthboc" = SKIN_COLOR_YOLZUTHBOC,
+		"Yaborys" = SKIN_COLOR_YABORYS
 	)
 
 /datum/species/tieberian/get_hairc_list()
