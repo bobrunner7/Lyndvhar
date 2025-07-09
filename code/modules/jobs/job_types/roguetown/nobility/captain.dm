@@ -215,7 +215,7 @@
 // Agile Captain Variant based off Irregular Knights. Gets master Knives/Swords
 /datum/advclass/captain/irregularcaptain
 	name = "Duelist Captain"
-	tutorial = "mjp yell at bowl for text"
+	tutorial = "Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in heavy armor, your evasive skills will only truly shine if you don even lighter protection."
 	outfit = /datum/outfit/job/roguetown/captain/irregularcaptain
 	category_tags = list(CTAG_CAPTAIN)
 
