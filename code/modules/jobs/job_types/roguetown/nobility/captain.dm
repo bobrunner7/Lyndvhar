@@ -212,6 +212,73 @@
 			beltr = /obj/item/rogueweapon/sword/sabre
 			backl = /obj/item/rogueweapon/shield/tower/metal
 
+// Agile Captain Variant based off Irregular Knights. Gets master Knives/Swords
+/datum/advclass/captain/irregularcaptain
+	name = "Duelist Captain"
+	tutorial = "Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in heavy armor, your evasive skills will only truly shine if you don even lighter protection."
+	outfit = /datum/outfit/job/roguetown/captain/irregularcaptain
+	category_tags = list(CTAG_CAPTAIN)
+
+/datum/outfit/job/roguetown/captain/irregularcaptain/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = /obj/item/clothing/head/roguetown/helmet/visored/captain
+	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backpack_contents = list(
+		/obj/item/storage/keyring/sheriff = 1,
+		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		)
+	if(H.mind)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+		H.change_stat("strength", 1)
+		H.change_stat("speed", 2)
+		H.change_stat("perception", 2)
+		H.change_stat("intelligence", 2)
+		H.change_stat("constitution", 1)
+		H.change_stat("endurance", 1)
+		H.change_stat("fortune", 1)
+
+	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
+	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // Heavy armor stays so you can wear the Captain Brigadine.
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+
+	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/proc/haltyell)
+	H.adjust_blindness(-3)
+	var/weapons = list(
+		"Sword & Recurve Bow",
+		"Bastard Sword & Parry Dagger",
+		"Sabre & Parry Dagger",
+		)
+	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	H.set_blindness(0)
+	switch(weapon_choice)
+		if("Sword & Recurve Bow")
+			r_hand = /obj/item/rogueweapon/sword
+			beltr = /obj/item/quiver/arrows
+			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+		if("Bastard Sword & Parry Dagger")
+			beltr = /obj/item/rogueweapon/sword/long
+			beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
+		if("Sabre & Parry Dagger")
+			beltr = /obj/item/rogueweapon/sword/sabre
+			beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
+
 /obj/effect/proc_holder/spell/self/convertrole
 	name = "Recruit Beggar"
 	desc = "Recruit someone to your cause."
